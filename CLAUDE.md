@@ -5,11 +5,12 @@
 ## 專案結構
 
 ```
-posts/          # 已發布的文章
-drafts/         # 草稿與文章規劃（尚未發布）
-docs/           # 部署與設定文件
-routes.yaml     # Ghost URL 路由設定
-redirects.yaml  # Ghost 301 redirect 設定
+posts/               # 已發布的文章
+drafts/              # 草稿與文章規劃（尚未發布）
+docs/                # 部署與設定文件
+  ghost-deployment.md  # Ghost 部署指南
+  routes.yaml          # Ghost URL 路由設定
+  redirects.yaml       # Ghost 301 redirect 設定
 ```
 
 ## Ghost 部署
