@@ -1,0 +1,12 @@
+301:
+  ^/claude-cowork-ai-from-chat-to-work/$: /posts/claude-cowork-ai-from-chat-to-work/
+  ^/vibe-coding-tutorial-how-web-works/$: /posts/vibe-coding-tutorial-how-web-works/
+  ^/vibe-coding-avoid-ai-style-how-to-make-high-quality-website/$: /posts/vibe-coding-avoid-ai-style-how-to-make-high-quality-website/
+  ^/claude-code-not-just-for-coding-for-blog-writing/$: /posts/claude-code-not-just-for-coding-for-blog-writing/
+  ^/markdown-tutorial/$: /posts/markdown-tutorial/
+  ^/how-to-self-host-ghost-on-gcp/$: /posts/how-to-self-host-ghost-on-gcp/
+  ^/vibe-coding-fundamentals-api-vs-webhook/$: /posts/vibe-coding-fundamentals-api-vs-webhook/
+  ^/vibe-coding-fundamentals-http-api-intro/$: /posts/vibe-coding-fundamentals-http-api-intro/
+  ^/seld-host-ghost-blog-vs-medium-and-vocus/$: /posts/seld-host-ghost-blog-vs-medium-and-vocus/
+  ^/using-ghost-for-your-blog/$: /posts/using-ghost-for-your-blog/
+  ^/wordpress-vs-ghost/$: /posts/wordpress-vs-ghost/
