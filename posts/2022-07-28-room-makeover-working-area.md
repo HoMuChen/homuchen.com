@@ -1,0 +1,67 @@
+---
+layout: post
+title: "房間DIY改造: 工作區域篇，我需要一張升降桌嗎？"
+date: 2022-07-28 18:55:00 +0800
+author: HoMuChen
+category: 生活
+tags: [life style, room makeover]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/room-makeover-working-area-0.jpg
+---
+
+因為開啟了全遠端工作模式的關係，不是在環遊世界工作，就是在家工作。退掉了台北租屋處回到老家之後，
+有了改造房間的念頭，這篇文章要簡單分享改造房間中關於工作區域的部分！(文後有購物清單唷)
+
+![我的工作區域]({{site.cdn_url}}/room-makeover-working-area-0.jpg)
+
+# 久坐怎麼辦？
+身為軟體工程師，需要長時間久坐，如果姿勢又不良，蠻容易造成腰部下背部的不適，
+這邊先簡單地給大家一個關鍵字: [**下交叉症候群**](https://www.google.com/search?q=%E4%B8%8B%E4%BA%A4%E5%8F%89%E7%97%87%E5%80%99%E7%BE%A4){:target="_blank"}。
+
+那該怎麼辦呢？就是要時常起來動一動～ 為了讓自己不要忘記時常站起來一下，我是用以下幾個方法:
+
+1. 裝水的杯子不要太大，才需要常起身去裝水喝。
+2. 多喝水才要常常去上廁所。
+3. 番茄鐘工作法: 專注一段時間之後要休息。
+4. 站坐交替工作！
+
+# 站坐交替工作！
+今天要討論的就是以上第四點，站坐交替，當時我第一個想法是**買一張升降桌**，但後來想想，
+決定使用另一個方法，簡單省錢，就是**買兩張桌子**！
+
+主要原因就是我工作需求就只有一台筆電的關係，所以可以非常容易地變換工作位置，加上錢錢賺得不夠多，
+所以想省一下囉～
+
+![升降桌 vs. 高腳桌搭配一般桌子]({{site.cdn_url}}/room-makeover-working-area-1.jpg)
+
+## 升降桌
+* **優點**: 高度可以任意調整，依照每個人的身高，座椅的高度，調到最適合的高度。
+
+* **缺點**: 價格較高，IKEA最便宜的大約落在6000左右，一般市面上的約12000上下。
+
+## 高腳桌搭配一般桌子
+* **優點**: 便宜～
+
+* **缺點**: 高度設定就是兩種！另外如果你工作會需要用到一堆東西，無法在兩張桌子間搬來搬去的話也較不適用，
+  另外對空間的需求也會較高。
+
+# 購物清單
+
+購買項目               |價格
+-----------------------|----------------
+[高腳吧檯桌](https://shopee.tw/%E7%BE%8E%E5%A5%BD%E5%AE%B6%E5%B1%85%E3%80%90%E9%AB%98%E8%85%B3%E5%90%A7%E6%AA%AF%E6%A1%8C%E3%80%91%E7%8F%BE%E8%B2%A8*%E9%85%92%E6%AB%83-%E9%A4%90%E6%A1%8C-%E4%B8%AD%E5%B3%B6%E6%A1%8C-%E5%84%B2%E7%89%A9%E6%A1%8C-%E5%92%96%E5%95%A1%E6%A1%8C-%E9%82%8A%E6%A1%8C-%E5%90%A7%E5%8F%B0%E6%A4%85-%E8%BE%A6%E5%85%AC%E6%A1%8C-%E5%90%A7%E6%AA%AF%E6%A1%8C-i.22740579.7814016836){:target="_blank"} | 1796
+-----------------------|----------------
+[IKEA組合書桌: LAGKAPTEN/ADILS](https://www.ikea.com.tw/zh/products/home-workspace/home-desks/lagkapten-adils-spr-59417209){:target="_blank"} | 1399
+-----------------------|----------------
+**total**              | **3195**
+
+# 總結
+沒有最好的，只有最適合自己的，大家根據自己的情況來做選擇，如果錢不是你考慮的點的話，那就直接買升降桌吧！😂
+
+對這次改造過程其他部分有興趣的朋友們，可以看之前分別寫的文章:
+* [**房間DIY改造: 老舊家具及櫃體篇**](/posts/room-makeover-furniture/){:target="_blank"}
+* [**房間DIY改造: 大門篇，如何用剩的乳膠漆來改造大門**](/posts/room-makeover-door/){:target="_blank"}
+* [**房間DIY改造: 牆壁篇(油漆、開關面板、變電箱遮掩)**](/posts/room-makeover-wall/){:target="_blank"}
+* [**房間DIY改造: 地板篇**](/posts/room-makeover-floor/){:target="_blank"}
+
+如果想更即時的看到改造過程的，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/){:target="_blank"}。希望以上的內容對你有幫助！掰掰～👋
