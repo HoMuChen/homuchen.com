@@ -127,6 +127,8 @@ curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit
 
 ### Create a draft
 
+**Important:** Ghost uses the Lexical editor by default. When passing `html`, you **must** include `"source": "html"` in the request body, otherwise the HTML content will be silently ignored and the post will be empty.
+
 ```bash
 TOKEN=$(generate_ghost_token)
 curl -s -X POST \
@@ -136,6 +138,7 @@ curl -s -X POST \
     "posts": [{
       "title": "My Post Title",
       "html": "<p>Post content in HTML</p>",
+      "source": "html",
       "tags": [
         {"name": "AI"},
         {"name": "productivity"}
@@ -158,6 +161,7 @@ curl -s -X POST \
     "posts": [{
       "title": "My Post Title",
       "html": "<p>Post content in HTML</p>",
+      "source": "html",
       "status": "published",
       "tags": [
         {"name": "AI"},
@@ -173,7 +177,7 @@ curl -s -X POST \
 | Field | Type | Notes |
 |-------|------|-------|
 | `title` | string | Required |
-| `html` | string | Post body as HTML |
+| `html` | string | Post body as HTML (**must** pair with `"source": "html"`) |
 | `lexical` | string | Post body in Lexical format (alternative to html) |
 | `status` | string | `draft` (default), `published`, `scheduled` |
 | `tags` | array | `[{"name": "tag"}]` or `[{"slug": "tag-slug"}]` — creates tag if not exists |
@@ -258,6 +262,7 @@ When publishing a markdown blog post from this project to Ghost:
 4. **Create the post** with parsed metadata mapped to Ghost fields:
    - `title` ← frontmatter `title`
    - `html` ← converted markdown body
+   - `source` ← `"html"` (**required** — Ghost uses Lexical by default and silently ignores `html` without this)
    - `tags` ← frontmatter `tags` array, mapped to `[{"name": "tag"}]`
    - `custom_excerpt` / `meta_description` ← frontmatter `description`
    - `status` ← `"published"` or `"draft"`
@@ -272,3 +277,4 @@ When publishing a markdown blog post from this project to Ghost:
 - **Wrong audience in JWT** — must be `"/admin/"`, not `"/v2/admin/"` or other paths
 - **Content-Type missing** — POST/PUT requests need `Content-Type: application/json`
 - **`source .env` fails silently** — in Claude Code's bash, `source .env` doesn't persist variables; use `export $(grep -v '^#' .env | xargs)` instead
+- **HTML content silently ignored** — Ghost defaults to Lexical editor; passing `html` without `"source": "html"` creates a post with empty body. Always include `"source": "html"` when using the `html` field
