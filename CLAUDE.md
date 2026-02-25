@@ -7,7 +7,14 @@
 ```
 posts/          # 已發布的文章
 drafts/         # 草稿與文章規劃（尚未發布）
+docs/           # 部署與設定文件
+routes.yaml     # Ghost URL 路由設定
+redirects.yaml  # Ghost 301 redirect 設定
 ```
+
+## Ghost 部署
+
+部署相關的設定與注意事項（routes、redirects、API 發布）詳見 [docs/ghost-deployment.md](docs/ghost-deployment.md)。
 
 ## 文章檔案規範
 
