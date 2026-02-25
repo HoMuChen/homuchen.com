@@ -19,10 +19,12 @@ GHOST_CONTENT_API_KEY=<content-api-key>
 
 Get these from Ghost Admin > Settings > Integrations > Add custom integration.
 
-Load them with:
+Load them into shell variables with:
 ```bash
-source .env
+export $(grep -v '^#' .env | xargs)
 ```
+
+**Note:** `source .env` does NOT work reliably in Claude Code's bash environment. Always use the `export ... xargs` pattern above, or inline the values directly with `export GHOST_URL="..."` etc.
 
 ## Authentication
 
@@ -269,3 +271,4 @@ When publishing a markdown blog post from this project to Ghost:
 - **Missing `updated_at` on edit** — causes 409 conflict; always fetch current version first
 - **Wrong audience in JWT** — must be `"/admin/"`, not `"/v2/admin/"` or other paths
 - **Content-Type missing** — POST/PUT requests need `Content-Type: application/json`
+- **`source .env` fails silently** — in Claude Code's bash, `source .env` doesn't persist variables; use `export $(grep -v '^#' .env | xargs)` instead
