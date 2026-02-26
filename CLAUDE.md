@@ -50,6 +50,7 @@ description: "選填。文章摘要描述，用於 SEO meta description。"
 - `category` 常見值：`生活`、`讀書筆記`、`Web Development`
 - `image` 和 `description` 為選填，但建議填寫以利 SEO
 - 使用通用 Markdown 格式，不使用 Jekyll 特有語法（如 `{:target="_blank"}`、`{{site.cdn_url}}`、`layout` 等）
+- 內部連結格式：`/posts/{slug}/`，**不含日期**。slug 對應檔名去掉日期前綴的部分，例如檔案 `2026-02-25-claude-cowork-ai-from-chat-to-work.md` 的連結是 `/posts/claude-cowork-ai-from-chat-to-work/`
 
 ## 寫文章的工作流程
 
