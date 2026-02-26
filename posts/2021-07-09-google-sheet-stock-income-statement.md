@@ -4,6 +4,8 @@ date:   2021-07-09 16:30:00 +0800
 author: HoMuChen
 category: Google Sheet
 tags: [google sheet, finance]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/income-statement-1.jpg
 ---
 
 此篇文章將分享我是如何製作我持有股票的未實現損益表，看起來的成果如下:

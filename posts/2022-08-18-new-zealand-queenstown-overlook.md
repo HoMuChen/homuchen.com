@@ -4,6 +4,8 @@ date: 2022-08-18 17:00:00 +0800
 author: HoMuChen
 category: 生活
 tags: [New Zealand]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/queenstown-overview-0.jpg
 ---
 
 冬天從皇后鎮高處往下看，有藍天、白雪覆蓋的山頭、咖啡色及綠色植被、湖泊及城鎮，

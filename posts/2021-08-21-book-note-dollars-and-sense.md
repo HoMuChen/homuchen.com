@@ -4,6 +4,8 @@ date: 2021-08-21 23:40:00 +0800
 author: HoMuChen
 category: 讀書筆記
 tags: [books, finance, psychology]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/dollars-and-sense-1.jpg
 ---
 
 繼上篇[**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)**](/posts/book-note-money-psychology/)

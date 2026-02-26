@@ -4,6 +4,8 @@ date:   2021-06-26 20:00:00 +0800
 author: HoMuChen
 category: Google Sheet
 tags: [google sheet]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/drop-down-1.jpg
 ---
 
 # 為什麼要用下拉式選單

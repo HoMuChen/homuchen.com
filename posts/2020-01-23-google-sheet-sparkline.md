@@ -4,6 +4,8 @@ date:   2020-01-23 20:00:00 +0800
 author: HoMuChen
 category: Google Sheet
 tags: [google sheet, sparkline]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/spark-line-1.jpg
 ---
 
 # Sparkline用起來長怎樣

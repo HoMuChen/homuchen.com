@@ -4,6 +4,8 @@ date: 2023-10-23 20:00:00 +0800
 author: HoMuChen
 category: 生活
 tags: [remote work]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/remote-jobs-trend.jpg
 ---
 
 疫情(Covid-19)的關係，算是打開了所以工作遠端的大門，這篇文章利用了網路爬蟲程式，

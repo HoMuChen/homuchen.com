@@ -5,6 +5,8 @@ tags: [message queue, node.js, redis]
 author: HoMuChen
 category: Web Development
 last_modified_at: 2021-10-28 16:49:00 +0800
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/kue-1.jpg
 ---
 
 這是篇教你如何在node.js環境下，快速擁有一個Task queue的tutorial，如果想了解什麼是message queue，以及為什麼跟什麼時候要使用它，可以參考我的另外一篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)!

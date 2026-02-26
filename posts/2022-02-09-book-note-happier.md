@@ -4,6 +4,8 @@ date: 2022-02-09 21:19:00 +0800
 author: HoMuChen
 category: 讀書筆記
 tags: [books, life style, self improvement, psychology]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/happier-01.jpg
 ---
 
 作者於2002年在哈佛大學開始講授 **正向心理學**，這門課主要探討的問題就是: **如何幫助自己和別人活得更快樂？**

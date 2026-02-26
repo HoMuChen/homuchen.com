@@ -4,6 +4,8 @@ date:   2021-03-24 20:00:00 +0800
 author: HoMuChen
 tags: [http, linux, curl]
 category: Networking
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/curl-1.jpg
 ---
 
 做為一個HTTP client，想要對server發出請求，有許多做法，可能是寫一個python script 或使用其他任何語言，也可以是使用[postman](https://www.postman.com/)這樣的工具，或者是直接在command line上或shell script中使用curl指令．當你想要快速地測試一下某個API，或是explore別人的HTTP service時，直接使用curl是還蠻方便的！甚至直接用shell script來寫爬蟲了！

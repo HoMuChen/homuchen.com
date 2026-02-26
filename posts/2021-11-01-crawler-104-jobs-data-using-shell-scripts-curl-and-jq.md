@@ -4,6 +4,8 @@ date: 2021-11-01 20:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [crawler, http, curl, linux]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/104-1.jpg
 ---
 
 想要抓取網路上的資料，大家可能都會想到python爬蟲，但有時並不需要那麼麻煩，

@@ -4,6 +4,8 @@ date: 2021-07-24 22:30:00 +0800
 author: HoMuChen
 category: 讀書筆記
 tags: [books, finance, habit]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/rich-habit-1.jpg
 ---
 
 ![book: Effort-less Wealth](https://storage.googleapis.com/homuchen.com/images/rich-habit-1.jpg)

@@ -4,6 +4,8 @@ date: 2021-10-26 17:30:00 +0800
 author: HoMuChen
 category: 生活
 tags: [food, life style, habit]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/food-0.jpg
 ---
 
 想少吃些外食的精緻碳水，於是乎開始研究自己下廚，在[**《原子習慣》**](https://www.books.com.tw/products/0010822522)

@@ -4,6 +4,8 @@ date:   2019-08-14 20:00:00 +0800
 author: HoMuChen
 tags: [google sheet, sparkline]
 category: Google Sheet
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/track-progress-1.jpg
 ---
 
 追蹤每項任務到目前為止的進度，或每段時間(每天、每個禮拜、或每個月)的努力情況

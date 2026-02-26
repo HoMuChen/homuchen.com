@@ -5,6 +5,8 @@ author: HoMuChen
 description: 什麼是Pagination？為何要使用，以及在HTTP API設計中該如何實作呢？
 category: Web Development
 tags: [api, http, restful api]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/pagination-1.jpg
 ---
 
 # 為何要Pagination

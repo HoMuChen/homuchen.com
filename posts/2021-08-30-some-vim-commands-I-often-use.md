@@ -4,6 +4,8 @@ date: 2021-08-30 22:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [vim, linux]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/vim-5.jpg
 ---
 
 作為一個軟體工程師，我們花在文字編輯器上的時間一定佔了一定的比例，

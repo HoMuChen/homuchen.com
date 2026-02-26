@@ -6,6 +6,8 @@ category: 生活
 tags: []
 descripton: |
   台北捷運運量統計資料分享，COVID-19疫情期間各站的總進出人數
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/mrt-data-taipei-stattion-0.jpg
 ---
 
 COVID-19爆發以來，台灣人民的生活跟世界其他國家相比，受到的影響相對較小，

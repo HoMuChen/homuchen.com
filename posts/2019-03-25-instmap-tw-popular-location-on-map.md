@@ -4,6 +4,8 @@ date:   2019-03-25 20:00:00 +0800
 author: HoMuChen
 tags: [instagram, react, node.js, express, gcp]
 category: Web Development
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/instmap-1.jpg
 ---
 
 到了一個地方，想知道附近有什麼好玩的景點嗎？想看看IG，Instagram上大家都去哪裡嗎？可以使用我最近做的一個玩具服務[InstMap TW](https://instmap.tw)，找尋台灣最多人標記的地標，或是附近最近的相對熱門的地標．

@@ -4,6 +4,8 @@ date: 2021-09-13 22:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [http, restful api, api, url]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/http-url-1.jpg
 ---
 
 這篇文章將會介紹什麼是URL，為何會需要它，以及它是由哪些部分組成的。

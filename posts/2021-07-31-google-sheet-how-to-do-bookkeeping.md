@@ -4,6 +4,8 @@ date: 2021-07-31 22:30:00 +0800
 author: HoMuChen
 category: Google Sheet
 tags: [finance, google sheet, google form]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-1.jpg
 ---
 
 利用Google sheet及Google form來客製化自己的記帳App，表單的連結可以放到手機桌面，就像一般App一樣，

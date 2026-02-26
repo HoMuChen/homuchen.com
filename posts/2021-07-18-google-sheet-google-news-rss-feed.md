@@ -4,6 +4,8 @@ date:   2021-07-18 12:00:00 +0800
 author: HoMuChen
 category: Google Sheet
 tags: [google sheet, finance]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/google-sheet-news-1.jpg
 ---
 
 此篇文章將分享我是如何在試算表裡查看新聞，看起來像是下面這樣:

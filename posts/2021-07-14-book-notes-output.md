@@ -8,6 +8,8 @@ last_modified_at: 2022-05-08 18:00:00 +0800
 description: |
   該如何學習，才能吸收最多、記得最多，答案就是要輸出，也就是透過分享、
   筆記、教學、實踐，才能使自己成長進步最快。
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/reading-output-1.jpg
 ---
 
 不知道大家是否有過這樣的經驗: 讀了許多本書，事後卻說不出來到底讀了什麼;

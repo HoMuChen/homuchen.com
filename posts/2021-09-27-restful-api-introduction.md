@@ -4,6 +4,8 @@ date: 2021-09-27 20:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [http, restful api, api]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/restful-api-1.jpg
 ---
 
 在web開發裡，API是幾乎無所不在，而其中最常見的應該就是基於HTTP協議的RESTful API，

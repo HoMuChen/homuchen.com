@@ -4,6 +4,8 @@ date:   2017-12-28 20:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [express, node.js, line notify, middleware]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/line-notify.jpg
 ---
 
 快速簡單地使用一個express的middleware完成line notify的oauth2流程，取得access\_token來做後續的消息推送

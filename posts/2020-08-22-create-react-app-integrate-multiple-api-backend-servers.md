@@ -4,6 +4,8 @@ date:   2020-08-22 20:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [react, create-react-app]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/cra-1.jpg
 ---
 
 在開發single page application時，會需要透過api來取得及操作資料，本篇文章將示範如何在使用create-react-app開發時，整合一個甚至是多個backend api server！

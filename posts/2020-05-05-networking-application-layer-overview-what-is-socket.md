@@ -4,6 +4,8 @@ date:   2020-05-05 20:00:00 +0800
 author: HoMuChen
 tags: [linux, socket, tcp, udp]
 category: Networking
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/app-layer-1.jpg
 ---
 
 ![application layer](https://storage.googleapis.com/homuchen.com/images/app-layer-1.jpg)

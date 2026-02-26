@@ -4,6 +4,8 @@ date:   2020-04-04 20:00:00 +0800
 author: HoMuChen
 category: Networking
 tags: [layered architecture]
+image:
+  path: https://storage.googleapis.com/homuchen.com/images/layered-arc-1.jpg
 ---
 
 網路是個如此巨大的工程，要如何架構，才能讓全世界的人通力合作，一起打造這豐富的世界呢？答案就是Layered Artichecture ．
