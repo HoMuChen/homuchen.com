@@ -16,7 +16,7 @@ description: |
 
 大家可能也有聽過，最好的學習方法就是去教人。
 
-教學就是一種輸出，在本書[**《最高學以致用法》**](https://www.books.com.tw/products/0010852800){:target="_blank"}中，
+教學就是一種輸出，在本書[**《最高學以致用法》**](https://www.books.com.tw/products/0010852800)中，
 作者認為自我成長的關鍵就是**輸出**，於本書收集了80個關於說、寫、行動三個面向的輸出，
 每一則皆為兩到三分鐘的時間就能閱讀完的份量，讓我們在自己的日常生活中尋找幾個可以小小進步的地方!
 
@@ -92,13 +92,13 @@ description: |
 # 後記
 截至目前，已經輸出了一些讀書筆記囉～ 希望能繼續保持下去！😊
 
-* [**成功是什麼? 5本關於自我成長的推薦書單**](/posts/self-improvement-books/){:target="_blank"}
-* [**[讀書筆記] 習慣致富 人生實踐版**](/posts/book-notes-effort-less-wealth/){:target="_blank"}
-* [**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)**](/posts/book-note-money-psychology/){:target="_blank"}
-* [**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (下)**](/posts/book-note-dollars-and-sense/){:target="_blank"}
-* [**[讀書筆記] 為什麼要睡覺? :睡出健康與學習力、夢出創意的新科學**](/posts/book-note-why-we-sleep/){:target="_blank"}
-* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
-* [**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement/){:target="_blank"}
-* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/){:target="_blank"}
-* [**[讀書筆記] 做自己的生命設計師**](/posts/book-note-designing-your-life/){:target="_blank"}
-* [**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/){:target="_blank"}
+* [**成功是什麼? 5本關於自我成長的推薦書單**](/posts/self-improvement-books/)
+* [**[讀書筆記] 習慣致富 人生實踐版**](/posts/book-notes-effort-less-wealth/)
+* [**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)**](/posts/book-note-money-psychology/)
+* [**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (下)**](/posts/book-note-dollars-and-sense/)
+* [**[讀書筆記] 為什麼要睡覺? :睡出健康與學習力、夢出創意的新科學**](/posts/book-note-why-we-sleep/)
+* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
+* [**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement/)
+* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)
+* [**[讀書筆記] 做自己的生命設計師**](/posts/book-note-designing-your-life/)
+* [**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/)

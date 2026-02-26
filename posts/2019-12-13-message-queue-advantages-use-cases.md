@@ -52,10 +52,10 @@ Sending emails這類工作，使用者可以接受信晚個幾秒，幾十秒甚
 主要的Message broker分成兩類，memory based及log based，各類比較知名的分別像是RabbitMQ及Kafka，
 對於他們的用法及使用場及不同有興趣的，可以看我的另一篇文章:
 
-[**Difference bwtween rabbitmq and kafka**](/posts/difference-bwtween-rabbitmq-and-kafka/){:target="_blank"}
+[**Difference bwtween rabbitmq and kafka**](/posts/difference-bwtween-rabbitmq-and-kafka/)
 
 # Tutorial
-之前有寫過的使用[**Redis來當作message broker的示範**](/posts/asynchronous-task-queue-using-redis-and-kue-js/){:target="_blank"}:
+之前有寫過的使用[**Redis來當作message broker的示範**](/posts/asynchronous-task-queue-using-redis-and-kue-js/):
 
 如果你連Redis都不想架！可以使用GCP的服務Pub/Sub，上GCP的網站點一點，開箱就用！
 

@@ -11,7 +11,7 @@ image:
 
 為何要遠距工作？遠距工作有哪些好處？常見會遇到的問題有哪些？該如何解決，
 不管是以**雇主**的角度還是以**員工**的角度，
-在這本書[**《遠距工作模式》**](https://www.books.com.tw/products/0010856669/){:target="_blank"}裡都有提及。
+在這本書[**《遠距工作模式》**](https://www.books.com.tw/products/0010856669/)裡都有提及。
 
 ![書: 遠距工作模式]({{site.cdn_url}}/book-note-remote-work-1.jpg)
 
@@ -28,7 +28,7 @@ image:
 ## 省下通勤的時間
 每天擠在電車、火車裡，或者是開車塞中公路車陣中，這樣的事情實在是很難讓人快樂起來。
 
-有些人會把通勤時間拿來利用，我自己也不例外[(**《原子習慣》應用: 我是如何養成閱讀習慣**)](/posts/how-i-keep-reading/){:target="_blank"}，
+有些人會把通勤時間拿來利用，我自己也不例外[(**《原子習慣》應用: 我是如何養成閱讀習慣**)](/posts/how-i-keep-reading/)，
 在電車裡閱讀，或是開車的時候邊聽有聲書，
 不過如果可以好好地在家裡做這些事，不是更棒嗎？😄
 
@@ -58,8 +58,8 @@ image:
 
 延伸閱讀:
 
-* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
-* [**如何不用做額外的工作，就使你的收入倍增**](/posts/double-your-money-without-any-extra-work/){:target="_blank"}
+* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
+* [**如何不用做額外的工作，就使你的收入倍增**](/posts/double-your-money-without-any-extra-work/)
 
 ## 世界人才庫
 當你公司的工作模式不在需要進辦公室時，來自全球的人才都可以為你所用。

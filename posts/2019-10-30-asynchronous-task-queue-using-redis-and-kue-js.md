@@ -8,7 +8,7 @@ category: Web Development
 last_modified_at: 2021-10-28 16:49:00 +0800
 ---
 
-這是篇教你如何在node.js環境下，快速擁有一個Task queue的tutorial，如果想了解什麼是message queue，以及為什麼跟什麼時候要使用它，可以參考我的另外一篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases){:target="_blank"}!
+這是篇教你如何在node.js環境下，快速擁有一個Task queue的tutorial，如果想了解什麼是message queue，以及為什麼跟什麼時候要使用它，可以參考我的另外一篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)!
 
 # Outline
 1. 部署Redis，使用Docker，在本地起一台Redis
@@ -117,9 +117,9 @@ queue.process('email', 10, function(job, done){
 
 以上是簡單地介紹如何連接到message broker，以及產生和消耗信息，完整的說明文件及更多功能用法，可以到github上看看:
 
-[Automattic/kue](https://github.com/Automattic/kue){:target="_blank"}
+[Automattic/kue](https://github.com/Automattic/kue)
 
 # 延伸閱讀
-* [**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases){:target="_blank"}
+* [**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)
 
-* [**RabbitMQ和Kafka有何不同？何時該選用哪種產品？**](/posts/difference-bwtween-rabbitmq-and-kafka/){:target="_blank"}
+* [**RabbitMQ和Kafka有何不同？何時該選用哪種產品？**](/posts/difference-bwtween-rabbitmq-and-kafka/)

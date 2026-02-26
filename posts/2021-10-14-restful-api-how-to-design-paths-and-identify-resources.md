@@ -7,7 +7,7 @@ category: Web Development
 tags: [http, restful api, api]
 ---
 
-繼上篇文章[**RESTful API簡介: 什麼是RESTful? 以及為何需要它?**](/posts/restful-api-introduction/){:target="_blank"}後，
+繼上篇文章[**RESTful API簡介: 什麼是RESTful? 以及為何需要它?**](/posts/restful-api-introduction/)後，
 我們知道了RESTful API是**resource based**的，今天講著重討論該如何設計resource，也就是HTTP URL中path的部分。
 
 # Resource based
@@ -79,4 +79,4 @@ PUT     /transactions   -> 發起一筆交易
 
 這是RESTful API一系列文章中的一篇，想了解更多關於RESTful API及HTTP的，可以看這篇目錄:
 
-[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/){:target="_blank"}
+[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/)

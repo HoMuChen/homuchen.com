@@ -258,8 +258,12 @@ When publishing a markdown blog post from this project to Ghost:
 
 1. **Read the post file** and parse frontmatter (title, tags, description, date)
 2. **Convert markdown to HTML** — use `pandoc` or similar
-3. **Generate JWT token** from `.env` credentials
-4. **Create the post** with parsed metadata mapped to Ghost fields:
+3. **Post-process HTML links:**
+   - External links (`http://`, `https://`) → add `target="_blank" rel="noopener noreferrer"`
+   - Internal links (`/posts/...`) → leave as-is
+   - Remove any Jekyll remnants: `{:target="_blank"}`, `{{site.cdn_url}}`, etc.
+4. **Generate JWT token** from `.env` credentials
+5. **Create the post** with parsed metadata mapped to Ghost fields:
    - `title` ← frontmatter `title`
    - `html` ← converted markdown body
    - `source` ← `"html"` (**required** — Ghost uses Lexical by default and silently ignores `html` without this)

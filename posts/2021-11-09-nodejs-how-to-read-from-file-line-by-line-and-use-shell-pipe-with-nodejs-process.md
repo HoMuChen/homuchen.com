@@ -86,8 +86,8 @@ rl.on('close', () => console.log(JSON.stringify(count)))
 另外我還有寫過另一篇一樣功能，只不過是用golang寫的，`stream.Readable`可以類比為golang中的`io.Reader`
 ，有興趣的可以看看:
 
-[**[Golang] 如何逐行讀取檔案，或使用shell pipe到go process**](/posts/golang-how-to-read-from-file-line-by-line-and-use-shell-pipe-with-go-process/){:target="_blank"}
+[**[Golang] 如何逐行讀取檔案，或使用shell pipe到go process**](/posts/golang-how-to-read-from-file-line-by-line-and-use-shell-pipe-with-go-process/)
 
 其他stream的實例:
 
-[**How to stream data from Blob Storage at your HTTP server using Azure and express.js**](/posts/how-to-stream-data-from-blob-storage-at-http-server-using-azure-and-express/){:target="_blank"}
+[**How to stream data from Blob Storage at your HTTP server using Azure and express.js**](/posts/how-to-stream-data-from-blob-storage-at-http-server-using-azure-and-express/)

@@ -11,7 +11,7 @@ description: |
   除了了解hash function是什麼及其特性之外，用更生活化的方式來展現這些特性，以及以有趣的應用來更加地熟悉hash function。
 ---
 
-在之前一篇文章: [**密碼學是什麼? 有何用途以及要解決什麼樣的問題?**](/posts/what-problems-cryptography-to-solve){:target="_blank"}
+在之前一篇文章: [**密碼學是什麼? 有何用途以及要解決什麼樣的問題?**](/posts/what-problems-cryptography-to-solve)
 中討論過密碼學的出現是為了解決什麼問題，這篇文章要討論密碼學裡一個重要的概念，
 **Hash Function**，其與對稱式加密跟非對稱式加密三者共同構成密碼學裡的核心。
 

@@ -80,9 +80,9 @@ console.log(mimetype)  //text/csv
 這篇文章中可以看到到許多Node.js Stream的實例，像是express.js的`request`、`response` object，
 其他還有像是`process.stdin`，`process.stdout`，想看更多使用stream的例子，可以看我寫過的其他文章:
 
-* [**Nodejs: 如何逐行讀取檔案，或使用Unix pipe與其他process互動**](/posts/nodejs-how-to-read-from-file-line-by-line-and-use-shell-pipe-with-nodejs-process/){:target="_blank"}
+* [**Nodejs: 如何逐行讀取檔案，或使用Unix pipe與其他process互動**](/posts/nodejs-how-to-read-from-file-line-by-line-and-use-shell-pipe-with-nodejs-process/)
 
 # 參考資料
 
-* [Node.js documentation: Stream](https://nodejs.org/api/stream.html){:target="_blank"}
-* [@azure/storage-file-share](https://www.npmjs.com/package/@azure/storage-file-share){:target="_blank"}
+* [Node.js documentation: Stream](https://nodejs.org/api/stream.html)
+* [@azure/storage-file-share](https://www.npmjs.com/package/@azure/storage-file-share)

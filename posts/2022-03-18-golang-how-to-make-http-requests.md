@@ -16,7 +16,7 @@ tags: [golang, http]
 一個HTTP Request message不外乎就是**method**、**url**、**headers**跟**body**，如果對於HTTP message還不熟悉的，
 可以看我之前寫過的文章: 
 
-[**HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl){:target="_blank"}
+[**HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl)
 
 # http.Get
 `func Get(url string) (resp *Response, err error)`

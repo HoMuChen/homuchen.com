@@ -68,5 +68,5 @@ Pool越大，可能就越容易找到合適的人。
 
 祝大家在追逐自己理想的生活上一路順遂～ 最近我也是正在經歷轉變生活型態的開端，
 會陸續分享數位遊牧遠端工作的心得及歷程，如果想更即時地看我遊到了哪裡，
-或是不想看這麼多字，想看精簡點的圖文表達的話，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/){:target="_blank"}。
+或是不想看這麼多字，想看精簡點的圖文表達的話，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/)。
 掰掰～👋

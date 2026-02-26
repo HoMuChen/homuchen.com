@@ -45,7 +45,7 @@ The Remarkables雪場，坐右邊的纜車往上，
 ![Queentown view from Skyline]({{site.cdn_url}}/queenstown-overview-3.jpg)
 
 這邊也有溜溜車可以玩，可以耗掉一些等待夜景出現的時間，或者是在餐廳裡喝杯飲料吃個晚餐都是可以。
-預先訂位的話可以前往這個網站[skyline訂票網站](TODO){:target="_blank"}，
+預先訂位的話可以前往這個網站[skyline訂票網站](TODO)，
 纜車票、餐廳及溜溜車都可以一次預訂，(要玩溜溜車的話，千萬不要只訂一次，一定不過癮！)。
 
 溜溜車
@@ -79,5 +79,5 @@ The Remarkables雪場，坐右邊的纜車往上，
 不論是極限的還是悠閒的～
 
 數位遊牧流浪的第一站來到了紐西蘭皇后鎮，如果想即時知道我流浪到哪，或是在做什麼的話，
-歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/){:target="_blank"}。
+歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/)。
 掰掰～👋

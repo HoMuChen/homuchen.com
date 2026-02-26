@@ -22,8 +22,8 @@ description: |
 雇主也必須從中得到好處才行。
 
 如果你沒那麼想遠端工作，或許可以看看我之前寫過的文章，來被我推坑吧～
-* [**遠端工作有哪些好處？**](/posts/remote-working-advantages/){:target="_blank"}
-* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
+* [**遠端工作有哪些好處？**](/posts/remote-working-advantages/)
+* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
 
 # 對老闆有哪些好處
 首先如果你是員工，以雇主的角度來看遠端工作這件事，說之以理，告訴你的老闆，如果你們合作的工作模式是遠距的話，
@@ -39,7 +39,7 @@ description: |
   比如說回鄉照顧老母、跟配偶搬到別的城市生活等等...
 
 之前有寫過一篇這個主題的分享，有興趣的朋友可以參考以下這篇文章:
-* [**遠端工作模式對於雇主有哪些好處？**](/posts/remote-working-advantages-for-boss/){:target="_blank"}
+* [**遠端工作模式對於雇主有哪些好處？**](/posts/remote-working-advantages-for-boss/)
 
 # 提出計畫
 有時候雇主面對未知的事物也是會害怕，
@@ -66,6 +66,6 @@ description: |
 
 最後，遠距工作模式可能不只是你的問題而已，而是整間公司的政策，在平時跟同事的合作上，
 就算是在辦公室，也不要太依賴同步的溝通，真的沒那麼重要緊急的事，
-多練習使用[**非同步溝通**](https://weworkremotely.com/everything-you-need-to-know-about-asynchronous-communication-in-remote-working-environments){:target="_blank"}，能給彼此都多專注工作的時間，以及為遠距工作的轉型無縫接軌！
+多練習使用[**非同步溝通**](https://weworkremotely.com/everything-you-need-to-know-about-asynchronous-communication-in-remote-working-environments)，能給彼此都多專注工作的時間，以及為遠距工作的轉型無縫接軌！
 
 祝大家在前往自己理想生活型態的道路上在進一步！掰掰～👋

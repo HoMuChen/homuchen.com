@@ -9,11 +9,11 @@ tags: [google sheet, sparkline]
 
 # Sparkline用起來長怎樣
 
-我在[**[Google Sheet]我如何製作進度表**](/posts/google-sheet-track-progress/){:target="_blank"}這篇裡
+我在[**[Google Sheet]我如何製作進度表**](/posts/google-sheet-track-progress/)這篇裡
 
 ![google sheet: track progress]({{site.cdn_url}}/spark-line-1.jpg)
 
-以及[**[Google sheet]我如何製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/){:target="_blank"}
+以及[**[Google sheet]我如何製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/)
 
 ![google sheet: stock]({{site.cdn_url}}/spark-line-2.jpg)
 

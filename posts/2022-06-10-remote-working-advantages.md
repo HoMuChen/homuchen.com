@@ -30,7 +30,7 @@ last_modified_at: 2022-06-30 22:37:00 +0800
 
 延伸閱讀:
 
-[**台北人每天上下班都會花多少時間跟費用通勤呢？**](/posts/how-much-commute-time-taipei/){:target="_blank"}
+[**台北人每天上下班都會花多少時間跟費用通勤呢？**](/posts/how-much-commute-time-taipei/)
 
 # 時間彈性
 擺脫了朝九晚五的辦公室框架，如果你事情都做完了，就不必因為主管還沒下班就不敢走，裝忙裝到時間到。
@@ -55,7 +55,7 @@ last_modified_at: 2022-06-30 22:37:00 +0800
 # 專注工作、生產力提升
 在辦公室中，就可能隨時會被打擾，同事間有意無意的閒聊，或是有一點點小事就找你問，失去了大段可以專注的時間。
 
-就像在[**《Deep Work深度工作力》**](https://www.books.com.tw/products/0010906940){:target="_blank"}一書中講到的，
+就像在[**《Deep Work深度工作力》**](https://www.books.com.tw/products/0010906940)一書中講到的，
 當某項任務被完全中斷的時候，人得花超過20分鐘才能完全回到之前的狀態，
 如果你頻繁地在工作之間切換時，就會破壞深度工作的執行。
 
@@ -73,11 +73,11 @@ last_modified_at: 2022-06-30 22:37:00 +0800
 
 延伸閱讀:
 
-[**如何不用做額外的工作，就使你的收入倍增**](/posts/double-your-money-without-any-extra-work/){:target="_blank"}
+[**如何不用做額外的工作，就使你的收入倍增**](/posts/double-your-money-without-any-extra-work/)
 
 # 結論
 遠端工作在時間及地點上的自由，可以帶來如此多的好處，但一體兩面地，
-有時同樣的好處也會帶來[**一些壞處**](/posts/remote-working-disadvantages/){:target="_blank"}，
+有時同樣的好處也會帶來[**一些壞處**](/posts/remote-working-disadvantages/)，
 以及我是如何跟老闆談遠端工作(TODO)。
 
 另外重點還是要知道你自己想要的是什麼？
@@ -85,5 +85,5 @@ last_modified_at: 2022-06-30 22:37:00 +0800
 就像有人退休了，終於不用做每天抱怨的工作時，生活卻失去了重心。
 
 祝大家在追逐自己理想的生活上一路順遂～如果想更即時地看我數位遊牧流浪去哪，
-或是不想看這麼多字，想看精簡點的圖文表達的話，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/){:target="_blank"}。
+或是不想看這麼多字，想看精簡點的圖文表達的話，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/)。
 掰掰～👋

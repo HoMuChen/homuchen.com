@@ -15,7 +15,7 @@ image:
 **Symmetric Encryption**及**Asymmetric Encryption**
 及**Digital Signature**。
 
-![cryptography in node.js cryto module]({{ site.cdn_url }}/nodejs-crytpo-1.jpg){:target="_blank"}
+![cryptography in node.js cryto module]({{ site.cdn_url }}/nodejs-crytpo-1.jpg)
 
 # Hash
 可以使用指令`openssl list -digest-algorithms`來查詢可用的algorithms，以下使用`sha256`為例，
@@ -154,4 +154,4 @@ const isVerified = verifier.verify(publicKey, signature, 'hex');
 並沒有討論為何需要上述的每一個東西，以及有何用途，有機會再陸續補上～ 掰掰👋
 
 # 參考資料
-* [**Crypto \| Node.js Documentation**](https://nodejs.org/api/crypto.html){:target="_blank"}
+* [**Crypto \| Node.js Documentation**](https://nodejs.org/api/crypto.html)

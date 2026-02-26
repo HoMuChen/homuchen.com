@@ -37,8 +37,8 @@ curl -H 'Referer: https://www.104.com.tw/jobs/search' https://www.104.com.tw/job
 ```
 
 對HTTP message或curl的使用還不熟的，可以參考我之前寫過的文章:
-* [**HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl/){:target="_blank"}
-* [**A Linux HTTP client tool — curl的介紹及用法**](/posts/linux-http-client-tool-curl-usage/){:target="_blank"}
+* [**HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl/)
+* [**A Linux HTTP client tool — curl的介紹及用法**](/posts/linux-http-client-tool-curl-usage/)
 
 # jq [**[1]**](#1)
 成功取得回應後，可以看到terminal上噴出一堆密密麻麻的資訊，難以去閱讀，今天為例的104 API，

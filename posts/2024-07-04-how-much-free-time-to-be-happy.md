@@ -15,7 +15,7 @@ image:
 但! 擁有更多的空閒時間，真的就會更快樂嗎？
 
 # 有更多的時間就會快樂嗎？
-根據這篇論文[Having Too Little or Too Much Time Is Linked to Lower Subjective Well-being](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf){:target="_blank"}的研究，**擁有太少或太多的自由時間，都會導致主觀幸福感的下降**！(這篇論文分析了2012-2013年，21736位美國人的資料)
+根據這篇論文[Having Too Little or Too Much Time Is Linked to Lower Subjective Well-being](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf)的研究，**擁有太少或太多的自由時間，都會導致主觀幸福感的下降**！(這篇論文分析了2012-2013年，21736位美國人的資料)
 
 ![空閒時間 vs. 主觀幸福感]({{site.cdn_url}}/how-much-free-time-0.jpg)
 

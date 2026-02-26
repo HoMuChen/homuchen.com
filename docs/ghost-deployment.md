@@ -68,3 +68,28 @@ routes.yaml 和 redirects.yaml 透過 Ghost Admin UI 上傳：
 
 - 傳 `html` 內容時必須加 `"source": "html"`，否則內容會是空的
 - 詳見 `.claude/skills/ghost-api/skill.md`
+
+## Markdown → HTML 轉換規則
+
+Markdown 檔案使用標準 Markdown 語法，不含 Jekyll 特有語法。在轉換成 HTML 發布到 Ghost 時，需要做以下處理：
+
+### 外部連結自動加 `target="_blank"`
+
+- **外部連結**（`http://` 或 `https://` 開頭）→ 加上 `target="_blank" rel="noopener noreferrer"`
+- **內部連結**（`/posts/...` 開頭）→ 不加，在同一視窗開啟
+
+範例：
+```
+Markdown: [Google](https://google.com)
+HTML:     <a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a>
+
+Markdown: [上一篇](/posts/my-post/)
+HTML:     <a href="/posts/my-post/">上一篇</a>
+```
+
+### 清理 Jekyll 殘留語法
+
+舊文章可能還有 Jekyll 語法，轉換時需清除：
+- `{:target="_blank"}` → 移除（由上述外部連結規則自動處理）
+- `{{site.cdn_url}}` → 替換為實際的 CDN URL
+- `layout: post` → 從 frontmatter 移除

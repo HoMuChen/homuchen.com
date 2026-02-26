@@ -17,7 +17,7 @@ image:
 ![book: why we slepp]({{site.cdn_url}}/sleep-0.jpg)
 
 # 大綱
-在[**《為什麼要睡覺》**](https://www.books.com.tw/products/0010813161){:target="_blank"}裡，
+在[**《為什麼要睡覺》**](https://www.books.com.tw/products/0010813161)裡，
 首先解釋睡覺的生理機制，我們的身體是透過怎樣的設計，讓我們感到疲憊想睡，
 越理解它，才能越知道如何不去破壞它，搞到自己失眠。
 

@@ -32,7 +32,7 @@ docker run                                  \
 
 1. -d 在背景執行
 2. -p $PG\_PORT:5432 將容器內的5432port映射到本機的$PG\_PORT
-3. -e 注入環境變數到容器裏，有哪些環境變數可用，可以參考官方連結[https://hub.docker.com/\_/postgres/](https://hub.docker.com/\_/postgres/){:target="_blank"}
+3. -e 注入環境變數到容器裏，有哪些環境變數可用，可以參考官方連結[https://hub.docker.com/\_/postgres/](https://hub.docker.com/\_/postgres/)
 4. -v 將容器內的檔案掛載到本機，此處將容器內存放postgres 資料的資料夾 /var/lib/postgresql/data 掛載到$PWD/pgdata，也就是當前目錄的pgdata資料夾
 5. postgres為image的名稱，可以用例如postgres:latest, postgres:9.6，後面加上版本號，沒加就是latest，可用的版本及latest是哪一版可以從此連結查詢https://hub.docker.com/\_/postgres/
 

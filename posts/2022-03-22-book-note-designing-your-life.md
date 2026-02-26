@@ -15,7 +15,7 @@ image:
 
 ![書: 做自己的生命設計師]({{site.cdn_url}}/self-improvement-books-4.jpg)
 
-[**《做自己的生命設計師》**](https://www.books.com.tw/products/0010733134){:target="_blank"}這本書，就是來試著回答上述這些問題，
+[**《做自己的生命設計師》**](https://www.books.com.tw/products/0010733134)這本書，就是來試著回答上述這些問題，
 作者在史丹佛大學開設設計人生的課程，將設計思考的工具及心法，應用到你自己的人生當中，
 讓我們開始學習如何做自己的生命設計師吧！
 
@@ -201,7 +201,7 @@ Humility、Compassion、Honesty、Kindness、Integrity、Selflessness...
 
 延伸閱讀:
 
-* [**成功是什麼? 5本關於自我成長的推薦書單**](/posts/self-improvement-books/){:target="_blank"}
+* [**成功是什麼? 5本關於自我成長的推薦書單**](/posts/self-improvement-books/)
 
 # 參考資料
 1. [**《心流: 高手都在研究的最優體驗心理學》**](https://www.books.com.tw/products/0010816703){:target="_blank" name="1"}

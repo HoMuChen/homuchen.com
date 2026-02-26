@@ -79,7 +79,7 @@ tags: [google sheet, finance]
   總共四個參數，第一為股票代號、再來是起始日期跟結束日期，此範例使用一年前today()-365到今天today()、最後爲資料的interval，
 1代表每天，也可以是7代表每週
 * sparkline:
-  可以再一個儲存格裡畫圖的函式，詳細的用法可以看我先前寫的文章:[[Google Sheet]Sparkline，在儲存格裡插入迷你圖表](/posts/google-sheet-sparkline/){:target="_blank"}
+  可以再一個儲存格裡畫圖的函式，詳細的用法可以看我先前寫的文章:[[Google Sheet]Sparkline，在儲存格裡插入迷你圖表](/posts/google-sheet-sparkline/)
 
 ## 替漲跌及損益百分比上色
 

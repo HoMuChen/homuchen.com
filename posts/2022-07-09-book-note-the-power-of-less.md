@@ -15,7 +15,7 @@ image:
 
 ![少才是力量]({{site.cdn_url}}/book-note-the-power-of-less-0.jpg){:loading="lazy"}
 
-作者是[**zenhabits.net**](https://zenhabits.net/){:target="_blank"}網站的創辦人，
+作者是[**zenhabits.net**](https://zenhabits.net/)網站的創辦人，
 在幾年裡，作者每次**只專注一個目標**，而不是一心多用，並且用這個方法完成了以下的目標，
 並將過程記錄在部落格中:
 
@@ -67,8 +67,8 @@ image:
 集中精力完成，我自己也有將之運用在自己的待辦清單系統上，對於這個議題有興趣的朋友，
 可以看看我之前寫的文章: 
 
-* [**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/){:target="_blank"}
-* [**如何使用Notion打造Kanban based的待辦清單**](/posts/notion-kanban-board/){:target="_blank"}
+* [**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/)
+* [**如何使用Notion打造Kanban based的待辦清單**](/posts/notion-kanban-board/)
 
 ## 為什麼要設限
 * 能夠把事情簡化，生活更易於掌控，壓力也會比較小。
@@ -97,7 +97,7 @@ image:
 # 集中精神
 **專注**是提高效率的最佳工具。
 
-就像在[**《Deep Work深度工作力》**](https://www.books.com.tw/products/0010906940){:target="_blank"}一書中講到的，
+就像在[**《Deep Work深度工作力》**](https://www.books.com.tw/products/0010906940)一書中講到的，
 當某項任務被完全中斷的時候，人得花超過20分鐘才能完全回到之前的狀態，
 如果你頻繁地在工作之間切換時，就會破壞深度工作的執行，降低效率。
 
@@ -111,8 +111,8 @@ image:
 # 養成習慣
 有許多書籍是在講習慣的重要、機制以及如何培養一個好習慣，
 像是
-[**為什麼我們這樣生活，那樣工作？**](https://www.books.com.tw/products/0010560033){:target="_blank"}，
-[**原子習慣**](https://www.books.com.tw/products/0010822522){:target="_blank"}，
+[**為什麼我們這樣生活，那樣工作？**](https://www.books.com.tw/products/0010560033)，
+[**原子習慣**](https://www.books.com.tw/products/0010822522)，
 
 
 ## 我們可以怎麼做呢

@@ -37,7 +37,7 @@ description: |
 
 關於待辦清單的原則，想看更詳盡的解釋，可以參考我之前寫過的一篇文章: 
 
-[**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/){:target="_blank"}
+[**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/)
 
 # Kanban是什麼
 Kanban緣起於Toyota的生產管理系統，看起來就像是下圖這樣:
@@ -67,7 +67,7 @@ Kanban緣起於Toyota的生產管理系統，看起來就像是下圖這樣:
 
 原本的Kanban系統因為有WIP limit的關係，有符合清單不能太長的原則，
 但缺少了截止日期及與特定目標連結，
-接下來我將一步一步地示範如何利用[**Notion**](https://www.notion.so/){:target="_blank"}，
+接下來我將一步一步地示範如何利用[**Notion**](https://www.notion.so/)，
 來完善我們Kanban待辦清單系統！
 
 ## 建立表格

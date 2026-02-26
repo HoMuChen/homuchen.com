@@ -61,6 +61,6 @@ curl http://api.exmaple.com/items?limit=10&created_at:lte:2022-04-10T00:00:00
 
 這是RESTful API一系列文章中的一篇，想了解更多關於RESTful API及HTTP的，可以看這篇目錄:
 
-[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/){:target="_blank"}
+[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/)
 
 感謝您的閱讀~期待下次見！

@@ -9,7 +9,7 @@ image:
   path: https://storage.googleapis.com/homuchen.com/images/remote-working-disadvantages-0.jpg
 ---
 
-在上一篇文章: [遠端工作有哪些好處？](/posts/remote-working-advantages/){:target="_blank"}中，
+在上一篇文章: [遠端工作有哪些好處？](/posts/remote-working-advantages/)中，
 提到了許多遠端工作的優點，今天將來看看有哪些缺點，並且提出相對應的解決辦法！
 
 # 遠端工作的缺點:
@@ -28,7 +28,7 @@ image:
 **不是無法脫離工作，就是無法好好開始工作**～
 
 ### 怎麼辦？
-就像在[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}一書中講到的，
+就像在[**《原子習慣》**](https://www.books.com.tw/products/0010822522)一書中講到的，
 組成我們每一天大部分是習慣，而不是有意識的選擇，而自由的生活使得我們會不斷地面臨選擇!
 
 我現在要開始工作了嗎？還是看一下NBA，晚上再補就好？我要在客廳用筆電工作嗎？
@@ -38,8 +38,8 @@ image:
 替自己加上一些限制，**明確地規定自己何時要在何地做什麼事**，**區分出工作及生活休閒的區域**。
 
 延伸閱讀:
-* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/){:target="_blank"}
-* [**《原子習慣》應用: 我是如何養成閱讀習慣**](/posts/how-i-keep-reading/){:target="_blank"}
+* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)
+* [**《原子習慣》應用: 我是如何養成閱讀習慣**](/posts/how-i-keep-reading/)
 
 
 ## 2. 缺乏社交，孤單寂寞覺得冷

@@ -57,7 +57,7 @@ tags: [finance, google sheet, google form]
 
 建立好表單之後，每次要花錢的時候，就打開手機，送出一個表單就能記帳啦．
 
-在[**金錢心理學**](https://www.books.com.tw/products/0010785897){:target="_blank"}也有說到，我們人類天生會避免痛苦，
+在[**金錢心理學**](https://www.books.com.tw/products/0010785897)也有說到，我們人類天生會避免痛苦，
 而付錢就是一種痛苦，所以商人會有許多方法來讓我們忘記痛苦，不小心就花太多錢，
 比如預付、後付、信用卡、一鍵購物，讓花錢變得越方便，越無痛，來使得我們花更多．
 
@@ -68,5 +68,5 @@ tags: [finance, google sheet, google form]
 
 # 延伸閱讀
 
-* [[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)](/posts/book-note-money-psychology/){:target="_blank"}
-* [[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (下)](/posts/book-note-dollars-and-sense/){:target="_blank"}
+* [[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)](/posts/book-note-money-psychology/)
+* [[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (下)](/posts/book-note-dollars-and-sense/)

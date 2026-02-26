@@ -40,8 +40,8 @@ OpenAPI是一個描述RESTful API的標準，藉由寫下OpenAPI的spec檔案，
 
 這裡就不詳細說明OpenAPI該怎麼使用了，想了解的去官網查詢～
 
-* [**OpenAPI Specification**](https://swagger.io/specification/){:target="_blank"}
+* [**OpenAPI Specification**](https://swagger.io/specification/)
 
 這是RESTful API一系列文章中的一篇，想了解更多關於RESTful API及HTTP的，可以看這篇目錄:
 
-* [**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/){:target="_blank"}
+* [**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/)

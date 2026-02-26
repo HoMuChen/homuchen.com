@@ -65,4 +65,4 @@ image:
 
 想知道完整遊戲收入情況的，可以看我之前寫過的一篇文章:
 
-* [**STEPN: 從2022-04-10進場至今的收益紀錄**](/posts/stepn-record-everyday-income/){:target="_blank"}
+* [**STEPN: 從2022-04-10進場至今的收益紀錄**](/posts/stepn-record-everyday-income/)

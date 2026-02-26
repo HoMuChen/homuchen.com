@@ -89,5 +89,5 @@ Relational database更適合當你的資料之間的關係複雜，有許多many
 
 # Reference
 
-1. [Designing Data-Intensive Applications Chapter 2](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321){:target="_blank"}
-2. [https://martinfowler.com/articles/schemaless/](https://martinfowler.com/articles/schemaless/){:target="_blank"}
+1. [Designing Data-Intensive Applications Chapter 2](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+2. [https://martinfowler.com/articles/schemaless/](https://martinfowler.com/articles/schemaless/)

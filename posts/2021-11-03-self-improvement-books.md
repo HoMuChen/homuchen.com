@@ -41,7 +41,7 @@ description: |
 
 * 找不到人生目標: [**做自己的生命設計師**](#做自己的生命設計師)
 
-# [**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}
+# [**《原子習慣》**](https://www.books.com.tw/products/0010822522)
 選擇很重要，但其實人生並沒有那麼多重大的選擇時刻，影響你這個人最多的，是組成你每天生活的習慣。
 
 ![書: 原子習慣]({{site.cdn_url}}/self-improvement-books-1.jpg)
@@ -62,7 +62,7 @@ description: |
 並且從各個面向提出可行動的方案及建議，幫助你過關斬將，培養新的習慣。
 
 延伸閱讀:
-* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/){:target="_blank"}
+* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)
 
 ## 你可以期待獲得什麼?
 * 了解習慣對人生的重要
@@ -70,7 +70,7 @@ description: |
 * 該要如何養成好習慣
 * 該要如何去除壞習慣
 
-# [**《複利效應》**](https://www.books.com.tw/products/0010814286){:target="_blank"}
+# [**《複利效應》**](https://www.books.com.tw/products/0010814286)
 每天微小的改變並不亦察覺，經過時間的累積卻會產生巨大的影響。
 
 ![書: 複利效應]({{site.cdn_url}}/self-improvement-books-2.jpg)
@@ -84,7 +84,7 @@ description: |
 * 認清世上沒有魔法，唯有努力才有回報
 * 努力的方向要對，如何加速看到成果
 
-# [**《刻意練習》**](https://www.books.com.tw/products/0010752714){:target="_blank"}
+# [**《刻意練習》**](https://www.books.com.tw/products/0010752714)
 > 透過刻意練習，善用大腦和身體的適應力，每個人都能改善技能，甚至創造出你本來以為自己沒有的能力，達到顛峰表現。
 
 ![書: 刻意練習]({{site.cdn_url}}/self-improvement-books-3.jpg)
@@ -101,7 +101,7 @@ description: |
 * 知道大腦是具可塑性的，如何學習及改變
 * 持續取得進步的要素的什麼？ 並不是一萬個小時就好
 
-# [**《一週工作四小時》**](https://www.books.com.tw/products/0010621037){:target="_blank"}
+# [**《一週工作四小時》**](https://www.books.com.tw/products/0010621037)
 誰說一週要工作四十小時，朝九晚五地待在辦公室，打破社會框架，有錢有閒地實現自己的夢想
 
 ![書: 一週工作四小時]({{ site.cdn_url }}/four-hour-work-week-0.jpg)
@@ -114,8 +114,8 @@ description: |
 否則等到退休那天，你可能也會茫茫然不知道要幹嘛，因為一直以來，從沒有停下來好好思考過。
 
 延伸閱讀:
-* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
-* [**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement/){:target="_blank"}
+* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
+* [**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement/)
 
 ## 你可以期待獲得什麼?
 * 認識新富族: 不再朝九晚五待在辦公室工作，擁抱自由及機動性的族群
@@ -123,7 +123,7 @@ description: |
 * 打造自動進帳的事業
 * 看看作者的有趣的經歷及如何達成上述目標
 
-# [**《做自己的生命設計師》**](https://www.books.com.tw/products/0010733134){:target="_blank"}
+# [**《做自己的生命設計師》**](https://www.books.com.tw/products/0010733134)
 透過打造原型、進行實驗，發想繼而嘗試人生各種可能，才能找到熱情
 
 ![書: 做自己的生命設計師]({{site.cdn_url}}/self-improvement-books-4.jpg)
@@ -144,7 +144,7 @@ description: |
 * 該如何打造原型，去測試自己的新的人生
 
 延伸閱讀:
-* [**[讀書筆記] 做自己的生命設計師**](/posts/book-note-designing-your-life/){:target="_blank"}
+* [**[讀書筆記] 做自己的生命設計師**](/posts/book-note-designing-your-life/)
 
 # Summary
 感謝你看到這邊～ 希望這些內容能帶給你一點啟發，我也是閱讀這些書過後，學習到了許多及產生很多新的想法，

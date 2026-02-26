@@ -97,7 +97,7 @@ Relevant（相關的）和Time-bound（有時限的）。
 - 缺點: 沒有每項任務的情境、分類，以及跟目標的關聯。
 
 ## 總工作清單 + 每日工作清單
-就像[**《子彈筆記》**](https://www.books.com.tw/products/0010803003){:target="_blank"}裡的基本元素，
+就像[**《子彈筆記》**](https://www.books.com.tw/products/0010803003)裡的基本元素，
 Future Log、Monthly Log及Daily Log，將未來清單與近期或每日清單分開。
 
 - 好處: 跟全包式清單一樣可以做到大腦傾存，區隔當前與未來任務，就能有份較短的優先清單。
@@ -141,16 +141,16 @@ Kanban緣起於Toyota的生產管理系統，看起來就像是下圖這樣:
 4. 加上截止日期
 5. 當前任務數量限制
 
-以上的內容為[**《一流工作者都在用的待辦清單》**](https://www.books.com.tw/products/0010831893){:target="_blank"}的節錄。
+以上的內容為[**《一流工作者都在用的待辦清單》**](https://www.books.com.tw/products/0010831893)的節錄。
 
 ![book: To-Do List Formula: A Stress-Free Guide To Creating To-Do Lists That Work!]({{site.cdn_url}}/book-note-to-do-1.jpg){:loading="lazy"}
 
 掌握核心的原則，才能根據每個人不同的情況去做變化，依照自己的需求，就設計出最適合自己的系統！
 
 而我自己是如何利用這些原則，
-並搭配工具[**Notion**](https://www.notion.so/){:target="_blank"}來打造自己的Kanban based的待辦系統，
+並搭配工具[**Notion**](https://www.notion.so/)來打造自己的Kanban based的待辦系統，
 可以參考我的另一篇文章:
 
-* [**如何使用Notion打造Kanban based的待辦清單**](/posts/notion-kanban-board/){:target="_blank"}
+* [**如何使用Notion打造Kanban based的待辦清單**](/posts/notion-kanban-board/)
 
 感謝您的閱讀～希望以上內容對大家有所幫助，並祝福大家都可以朝自己想要的生活前進！掰掰～👋

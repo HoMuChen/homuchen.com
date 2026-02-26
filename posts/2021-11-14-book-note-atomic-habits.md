@@ -9,7 +9,7 @@ image:
   path: https://storage.googleapis.com/homuchen.com/images/book-note-atomic-hanit-0.jpg
 ---
 
-[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}
+[**《原子習慣》**](https://www.books.com.tw/products/0010822522)
 這本書收首先帶我們了解到習慣是什麼，它就是我們平常不太會去注意到，
 卻是很大地影響我們人生的一件事，更清楚地認識了習慣及其重要之後，
 作者將習慣拆解成四個階段，提出一個框架，好讓我們可以一步一步地培養好習慣、斷除壞習慣。
@@ -151,6 +151,6 @@ image:
 
 最後跟大家分享我應用所學，在生活中培養新習慣的故事(陸續新增):
 
-* [**懶人早餐: 15分鐘，高纖高蛋白低碳水**](/posts/lazy-breakfast/){:target="_blank"}
+* [**懶人早餐: 15分鐘，高纖高蛋白低碳水**](/posts/lazy-breakfast/)
 
-* [**《原子習慣》應用: 我是如何養成閱讀習慣**](/posts/how-i-keep-reading/){:target="_blank"}
+* [**《原子習慣》應用: 我是如何養成閱讀習慣**](/posts/how-i-keep-reading/)

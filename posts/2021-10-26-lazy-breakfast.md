@@ -7,7 +7,7 @@ category: 生活
 tags: [food, life style, habit]
 ---
 
-想少吃些外食的精緻碳水，於是乎開始研究自己下廚，在[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}
+想少吃些外食的精緻碳水，於是乎開始研究自己下廚，在[**《原子習慣》**](https://www.books.com.tw/products/0010822522)
 裡有說到，想要開始培養一個新習慣時，
 要讓他容易去做，不會太麻煩，目標小一點，好容易踏出第一步並且持之以恆。
 所以我開始下廚的重點是**簡單**、**方便**、**懶人**，
@@ -47,4 +47,4 @@ tags: [food, life style, habit]
 
 延伸閱讀:
 
-* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/){:target="_blank"}
+* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)

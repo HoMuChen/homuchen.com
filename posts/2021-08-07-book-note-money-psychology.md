@@ -14,7 +14,7 @@ last_modified_at: 2021-10-28 21:30:00 +0800
 
 當這些人的天性碰上了金錢，我們是否能做出好的經濟決策呢？會不會當了許久的冤大頭而不自知，
 或是被誘惑引導到花了一些本來不會花的錢，該如何聰明的花費、花得剛好、花得開心，
-就是[**《金錢心理學》**](https://www.books.com.tw/products/0010785897){:target="_blank"}這本書要探討的內容．
+就是[**《金錢心理學》**](https://www.books.com.tw/products/0010785897)這本書要探討的內容．
 
 ![book: Dollards and Sense]({{site.cdn_url}}/dollars-and-sense-1.jpg)
 
@@ -137,9 +137,9 @@ last_modified_at: 2021-10-28 21:30:00 +0800
 3. 在實驗期間，每要使用一項娛樂時，當下付費
 
 結果，預付跟後付沒有明顯差別，但是邊用邊付組則是花了最少的錢～所以可以藉由時時提醒自己付錢的痛苦，來減少不必要的花費，
-就像我在[**[Google Sheet]我如何利用Google表單來記帳**](/posts/google-sheet-how-to-do-bookkeeping/){:target="_blank"}這篇裡，透過記帳，
+就像我在[**[Google Sheet]我如何利用Google表單來記帳**](/posts/google-sheet-how-to-do-bookkeeping/)這篇裡，透過記帳，
 讓自己就算是使用電子錢包、網購、用信用卡時都能感受到付錢之痛．
 
 # 續集出爐囉～
 
-[**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (下)**](/posts/book-note-dollars-and-sense/){:target="_blank"}
+[**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (下)**](/posts/book-note-dollars-and-sense/)

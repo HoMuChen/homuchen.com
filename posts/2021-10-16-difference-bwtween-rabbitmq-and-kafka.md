@@ -16,7 +16,7 @@ Redis或RabbitMQ作為broker的是memory based的，而log based最有名的，
 這篇文章首先會討論message broker普遍的基本特性及用法，
 然後再探討兩種broker內部設計的不同，最後就可以比較在各種特性上，兩者的不同。
 
-在上篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases){:target="_blank"}中，
+在上篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)中，
 看完了為何要使用message queue之後，今天要討論兩類message broker的差異，分別是**memory based**及**log based**，
 
 ![rabbitmq vs kafka]({{site.cdn_url}}/rabbitmq-kafka-1.jpg)

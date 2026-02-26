@@ -12,7 +12,7 @@ tags: [http, restful api, api]
 
 這是RESTful API一系列文章中的一篇，想了解更多關於RESTful API及HTTP的，可以看這篇目錄:
 
-[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/){:target="_blank"}
+[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/)
 
 # Introduction
 首先，什麼是RESTful，可以說它是一種慣例，一個關於HTTP API如何設計的style，

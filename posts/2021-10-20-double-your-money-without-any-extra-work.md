@@ -14,7 +14,7 @@ tags: [finance, life style, self improvement, digital nomad]
 有這麼好康的事？！好拉，當然沒有，在這裡要討論的並不是要讓你的絕對收入倍增，也就是你每個月領的薪水並不會變多，
 而是如何**花更少的錢，來獲得一樣的體驗**，好讓你金錢的實際價值倍增～
 
-這是我在[**《一週工作四小時》**](https://www.books.com.tw/products/0010621037){:target="_blank"}這本書裡看到的想法，
+這是我在[**《一週工作四小時》**](https://www.books.com.tw/products/0010621037)這本書裡看到的想法，
 作者稱之為自由倍增因子，也就是你能藉由操控這些事，來讓金錢的實際價值倍增，
 他們就是**做什麼**(what)、**在哪做**(where)、**何時做**(when)、**跟誰做**(whom)。
 
@@ -30,7 +30,7 @@ tags: [finance, life style, self improvement, digital nomad]
 也就是利用匯率，在消費指數低的國家進行消費，一樣的金錢就可以擁有了更大的購買力！
 
 當你可以自由地決定你要在哪裡生活時，就可以獲得這項好處，所以脫離在辦公室裡工作的社會框架，
-是作者在[**《一週工作四小時》**](https://www.books.com.tw/products/0010621037){:target="_blank"}裡所提倡的，
+是作者在[**《一週工作四小時》**](https://www.books.com.tw/products/0010621037)裡所提倡的，
 不過你是創業者還是受僱於人的打工仔都一樣～
 
 有時就算不能出國也一樣可以得到一些好處，比如說你最近想學衝浪，那你就可以直接住在宜蘭烏石港、台東東河附近，
@@ -43,7 +43,7 @@ tags: [finance, life style, self improvement, digital nomad]
 能把工作時間挪到六日，就算工時一樣，也可以相對地為你帶來額外的收入！
 
 # 避免付錢之痛及期待
-在[**《金錢心理學》**](https://www.books.com.tw/products/0010785897){:target="_blank"}這本書裡說到，
+在[**《金錢心理學》**](https://www.books.com.tw/products/0010785897)這本書裡說到，
 在體驗消費的當下時，如果要你付錢，你就會感到痛苦，也就沒那麼快樂了～
 
 所以可以選擇預付的方式，提前預先支付掉活動的費用，讓你在體驗的當下，
@@ -56,6 +56,6 @@ tags: [finance, life style, self improvement, digital nomad]
 
 # 延伸閱讀
 
-[**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
+[**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
 
-[**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)**](/posts/book-note-money-psychology/){:target="_blank"}
+[**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)**](/posts/book-note-money-psychology/)

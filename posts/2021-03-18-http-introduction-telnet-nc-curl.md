@@ -12,7 +12,7 @@ last_modified_at: 2021-11-01 18:00:00 +0800
 
 HTTP在OSI模型中，是屬於應用層(Application layer)裡的一個通訊協定，透過傳輸層(Transport layer)的TCP來傳輸資料．
 
-關於application layer在整個分層架構中扮演什麼樣的角色，可以參考我之前寫的文章: [**[Networking]Application Layer Overview，什麼是Socket?**](/posts/networking-application-layer-overview-what-is-socket){:target="_blank"}
+關於application layer在整個分層架構中扮演什麼樣的角色，可以參考我之前寫的文章: [**[Networking]Application Layer Overview，什麼是Socket?**](/posts/networking-application-layer-overview-what-is-socket)
 
 # Client server protocol
 HTTP是這樣的，想要發起通訊請求的一方作為client(例如你的瀏覽器)，而server則隨時等候，回應client的請求，client首先會建立一個TCP socket，至於TCP連線是怎麼建立，以及資料如何透過TCP connection在client及server之間傳送，則是另外一回事，並不是HTTP需要考慮的事．
@@ -36,7 +36,7 @@ Accept-language: en
 
 第一行為request line，由三個部分組成，method、URL、version，分別以空格隔開．
 
-常見的method有GET 、POST 、PUT 、DELETE 、HEAD等等，GET非常地常見，通常代表著你想要取得的某些資源，而你想取的資源則用URL表示，最後HTTP/1.1就是版本．[**點我看更多關於method的介紹．**](/posts/http-methods-which-to-use-and-how-to-use-them-correctly/){:target="_blank"}
+常見的method有GET 、POST 、PUT 、DELETE 、HEAD等等，GET非常地常見，通常代表著你想要取得的某些資源，而你想取的資源則用URL表示，最後HTTP/1.1就是版本．[**點我看更多關於method的介紹．**](/posts/http-methods-which-to-use-and-how-to-use-them-correctly/)
 
 第二行開始為header lines，field跟value以冒號(:)隔開，上面例子中有Host、Connection、User-agent、Accept-language四個header，還有許許多多的header各自有各自的意義，Host代表server，Connection: Close是叫server回傳完資料後就把TCP connection close掉，關於persistent connections的部分，之後會再寫一篇文章來詳細探討．
 
@@ -76,7 +76,7 @@ Status code 跟 phrase拜表著回應的結果，常見的有：
 
 詳細的status code的介紹，可以看我另一篇文章:
 
-[**Introduction to HTTP Response Status Codes: How to use them correctly?**](/posts/http-response-status-codes-how-to-use/){:target="_blank"}
+[**Introduction to HTTP Response Status Codes: How to use them correctly?**](/posts/http-response-status-codes-how-to-use/)
 
 ## Header Lines
 第二行開始一樣是header lines，我覺得比較重要的是Content-Type，此header就是說明了放在最後body裡的資料是什麼格式，讓client可以去處理．常見的像是text/html、application/json、image/jpeg、application/pdf等等．
@@ -136,12 +136,12 @@ HTTP作為網路中最常用的client server 通訊協定，簡單地介紹了HT
 
 有時也會用curl來寫些簡易的網路爬蟲，可以看看我其他的文章:
 
-[**104人力網站爬蟲: 如何只用shell script來抓取資料**](/posts/crawler-104-jobs-data-using-shell-scripts-curl-and-jq/){:target="_blank"}
+[**104人力網站爬蟲: 如何只用shell script來抓取資料**](/posts/crawler-104-jobs-data-using-shell-scripts-curl-and-jq/)
 
 ----------
 
 這是RESTful API一系列文章中的一篇，想了解更多關於RESTful API及HTTP的，可以看這篇目錄:
 
-[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/){:target="_blank"}
+[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/)
 
 感謝您的閱讀~期待下次見！

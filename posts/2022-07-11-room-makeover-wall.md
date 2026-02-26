@@ -47,13 +47,13 @@ description: |
 
 而得利的電腦調色色號一共有三個組成: 色相、明度跟彩度，最後面的三個數字就是彩度，大家就可以挑選最後三個數字比較小的顏色囉～
 想更多了解得利油漆色號的意義的，
-推薦看看這部影片[**油漆小妹線上聊色卡，顏色該怎麼挑選?**](https://www.youtube.com/watch?v=zsmQunVavLE){:target="_blank"}。
+推薦看看這部影片[**油漆小妹線上聊色卡，顏色該怎麼挑選?**](https://www.youtube.com/watch?v=zsmQunVavLE)。
 
 # 開關面板安裝
 開關面板老舊發黃，按鍵也不好按，就可以考慮換掉～如果害怕自己接線的話，可以請水電工來做，
 工錢也是一個幾十塊而已。
 
-如果想自己來，推薦[**宅水電的教學影片**](https://www.youtube.com/watch?v=X-6-yiAWK6A){:target="_blank"}，
+如果想自己來，推薦[**宅水電的教學影片**](https://www.youtube.com/watch?v=X-6-yiAWK6A)，
 **開關有分雙切單切**，單切就是一個開關控制一個電路，
 雙切是兩個開關控制一個電路，就比如說門口跟床頭的開關都可以控制同一個大燈，
 買的時候需要注意一下是買到雙切還是單切，雙切的開關在單切電路中還是可以使用，
@@ -81,9 +81,9 @@ description: |
 
 另外還有針對老舊櫃體、大門及牆壁的部分做過改造，有興趣的朋友可以看我之前寫過的文章～
 
-* [**房間DIY改造: 老舊家具及櫃體篇**](/posts/room-makeover-furniture/){:target="_blank"}
-* [**房間DIY改造: 大門篇，如何用剩的乳膠漆來改造大門**](/posts/room-makeover-door/){:target="_blank"}
-* [**房間DIY改造: 地板篇**](/posts/room-makeover-floor/){:target="_blank"}
+* [**房間DIY改造: 老舊家具及櫃體篇**](/posts/room-makeover-furniture/)
+* [**房間DIY改造: 大門篇，如何用剩的乳膠漆來改造大門**](/posts/room-makeover-door/)
+* [**房間DIY改造: 地板篇**](/posts/room-makeover-floor/)
 
 之後就剩下改造地板、及新傢俱的添購(床、工作桌椅)，
-如果想更即時的看到改造過程的，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/){:target="_blank"}。希望以上的內容對你有幫助！掰掰～👋
+如果想更即時的看到改造過程的，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/)。希望以上的內容對你有幫助！掰掰～👋

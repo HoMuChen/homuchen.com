@@ -127,7 +127,7 @@ horizontal partition，是根據列來進行拆分，
 
 原理都是一樣的，選定一個欄位作為shard key，你的application server將決定這筆資料的要放到哪台DB上，
 
-![RDBMS sharding]({{site.cdn_url}}/partition-6.jpg){:target="_blank"}
+![RDBMS sharding]({{site.cdn_url}}/partition-6.jpg)
 
 * **優點**: 增加了throughput，不管是卡在Disk或是CPU，一台機器不夠寫不夠讀，那你有試過兩台三台十台嗎～
 * **缺點**: application code的複雜度變大了是一定的，除此之外，每個partiton現在已經各自獨立，
@@ -154,7 +154,7 @@ horizontal partition，是根據列來進行拆分，
   如果我們今天將users及orders用它們的id做partition了，
   則同一個user的orders可能會被分散到不同的機器之中，所以就沒法JOIN拉～
 
-  ![after sharding, not able to join]({{site.cdn_url}}/partition-7.jpg){:target="_blank"}
+  ![after sharding, not able to join]({{site.cdn_url}}/partition-7.jpg)
   
   其實這裡的解決方法就是選用user_id作為shard key就好了，但不可能所有的資料集都有辦法使用同樣意義的欄位來做partition。
 
@@ -170,7 +170,7 @@ horizontal partition，是根據列來進行拆分，
 是range還是hash partition，如何動態增加或減少shard的數量(這部分這篇文章裡沒有討論到)。
 
 比如說MongoDB可以自己選擇shard key，也可以選擇shard strategy，
-大家可以根據自己的use case來調整，詳見[MongoDB sharding](https://docs.mongodb.com/manual/sharding/){:target="_blank"}
+大家可以根據自己的use case來調整，詳見[MongoDB sharding](https://docs.mongodb.com/manual/sharding/)
 
 ## Multiple services? [5]
 其實好像沒看到DB做vertical partition，然後把不同的partition分散到不同的機器上的，就算是column oriented的DB，
@@ -189,6 +189,6 @@ horizontal partition，是根據列來進行拆分，
 感謝你的閱讀，有很多地方我可能還是不懂或搞錯的，或是有任何想法，更棒的idea想討論的，都歡迎可以留言唷～ 掰掰👋
 
 # 參考資料
-* [PostgreSQL: Documentation](https://www.postgresql.org/docs/10/ddl-partitioning.html){:target="_blank"}
-* [Understanding Database Sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding){:target="_blank"}
-* [MongoDB sharding](https://docs.mongodb.com/manual/sharding/){:target="_blank"}
+* [PostgreSQL: Documentation](https://www.postgresql.org/docs/10/ddl-partitioning.html)
+* [Understanding Database Sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
+* [MongoDB sharding](https://docs.mongodb.com/manual/sharding/)

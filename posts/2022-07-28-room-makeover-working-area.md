@@ -16,7 +16,7 @@ image:
 
 # 久坐怎麼辦？
 身為軟體工程師，需要長時間久坐，如果姿勢又不良，蠻容易造成腰部下背部的不適，
-這邊先簡單地給大家一個關鍵字: [**下交叉症候群**](https://www.google.com/search?q=%E4%B8%8B%E4%BA%A4%E5%8F%89%E7%97%87%E5%80%99%E7%BE%A4){:target="_blank"}。
+這邊先簡單地給大家一個關鍵字: [**下交叉症候群**](https://www.google.com/search?q=%E4%B8%8B%E4%BA%A4%E5%8F%89%E7%97%87%E5%80%99%E7%BE%A4)。
 
 那該怎麼辦呢？就是要時常起來動一動～ 為了讓自己不要忘記時常站起來一下，我是用以下幾個方法:
 
@@ -49,9 +49,9 @@ image:
 
 購買項目               |價格
 -----------------------|----------------
-[高腳吧檯桌](https://shopee.tw/%E7%BE%8E%E5%A5%BD%E5%AE%B6%E5%B1%85%E3%80%90%E9%AB%98%E8%85%B3%E5%90%A7%E6%AA%AF%E6%A1%8C%E3%80%91%E7%8F%BE%E8%B2%A8*%E9%85%92%E6%AB%83-%E9%A4%90%E6%A1%8C-%E4%B8%AD%E5%B3%B6%E6%A1%8C-%E5%84%B2%E7%89%A9%E6%A1%8C-%E5%92%96%E5%95%A1%E6%A1%8C-%E9%82%8A%E6%A1%8C-%E5%90%A7%E5%8F%B0%E6%A4%85-%E8%BE%A6%E5%85%AC%E6%A1%8C-%E5%90%A7%E6%AA%AF%E6%A1%8C-i.22740579.7814016836){:target="_blank"} | 1796
+[高腳吧檯桌](https://shopee.tw/%E7%BE%8E%E5%A5%BD%E5%AE%B6%E5%B1%85%E3%80%90%E9%AB%98%E8%85%B3%E5%90%A7%E6%AA%AF%E6%A1%8C%E3%80%91%E7%8F%BE%E8%B2%A8*%E9%85%92%E6%AB%83-%E9%A4%90%E6%A1%8C-%E4%B8%AD%E5%B3%B6%E6%A1%8C-%E5%84%B2%E7%89%A9%E6%A1%8C-%E5%92%96%E5%95%A1%E6%A1%8C-%E9%82%8A%E6%A1%8C-%E5%90%A7%E5%8F%B0%E6%A4%85-%E8%BE%A6%E5%85%AC%E6%A1%8C-%E5%90%A7%E6%AA%AF%E6%A1%8C-i.22740579.7814016836) | 1796
 -----------------------|----------------
-[IKEA組合書桌: LAGKAPTEN/ADILS](https://www.ikea.com.tw/zh/products/home-workspace/home-desks/lagkapten-adils-spr-59417209){:target="_blank"} | 1399
+[IKEA組合書桌: LAGKAPTEN/ADILS](https://www.ikea.com.tw/zh/products/home-workspace/home-desks/lagkapten-adils-spr-59417209) | 1399
 -----------------------|----------------
 **total**              | **3195**
 
@@ -59,9 +59,9 @@ image:
 沒有最好的，只有最適合自己的，大家根據自己的情況來做選擇，如果錢不是你考慮的點的話，那就直接買升降桌吧！😂
 
 對這次改造過程其他部分有興趣的朋友們，可以看之前分別寫的文章:
-* [**房間DIY改造: 老舊家具及櫃體篇**](/posts/room-makeover-furniture/){:target="_blank"}
-* [**房間DIY改造: 大門篇，如何用剩的乳膠漆來改造大門**](/posts/room-makeover-door/){:target="_blank"}
-* [**房間DIY改造: 牆壁篇(油漆、開關面板、變電箱遮掩)**](/posts/room-makeover-wall/){:target="_blank"}
-* [**房間DIY改造: 地板篇**](/posts/room-makeover-floor/){:target="_blank"}
+* [**房間DIY改造: 老舊家具及櫃體篇**](/posts/room-makeover-furniture/)
+* [**房間DIY改造: 大門篇，如何用剩的乳膠漆來改造大門**](/posts/room-makeover-door/)
+* [**房間DIY改造: 牆壁篇(油漆、開關面板、變電箱遮掩)**](/posts/room-makeover-wall/)
+* [**房間DIY改造: 地板篇**](/posts/room-makeover-floor/)
 
-如果想更即時的看到改造過程的，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/){:target="_blank"}。希望以上的內容對你有幫助！掰掰～👋
+如果想更即時的看到改造過程的，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/)。希望以上的內容對你有幫助！掰掰～👋

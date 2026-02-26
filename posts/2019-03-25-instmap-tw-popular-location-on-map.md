@@ -7,7 +7,7 @@ tags: [instagram, react, node.js, express, gcp]
 category: Web Development
 ---
 
-到了一個地方，想知道附近有什麼好玩的景點嗎？想看看IG，Instagram上大家都去哪裡嗎？可以使用我最近做的一個玩具服務[InstMap TW](https://instmap.tw){:target="_blank"}，找尋台灣最多人標記的地標，或是附近最近的相對熱門的地標．
+到了一個地方，想知道附近有什麼好玩的景點嗎？想看看IG，Instagram上大家都去哪裡嗎？可以使用我最近做的一個玩具服務[InstMap TW](https://instmap.tw)，找尋台灣最多人標記的地標，或是附近最近的相對熱門的地標．
 
 ![instmap]({{site.cdn_url}}/instmap-1.jpg)
 

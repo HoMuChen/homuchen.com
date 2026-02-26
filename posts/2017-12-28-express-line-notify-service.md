@@ -54,4 +54,4 @@ app.listen(3000);
 
 最後附上git hub repository，有較為詳盡的使用說明．
 
-[HoMuChen/express-line-notify](https://github.com/HoMuChen/express-line-notify){:target="_blank"}
+[HoMuChen/express-line-notify](https://github.com/HoMuChen/express-line-notify)

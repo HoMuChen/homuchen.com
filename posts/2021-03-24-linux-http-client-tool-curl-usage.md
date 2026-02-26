@@ -7,7 +7,7 @@ tags: [http, linux, curl]
 category: Networking
 ---
 
-做為一個HTTP client，想要對server發出請求，有許多做法，可能是寫一個python script 或使用其他任何語言，也可以是使用[postman](https://www.postman.com/){:target="_blank"}這樣的工具，或者是直接在command line上或shell script中使用curl指令．當你想要快速地測試一下某個API，或是explore別人的HTTP service時，直接使用curl是還蠻方便的！甚至直接用shell script來寫爬蟲了！
+做為一個HTTP client，想要對server發出請求，有許多做法，可能是寫一個python script 或使用其他任何語言，也可以是使用[postman](https://www.postman.com/)這樣的工具，或者是直接在command line上或shell script中使用curl指令．當你想要快速地測試一下某個API，或是explore別人的HTTP service時，直接使用curl是還蠻方便的！甚至直接用shell script來寫爬蟲了！
 
 # Outline
 
@@ -119,7 +119,7 @@ curl api.host.com/users | jq
 
 這是RESTful API一系列文章中的一篇，想了解更多關於RESTful API及HTTP的，可以看這篇目錄:
 
-[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/){:target="_blank"}
+[**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/)
 
 感謝您的閱讀~期待下次見！
 
@@ -127,5 +127,5 @@ curl api.host.com/users | jq
 
 參考資料
 
-* [https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages){:target="_blank"}
-* jq - [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/){:target="_blank"}
+* [https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
+* jq - [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)

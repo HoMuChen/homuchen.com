@@ -25,18 +25,18 @@ tags: [api, http, restful api]
    * 1.1 What is an API?
    * 1.2 What is a good API?
 2. HTTP Basics
-   * [2.1 A HTTP Overview](/posts/http-introduction-telnet-nc-curl/){:target="_blank"}
-   * [2.2 HTTP Methods](/posts/http-methods-which-to-use-and-how-to-use-them-correctly/){:target="_blank"}
-   * [2.3 HTTP Response status codes](/posts/http-response-status-codes-how-to-use/){:target="_blank"}
-   * [2.4 HTTP URI](/posts/what-is-url-and-what-is-it-composed-of/){:target="_blank"}
-   * [2.5 HTTP Headers](/posts/http-headers/){:target="_blank"}
-   * [2.6 [Practices] A HTTP client — curl](/posts/linux-http-client-tool-curl-usage/){:target="_blank"}
+   * [2.1 A HTTP Overview](/posts/http-introduction-telnet-nc-curl/)
+   * [2.2 HTTP Methods](/posts/http-methods-which-to-use-and-how-to-use-them-correctly/)
+   * [2.3 HTTP Response status codes](/posts/http-response-status-codes-how-to-use/)
+   * [2.4 HTTP URI](/posts/what-is-url-and-what-is-it-composed-of/)
+   * [2.5 HTTP Headers](/posts/http-headers/)
+   * [2.6 [Practices] A HTTP client — curl](/posts/linux-http-client-tool-curl-usage/)
 3. RESTful API and some Practical Guidelines
-   * [3.1 What is a RESTful API?](/posts/restful-api-introduction/){:target="_blank"}
-   * [3.2 Identifying Resources](/posts/restful-api-how-to-design-paths-and-identify-resources/){:target="_blank"}
-   * [3.3 API first principle and an introduction to OpenAPI](/posts/api-first-principle-openapi/){:target="_blank"}
-   * [3.4 [Practices] How do I manage a large OpenAPI spec file?](/posts/how-to-manage-a-large-openapi-document-file/){:target="_blank"}
-   * [3.5 Pagination](/posts/restful-api-pagination/){:target="_blank"}
+   * [3.1 What is a RESTful API?](/posts/restful-api-introduction/)
+   * [3.2 Identifying Resources](/posts/restful-api-how-to-design-paths-and-identify-resources/)
+   * [3.3 API first principle and an introduction to OpenAPI](/posts/api-first-principle-openapi/)
+   * [3.4 [Practices] How do I manage a large OpenAPI spec file?](/posts/how-to-manage-a-large-openapi-document-file/)
+   * [3.5 Pagination](/posts/restful-api-pagination/)
    * 3.6 Rate Limiting
    * 3.7 Monitoring
 4. Advanced Topics

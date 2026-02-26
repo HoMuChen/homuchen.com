@@ -99,7 +99,7 @@ tags: [books, life style, self improvement, psychology]
 
 延伸閱讀:
 
-[**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement){:target="_blank"}
+[**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement)
 
 # 快樂是什麼？
 每個人在人生的不同時期，或是不同的事情上，都或多或少會有上面四種的生活型態，

@@ -18,9 +18,9 @@ tags: [remote work, digital nomad]
 
 延伸閱讀:
 
-* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
-* [**遠端工作有哪些好處？**](/posts/remote-working-advantages/){:target="_blank"}
-* [**如何不用做額外的工作，就使你的收入倍增**](/posts/double-your-money-without-any-extra-work/){:target="_blank"}
+* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
+* [**遠端工作有哪些好處？**](/posts/remote-working-advantages/)
+* [**如何不用做額外的工作，就使你的收入倍增**](/posts/double-your-money-without-any-extra-work/)
 
 # 數位遊牧簽證
 但如果你只是持旅遊簽證，你在一個國家待的時間就會有限，有了數位簽證，
@@ -80,5 +80,5 @@ tags: [remote work, digital nomad]
 如果對以上國家有興趣的，可以google 國家名 + digital nomand visa來看看申請辦法唷～
 
 # 參考資料
-* [You Can Get a ‘Digital Nomad’ Visa in These 46 Countries](https://lifehacker.com/you-can-get-a-digital-nomad-visa-in-these-46-countrie-1849058910){:target="_blank"}
-* [How “Digital Nomad” Visas Can Boost Local Economies](https://hbr.org/2022/05/how-digital-nomad-visas-can-boost-local-economies?ab=hero-subleft-2){:target="_blank"}
+* [You Can Get a ‘Digital Nomad’ Visa in These 46 Countries](https://lifehacker.com/you-can-get-a-digital-nomad-visa-in-these-46-countrie-1849058910)
+* [How “Digital Nomad” Visas Can Boost Local Economies](https://hbr.org/2022/05/how-digital-nomad-visas-can-boost-local-economies?ab=hero-subleft-2)

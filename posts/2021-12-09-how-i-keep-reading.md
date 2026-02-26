@@ -15,11 +15,11 @@ description: |
 出社會以前，完全沒有在看課外讀物的我，是如何養成現在每天都會閱讀的習慣，
 雖然閱讀的時間不多，大約每天30-60分鐘，但跟以前的我相比，已經是巨大的進步了～
 
-這篇文章將依據[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}所提出的框架，
+這篇文章將依據[**《原子習慣》**](https://www.books.com.tw/products/0010822522)所提出的框架，
 **提示 -> 渴望 -> 回應 -> 獎賞**，來分析我閱讀習慣的各個面向，算是原子習慣的應用案例～
 如果沒看過這本書的也可以看看我之前寫的文章:
 
-[**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/){:target="_blank"}
+[**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)
 
 ![閱讀習慣]({{site.cdn_url}}/reading-habit-0.jpg)
 
@@ -41,7 +41,7 @@ description: |
 也就是做完想要培養的習慣之後，可以做其他你本來就想要做的事，比如說看完15分鐘書後，才可以滑手機。
 
 另外我有想到另一個渴望就是耍帥，捷運上不乏許多正妹，可以看看書，展現一下自己知性上進的一面XD
-有個IG帳號[hotdudesreading](https://www.instagram.com/hotdudesreading/){:target="_blank"}專門收集在車上看書的帥哥們，
+有個IG帳號[hotdudesreading](https://www.instagram.com/hotdudesreading/)專門收集在車上看書的帥哥們，
 大概也是一樣的概念😄
 
 # 回應
@@ -64,13 +64,13 @@ description: |
 因為每次的勝利在紀錄上可以記上一筆時，會帶來成就感，而且你也會不想讓一連串的紀錄中斷。
 
 我使用的紀錄APP是種樹APP
-[**Forest 專注森林**](https://apps.apple.com/tw/app/forest-%E5%B0%88%E6%B3%A8%E6%A3%AE%E6%9E%97/id866450515){:target="_blank"}，
+[**Forest 專注森林**](https://apps.apple.com/tw/app/forest-%E5%B0%88%E6%B3%A8%E6%A3%AE%E6%9E%97/id866450515)，
 有點像是蕃茄鐘工作法的概念，在種樹期間不能使用其他APP，而且還會幫你種真的樹唷。
 
 # 總結
-今天簡單地分享我是如何應用上[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}所提出的框架，
+今天簡單地分享我是如何應用上[**《原子習慣》**](https://www.books.com.tw/products/0010822522)所提出的框架，
 來培養閱讀習慣，雖然每天讀的時間不多，但持之以恆才是更重要的。感謝您的閱讀，掰掰～👋
 
 # 延伸閱讀
-* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/){:target="_blank"}
-* [**懶人早餐: 15分鐘，高纖高蛋白低碳水**](/posts/lazy-breakfast/){:target="_blank"}
+* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)
+* [**懶人早餐: 15分鐘，高纖高蛋白低碳水**](/posts/lazy-breakfast/)

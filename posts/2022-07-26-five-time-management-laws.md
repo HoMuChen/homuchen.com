@@ -40,14 +40,14 @@ description: |
 那你就會神奇地在2個小時內完成工作。
 
 所以我們能做什麼呢？可以為你的任務設定合理的時間及截止日期，
-就像我之前在[**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/){:target="_blank"}
+就像我之前在[**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/)
 這篇文章中提到的，待辦清單中的事項必須要有截止日期，否則你就是拖拖拖，拖到最後一刻可以完成的他的時候才去完成。
 
 # Carlson’s Law
 > Interrupted work will be less effective and will take more time than if completed in a continuous manner.
 
 如果一件任務被中斷多次，它所花的時間講比起一次做完更多。
-這本書: [**《Deep Work深度工作力：淺薄時代，個人成功的關鍵能力》**](https://www.books.com.tw/products/0010758381){:target="_blank"}就是專門再講這一個主題的書，有興趣的朋友可以去找來看看～
+這本書: [**《Deep Work深度工作力：淺薄時代，個人成功的關鍵能力》**](https://www.books.com.tw/products/0010758381)就是專門再講這一個主題的書，有興趣的朋友可以去找來看看～
 
 所以我們能做什麼呢？去除所有可能會干擾你的專注時間的事物，利用意志力來限制自己是不明智的決定，
 不如**打造一個去除分心事務的環境**，比如把手機放到離工作區域遠一點的地方，在家規劃出一個專門用來工作的區域等等，
@@ -67,7 +67,7 @@ description: |
 都應該有個使用及恢復的週期，Work hard, Play hard！
 
 延伸閱讀:
-* [**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement/){:target="_blank"}
+* [**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement/)
 
 # Laborit’s Law(The Law of the Least Effort、最小努力原則)
 
@@ -78,10 +78,10 @@ description: |
 滑社群應用程式(立即得到一些社交互動或資訊)、看劇耍廢(立即獲得感官娛樂刺激)。
 
 所以我們能做什麼呢？每天先從最困難最重要的事開始，並且在完成任務後，給自己立即的獎勵，
-這也是在[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}一書中所提到的養成習慣四步驟框架中的**獎賞**部分。
+這也是在[**《原子習慣》**](https://www.books.com.tw/products/0010822522)一書中所提到的養成習慣四步驟框架中的**獎賞**部分。
 
 延伸閱讀:
-* [[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則](/posts/book-note-atomic-habits/){:target="_blank"}
+* [[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則](/posts/book-note-atomic-habits/)
 
 # 結論
 前兩個法則都跟**不要太多**有關，做的少但卻不一定成就的少，

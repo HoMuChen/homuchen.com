@@ -35,7 +35,7 @@ image:
 
 關於遠端工作其他更多的好處，之前也有些過一篇分享，有興趣的朋友可以看看:
 
-* [**遠端工作有哪些好處？**](/posts/remote-working-advantages/){:target="_blank"}
+* [**遠端工作有哪些好處？**](/posts/remote-working-advantages/)
 
 # 資料來源
-* [台北市資料太平臺: 107 年第 1 次(5 月)臺北市交通民意調查報告](https://data.taipei/dataset/detail?id=e8600a47-0788-414e-af8e-c065444b07aa){:target="_blank"}
+* [台北市資料太平臺: 107 年第 1 次(5 月)臺北市交通民意調查報告](https://data.taipei/dataset/detail?id=e8600a47-0788-414e-af8e-c065444b07aa)

@@ -9,7 +9,7 @@ image:
   path: https://storage.googleapis.com/homuchen.com/images/full-engagement-0.jpg
 ---
 
-原文書名為[**《The Power of Full Engagement》**](https://bookzone.cwgv.com.tw/books/details/BBP291){:target="_blank"}，
+原文書名為[**《The Power of Full Engagement》**](https://bookzone.cwgv.com.tw/books/details/BBP291)，
 作者提出**能量管理**的概念，幫助我們找回對生活與工作的熱情和意義！
 
 ![Book: The Power of Full Engagement]({{site.cdn_url}}/full-engagement-0.jpg)
@@ -38,22 +38,22 @@ image:
 但在其它面向，也需要注意。你有多久沒有純粹為了喜悅、放鬆做一件事了呢？
 有多久沒有檢視平常的作為跟核心的價值觀相不相符呢?
 
-Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/0010621037){:target="_blank"}裡也有提到相關的概念，
+Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/0010621037)裡也有提到相關的概念，
 工作及興趣都是週期性的，並且提出**迷你退休**: 將一般累積在人生後半段的退休時光平均分散在一生當中，
 對這本書有興趣的朋友，可以看我之前寫的讀書筆記: 
 
-[**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
+[**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
 
 ## 突破極限、接受訓練
 就像肌肉想要變強壯一樣，我們需要鍛鍊它，讓它突破現有界線一點，再讓他休息恢復，
-就像在[**《刻意練習》**](https://www.books.com.tw/products/0010752714){:target="_blank"}裡說的，
+就像在[**《刻意練習》**](https://www.books.com.tw/products/0010752714)裡說的，
 要**走出舒適圈一點點**，一點點就好唷！
 
 而在情緒、心智及精神層面也一樣是如此，在後面的章節中，可以看到許多個案，如何針對他們在各方面的能量進行鍛鍊。
 
 ## 建立儀式
 我們的意志力是有限的，靠著自律、意志力想要長久地逼自己去做一件事是不實際的，
-這也是在[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}一書裡所提倡的。
+這也是在[**《原子習慣》**](https://www.books.com.tw/products/0010822522)一書裡所提倡的。
 想要改變，去做一件事，有個好的辦法就是讓他成為習慣、儀式化，也就是可以不假思索地就去做它。
 
 習慣占了我們一天中大部分的時間，想一下你一早起床，你需要克服萬難，用盡一切力氣將自己拖到浴室，然後刷牙洗臉嗎？
@@ -69,8 +69,8 @@ Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/001062
 談到呼吸、飲食、睡眠、運動，關於這部分，市面上或網路上也有許多相關的資源，
 在這裡我額外推薦一些書。
 
-* 睡眠: [**《為什麼要睡覺》**](https://www.books.com.tw/products/0010813161){:target="_blank"}
-* 運動: [**《真正的快樂處方：瑞典國民書！腦科學實證的健康生活提案》**](https://www.books.com.tw/products/0010855828){:target="_blank"}
+* 睡眠: [**《為什麼要睡覺》**](https://www.books.com.tw/products/0010813161)
+* 運動: [**《真正的快樂處方：瑞典國民書！腦科學實證的健康生活提案》**](https://www.books.com.tw/products/0010855828)
 
 ## 情緒
 情緒能量的不足，體現在我們會容易升起各種負面情緒，焦慮、急躁、沒耐心、負面悲觀，
@@ -82,7 +82,7 @@ Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/001062
 沒有營養，且容易過量。
 
 如果不知道要做什麼，推薦可以來這裡看看
-[**維基百科 List\_of\_hobbies**](https://en.wikipedia.org/wiki/List_of_hobbies){:target="_blank"}，
+[**維基百科 List\_of\_hobbies**](https://en.wikipedia.org/wiki/List_of_hobbies)，
 或是google**嗜好清單**，從裡面看看，覺得有感到興趣的就做吧！
 就單純是為了好玩，培養一些跟平常生活無關的嗜好，但說不定也會擦撞出某些火花。
 
@@ -98,7 +98,7 @@ Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/001062
 ## 心智
 作者指的心智能量主要有兩個，一個是**專注**，另一個為**理性樂觀**。
 
-關於專注，[**《Deep Work深度工作力：淺薄時代，個人成功的關鍵能力》**](https://www.books.com.tw/products/0010758381){:target="_blank"}，
+關於專注，[**《Deep Work深度工作力：淺薄時代，個人成功的關鍵能力》**](https://www.books.com.tw/products/0010758381)，
 這本書是專門討論現代人失去了深度思考、深度工作的能力，被電子郵件及社群綁架分心的議題。
 
 理性樂觀則為接受世界原本的樣子，但永遠積極努力，朝向期望的結果或解決方式邁進。與之相反的就是悲觀、或者是盲目樂觀，
@@ -119,7 +119,7 @@ Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/001062
 很少停下來思考自己最重視的東西。
 
 但如果像我一樣，不知道自己最重視的價值觀是什麼怎麼辦～這就真的要停下來好好想想了，
-在[Rokeach Value Survey](https://en.wikipedia.org/wiki/Rokeach_Value_Survey){:target="_blank"}中，
+在[Rokeach Value Survey](https://en.wikipedia.org/wiki/Rokeach_Value_Survey)中，
 有列出36項價值觀，可以認真思考，從中選出5項你最重視的，隨著人生再過，這5項價值觀也會再隨之調整，
 它們將成為我們度過人生的基本原則。
 
@@ -130,7 +130,7 @@ Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/001062
 ## 建立儀式
 有了目標及知道首先要改進的目標後，選一個想要鍛鍊的目標肌肉，一個就好，提出明確的行動指南，
 在某個時間地點或情景該怎麼行動，將其轉為自發性的行為，
-關於這部分可以延伸參考[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}，
+關於這部分可以延伸參考[**《原子習慣》**](https://www.books.com.tw/products/0010822522)，
 針對如何建立習慣，有系統性的認識。
 
 # 總結
@@ -142,6 +142,6 @@ Tim在[**《一週工作四小時》**](https://www.books.com.tw/products/001062
 最後祝福大家每天的生活都能充滿能量～ 找到目標熱情，或者去做好玩的事！ 掰掰～ 👋
 
 # 延伸閱讀
-* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/){:target="_blank"}
+* [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
 
-* [**[讀書筆記] 為什麼要睡覺? :睡出健康與學習力、夢出創意的新科學**](/posts/book-note-why-we-sleep/){:target="_blank"}
+* [**[讀書筆記] 為什麼要睡覺? :睡出健康與學習力、夢出創意的新科學**](/posts/book-note-why-we-sleep/)
