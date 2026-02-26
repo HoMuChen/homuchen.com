@@ -64,32 +64,32 @@ routes.yaml 和 redirects.yaml 透過 Ghost Admin UI 上傳：
 
 ## 發布文章到 Ghost
 
-使用 `ghost-api` skill 透過 Admin API 發布。關鍵注意事項：
+使用 `ghost-api` skill 透過 Admin API 發布。詳見 `.claude/skills/ghost-api/SKILL.md`。
 
-- 傳 `html` 內容時必須加 `"source": "html"`，否則內容會是空的
-- 詳見 `.claude/skills/ghost-api/skill.md`
+### 關鍵注意事項（Ghost v6.0）
 
-## Markdown → HTML 轉換規則
+- **`source: "html"` 已失效** — Ghost v6.0 不支援，會產生空文章
+- **必須使用 Lexical 格式** — 將 HTML 轉換成 Lexical JSON，透過 `lexical` 欄位傳送
+- 轉換流程：Markdown → 預處理 → HTML → Lexical JSON → Ghost API
 
-Markdown 檔案使用標準 Markdown 語法，不含 Jekyll 特有語法。在轉換成 HTML 發布到 Ghost 時，需要做以下處理：
+### Markdown → Lexical 轉換流程
 
-### 外部連結自動加 `target="_blank"`
+1. **預處理 Markdown**：在 list 項目前補空行（Python `markdown` 模組需要）
+2. **Markdown → HTML**：使用 Python `markdown` 模組（extensions: `tables`, `fenced_code`）
+3. **HTML → Lexical JSON**：逐一將 HTML 元素轉換成 Lexical 節點
+   - `<p>` → `paragraph`
+   - `<h1>`–`<h6>` → `extended-heading`
+   - `<ul>/<ol>` → `list` + `listitem`
+   - `<blockquote>` → `extended-quote`
+   - `<img>` → `image`（從 `<p>` 中提升為頂層節點）
+   - `<table>` → `html` card（原始 HTML 直接傳入）
+   - `<strong>` → format `1`（bold）, `<em>` → format `2`（italic）, `<code>` → format `16`
+   - 外部連結自動加 `target="_blank" rel="noopener noreferrer"`
+   - 內部連結（`/posts/...`）不加
 
-- **外部連結**（`http://` 或 `https://` 開頭）→ 加上 `target="_blank" rel="noopener noreferrer"`
-- **內部連結**（`/posts/...` 開頭）→ 不加，在同一視窗開啟
+### 已完成的 Jekyll 清理
 
-範例：
-```
-Markdown: [Google](https://google.com)
-HTML:     <a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a>
-
-Markdown: [上一篇](/posts/my-post/)
-HTML:     <a href="/posts/my-post/">上一篇</a>
-```
-
-### 清理 Jekyll 殘留語法
-
-舊文章可能還有 Jekyll 語法，轉換時需清除：
-- `{:target="_blank"}` → 移除（由上述外部連結規則自動處理）
-- `{{site.cdn_url}}` → 替換為實際的 CDN URL
-- `layout: post` → 從 frontmatter 移除
+以下 Jekyll 語法已從 `posts/` 中全部移除：
+- `{:target="_blank"}` 及所有變體（`{:target="..." name="..."}`、`{:loading="lazy"}`）
+- `layout: post` frontmatter
+- `{{site.cdn_url}}` → 已替換為 `https://storage.googleapis.com/homuchen.com/images`

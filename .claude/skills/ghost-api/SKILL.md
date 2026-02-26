@@ -125,20 +125,21 @@ curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit
 
 ## Creating / Publishing Posts
 
-### Create a draft
+### Ghost v6.0: Must use Lexical format
 
-**Important:** Ghost uses the Lexical editor by default. When passing `html`, you **must** include `"source": "html"` in the request body, otherwise the HTML content will be silently ignored and the post will be empty.
+**`source: "html"` is BROKEN in Ghost v6.0** — it silently creates empty posts. You must convert HTML to Lexical JSON format and pass it via the `lexical` field.
+
+### Create a draft (Lexical format)
 
 ```bash
 TOKEN=$(generate_ghost_token)
 curl -s -X POST \
   -H "Authorization: Ghost ${TOKEN}" \
-  -H "Content-Type: application/json" \
+  -H "Content-Type: application/json; charset=utf-8" \
   -d '{
     "posts": [{
       "title": "My Post Title",
-      "html": "<p>Post content in HTML</p>",
-      "source": "html",
+      "lexical": "{\"root\":{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Post content here\",\"type\":\"extended-text\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
       "tags": [
         {"name": "AI"},
         {"name": "productivity"}
@@ -150,35 +151,15 @@ curl -s -X POST \
 
 ### Create and publish immediately
 
-Add `"status": "published"`:
-
-```bash
-TOKEN=$(generate_ghost_token)
-curl -s -X POST \
-  -H "Authorization: Ghost ${TOKEN}" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "posts": [{
-      "title": "My Post Title",
-      "html": "<p>Post content in HTML</p>",
-      "source": "html",
-      "status": "published",
-      "tags": [
-        {"name": "AI"},
-        {"name": "productivity"}
-      ]
-    }]
-  }' \
-  "${GHOST_URL}/ghost/api/admin/posts/" | jq .
-```
+Add `"status": "published"` to the post object.
 
 ### Post fields reference
 
 | Field | Type | Notes |
 |-------|------|-------|
 | `title` | string | Required |
-| `html` | string | Post body as HTML (**must** pair with `"source": "html"`) |
-| `lexical` | string | Post body in Lexical format (alternative to html) |
+| `lexical` | string | **Required for v6.0.** Post body as Lexical JSON string |
+| `html` | string | ~~`source: "html"` broken in v6.0~~ — do NOT use |
 | `status` | string | `draft` (default), `published`, `scheduled` |
 | `tags` | array | `[{"name": "tag"}]` or `[{"slug": "tag-slug"}]` — creates tag if not exists |
 | `authors` | array | `[{"email": "..."}]` or `[{"slug": "..."}]` |
@@ -256,29 +237,147 @@ curl -s -X POST \
 
 When publishing a markdown blog post from this project to Ghost:
 
-1. **Read the post file** and parse frontmatter (title, tags, description, date)
-2. **Convert markdown to HTML** — use `pandoc` or similar
-3. **Post-process HTML links:**
-   - External links (`http://`, `https://`) → add `target="_blank" rel="noopener noreferrer"`
-   - Internal links (`/posts/...`) → leave as-is
-   - Remove any Jekyll remnants: `{:target="_blank"}`, `{{site.cdn_url}}`, etc.
-4. **Generate JWT token** from `.env` credentials
-5. **Create the post** with parsed metadata mapped to Ghost fields:
+1. **Read the post file** and parse frontmatter (title, tags, description, date, image)
+2. **Preprocess markdown** before conversion:
+   - Add blank line before list items (`* `, `- `) that follow a non-list line (Python `markdown` module requires this, otherwise list merges into paragraph)
+3. **Convert markdown to HTML** — use Python `markdown` module with `tables` and `fenced_code` extensions
+4. **Convert HTML to Lexical JSON** — Ghost v6.0 requires Lexical format (see Lexical Format section below)
+5. **Generate JWT token** from `.env` credentials
+6. **Create the post** with parsed metadata mapped to Ghost fields:
    - `title` ← frontmatter `title`
-   - `html` ← converted markdown body
-   - `source` ← `"html"` (**required** — Ghost uses Lexical by default and silently ignores `html` without this)
-   - `tags` ← frontmatter `tags` array, mapped to `[{"name": "tag"}]`
+   - `lexical` ← Lexical JSON string (converted from HTML)
+   - `tags` ← frontmatter `tags` array + `category`, mapped to `[{"name": "tag"}]`
    - `custom_excerpt` / `meta_description` ← frontmatter `description`
+   - `feature_image` ← frontmatter `image.path`
+   - `slug` ← filename without date prefix (e.g. `2024-07-04-my-post.md` → `my-post`)
    - `status` ← `"published"` or `"draft"`
    - `published_at` ← frontmatter `date` in ISO 8601
 
+## Lexical Format Reference (Ghost v6.0)
+
+Ghost v6.0 uses the Lexical editor internally. Content must be sent as a JSON string in the `lexical` field.
+
+### Top-level structure
+
+```json
+{
+  "root": {
+    "children": [ /* block nodes */ ],
+    "direction": null,
+    "format": "",
+    "indent": 0,
+    "type": "root",
+    "version": 1
+  }
+}
+```
+
+### Block node types
+
+**Paragraph** (`<p>`):
+```json
+{"children": [/* inline nodes */], "direction": null, "format": "", "indent": 0, "type": "paragraph", "version": 1}
+```
+
+**Heading** (`<h1>`–`<h6>`):
+```json
+{"children": [/* inline nodes */], "direction": null, "format": "", "indent": 0, "type": "extended-heading", "version": 1, "tag": "h2"}
+```
+
+**Blockquote** (`<blockquote>`):
+```json
+{"children": [/* inline nodes */], "direction": null, "format": "", "indent": 0, "type": "extended-quote", "version": 1}
+```
+
+**List** (`<ul>`, `<ol>`):
+```json
+{"children": [/* listitem nodes */], "direction": null, "format": "", "indent": 0, "type": "list", "version": 1, "listType": "bullet", "start": 1, "tag": "ul"}
+```
+- `listType`: `"bullet"` or `"number"`
+- `tag`: `"ul"` or `"ol"`
+
+**List item** (`<li>`):
+```json
+{"children": [/* inline nodes */], "direction": null, "format": "", "indent": 0, "type": "listitem", "version": 1, "value": 1}
+```
+
+**Image** (`<img>`):
+```json
+{"type": "image", "version": 1, "src": "https://...", "alt": "desc", "title": "", "width": null, "height": null, "caption": "", "cardWidth": "wide"}
+```
+
+**HTML card** (for tables and other complex HTML):
+```json
+{"type": "html", "version": 1, "html": "<table>...</table>"}
+```
+
+**Code block** (`<pre><code>`):
+```json
+{"type": "codeblock", "version": 1, "code": "...", "language": ""}
+```
+
+**Horizontal rule** (`<hr>`):
+```json
+{"type": "horizontalrule", "version": 1}
+```
+
+### Inline node types
+
+**Text** (with formatting):
+```json
+{"detail": 0, "format": 0, "mode": "normal", "style": "", "text": "hello", "type": "extended-text", "version": 1}
+```
+- `format` flags (bitmask): `0` = normal, `1` = bold, `2` = italic, `4` = strikethrough, `8` = underline, `16` = code
+
+**Link** (`<a>`):
+```json
+{"children": [/* text nodes */], "direction": null, "format": "", "indent": 0, "type": "link", "version": 1, "url": "https://...", "target": "_blank", "rel": "noopener noreferrer"}
+```
+- External links (`http://`, `https://`): add `target` and `rel`
+- Internal links (`/posts/...`): omit `target` and `rel`
+
+**Line break** (`<br>`):
+```json
+{"type": "linebreak", "version": 1}
+```
+
+### HTML-to-Lexical conversion rules
+
+1. Parse HTML into DOM elements
+2. Map each top-level element to the corresponding Lexical block node
+3. Handle inline formatting (`<strong>` → format `1`, `<em>` → format `2`, `<code>` → format `16`)
+4. Handle links (`<a>`) as `link` nodes wrapping `extended-text` children
+5. Promote images: if a `<p>` only contains `<img>`, promote the image to top-level instead of wrapping in paragraph
+6. Tables (`<table>`) → use `html` card node (raw HTML passthrough)
+7. Filter out whitespace-only text nodes inside `<ul>`/`<ol>` containers (HTML whitespace between `<li>` tags creates phantom empty list items)
+
+### Markdown preprocessing
+
+Python's `markdown` module requires a blank line before list items. Without it, `* item` after a paragraph line gets merged into the paragraph as literal text.
+
+```python
+def preprocess_markdown(md):
+    """Add blank line before list items that follow a non-list, non-blank line."""
+    lines = md.split('\n')
+    result = []
+    for i, line in enumerate(lines):
+        if i > 0 and re.match(r'^[\*\-\+] ', line):
+            prev = lines[i-1].strip()
+            if prev and not re.match(r'^[\*\-\+] ', lines[i-1]) and not re.match(r'^\d+\. ', lines[i-1]):
+                result.append('')
+        result.append(line)
+    return '\n'.join(result)
+```
+
 ## Common Mistakes
 
+- **`source: "html"` broken in Ghost v6.0** — creates empty posts. Must use `lexical` field with Lexical JSON
+- **Empty list items** — whitespace between `</li>` and `<li>` in HTML becomes phantom text nodes; filter non-listitem children when building list nodes
+- **List merged into paragraph** — markdown needs blank line before `* ` items; preprocess markdown before conversion
 - **Post created as draft instead of published** — must explicitly set `"status": "published"`
 - **JWT expired** — tokens are valid for 5 minutes only; regenerate before each request
 - **Tags replaced on edit** — when updating, pass the FULL list of tags, not just new ones
 - **Missing `updated_at` on edit** — causes 409 conflict; always fetch current version first
 - **Wrong audience in JWT** — must be `"/admin/"`, not `"/v2/admin/"` or other paths
-- **Content-Type missing** — POST/PUT requests need `Content-Type: application/json`
+- **Content-Type missing** — POST/PUT requests need `Content-Type: application/json; charset=utf-8`
 - **`source .env` fails silently** — in Claude Code's bash, `source .env` doesn't persist variables; use `export $(grep -v '^#' .env | xargs)` instead
-- **HTML content silently ignored** — Ghost defaults to Lexical editor; passing `html` without `"source": "html"` creates a post with empty body. Always include `"source": "html"` when using the `html` field
