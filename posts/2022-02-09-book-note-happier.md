@@ -17,7 +17,7 @@ tags: [books, life style, self improvement, psychology]
 無不想探討快樂的問題，而正向心理學，泛指 **『研究人類最佳心理運作狀態的學問』**，作為學術象牙塔及社會大眾間的橋樑，
 結合了嚴謹的學術研究及有趣的自助運動。
 
-![book: Happier]({{site.cdn_url}}/happier-01.jpg)
+![book: Happier](https://storage.googleapis.com/homuchen.com/images/happier-01.jpg)
 
 # 你快樂嗎?
 當我告訴我朋友我正在看正向心理學的相關書籍時，他們就會問我: 你不快樂嗎？😂，好像擔心我會不會跑去自殺似的，
@@ -27,7 +27,7 @@ tags: [books, life style, self improvement, psychology]
 
 作者對這問題的回答是這樣的: 與其問「你快樂嗎?」這樣的是非題，不如問該「怎麼做可以變得**更**快樂？」，
 
-![ask the right question: How to become happier?]({{site.cdn_url}}/happier-03.jpg)
+![ask the right question: How to become happier?](https://storage.googleapis.com/homuchen.com/images/happier-03.jpg)
 
 你快樂嗎？是個是非題，答案要不是快樂就是不快樂，這意味著快樂只是某段旅程的終點，
 一旦抵達了這個定點，旅程就結束了。
@@ -45,7 +45,7 @@ tags: [books, life style, self improvement, psychology]
 ## 四種生活類型
 作者在這裡提供了一個模型來描述四種生活類型:
 
-![四種關於現在與未來的生活類型]({{site.cdn_url}}/happier-04.jpg)
+![四種關於現在與未來的生活類型](https://storage.googleapis.com/homuchen.com/images/happier-04.jpg)
 
 橫軸為現在，越右邊代表對現在越有好處，縱軸為未來，越上面代表你所做的選擇是對未來有好處的，反之亦然，
 接下來我們就一個一個象限來看看吧，也可以想想自己是否在人生的某個時期，這樣地生活著。
@@ -105,7 +105,7 @@ tags: [books, life style, self improvement, psychology]
 而作者認為的快樂就是**要有樂趣，也要有意義**，要兼顧現在以及未來，
 也就是坐落在快樂開朗型的生活型態。
 
-![快樂是什麼: 有樂趣，也有意義]({{site.cdn_url}}/happier-05.jpg)
+![快樂是什麼: 有樂趣，也有意義](https://storage.googleapis.com/homuchen.com/images/happier-05.jpg)
 
 **樂趣**是指我們目前感受的正面情緒，是現在的好處； **意義**則伴隨使命感而來，代表所作所為對將來的好處。
 

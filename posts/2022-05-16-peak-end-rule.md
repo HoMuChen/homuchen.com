@@ -11,7 +11,7 @@ tags: [psychology]
 為什麼IKEA會在最後結帳區的前後，設置餐廳區及有賣霜淇淋的小吃部呢？
 這麼做對我們購物的體驗有什麼影響嗎？**峰終定律**可能可以給我們一點答案。
 
-![IKEA 冰淇淋]({{site.cdn_url}}/peak-end-rule-1.jpg)
+![IKEA 冰淇淋](https://storage.googleapis.com/homuchen.com/images/peak-end-rule-1.jpg)
 
 # 什麼是峰終定律
 我們對於過去的一段經驗及體驗的記憶，主要由兩個部分決定: **高峰**時於**結束**時的感覺。
@@ -25,14 +25,14 @@ tags: [psychology]
 事後詢問兩組實驗對象對於腸鏡體驗的感受，結果竟然是實驗組覺得體驗較佳！
 總的來說，他們承受了更多不適的時間，卻因為最後的時間比較沒那麼不舒服，就使得他們對於整段體驗的感受有更好的評價！
 
-![峰終定律: 結腸鏡實驗]({{site.cdn_url}}/peak-end-rule-2.jpg)
+![峰終定律: 結腸鏡實驗](https://storage.googleapis.com/homuchen.com/images/peak-end-rule-2.jpg)
 
 # 噪音實驗
 另一個實驗則是使用噪音作為不悅的體驗來源，實驗對象分別要聽兩段噪音，第一段是持續八分鐘的痛苦噪音，
 第二段是八分鐘的痛苦噪音再加上八分鐘的輕微噪音，結束後請受試者再聽一次，他們可以選擇要聽哪一段，
 結果竟然有更多的人選擇聽第二段噪音！！
 
-![峰終定律: 噪音實驗]({{site.cdn_url}}/peak-end-rule-3.jpg)
+![峰終定律: 噪音實驗](https://storage.googleapis.com/homuchen.com/images/peak-end-rule-3.jpg)
 
 # 人是不理性的
 有沒有覺得那些受試者很笨，但人就是這樣，許多時候都是不理性的，人類的判斷會有許多失誤

@@ -12,7 +12,7 @@ image:
 我的生活該要怎麼度過呢？找不到喜歡感到熱情的事怎麼辦？對未來的職涯感到迷茫，
 想要一份我喜歡的、我所熱愛的、最好是有意義，可以改變的世界的工作，該怎麼去進行呢？
 
-![書: 做自己的生命設計師]({{site.cdn_url}}/self-improvement-books-4.jpg)
+![書: 做自己的生命設計師](https://storage.googleapis.com/homuchen.com/images/self-improvement-books-4.jpg)
 
 [**《做自己的生命設計師》**](https://www.books.com.tw/products/0010733134)這本書，就是來試著回答上述這些問題，
 作者在史丹佛大學開設設計人生的課程，將設計思考的工具及心法，應用到你自己的人生當中，
@@ -67,7 +67,7 @@ image:
 知道了我們該專注的問題種類、人生的本質，以及設計思考該擁有的心態之後，
 接下來來看看具體一點的步驟可以怎麼做吧！
 
-![設計人生的四個步驟]({{site.cdn_url}}/book-note-design-life-2.jpg)
+![設計人生的四個步驟](https://storage.googleapis.com/homuchen.com/images/book-note-design-life-2.jpg)
 
 # 衡量現況
 在我們朝向任何目標方現前進之前，首先我們得要知道自己在哪？
@@ -80,7 +80,7 @@ image:
 我在史丹佛大學任教，另外還從事私人顧問工作。我主持做自己的生命設計師工作坊，
 並擔任社會則任新創公司VOZ的董事，我覺得工作方面的分數為9分!
 
-![健康/工作/娛樂/愛的儀表板]({{site.cdn_url}}/book-note-design-life-3.jpg)
+![健康/工作/娛樂/愛的儀表板](https://storage.googleapis.com/homuchen.com/images/book-note-design-life-3.jpg)
 
 一張圖可以提供判斷，只有自己知道，目前哪些地方OK與不OK，
 在做完後面的練習、打造原型跟實驗的過程，會不斷地回頭評估衡量，
@@ -148,7 +148,7 @@ Humility、Compassion、Honesty、Kindness、Integrity、Selflessness...
 利用心智圖，以一個詞彙為中心，想出三四個與之有關的詞彙，再對每個新詞彙重複進行一樣的動作，
 得到三四層的字詞聯想，給自己一個時間限制快速做完，避免大腦的審查機制，以下是G先生做的練習:
 
-![心智圖]({{site.cdn_url}}/book-note-design-life-4.jpg)
+![心智圖](https://storage.googleapis.com/homuchen.com/images/book-note-design-life-4.jpg)
 
 最後，從最外層的字詞中挑選幾個組合起來，組成兩個可能的點子，從下面心智圖中，
 或許G先生可以兼職帶領探索營隊，服務喜愛戶外活動的孩子？那不如在海灘上辦個**海盜營隊**。

@@ -15,7 +15,7 @@ image:
 這篇文章紀錄了我從2022-04-10進場，花了多少錢買鞋子，
 以及後續每天的產出，希望能幫助還在觀望的玩家對實際情形有近一步的了解～
 
-![STEPN]({{site.cdn_url}}/stepn-income-01.jpg)
+![STEPN](https://storage.googleapis.com/homuchen.com/images/stepn-income-01.jpg)
 
 # 投入金額 (4/10)
 在4/10以10.1SOL購入第一雙runner的鞋子，當時1SOL = 110USD，而1USD = 28.9 NTD，
@@ -24,7 +24,7 @@ image:
 # 每天產出(持續更新)
 下圖是**Runner**的鞋，跑**五分速(12km/hr)**每天的收益(已扣掉每天維修費)。
 
-![收益圖表]({{site.cdn_url}}/stepn-income-02.jpg)
+![收益圖表](https://storage.googleapis.com/homuchen.com/images/stepn-income-02.jpg)
 
 ## 2022-04-16
 以12.5SOL購入第二雙LV0鞋，開始做效率測試。

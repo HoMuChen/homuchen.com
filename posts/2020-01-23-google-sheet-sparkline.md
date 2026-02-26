@@ -10,11 +10,11 @@ tags: [google sheet, sparkline]
 
 我在[**[Google Sheet]我如何製作進度表**](/posts/google-sheet-track-progress/)這篇裡
 
-![google sheet: track progress]({{site.cdn_url}}/spark-line-1.jpg)
+![google sheet: track progress](https://storage.googleapis.com/homuchen.com/images/spark-line-1.jpg)
 
 以及[**[Google sheet]我如何製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/)
 
-![google sheet: stock]({{site.cdn_url}}/spark-line-2.jpg)
+![google sheet: stock](https://storage.googleapis.com/homuchen.com/images/spark-line-2.jpg)
 
 大家可以看到一些儲存格裡都有迷你圖表，像是柱狀圖、線圖，這就是sparkline這個函式的功用，讓我們不需要額外插入一些圖表，就能直接在格子中畫圖．
 
@@ -58,19 +58,19 @@ options則是一些其他設置，可有可無，例如圖表的類型是line、
 
 sparkline(E1:E10)
 
-![google sheet: sparkline line chart]({{site.cdn_url}}/spark-line-3.jpg)
+![google sheet: sparkline line chart](https://storage.googleapis.com/homuchen.com/images/spark-line-3.jpg)
 
 ## 藍色且較粗的折線圖
 
 sparkline(E1:E10, {"color","blue"; "linewidth", 2})
 
-![google sheet: sparkline line chart]({{site.cdn_url}}/spark-line-4.jpg)
+![google sheet: sparkline line chart](https://storage.googleapis.com/homuchen.com/images/spark-line-4.jpg)
 
 ## 堆疊長條圖
 
 sparkline(H1:H10, {"charttype","bar"; "max", 50})
 
-![google sheet: sparkline stack bar chart]({{site.cdn_url}}/spark-line-5.jpg)
+![google sheet: sparkline stack bar chart](https://storage.googleapis.com/homuchen.com/images/spark-line-5.jpg)
 
 Bar為堆疊長條圖，交替兩個顏色一個疊著一個，max50為上限值，也就是當值疊加到50時會填滿那一欄．
 
@@ -78,7 +78,7 @@ Bar為堆疊長條圖，交替兩個顏色一個疊著一個，max50為上限值
 
 sparkline(H1, {"charttype","bar"; "max", 5})
 
-![google sheet: sparkline bar chart]({{site.cdn_url}}/spark-line-6.jpg)
+![google sheet: sparkline bar chart](https://storage.googleapis.com/homuchen.com/images/spark-line-6.jpg)
 
 這裏我們資料只有一個值，也就是H1的1，當值等於max的5時就會填滿整格，常可以用來代表進度，例如值為百分比而max為1
 
@@ -86,4 +86,4 @@ sparkline(H1, {"charttype","bar"; "max", 5})
 
 sparkline(H1:H10, {"charttype","column"})
 
-![google sheet: sparkline column chart]({{site.cdn_url}}/spark-line-7.jpg)
+![google sheet: sparkline column chart](https://storage.googleapis.com/homuchen.com/images/spark-line-7.jpg)

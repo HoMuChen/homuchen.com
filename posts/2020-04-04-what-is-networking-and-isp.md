@@ -12,7 +12,7 @@ tags: [ISP]
 
 網路連接了世界上數十億的裝置，這些連上網路的裝置就稱為hosts, end-systems，而網路本身由communocation links及packets switches組成，links就是指電話線呀、同軸電纜、光纖、電磁波頻譜這些實際傳送資料的媒介，而資料從一個host到另一個host是被拆分成許多一個一個的packet，藉由link傳送，到達packets switches，每個switch則負責把packet從進來的link選擇一個link傳出去，最後到達目的地．
 
-![networking]({{site.cdn_url}}/isp-2.jpg)
+![networking](https://storage.googleapis.com/homuchen.com/images/isp-2.jpg)
 
 那到底是誰提供這些links及switches給我們的裝置去連接上呢？就是網際網路服務供應商，Internet Service Provider，ISP．
 
@@ -27,6 +27,6 @@ tags: [ISP]
 
 現在假設有個全球範圍的服務供應商，各地區的供應商只要接上去就可以了，下層的服務供應商成了上層的客戶，依據流量付費，有錢賺的生意當然就有許多人進來做，許多競爭的供應商加入，彼此也可以互相連結，客戶也可以跟多個供應商合作，如此當有任一供應商服務中斷，也不會影響終端用戶．
 
-![networking]({{site.cdn_url}}/isp-3.jpg)
+![networking](https://storage.googleapis.com/homuchen.com/images/isp-3.jpg)
 
 於是網路就成了階層式的架構，上下層的客戶關係，同層之間也會互相連接，各個供應商自己負責建設自己的基礎設施及設定路由，封包的傳送可能會有經濟的考量(盡量不走上層供應商，因為要錢，只在同層之間交換)、或者是政治考量(不想封包經過某某國家的設備，或是所以封包都要經過某地，以利監控、阻擋某些來源)．

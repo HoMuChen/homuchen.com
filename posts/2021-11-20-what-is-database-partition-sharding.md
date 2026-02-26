@@ -24,26 +24,26 @@ Partion的方式有兩種，分別為vertical及horizontal partition，
 我們看資料的方式通常是使用表格的，也就是說有欄有列，
 vertical partition就是根據欄來做分拆，而horizontal partition是對列進行分拆。
 
-![vertical partition and horizontal partition]({{site.cdn_url}}/partition-0.jpg)
+![vertical partition and horizontal partition](https://storage.googleapis.com/homuchen.com/images/partition-0.jpg)
 
 ## Vertical Partition
 如下圖，vertical partition是根據欄位來進行拆分，會拆分出schema不同的表格，
 主要是為了效能優化，易於管理等目的，再後面的章節中，再來討論應用場景及優缺點。
 
-![vertical partition]({{site.cdn_url}}/partition-1.jpg)
+![vertical partition](https://storage.googleapis.com/homuchen.com/images/partition-1.jpg)
 
 ## Horizontal Partition
 horizontal partition，是根據列來進行拆分，
 每個拆分出來的資料集都跟原本的資料集長一樣，只不過是一個子集合。
 
-![horizontal partition]({{site.cdn_url}}/partition-2.jpg)
+![horizontal partition](https://storage.googleapis.com/homuchen.com/images/partition-2.jpg)
 
 # 該如何做Horizontal Partition
 要根據列來進行拆分的話，就必須有個方法，來決定每一列是屬於哪一份partition，
 作法就是選擇一個資料欄位，用這個欄位經過一些運算或判斷來決定這筆資料屬於哪一個partition，
 而這個欄位就稱為**partitioning key**。
 
-![partition key]({{site.cdn_url}}/partition-3.jpg)
+![partition key](https://storage.googleapis.com/homuchen.com/images/partition-3.jpg)
 
 在上面的例子中，我們選擇了id做為我們的partition key，將資料拆分為兩份，一份為id是奇數，另一份id是偶數，
 除了上述使用ID奇偶數的方法外，哪些欄位可以適合作為partition key呢? 又有哪些方法來利用每筆資料的partition key，
@@ -53,7 +53,7 @@ horizontal partition，是根據列來進行拆分，
 就是指shard key依照某個range來指派partition。舉個例子，假設我們選用birthday做為我們的shard key，
 然後指派出生年在1960年前的為partition 1，1960-1990的為partition 2，1990之後的為partition 3。
 
-![range partition]({{site.cdn_url}}/partition-4.jpg)
+![range partition](https://storage.googleapis.com/homuchen.com/images/partition-4.jpg)
 
 這樣做的缺點是，如果你的資料有一堆1990年後出生的年輕人，那麼partition 3就會有一大堆資料，分散的並不平均。
 
@@ -69,7 +69,7 @@ horizontal partition，是根據列來進行拆分，
 或是要分散到多台機器中(**Distributed**)，來討論有何作法及應用場景，
 相對應的好壞處、以及相關市面上已經有哪些solution。
 
-![vertical vs. horizontal partition and centralized vs. distributed]({{site.cdn_url}}/partition-5.jpg)
+![vertical vs. horizontal partition and centralized vs. distributed](https://storage.googleapis.com/homuchen.com/images/partition-5.jpg)
 
 按照上圖的編號的順序一個一個來討論～
 
@@ -126,7 +126,7 @@ horizontal partition，是根據列來進行拆分，
 
 原理都是一樣的，選定一個欄位作為shard key，你的application server將決定這筆資料的要放到哪台DB上，
 
-![RDBMS sharding]({{site.cdn_url}}/partition-6.jpg)
+![RDBMS sharding](https://storage.googleapis.com/homuchen.com/images/partition-6.jpg)
 
 * **優點**: 增加了throughput，不管是卡在Disk或是CPU，一台機器不夠寫不夠讀，那你有試過兩台三台十台嗎～
 * **缺點**: application code的複雜度變大了是一定的，除此之外，每個partiton現在已經各自獨立，
@@ -153,7 +153,7 @@ horizontal partition，是根據列來進行拆分，
   如果我們今天將users及orders用它們的id做partition了，
   則同一個user的orders可能會被分散到不同的機器之中，所以就沒法JOIN拉～
 
-  ![after sharding, not able to join]({{site.cdn_url}}/partition-7.jpg)
+  ![after sharding, not able to join](https://storage.googleapis.com/homuchen.com/images/partition-7.jpg)
   
   其實這裡的解決方法就是選用user_id作為shard key就好了，但不可能所有的資料集都有辦法使用同樣意義的欄位來做partition。
 

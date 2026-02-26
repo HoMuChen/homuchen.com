@@ -10,7 +10,7 @@ tags: [google sheet, finance]
 
 於左上角輸入公司名稱(此處是下拉選單)，即可跑出公司的相關新聞
 
-![google sheet: import google news]({{site.cdn_url}}/google-sheet-news-1.jpg)
+![google sheet: import google news](https://storage.googleapis.com/homuchen.com/images/google-sheet-news-1.jpg)
 
 在這一篇[**[Google sheet]我如何製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/)裡，
 我們已經建立了持有股票清單，我就想說如果同時可以同時看到每一間公司的相關新聞應該不錯，所以才會有了這篇．

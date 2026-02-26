@@ -96,7 +96,7 @@ GET / HTTP/1.1
 Host: www.google.com
 ```
 
-![telnet request response]({{site.cdn_url}}/http-intro-1.jpg)
+![telnet request response](https://storage.googleapis.com/homuchen.com/images/http-intro-1.jpg)
 
 就可以看到google把網頁吐回來拉～～
 
@@ -112,7 +112,7 @@ nc -l 3000
 curl localhost:3000
 ```
 
-![curl response]({{site.cdn_url}}/http-intro-2.jpg)
+![curl response](https://storage.googleapis.com/homuchen.com/images/http-intro-2.jpg)
 
 nc的terminal上就會出現這些資訊拉～～也就是curl傳送過來的資料，再來試試看上面開創一個新的user的API call吧
 
@@ -126,7 +126,7 @@ curl -XPOST \
 
 nc server就會收到下面的資料拉！
 
-![curl request]({{site.cdn_url}}/http-intro-3.jpg)
+![curl request](https://storage.googleapis.com/homuchen.com/images/http-intro-3.jpg)
 
 # Summary
 HTTP作為網路中最常用的client server 通訊協定，簡單地介紹了HTTP message的格式，他是human readable的text format，熟悉他到底傳來傳去到底在傳什麼，可以幫助我們開發網頁應用時更有底氣。

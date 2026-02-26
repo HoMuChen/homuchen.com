@@ -16,7 +16,7 @@ description: |
 # 邁向成功的公式
 找到你目標，然後走到底，這樣就成功了，那要怎麼走到底呢?
 
-![邁向成功的公式及書單]({{site.cdn_url}}/self-improvement-books-0.jpg)
+![邁向成功的公式及書單](https://storage.googleapis.com/homuchen.com/images/self-improvement-books-0.jpg)
 
 有了目標以後，每天你做出選擇，相對應地有一些行為，
 但是最好將其變為習慣，否則將難以持之以恆，因為我們的意志力是有限的。
@@ -43,7 +43,7 @@ description: |
 # [**《原子習慣》**](https://www.books.com.tw/products/0010822522)
 選擇很重要，但其實人生並沒有那麼多重大的選擇時刻，影響你這個人最多的，是組成你每天生活的習慣。
 
-![書: 原子習慣]({{site.cdn_url}}/self-improvement-books-1.jpg)
+![書: 原子習慣](https://storage.googleapis.com/homuchen.com/images/self-improvement-books-1.jpg)
 
 習慣佔據你人生的八、九成，試想一下每天醒來，躺在床上滑一下手機，
 走去浴室刷牙洗臉，要不要吃早餐，早餐要吃什麼，通勤去上班的路上在做什麼，
@@ -72,7 +72,7 @@ description: |
 # [**《複利效應》**](https://www.books.com.tw/products/0010814286)
 每天微小的改變並不亦察覺，經過時間的累積卻會產生巨大的影響。
 
-![書: 複利效應]({{site.cdn_url}}/self-improvement-books-2.jpg)
+![書: 複利效應](https://storage.googleapis.com/homuchen.com/images/self-improvement-books-2.jpg)
 
 或許大家都聽過複利效應，應該通常是在財務儲蓄領域上，但這概念可以應用在生活的各個面向上，
 我們每天做的事，影響可能很小，多吃一片洋芋片、多抽一根菸、晚上熬夜少睡一個小時，造成的影響幾乎無法察覺，
@@ -86,7 +86,7 @@ description: |
 # [**《刻意練習》**](https://www.books.com.tw/products/0010752714)
 > 透過刻意練習，善用大腦和身體的適應力，每個人都能改善技能，甚至創造出你本來以為自己沒有的能力，達到顛峰表現。
 
-![書: 刻意練習]({{site.cdn_url}}/self-improvement-books-3.jpg)
+![書: 刻意練習](https://storage.googleapis.com/homuchen.com/images/self-improvement-books-3.jpg)
 
 如何在某個領域邁向頂尖、擁有高手級的表現，只要一直一直不斷地做、不斷地練習就好了嗎？
 
@@ -125,7 +125,7 @@ description: |
 # [**《做自己的生命設計師》**](https://www.books.com.tw/products/0010733134)
 透過打造原型、進行實驗，發想繼而嘗試人生各種可能，才能找到熱情
 
-![書: 做自己的生命設計師]({{site.cdn_url}}/self-improvement-books-4.jpg)
+![書: 做自己的生命設計師](https://storage.googleapis.com/homuchen.com/images/self-improvement-books-4.jpg)
 
 不知道自己的人生要做什麼嗎？第一步就是要去想，隨意的發想，如果你連想都沒想過的話一件事，
 你不可能會在你的人生中去做那件事，甚至去喜歡他，所以第一步就是發揮想像力，無所限制地記錄下所以可能會喜歡的想法。

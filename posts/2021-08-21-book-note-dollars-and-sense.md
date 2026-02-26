@@ -9,7 +9,7 @@ tags: [books, finance, psychology]
 繼上篇[**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)**](/posts/book-note-money-psychology/)
 談完部分的內容之後，今天在這把剩下講完吧～
 
-![book: Dollards and Sense]({{site.cdn_url}}/dollars-and-sense-1.jpg)
+![book: Dollards and Sense](https://storage.googleapis.com/homuchen.com/images/dollars-and-sense-1.jpg)
 
 # 大綱
 

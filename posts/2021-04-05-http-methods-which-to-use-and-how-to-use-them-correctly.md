@@ -32,7 +32,7 @@ category: Web Development
 
 URL代表著資源，而method是你想要對資源進行的操作，常見的method如下表：
 
-![http headers]({{site.cdn_url}}/header-1.jpg)
+![http headers](https://storage.googleapis.com/homuchen.com/images/header-1.jpg)
 
 # Don’t surprise your user
 並不是所有的server都會實作所有的method，而且每個method要做什麼事，也都是由server所決定的，但是一個好的API通常不會做怪怪的事，而是要符合使用者的期待，使其體驗良好，這裡先來解釋一下safe及Idempotent這兩個特性是什麼吧．

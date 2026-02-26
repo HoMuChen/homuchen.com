@@ -34,7 +34,7 @@ tags: [food, life style, habit]
 * 炒花椰菜:
   一樣熱鍋後，放花椰菜下去炒炒，加點鹽巴就可以起鍋了，最後一樣灑點黑胡椒
 
-![food]({{site.cdn_url}}/food-0.jpg)
+![food](https://storage.googleapis.com/homuchen.com/images/food-0.jpg)
 
 # 花費
 首次嘗試下廚，成功！僅花了15分鐘，幾乎不需要任何準備，食材買買，進鍋子裡翻一翻就好😄

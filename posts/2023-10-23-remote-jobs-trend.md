@@ -12,7 +12,7 @@ tags: [remote work]
 # 圖表
 從2021年11月至今的資料，圖表如下:
 
-![遠端職缺數趨勢圖]({{site.cdn_url}}/remote-jobs-trend.jpg)
+![遠端職缺數趨勢圖](https://storage.googleapis.com/homuchen.com/images/remote-jobs-trend.jpg)
 
 # 原始資料
 原始資料我就放在[google試算表](https://docs.google.com/spreadsheets/d/1VHkQlnWTwu7CR8kn5GjNFzIL_-IHqaF_bAp6EybNEHI/edit?usp=sharing)上，有興趣的朋友可以自行取用。

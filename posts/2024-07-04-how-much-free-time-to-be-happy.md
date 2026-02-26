@@ -16,7 +16,7 @@ image:
 # 有更多的時間就會快樂嗎？
 根據這篇論文[Having Too Little or Too Much Time Is Linked to Lower Subjective Well-being](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf)的研究，**擁有太少或太多的自由時間，都會導致主觀幸福感的下降**！(這篇論文分析了2012-2013年，21736位美國人的資料)
 
-![空閒時間 vs. 主觀幸福感]({{site.cdn_url}}/how-much-free-time-0.jpg)
+![空閒時間 vs. 主觀幸福感](https://storage.googleapis.com/homuchen.com/images/how-much-free-time-0.jpg)
 
 研究結果顯示，在**空閒時間不足2小時、與超過5小時時，主觀幸福感都有下降的趨勢**，
 這裡的空閒時間指的是個人有多少時間可以用於自主活動，也就是人們想做的事，包括放空、放鬆、看電視，
@@ -37,6 +37,6 @@ image:
 以上需要多少空閑時間會影響快樂是我在[**更快樂的1小時：UCLA爆紅的時間幸福學，教你聚焦於最重要的事**](https://www.books.com.tw/products/0010939311)這本書中看到的．
 
 
-![更快樂的1小時: UCLA爆紅的時間幸福學, 教你聚焦於最重要的事]({{site.cdn_url}}/book-note-happier-hour-1.jpg)
+![更快樂的1小時: UCLA爆紅的時間幸福學, 教你聚焦於最重要的事](https://storage.googleapis.com/homuchen.com/images/book-note-happier-hour-1.jpg)
 
 作者闡述擁有多少時間不是重點，而是你如何使用支出他們，這本書確實是一本投資指南，只不過不是投資金錢，而是你最寶貴的資源──時間。

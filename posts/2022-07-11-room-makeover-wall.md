@@ -13,9 +13,9 @@ description: |
 
 今天要分享我在改造房間的過程中，針對牆壁這一部分做了些什麼，首先就來看看成果吧！
 
-![牆壁改造Before and After]({{site.cdn_url}}/room-makeover-wall-1.jpg)
+![牆壁改造Before and After](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-1.jpg)
 
-![牆壁改造Before and After]({{site.cdn_url}}/room-makeover-wall-2.jpg)
+![牆壁改造Before and After](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-2.jpg)
 
 # 要改善的點
 從Before的照片中可以看到，牆壁的顏色不均、二十幾年的海報(我妹貼的)、
@@ -30,7 +30,7 @@ description: |
 ## 廠牌及顏色
 我使用的是得利乳膠漆1501白，以及00NN 62/000的電腦調色。
 
-![油漆: 1501白、00NN 62/000]({{site.cdn_url}}/room-makeover-wall-3.jpg)
+![油漆: 1501白、00NN 62/000](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-3.jpg)
 
 如果大家不想要房間那麼無聊都是白色，都要不知道要如何配色時，在這邊提供幾個原則給跟我一樣不是美學專業的人們:
 
@@ -42,7 +42,7 @@ description: |
 
 另外也可以使用低彩度(飽和度)的顏色，就算真的選得不好，整個房間也會有種粉粉的感覺，也就是莫蘭迪色的原理。
 
-![彩度]({{site.cdn_url}}/room-makeover-wall-4.jpg)
+![彩度](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-4.jpg)
 
 而得利的電腦調色色號一共有三個組成: 色相、明度跟彩度，最後面的三個數字就是彩度，大家就可以挑選最後三個數字比較小的顏色囉～
 想更多了解得利油漆色號的意義的，
@@ -67,7 +67,7 @@ description: |
 # 總結
 成果還算滿意～ 
 
-![房間DIY改造]({{site.cdn_url}}/room-makeover-wall-5.jpg)
+![房間DIY改造](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-5.jpg)
 
 這次總共購買的清單如下:
 

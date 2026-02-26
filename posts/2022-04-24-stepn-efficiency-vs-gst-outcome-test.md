@@ -12,14 +12,14 @@ image:
 點數要加到哪裡呢？今天這篇文章將分享我實測下來的結果，升級並提升效率值後，
 但每次跑步GST的產出有多少的影響！
 
-![STEPN shoes price]({{site.cdn_url}}/stepn-income-01.jpg)
+![STEPN shoes price](https://storage.googleapis.com/homuchen.com/images/stepn-income-01.jpg)
 
 # 實測數據
 以下是我11天的十跑紀錄，每次皆為花費2能量，以5分速(12km/hr)跑10分鐘的GST的紀錄，
 橫軸為鞋子的效率值，縱軸為GST產出。
 
 ## 散佈圖
-![STEPN: efficiency vs. gst outcome scatter chart]({{site.cdn_url}}/stepn-eff-01.jpg)
+![STEPN: efficiency vs. gst outcome scatter chart](https://storage.googleapis.com/homuchen.com/images/stepn-eff-01.jpg)
 
 ## 原始數據
 
@@ -47,7 +47,7 @@ image:
 2. 持續投入，升級到效率值約為25 (假設每天產出9.5GST)
 3. 持續投入，升級到效率值約為35 (假設每天產出11.5GST)
 
-![STEPN: gst outcome chart group by level]({{site.cdn_url}}/stepn-eff-02.jpg)
+![STEPN: gst outcome chart group by level](https://storage.googleapis.com/homuchen.com/images/stepn-eff-02.jpg)
 
 可以看到將鞋升到約LV5，也就是效率值大約25的話，雖然前三天賺得幾乎得要再投入，
 但7天之後，就會彎道超車將不升級的鞋比下去了。

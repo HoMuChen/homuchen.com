@@ -18,7 +18,7 @@ Redis或RabbitMQ作為broker的是memory based的，而log based最有名的，
 在上篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)中，
 看完了為何要使用message queue之後，今天要討論兩類message broker的差異，分別是**memory based**及**log based**，
 
-![rabbitmq vs kafka]({{site.cdn_url}}/rabbitmq-kafka-1.jpg)
+![rabbitmq vs kafka](https://storage.googleapis.com/homuchen.com/images/rabbitmq-kafka-1.jpg)
 
 # 基本特性
 Message borker最基本的操作就是produce跟consume，一個產生message，一個消耗message，
@@ -31,13 +31,13 @@ Message borker最基本的操作就是produce跟consume，一個產生message，
 每個message只會被其中**一個**consumer處理到，所以你可以指派任意多個consumer去consume一個topic，
 當你想要並行處理你的工作時，這會非常有用。
 
-![load balancing]({{site.cdn_url}}/rabbitmq-kafka-2-1.jpg)
+![load balancing](https://storage.googleapis.com/homuchen.com/images/rabbitmq-kafka-2-1.jpg)
 
 ### Fan-out
 每個message會被送到**所有**的consumer去處理，像是broadcast，可以用在當你的message需要到各個不同的系統時，
 比如說一筆交易的資料，需要被送到data warehouse保存、送到BI分析給老闆看、送到使用者的系統來更新他的交易資訊頁面。
 
-![fan-out]({{site.cdn_url}}/rabbitmq-kafka-3-1.jpg)
+![fan-out](https://storage.googleapis.com/homuchen.com/images/rabbitmq-kafka-3-1.jpg)
 
 ## Persistence
 > 當broker掛掉時，已經發送過來的messsage會消失嗎？還是等到broker重啟之後，會再重新發送？
@@ -97,12 +97,12 @@ function (message) {
 
 此時，信息的傳送consumer去向broker**pull**。
 
-![log based]({{site.cdn_url}}/rabbitmq-kafka-4.jpg)
+![log based](https://storage.googleapis.com/homuchen.com/images/rabbitmq-kafka-4.jpg)
 
 為了不讓寫入的速度被限制一個硬碟上，需要將一個topic的log partitioned，
 每個partition由一台機器負責，可以獨立地讀寫。
 
-![log partition]({{site.cdn_url}}/rabbitmq-kafka-5.jpg)
+![log partition](https://storage.googleapis.com/homuchen.com/images/rabbitmq-kafka-5.jpg)
 
 # Comparison between RabbitMQ and Kafka
 終於可以來看看兩者的比較拉～ 首先奉上一個表格，再來一點一點詳細討論！

@@ -13,7 +13,7 @@ image:
 不易罹癌、變帥變漂亮、更有吸引力～請問你願意花多少錢購買這產品呢？讓我現在告訴你，
 免錢！你每天都有機會享受到這些好處，需要做的就只是好好地睡覺～～😴
 
-![book: why we slepp]({{site.cdn_url}}/sleep-0.jpg)
+![book: why we slepp](https://storage.googleapis.com/homuchen.com/images/sleep-0.jpg)
 
 # 大綱
 在[**《為什麼要睡覺》**](https://www.books.com.tw/products/0010813161)裡，
@@ -87,7 +87,7 @@ image:
 不過睡眠一定扮演著重要的角色，能將記憶從海馬迴搬到皮質，以鞏固記憶，並且清空了海馬迴，
 讓你可以繼續學習新事物，而在這之中，跨腦區溝通的非快速動眼睡眠起到了相當的作用。
 
-![the benifit of sleep for memory]({{site.cdn_url}}/sleep-1.jpg)
+![the benifit of sleep for memory](https://storage.googleapis.com/homuchen.com/images/sleep-1.jpg)
 
 ## 實驗 - 睡眠之後的學習
 請兩組人分別記憶100組人臉跟名字的對照，記完之後，一組經歷90分鐘的午睡，另一組不能睡，之後再記100組，
@@ -114,7 +114,7 @@ image:
 則表現跟持續48小時不睡一樣。接下來最令人擔心的是每晚睡6小時的受試者，這也許跟許多人平常的睡眠時間差不多了，
 在經過10晚的只睡6小時後，失神的次數的表現跟連續24小時沒睡一樣！多了400%，
 
-![the lack of concentration due to sleeplessness]({{site.cdn_url}}/sleep-2.jpg)
+![the lack of concentration due to sleeplessness](https://storage.googleapis.com/homuchen.com/images/sleep-2.jpg)
 
 # 情緒
 > 睡眠不足時，腦中的情緒中心反應會更強烈

@@ -11,7 +11,7 @@ image:
 在考慮進場**STEPN**邊跑邊賺嗎？對於想買鞋嘗試玩玩看的玩家，
 買鞋時有哪些點是需要考量及注意的呢？將在這篇文章一一介紹。
 
-![STEPN shoes price]({{site.cdn_url}}/stepn-shoes-0.jpg)
+![STEPN shoes price](https://storage.googleapis.com/homuchen.com/images/stepn-shoes-0.jpg)
 
 可以看到上圖，在撰寫這篇文章時(2022-04-16)，
 最便宜的鞋在市場上的價格已經來到約12SOL，折合美金約為1224USD，台幣為35655NTD。
@@ -32,7 +32,7 @@ image:
 而以跑步賺錢效率來說，最直接影響的數值就是Efficiency及Resilience，
 Efficiency越高跑步時產生的GST越多，而Resilience越高，會讓鞋子不容易壞，需要維修的費用較少！
 
-![STEPN shoes fundementals]({{site.cdn_url}}/stepn-shoes-2.jpg)
+![STEPN shoes fundementals](https://storage.googleapis.com/homuchen.com/images/stepn-shoes-2.jpg)
 
 上圖可以看到，左邊的鞋的素質就比右邊的要好上許多。
 

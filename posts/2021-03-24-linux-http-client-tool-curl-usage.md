@@ -15,7 +15,7 @@ category: Networking
 * 如何知道自己curl有沒有寫對
 * 其他常見搭配的用法及使用情境
 
-![curl]({{site.cdn_url}}/curl-1.jpg)
+![curl](https://storage.googleapis.com/homuchen.com/images/curl-1.jpg)
 
 # HTTP Request message
 

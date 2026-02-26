@@ -15,7 +15,7 @@ linux command line tool就有許多好用的工具，
 流程就是到目標網站上操作，並且一邊觀察chrome dev tool，將http requests用python的requests套件重現，
 之後將response回來的資料做parse，最後存起來，可能是存到檔案或是資料庫裡。
 
-![爬蟲流程: 用command line tool來實現]({{site.cdn_url}}/104-1.jpg)
+![爬蟲流程: 用command line tool來實現](https://storage.googleapis.com/homuchen.com/images/104-1.jpg)
 
 前面三個步驟是觀察，後面要進行動作，共有三個主要的動作，
 分別為: 發起HTTP請求、處理HTTP回應的資料，將處理好的資料存起來。
@@ -82,7 +82,7 @@ sh ./104.sh 軟體工程師 1
 ```
 
 得到的結果如下:
-![data]({{site.cdn_url}}/104-2.jpg)
+![data](https://storage.googleapis.com/homuchen.com/images/104-2.jpg)
 
 如果只想要資料的list，可以再pipe到jq做進一步的處理:
 ```sh
@@ -90,7 +90,7 @@ sh ./104.sh 軟體工程師 1 | jq .data.list
 ```
 
 得到的結果如下:
-![data]({{site.cdn_url}}/104-3.jpg)
+![data](https://storage.googleapis.com/homuchen.com/images/104-3.jpg)
 
 # 結語
 有時只想要簡易的爬蟲，不想要大張旗鼓地寫個python時，就可以寫個shell script，加上crontab就能去抓取資料。

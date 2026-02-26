@@ -14,7 +14,7 @@ image:
 # 成果
 首先就來看看改造前後的房間模樣吧!
 
-![DIY改造房間]({{site.cdn_url}}/room-makeover-overview-0.jpg)
+![DIY改造房間](https://storage.googleapis.com/homuchen.com/images/room-makeover-overview-0.jpg)
 
 # 總共花費
 以下是這次改造中，所有購買的東西。

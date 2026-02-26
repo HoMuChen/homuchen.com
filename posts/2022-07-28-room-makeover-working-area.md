@@ -11,7 +11,7 @@ image:
 因為開啟了全遠端工作模式的關係，不是在環遊世界工作，就是在家工作。退掉了台北租屋處回到老家之後，
 有了改造房間的念頭，這篇文章要簡單分享改造房間中關於工作區域的部分！(文後有購物清單唷)
 
-![我的工作區域]({{site.cdn_url}}/room-makeover-working-area-0.jpg)
+![我的工作區域](https://storage.googleapis.com/homuchen.com/images/room-makeover-working-area-0.jpg)
 
 # 久坐怎麼辦？
 身為軟體工程師，需要長時間久坐，如果姿勢又不良，蠻容易造成腰部下背部的不適，
@@ -31,7 +31,7 @@ image:
 主要原因就是我工作需求就只有一台筆電的關係，所以可以非常容易地變換工作位置，加上錢錢賺得不夠多，
 所以想省一下囉～
 
-![升降桌 vs. 高腳桌搭配一般桌子]({{site.cdn_url}}/room-makeover-working-area-1.jpg)
+![升降桌 vs. 高腳桌搭配一般桌子](https://storage.googleapis.com/homuchen.com/images/room-makeover-working-area-1.jpg)
 
 ## 升降桌
 * **優點**: 高度可以任意調整，依照每個人的身高，座椅的高度，調到最適合的高度。

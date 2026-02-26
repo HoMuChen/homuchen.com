@@ -12,7 +12,7 @@ image:
 不管是以**雇主**的角度還是以**員工**的角度，
 在這本書[**《遠距工作模式》**](https://www.books.com.tw/products/0010856669/)裡都有提及。
 
-![書: 遠距工作模式]({{site.cdn_url}}/book-note-remote-work-1.jpg)
+![書: 遠距工作模式](https://storage.googleapis.com/homuchen.com/images/book-note-remote-work-1.jpg)
 
 # 為何要遠距工作
 遠距工作會帶來好處呢？以下從雇主或員工的角度來看待這個問題

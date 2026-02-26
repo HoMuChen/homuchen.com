@@ -13,7 +13,7 @@ image:
 卻是很大地影響我們人生的一件事，更清楚地認識了習慣及其重要之後，
 作者將習慣拆解成四個階段，提出一個框架，好讓我們可以一步一步地培養好習慣、斷除壞習慣。
 
-![書: 原子習慣]({{site.cdn_url}}/self-improvement-books-1.jpg)
+![書: 原子習慣](https://storage.googleapis.com/homuchen.com/images/self-improvement-books-1.jpg)
 
 # 習慣是什麼
 習慣佔據你人生的八、九成，試想一下每天醒來，躺在床上滑一下手機，

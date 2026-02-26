@@ -15,13 +15,13 @@ tags: [data model, system design, database]
 
 ## Relational DBMS
 
-![database relationship]({{site.cdn_url}}/data-model-1.jpg)
+![database relationship](https://storage.googleapis.com/homuchen.com/images/data-model-1.jpg)
 
 如上圖， 一般使用SQL database的做法，會開兩個table，分別是users及todos，並且在todos table有個欄位user_id為foreign key指到user table
 
 ## Document database
 
-![document in NoSQL]({{site.cdn_url}}/data-model-2.jpg)
+![document in NoSQL](https://storage.googleapis.com/homuchen.com/images/data-model-2.jpg)
 
 而在document database中，我們可以將整個資訊存成一個JSON document如上圖，當我們的UI需要呈現某使用者的todo的時候，資料庫只需要一個disk seek就可以拿到全部的資料，對比於relational database，必須在todos table裡找到相對應的rows，再將其與users的row合併．
 
@@ -31,13 +31,13 @@ tags: [data model, system design, database]
 
 現在假設我們要加入新的功能，使用者可以新增標籤，並把自己的Todo加上一個標籤．
 
-![Many-to-many relationship]({{site.cdn_url}}/data-model-3.jpg)
+![Many-to-many relationship](https://storage.googleapis.com/homuchen.com/images/data-model-3.jpg)
 
 Relational database按照normalization的做法，就是再多一個tags table，user_id指向Users，而Todos再多一個foreign key指向Tags，如上圖沒什麼問題．
 
 而Document database則會向下圖這樣:
 
-![document in NoSQL]({{site.cdn_url}}/data-model-4.jpg)
+![document in NoSQL](https://storage.googleapis.com/homuchen.com/images/data-model-4.jpg)
 
 資訊重複出現了好幾個地方，容易造成不一致，比如說我想把Coding改成Programming，除了在tags這個array裡面要修改之外，兩個todo裡的tag也要同時修改才行．
 

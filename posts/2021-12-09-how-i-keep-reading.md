@@ -20,7 +20,7 @@ description: |
 
 [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)
 
-![閱讀習慣]({{site.cdn_url}}/reading-habit-0.jpg)
+![閱讀習慣](https://storage.googleapis.com/homuchen.com/images/reading-habit-0.jpg)
 
 # 提示
 環境中的提示對你有淺移默化的影響，你無法輕易地待在一個滿是垃圾食物的環境，然後一直靠意志力不去吃零食，

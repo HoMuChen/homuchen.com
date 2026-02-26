@@ -20,7 +20,7 @@ tags: [http, restful api, api, url]
 以這篇文章的網址`https://homuchen.com/categories`為例，
 他代表的就是一篇部落格文章的資源，如何跟server溝通，server在哪裡，以及我想要的特定資源:
 
-![url format]({{site.cdn_url}}/http-url-1.jpg)
+![url format](https://storage.googleapis.com/homuchen.com/images/http-url-1.jpg)
 
 * `https`為**傳輸協議**，其他還有許多種，比如說ftp、rtsp、ipfs等等...
 * `homuchen.com`就是**host**，用來說明存放資源的伺服器在哪裏，透過DNS可以得到機器的IP位置。

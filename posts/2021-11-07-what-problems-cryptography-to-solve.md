@@ -17,7 +17,7 @@ last_modified_at: 2021-11-17 17:52:00 +0800
 就是要來深入探討這句話，通訊的本質是什麼，會面臨什麼問題，
 以及什麼樣才是**安全**的通訊，要達到哪些目標才算安全呢?
 
-![what is communication and cryptography?]({{site.cdn_url}}/why-cryptography-0.jpg)
+![what is communication and cryptography?](https://storage.googleapis.com/homuchen.com/images/why-cryptography-0.jpg)
 
 # 通訊 (communication)
 ## 什麼是通訊
@@ -49,7 +49,7 @@ last_modified_at: 2021-11-17 17:52:00 +0800
 以下將用一個例子來說明，假設有兩個人名為Alice跟Bob，他們倆是筆友，透過寫實體信的方式互通往來，
 而有一個壞人Charlie想要偷看信件並破壞兩方感情，來看看Charlie有哪些招數可以用吧。
 
-![communication in adverities]({{site.cdn_url}}/why-cryptography-1.jpg)
+![communication in adverities](https://storage.googleapis.com/homuchen.com/images/why-cryptography-1.jpg)
 
 ## 偷看 (Sniffing)
 Charlie要做壞事的第一步，當然就是先偷看他們通信的內容是什麼？只要到收信者的信箱那邊等，

@@ -54,7 +54,7 @@ DELETE  /posts/2        -> 刪除某一篇文章
 基本上RESTful就是verbs x nouns、操作對上資源，因為HTTP有URL代表資源，還有methods，
 這也是為何基於HTTP的RESTful API自然而然就會長成這樣的原因。
 
-![http versus restful api]({{site.cdn_url}}/restful-api-1.jpg)
+![http versus restful api](https://storage.googleapis.com/homuchen.com/images/restful-api-1.jpg)
 
 但HTTP methods有限，所以通常只會有幾種操作，也就是**CRUD**，
 這也是為何常常RESTful API就是對資源進行CRUD的操作，大部分簡單的應用也許這樣就夠了，

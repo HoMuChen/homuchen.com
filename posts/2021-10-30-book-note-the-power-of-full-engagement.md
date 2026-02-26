@@ -11,7 +11,7 @@ image:
 原文書名為[**《The Power of Full Engagement》**](https://bookzone.cwgv.com.tw/books/details/BBP291)，
 作者提出**能量管理**的概念，幫助我們找回對生活與工作的熱情和意義！
 
-![Book: The Power of Full Engagement]({{site.cdn_url}}/full-engagement-0.jpg)
+![Book: The Power of Full Engagement](https://storage.googleapis.com/homuchen.com/images/full-engagement-0.jpg)
 
 # 簡介
 我們生活在步調緊湊的數位時代，資訊、訊息、工作緊接而來，很多人致力學習時間管理，

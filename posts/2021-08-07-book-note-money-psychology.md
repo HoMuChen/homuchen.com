@@ -15,7 +15,7 @@ last_modified_at: 2021-10-28 21:30:00 +0800
 或是被誘惑引導到花了一些本來不會花的錢，該如何聰明的花費、花得剛好、花得開心，
 就是[**《金錢心理學》**](https://www.books.com.tw/products/0010785897)這本書要探討的內容．
 
-![book: Dollards and Sense]({{site.cdn_url}}/dollars-and-sense-1.jpg)
+![book: Dollards and Sense](https://storage.googleapis.com/homuchen.com/images/dollars-and-sense-1.jpg)
 
 # 大綱
 
@@ -48,7 +48,7 @@ last_modified_at: 2021-10-28 21:30:00 +0800
 
 ## 艾賓浩斯錯覺
 首先我們先來看一張圖，大家會覺得兩個在中間的橘色圓形圖案，哪一個比較大呢？
-![ebbinghaus illusion]({{site.cdn_url}}/dollars-and-sense-2.jpg)
+![ebbinghaus illusion](https://storage.googleapis.com/homuchen.com/images/dollars-and-sense-2.jpg)
 是否會覺得右邊的比較大呢？但其實是一樣的! 這就是艾賓浩斯錯覺，是對相對大小感知的一種視力錯覺．
 
 ## 金錢的相對大小
@@ -78,7 +78,7 @@ last_modified_at: 2021-10-28 21:30:00 +0800
 現在我們把傻瓜選項拿掉，只有線上版及雙訂閱，結果選擇雙訂閱的人只剩32%！加上一個無關緊要的選項，竟然讓大家選擇了更高價的選項，
 這是因為在比較單純印刷版及雙訂閱的時候，一樣的價錢，雙訂閱明顯優於印刷版，有東西可以比較的時候，我們人類就是比較開心，覺得賺到！
 
-![The Econimics: Bait]({{site.cdn_url}}/dollars-and-sense-3.jpg)
+![The Econimics: Bait](https://storage.googleapis.com/homuchen.com/images/dollars-and-sense-3.jpg)
 
 # 心理帳戶
 

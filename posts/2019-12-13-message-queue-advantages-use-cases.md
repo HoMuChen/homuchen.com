@@ -11,7 +11,7 @@ category: Web Development
 
 # 什麼是message queue?
 
-![message queue]({{site.cdn_url}}/mq-1.jpg)
+![message queue](https://storage.googleapis.com/homuchen.com/images/mq-1.jpg)
 
 顧名思義，就是有個queue，訊息先入先出( FIFO )，基本上就是提供一個讓不同process間通訊的方式( asynchronous messaging )，會有產生訊息的producer，及消耗處理訊息的consumer．
 
@@ -23,11 +23,11 @@ category: Web Development
 一但訊息被成功送進queue裡，在他被成功消耗掉之前，都會保存著，有時可能因為莫名原因，consumer都掛了，在consumer恢復之前，需要做的任務還留著，能夠等到恢復之後再繼續處理．
 
 ## Decoupling
-![decoupling]({{site.cdn_url}}/mq-2.jpg)
+![decoupling](https://storage.googleapis.com/homuchen.com/images/mq-2.jpg)
 訊息的發送方和接受方都不需要知道彼此，consumer和produce可以隨便你用不同語言實作，只要message的格式事先有溝通好，知道就好．
 
 ## Scaling
-![scaling]({{site.cdn_url}}/mq-3.jpg)
+![scaling](https://storage.googleapis.com/homuchen.com/images/mq-3.jpg)
 系統可能有時會突然面臨大的流量，此時queue就提供了一個buffer的功能，能夠緩衝尖峰流量，在資源固定的情況下，能夠處理更多的任務，以時間換取資源！
 但有時訊息可能真的太多，產生的速度快於消耗的速度，或是你無法接受太長的latency，此時consumer process就可以隨時增加多個，不會有衝突的風險．
 

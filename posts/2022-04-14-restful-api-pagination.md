@@ -32,7 +32,7 @@ curl http://api.exmaple.com/items?offset=0&limit=10
 也有一些服務會使用其他的名字，例如`Elasticsearch`用的`from`及`size`，都是代表一樣的意思，
 從第幾則資料開始(offset、from)算，總共抓取幾則資料(limit、size)。
 
-![offset pagination]({{site.cdn_url}}/pagination-1.jpg)
+![offset pagination](https://storage.googleapis.com/homuchen.com/images/pagination-1.jpg)
 
 ## offset pagination可能的問題
 * 當offset很大時，比如說offset=1000000，API server必須scan一百萬的資料，效能不彰。

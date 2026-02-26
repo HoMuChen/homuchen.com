@@ -16,7 +16,7 @@ tags: [express, node.js, line notify, middleware]
 
 Line notify的流程大致來說是這樣的:
 
-![Line Notify Login Flow]({{site.cdn_url}}/line-notify.jpg)
+![Line Notify Login Flow](https://storage.googleapis.com/homuchen.com/images/line-notify.jpg)
 
 1. GET https://notify-bot.line.me/oauth/authorize
 * 帶著你的client id及redirect_uri，GET上面的url，使用者就會被導到line的登入頁面

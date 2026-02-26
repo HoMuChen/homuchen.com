@@ -21,19 +21,19 @@ COVID-19爆發以來，台灣人民的生活跟世界其他國家相比，受到
 以下橫軸時間為**2020-01 ~ 2021-09**，縱軸單位為**百萬人**。
 
 ## 台北車站
-![捷運台北車站每月進出站人數]({{site.cdn_url}}/mrt-data-taipei-stattion-0.jpg)
+![捷運台北車站每月進出站人數](https://storage.googleapis.com/homuchen.com/images/mrt-data-taipei-stattion-0.jpg)
 
 ## 忠孝復興
-![捷運忠孝復興每月進出站人數]({{site.cdn_url}}/mrt-data-忠孝復興-0.jpg)
+![捷運忠孝復興每月進出站人數](https://storage.googleapis.com/homuchen.com/images/mrt-data-忠孝復興-0.jpg)
 
 ## 西門
-![捷運西門站每月進出站人數]({{site.cdn_url}}/mrt-data-西門-0.jpg)
+![捷運西門站每月進出站人數](https://storage.googleapis.com/homuchen.com/images/mrt-data-西門-0.jpg)
 
 ## 板橋
-![捷運板橋站每月進出站人數]({{site.cdn_url}}/mrt-data-板橋-0.jpg)
+![捷運板橋站每月進出站人數](https://storage.googleapis.com/homuchen.com/images/mrt-data-板橋-0.jpg)
 
 ## 士林
-![捷運士林站每月進出站人數]({{site.cdn_url}}/mrt-data-士林-0.jpg)
+![捷運士林站每月進出站人數](https://storage.googleapis.com/homuchen.com/images/mrt-data-士林-0.jpg)
 
 # 結論
 可以看出各站的趨勢都大同小異，在2020年初小量下滑，在2021五月開始，搭乘捷運的人數大量地縮減。

@@ -8,7 +8,7 @@ tags: [google sheet, finance]
 
 此篇文章將分享我是如何製作我持有股票的未實現損益表，看起來的成果如下:
 
-![google sheet: stock income statement]({{site.cdn_url}}/income-statement-1.jpg)
+![google sheet: stock income statement](https://storage.googleapis.com/homuchen.com/images/income-statement-1.jpg)
 
 # 主要功能
 
@@ -25,7 +25,7 @@ tags: [google sheet, finance]
 **股票代號**、**名稱**、**近一年股價**、**現價**、**漲跌**、
 **成交量**、**持有張數**、**市值**、**持有成本**、**損益**、**損益百分比**
 
-![google sheet: blank data table]({{site.cdn_url}}/income-statement-2.jpg)
+![google sheet: blank data table](https://storage.googleapis.com/homuchen.com/images/income-statement-2.jpg)
 
 每新增一檔股票，需要我們自己填入的有**股票代號**、**名稱**，**持有張數**、**持有成本**
 
@@ -41,7 +41,7 @@ tags: [google sheet, finance]
   使用**GOOGLEFINANCE**函式來取得股價資訊！
 
   在D2儲存格中輸入公式: **=GOOGLEFINANCE(A2, "price")**，之後下來套用至整個D欄
-  ![google sheet: GOOGLEFINANCE price]({{site.cdn_url}}/income-statement-3.jpg)
+  ![google sheet: GOOGLEFINANCE price](https://storage.googleapis.com/homuchen.com/images/income-statement-3.jpg)
 
 * **成交量**:
 
@@ -56,7 +56,7 @@ tags: [google sheet, finance]
 * **漲跌**:
 
   有了現價，可以跟昨日收盤價做比較計算出今日漲跌: **=D2 - GOOGLEFINANCE(A2, "closeyest")**
-  ![google sheet: GOOGLEFINANCE closeyest]({{site.cdn_url}}/income-statement-4.jpg)
+  ![google sheet: GOOGLEFINANCE closeyest](https://storage.googleapis.com/homuchen.com/images/income-statement-4.jpg)
 
 * **損益**:
 
@@ -65,14 +65,14 @@ tags: [google sheet, finance]
 * **損益百分比**:
 
   即為**損益**除以**持有成本**: **=IF(ISBLANK(I2), 0, J2/I2)**
-  ![google sheet: GOOGLEFINANCE]({{site.cdn_url}}/income-statement-5.jpg)
+  ![google sheet: GOOGLEFINANCE](https://storage.googleapis.com/homuchen.com/images/income-statement-5.jpg)
   **IF**及**ISBLANK**的用途爲如果你尚未實有該檔股票，持有成本爲0或空白，卻又寫列入表中觀察，
   則**損益百分比**顯示為0，否則將出現錯誤．
 
 ## 股價折線圖
 
 公式為: **=sparkline(GOOGLEFINANCE(A2, "price",today()-365,today(),1))**
-![google sheet: GOOGLEFINANCE sparkline]({{site.cdn_url}}/income-statement-6.jpg)
+![google sheet: GOOGLEFINANCE sparkline](https://storage.googleapis.com/homuchen.com/images/income-statement-6.jpg)
 
 * GOOGLEFINACE:
   總共四個參數，第一為股票代號、再來是起始日期跟結束日期，此範例使用一年前today()-365到今天today()、最後爲資料的interval，
@@ -85,9 +85,9 @@ tags: [google sheet, finance]
 最後！股市就是要紅紅綠綠才比較好看，將賺錢的部分標上紅色，虧錢的弄上綠色吧！
 
 首先點選漲跌那一欄(E)，接著點選工具欄**格式** -> **條件格式設定**
-![google sheet: format]({{site.cdn_url}}/income-statement-7.jpg)
+![google sheet: format](https://storage.googleapis.com/homuchen.com/images/income-statement-7.jpg)
 
 將格式規則設為大於0，格式設定樣式改為字體紅色，綠色及損益率的部分也是一樣！
-![google sheet: format]({{site.cdn_url}}/income-statement-8.jpg)
+![google sheet: format](https://storage.googleapis.com/homuchen.com/images/income-statement-8.jpg)
 
 如此一來就大功告成囉🎉

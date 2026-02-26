@@ -6,7 +6,7 @@ category: 讀書筆記
 tags: [books, finance, habit]
 ---
 
-![book: Effort-less Wealth]({{site.cdn_url}}/rich-habit-1.jpg)
+![book: Effort-less Wealth](https://storage.googleapis.com/homuchen.com/images/rich-habit-1.jpg)
 
 # 簡介
 

@@ -17,7 +17,7 @@ image:
 * 個人品牌
 * SEO知識及Markdown語法
 
-![personal blog advantages]({{site.cdn_url}}/personal-blog-advantages.jpg)
+![personal blog advantages](https://storage.googleapis.com/homuchen.com/images/personal-blog-advantages.jpg)
 
 # 積極學習
 當你需要規律的有產出的時候，等於變相地要求自己有所學習及成長，如果寫不出來，

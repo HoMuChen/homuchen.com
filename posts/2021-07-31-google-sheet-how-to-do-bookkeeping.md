@@ -9,7 +9,7 @@ tags: [finance, google sheet, google form]
 利用Google sheet及Google form來客製化自己的記帳App，表單的連結可以放到手機桌面，就像一般App一樣，
 每次花費的紀錄，將儲存在試算表裡，後續可以做任何你想要的統計分析．
 
-![google sheet bookkeeping]({{site.cdn_url}}/google-sheet-bookkeeping-1.jpg)
+![google sheet bookkeeping](https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-1.jpg)
 
 # 建立表單
 
@@ -22,13 +22,13 @@ tags: [finance, google sheet, google form]
 
 這裡的第一個問題的題目就是項目，也就是我們花了什麼錢，題目的種類選簡答:
 
-![google form question 1: item]({{site.cdn_url}}/google-sheet-bookkeeping-2.jpg)
+![google form question 1: item](https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-2.jpg)
 
 第二題題目題目為金額，也是簡答，填表單時記得填上數字
 
 第三題題目題目為種類，選項就你開心怎麼分類～ 這裡的例子是食衣住行娛樂跟其他
 
-![google form question 3: types]({{site.cdn_url}}/google-sheet-bookkeeping-3.jpg)
+![google form question 3: types](https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-3.jpg)
 
 後面你想要加上任何題目都可以
 
@@ -36,21 +36,21 @@ tags: [finance, google sheet, google form]
 
 完成表單後，點選右上角的**傳送**，就可以在你的手機瀏覽器中，打開這個網址．
 
-![google form question 3: types]({{site.cdn_url}}/google-sheet-bookkeeping-4.jpg)
+![google form question 3: types](https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-4.jpg)
 
 點選右上角表單裡面的**加到主畫面**，就能像是Appㄧ樣，在桌面有個小圖示囉～
 
-![google form question 3: add to desktop]({{site.cdn_url}}/google-sheet-bookkeeping-5.jpg)
+![google form question 3: add to desktop](https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-5.jpg)
 
 # 檢視成果
 
 每次在表單送出的資料，都會收集到Google Sheet中，如下圖:
 
-![google sheet: data]({{site.cdn_url}}/google-sheet-bookkeeping-6.jpg)
+![google sheet: data](https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-6.jpg)
 
 之後就能利用這些進行各種你想要的統計圖表拉，比如說每天花多少錢在哪些分類上，總共各分類的佔比為何:
 
-![google sheet: charts]({{site.cdn_url}}/google-sheet-bookkeeping-7.jpg)
+![google sheet: charts](https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-7.jpg)
 
 # Summary
 

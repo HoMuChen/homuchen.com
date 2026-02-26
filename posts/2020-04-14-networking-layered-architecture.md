@@ -15,7 +15,7 @@ tags: [layered architecture]
 
 答案就是分層的架構，Layered Architecture，生活中很多地方都可以看到類似的架構，我們以公司內部的信件為例好了，假設現在有一間公司有ABC三間分公司，在A公司的Alice想要寄封信給B公司的Bob，Alice首先寫了信的內容，將之放入信封內，並寫上收件人: B公司的bob，之後將信封交給A公司裡的一個叫做信件部門的部門，信件部門將信封寫上B公司的地址，再將信封交給附近的郵局，而郵局則使用卡車、飛機等運輸工具將信封運到B公司附近的郵局，此郵局再送到B公司，最後B公司的信件部門收到信，將他交給Bob．
 
-![Layered Architecture]({{site.cdn_url}}/layered-arc-1.jpg)
+![Layered Architecture](https://storage.googleapis.com/homuchen.com/images/layered-arc-1.jpg)
 
 分層架構將一項任務分成了許多層，每一層只專心做自己的事，並且使用下一層所提供的服務．
 
@@ -24,7 +24,7 @@ tags: [layered architecture]
 # Layers in the Internet
 網路世界的分層如下圖，根據OSI Model應該是有七層，但就目前常用，只介紹此五層，Application layer、Transmission layer、Network layer、Link layer、Physical layer．
 
-![Layered Architecture]({{site.cdn_url}}/layered-arc-2.jpg)
+![Layered Architecture](https://storage.googleapis.com/homuchen.com/images/layered-arc-2.jpg)
 
 ## Application layer
 這裡就是我們的應用程式所在地方，根據你的程式所要達成的目的，各自執行著自己的協議．例如網頁瀏覽器跟伺服器，一個說給我看某某網頁首頁，伺服器就說，好！給你！這之間資料交換的格式及方法，就是由HTTP協議所規範，只要瀏覽器跟伺服器都遵守HTTP的規範就能互相溝通．電子信箱服務使用的則是SMTP，查詢網域ip位置的是DNS，傳輸檔案的FTP等等．

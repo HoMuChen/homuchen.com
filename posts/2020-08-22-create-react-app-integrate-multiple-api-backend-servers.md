@@ -8,7 +8,7 @@ tags: [react, create-react-app]
 
 在開發single page application時，會需要透過api來取得及操作資料，本篇文章將示範如何在使用create-react-app開發時，整合一個甚至是多個backend api server！
 
-![create-react-app with multiple backend servers]({{site.cdn_url}}/cra-1.jpg)
+![create-react-app with multiple backend servers](https://storage.googleapis.com/homuchen.com/images/cra-1.jpg)
 
 # Create-react-app
 使用create-react-app時，簡單一個指令npm start 就可以開始開發，此時CRA會起一個webpack dev server來serve static files，通常我們會想要做類似這樣的動作: fetch(‘/todos’) 、fetch(‘/api/todos’) 來跟我們的API server通訊，此時該如何讓CRA的dev server將request proxy到我們想要的API server呢？

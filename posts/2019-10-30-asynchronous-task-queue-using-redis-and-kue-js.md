@@ -36,7 +36,7 @@ docker run                        \
 
 執行完之後執行 docker ps 就可以看到container的資訊如下
 
-![docker ps]({{site.cdn_url}}/kue-1.jpg)
+![docker ps](https://storage.googleapis.com/homuchen.com/images/kue-1.jpg)
 
 # 介紹Kue.js
 
