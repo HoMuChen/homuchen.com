@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Google Sheet]Sparkline，在儲存格裡插入迷你圖表"
 date:   2020-01-23 20:00:00 +0800
 author: HoMuChen

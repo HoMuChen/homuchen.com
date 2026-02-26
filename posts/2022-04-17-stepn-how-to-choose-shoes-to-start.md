@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "STEPN攻略: 想進場跑步該如何挑選鞋子？"
 date: 2022-04-17 15:49:00 +0800
 author: HoMuChen

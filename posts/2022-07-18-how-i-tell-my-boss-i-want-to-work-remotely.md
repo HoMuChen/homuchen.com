@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "我是如何跟我老闆談要遠端工作的？"
 date: 2022-07-18 22:53:00 +0800
 author: HoMuChen

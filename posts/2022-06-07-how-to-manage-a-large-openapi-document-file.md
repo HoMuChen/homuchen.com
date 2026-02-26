@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HTTP API: 該如何管理一份很大的OpenAPI document？"
 date: 2022-06-07 00:07:00 +0800
 author: HoMuChen

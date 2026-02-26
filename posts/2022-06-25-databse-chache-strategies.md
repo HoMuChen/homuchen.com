@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "淺談各種資料庫cache策略: cache aside、read through、write through、write back"
 date: 2022-06-25 23:54:00 +0800
 author: HoMuChen

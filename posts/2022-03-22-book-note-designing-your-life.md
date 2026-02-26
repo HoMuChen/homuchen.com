@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 做自己的生命設計師"
 date: 2022-03-23 22:30:00 +0800
 author: HoMuChen
@@ -204,4 +203,4 @@ Humility、Compassion、Honesty、Kindness、Integrity、Selflessness...
 * [**成功是什麼? 5本關於自我成長的推薦書單**](/posts/self-improvement-books/)
 
 # 參考資料
-1. [**《心流: 高手都在研究的最優體驗心理學》**](https://www.books.com.tw/products/0010816703){:target="_blank" name="1"}
+1. [**《心流: 高手都在研究的最優體驗心理學》**](https://www.books.com.tw/products/0010816703)

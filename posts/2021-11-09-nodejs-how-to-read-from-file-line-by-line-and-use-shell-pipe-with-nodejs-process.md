@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Nodejs: 如何逐行讀取檔案，或使用Unix pipe與其他process互動"
 date: 2021-11-09 10:00:00 +0800
 author: HoMuChen

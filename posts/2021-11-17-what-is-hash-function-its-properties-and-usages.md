@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "什麼是Hash Function? 有什麼特性及用途?"
 date: 2021-11-17 17:52:00 +0800
 author: HoMuChen

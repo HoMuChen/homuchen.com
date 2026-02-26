@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "利用Docker建立PostgreSQL開發環境"
 date:   2018-07-25 12:19:15 +0800
 author: "HoMuChen"

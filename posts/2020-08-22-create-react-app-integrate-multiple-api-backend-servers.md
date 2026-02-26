@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何用create-react-app開發，整合一個或多個API backend server"
 date:   2020-08-22 20:00:00 +0800
 author: HoMuChen

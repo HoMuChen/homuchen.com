@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "台北捷運在疫情期間各站的進出人數"
 date: 2021-11-11 16:04:00 +0800
 author: HoMuChen

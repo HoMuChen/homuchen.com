@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何開始開發你的API: API first principle and OpenAPI"
 date:   2022-04-09 12:50:00 +0800
 author: HoMuChen

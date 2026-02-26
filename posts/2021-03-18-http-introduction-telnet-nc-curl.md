@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HTTP 簡介，以及使用telnet、nc、curl等指令來探索"
 date:   2021-03-24 20:00:00 +0800
 author: HoMuChen

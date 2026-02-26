@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "密碼學是什麼? 有何用途以及要解決什麼樣的問題?"
 date: 2021-11-07 13:30:00 +0800
 author: HoMuChen

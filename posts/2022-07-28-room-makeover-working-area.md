@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "房間DIY改造: 工作區域篇，我需要一張升降桌嗎？"
 date: 2022-07-28 18:55:00 +0800
 author: HoMuChen

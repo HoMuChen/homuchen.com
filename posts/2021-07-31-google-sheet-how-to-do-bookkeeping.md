@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Google Sheet]我如何利用Google表單來記帳"
 date: 2021-07-31 22:30:00 +0800
 author: HoMuChen

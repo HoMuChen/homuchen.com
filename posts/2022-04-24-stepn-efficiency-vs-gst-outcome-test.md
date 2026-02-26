@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "STEPN實測: 效率對產出的影響？我應該要升級我的跑鞋嗎？"
 date: 2022-04-24 21:40:00 +0800
 author: HoMuChen

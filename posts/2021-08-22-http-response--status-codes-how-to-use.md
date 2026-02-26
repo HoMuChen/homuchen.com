@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Introduction to HTTP Response Status Codes: How to use them correctly?"
 date: 2021-08-22 22:00:00 +0800
 author: HoMuChen

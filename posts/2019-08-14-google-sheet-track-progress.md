@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Google Sheet]我如何製作進度表"
 date:   2019-08-14 20:00:00 +0800
 author: HoMuChen

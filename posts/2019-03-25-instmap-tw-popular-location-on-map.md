@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "InstMap TW — 從地圖上找尋附近的台灣Instagram熱門景點"
 date:   2019-03-25 20:00:00 +0800
 author: HoMuChen

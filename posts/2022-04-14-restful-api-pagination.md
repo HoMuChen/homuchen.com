@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "REST API Design: Pagination"
 date:   2022-04-14 22:35:00 +0800
 author: HoMuChen

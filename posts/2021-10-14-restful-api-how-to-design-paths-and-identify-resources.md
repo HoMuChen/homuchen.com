@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "RESTful API: How to design paths and identify resources"
 date: 2021-10-14 13:20:00 +0800
 author: HoMuChen

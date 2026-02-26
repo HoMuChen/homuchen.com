@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "《原子習慣》應用: 我是如何養成閱讀習慣"
 date: 2021-12-09 21:03:00 +0800
 author: HoMuChen

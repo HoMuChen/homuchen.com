@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 習慣致富 人生實踐版"
 date: 2021-07-24 22:30:00 +0800
 author: HoMuChen

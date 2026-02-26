@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "架設個人網站、撰寫部落格帶給我的5個好處"
 date: 2022-05-08 20:31:00 +0800
 author: HoMuChen
@@ -18,7 +17,7 @@ image:
 * 個人品牌
 * SEO知識及Markdown語法
 
-![personal blog advantages]({{site.cdn_url}}/personal-blog-advantages.jpg){:loading="lazy"}
+![personal blog advantages]({{site.cdn_url}}/personal-blog-advantages.jpg)
 
 # 積極學習
 當你需要規律的有產出的時候，等於變相地要求自己有所學習及成長，如果寫不出來，

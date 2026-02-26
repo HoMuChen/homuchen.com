@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "RESTful API簡介: 什麼是RESTful? 以及為何需要它?"
 date: 2021-09-27 20:00:00 +0800
 author: HoMuChen

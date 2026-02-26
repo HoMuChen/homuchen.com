@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 少才是力量: 簡單高效6大原則"
 date: 2022-07-09 00:48:00 +0800
 author: HoMuChen
@@ -13,7 +12,7 @@ image:
 許多人都想在每天24小時的時間裡，完成更多的事，各種時間管理的方法層出不窮，
 不過這本書卻是要大家簡化生活，作者要跟大家分享**如何做更少的事，卻可以成就更多**！
 
-![少才是力量]({{site.cdn_url}}/book-note-the-power-of-less-0.jpg){:loading="lazy"}
+![少才是力量]({{site.cdn_url}}/book-note-the-power-of-less-0.jpg)
 
 作者是[**zenhabits.net**](https://zenhabits.net/)網站的創辦人，
 在幾年裡，作者每次**只專注一個目標**，而不是一心多用，並且用這個方法完成了以下的目標，

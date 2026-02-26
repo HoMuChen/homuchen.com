@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "簡易老家房間DIY改造，成果如何、購物清單及總共花了多少錢呢？"
 date: 2023-01-12 17:00:00 +0800
 author: HoMuChen

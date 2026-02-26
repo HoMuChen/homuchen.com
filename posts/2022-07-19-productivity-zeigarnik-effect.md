@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "柴嘉尼效應: 如何減輕心理負擔、更高效地完成工作？"
 date: 2022-07-19 23:00:00 +0800
 author: HoMuChen

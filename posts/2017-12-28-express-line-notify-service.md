@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 使用Node.js + Express整合Line Notify通知服務
 date:   2017-12-28 20:00:00 +0800
 author: HoMuChen

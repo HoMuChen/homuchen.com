@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何使用Notion打造Kanban based的待辦清單"
 date: 2022-06-04 00:02:00 +0800
 author: HoMuChen
@@ -18,7 +17,7 @@ description: |
 這篇文章將簡單分享我認為**待辦清單系統應該具有哪些原則**，什麼是**Kanban**，
 以及我如何使用**Notion**，來打造自己的Kanban based的待辦清單系統，Let's go！
 
-![notion kanban todo list system]({{site.cdn_url}}/notion-kanban-0.jpg){:loading="lazy"}
+![notion kanban todo list system]({{site.cdn_url}}/notion-kanban-0.jpg)
 
 # 三大待辦清單原則
 市面上的待辦事項系統玲瑯滿目，有沒有一些基本的原則是我們可以把握的呢？以下為大家簡單總結出三項原則：
@@ -33,7 +32,7 @@ description: |
 * **與目標連結:**
   要知道**為什麼**要做每項任務，它必須可以幫助你達成某項目標，否則做了很多事，很可能只是在瞎忙。
 
-![todo list system principles]({{site.cdn_url}}/book-note-to-do-3.jpg){:loading="lazy"}
+![todo list system principles]({{site.cdn_url}}/book-note-to-do-3.jpg)
 
 關於待辦清單的原則，想看更詳盡的解釋，可以參考我之前寫過的一篇文章: 
 
@@ -42,7 +41,7 @@ description: |
 # Kanban是什麼
 Kanban緣起於Toyota的生產管理系統，看起來就像是下圖這樣:
 
-![看板系統]({{site.cdn_url}}/book-note-to-do-5.jpg){:loading="lazy"}
+![看板系統]({{site.cdn_url}}/book-note-to-do-5.jpg)
 
 主要組成有**欄(column)**、**列**、**卡片(card)**、**WIP limit**，每張卡片即是一項任務，
 可以將相關的任務放在同一欄，也可以使用顏色分類，並在每一列區分出**未開始**、**進行中**及**完成**，
@@ -72,14 +71,14 @@ Kanban緣起於Toyota的生產管理系統，看起來就像是下圖這樣:
 
 ## 建立表格
 首先第一步，新增一個頁面，並且選擇**Table**。
-![notion: create a table]({{site.cdn_url}}/notion-kanban-1.jpg){:loading="lazy"}
+![notion: create a table]({{site.cdn_url}}/notion-kanban-1.jpg)
 
 接著系統會要你選擇資料來源，這邊就選**New database**。
-![notion: create a table]({{site.cdn_url}}/notion-kanban-2.jpg){:loading="lazy"}
+![notion: create a table]({{site.cdn_url}}/notion-kanban-2.jpg)
 
 ## 新增欄位
 現在需要來定義我們的資料庫裡需要的欄位了，這邊我們是會需要名稱、任務狀態、截至日期、目標或專案。
-![notion: create columns]({{site.cdn_url}}/notion-kanban-3.jpg){:loading="lazy"}
+![notion: create columns]({{site.cdn_url}}/notion-kanban-3.jpg)
 
 1. 狀態(Status): 為一個單選欄，主要的狀態就分為未開始、進行中、已完成，可以取用自己喜歡的名字，
    也可以有更多的狀態，這邊最主要的目的就是區分出進行中的任務。
@@ -92,14 +91,14 @@ Kanban緣起於Toyota的生產管理系統，看起來就像是下圖這樣:
 
 ## 新增Board view
 建立好資料後，就可以使用board view的功能，按照下圖的步驟，來使得系統像一個看板拉！
-![notion: add board view]({{site.cdn_url}}/notion-kanban-4.jpg){:loading="lazy"}
+![notion: add board view]({{site.cdn_url}}/notion-kanban-4.jpg)
 
 完成後，就可以在板上將任務拖拉移動來更改狀態，可以依照個人習慣的不同，每天或每個禮拜，
 決定好要先專注於哪些任務。
 
 ## 新增Timeline view
 再新增一個timeline view，步驟如下圖:
-![notion: add timeline view]({{site.cdn_url}}/notion-kanban-5.jpg){:loading="lazy"}
+![notion: add timeline view]({{site.cdn_url}}/notion-kanban-5.jpg)
 
 可以看到紅線的位置就是當天，有了這張圖表，就可以一目瞭然的看出，
 哪些任務已經快可以開始或是截止日期已經逼近了，可以據此來調整你的優先事項唷！

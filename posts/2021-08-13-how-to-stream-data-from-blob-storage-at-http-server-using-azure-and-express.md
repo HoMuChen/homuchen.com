@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "How to stream data from Blob Storage at your HTTP server using Azure and express.js"
 date: 2021-08-13 23:30:00 +0800
 author: HoMuChen

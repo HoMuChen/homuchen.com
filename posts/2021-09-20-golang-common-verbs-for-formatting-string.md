@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Golang] Common verbs of formatting string"
 date: 2021-09-20 15:30:00 +0800
 author: HoMuChen

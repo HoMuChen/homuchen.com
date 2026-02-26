@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "RabbitMQ和Kafka有何不同？何時該選用哪種產品？"
 date: 2024-01-27 10:00:00 +0800
 author: HoMuChen

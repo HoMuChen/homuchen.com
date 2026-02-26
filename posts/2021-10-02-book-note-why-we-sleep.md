@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 為什麼要睡覺? :睡出健康與學習力、夢出創意的新科學"
 date: 2021-10-02 23:00:00 +0800
 author: HoMuChen
@@ -202,4 +201,4 @@ TODO
 
 # 參考資料
 1. <a name="1">J. Jenkins and K. Dallenbach, “Obliviscence During Sleep and Waking,” The American Journal of Psichology, Vol. 35, 1924, pp. 605-612. doi:10.2307/1414040</a>
-2. [Youtube: Master Your Sleep & Be More Alert When Awake](https://www.youtube.com/watch?v=nm1TxQj9IsQ){:target="_blank" name="2"}
+2. [Youtube: Master Your Sleep & Be More Alert When Awake](https://www.youtube.com/watch?v=nm1TxQj9IsQ)

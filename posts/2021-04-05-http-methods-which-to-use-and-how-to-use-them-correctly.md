@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "What are HTTP Methods？Which to use and How to use them correctly?"
 date:   2021-04-04 20:00:00 +0800
 author: HoMuChen

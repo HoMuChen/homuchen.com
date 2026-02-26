@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Google sheet]如何建立下拉選單，以及從既有資料中自動建立選項"
 date:   2021-06-26 20:00:00 +0800
 author: HoMuChen

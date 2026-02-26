@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "快速擁有一個Asynchronous Task Queue，使用Redis and Kue.js"
 date:   2019-10-30 20:00:00 +0800
 tags: [message queue, node.js, redis]

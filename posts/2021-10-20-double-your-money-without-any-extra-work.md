@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何不用做額外的工作，就使你的收入倍增"
 date: 2021-10-20 19:00:00 +0800
 author: HoMuChen

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "幾個我常用的vim的功能"
 date: 2021-08-30 22:00:00 +0800
 author: HoMuChen

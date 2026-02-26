@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Networking]什麼是網路？網路的組成及網路服務供應商 ISP"
 date:   2020-04-04 20:00:00 +0800
 author: HoMuChen

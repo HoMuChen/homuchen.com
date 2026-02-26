@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 最高學以致用法: 讓學習發揮最大成果的輸出大全"
 date: 2021-07-14 17:10:00 +0800
 author: HoMuChen

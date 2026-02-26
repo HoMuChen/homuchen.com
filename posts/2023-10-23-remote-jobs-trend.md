@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "遠端工作職缺數變化: 104求職網站搜尋結果統計"
 date: 2023-10-23 20:00:00 +0800
 author: HoMuChen

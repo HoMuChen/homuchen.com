@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "104人力網站爬蟲: 如何只用shell script來抓取資料"
 date: 2021-11-01 20:00:00 +0800
 author: HoMuChen
@@ -105,5 +104,5 @@ sh ./104.sh 軟體工程師 1 | jq .data.totalCount >> data.csv
 感謝你閱讀到這邊～希望以上的內容對你有一丁點的幫助，掰掰～ 👋
 
 # 附錄
-1. jq - [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/){:target="_blank" name="1"}
-2. pup - [https://github.com/ericchiang/pup](https://github.com/ericchiang/pup){:target="_blank" name="2"}
+1. jq - [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
+2. pup - [https://github.com/ericchiang/pup](https://github.com/ericchiang/pup)

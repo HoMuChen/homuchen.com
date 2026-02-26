@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "URL簡介: URL是什麼，由哪些部分組成?"
 date: 2021-09-13 22:00:00 +0800
 author: HoMuChen

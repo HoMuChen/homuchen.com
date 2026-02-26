@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "A Linux HTTP client tool — curl的介紹及用法"
 date:   2021-03-24 20:00:00 +0800
 author: HoMuChen
@@ -44,7 +43,7 @@ name=HoMu&phone=0912345678&email=homu@email.com
 
 更多關於HTTP message的說明，可以看我之前寫過的文章：
 
-[**[Networking] HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl/){:target="\blank"}
+[**[Networking] HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl/)
 
 # Curl
 所以我們要如何使用curl指令來產生HTTP message呢？！

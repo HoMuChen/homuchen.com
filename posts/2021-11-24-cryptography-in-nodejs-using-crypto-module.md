@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Node.js: 7 cryptography concepts using ctypto module"
 date: 2021-11-24 22:11:00 +0800
 author: HoMuChen

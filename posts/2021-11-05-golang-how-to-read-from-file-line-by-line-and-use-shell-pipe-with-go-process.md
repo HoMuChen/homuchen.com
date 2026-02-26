@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Golang] 如何逐行讀取檔案，或使用shell pipe到go process"
 date: 2021-11-05 13:00:00 +0800
 author: HoMuChen

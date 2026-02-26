@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "HTTP headers 簡介: 一些常用的headers"
 #date: 2021-09-05 22:30:00 +0800
 author: HoMuChen

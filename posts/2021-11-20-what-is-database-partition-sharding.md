@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[System Design] 淺談Database Partition. Centralized and Distributed."
 date: 2021-11-21 18:19:00 +0800
 author: HoMuChen

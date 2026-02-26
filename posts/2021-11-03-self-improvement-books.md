@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "成功是什麼? 5本關於自我成長的推薦書單"
 date: 2022-03-22 22:30:00 +0800
 author: HoMuChen

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 更快樂：哈佛最受歡迎的一堂課"
 date: 2022-02-09 21:19:00 +0800
 author: HoMuChen
@@ -148,6 +147,6 @@ tags: [books, life style, self improvement, psychology]
 這本書後面的章節，還有討論在教育、職場及感情上的應用，不過基本的原則就是上述的這些，有興趣的人可以再去看看唷～
 
 # 參考資料
-1. [台灣憂鬱用藥數據](https://data.gov.tw/dataset/146577){:target="_blank" name="1"}
-2. [米歇爾-棉花糖實驗](https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment#Original_Stanford_experiment){:target="_blank" name="2"}
-3. [賽利格曼-習得性無助](https://en.wikipedia.org/wiki/Learned_helplessness){:target="_blank" name="3"}
+1. [台灣憂鬱用藥數據](https://data.gov.tw/dataset/146577)
+2. [米歇爾-棉花糖實驗](https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment#Original_Stanford_experiment)
+3. [賽利格曼-習得性無助](https://en.wikipedia.org/wiki/Learned_helplessness)

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！"
 date: 2021-10-10 23:00:00 +0800
 author: HoMuChen
@@ -160,4 +159,4 @@ last_modified_at: 2021-10-31 21:11:00 +0800
 
 # 參考資料
 
-1. [Playing with FIRE(Financial Independence Retire Early): How Far Would You Go for Financial Freedom?](https://www.amazon.com/Playing-Financial-Independence-Retire-Early/dp/1608685802){:name="1" target="_blank"}
+1. [Playing with FIRE(Financial Independence Retire Early): How Far Would You Go for Financial Freedom?](https://www.amazon.com/Playing-Financial-Independence-Retire-Early/dp/1608685802)

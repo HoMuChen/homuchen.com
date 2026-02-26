@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 用對能量，你就不會累"
 date: 2021-10-30 10:30:00 +0800
 author: HoMuChen

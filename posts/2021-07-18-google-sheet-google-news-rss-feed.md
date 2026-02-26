@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Google sheet]如何在試算表裡匯入新聞、rss feed"
 date:   2021-07-18 12:00:00 +0800
 author: HoMuChen

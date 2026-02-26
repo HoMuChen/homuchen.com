@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "遠端工作有哪些缺點？以及該如何克服？"
 date: 2022-06-14 23:36:00 +0800
 author: HoMuChen

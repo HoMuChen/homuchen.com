@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "三個數位遊牧可以尋找住宿的方法及各平台"
 date: 2022-07-12 21:20:00 +0800
 author: HoMuChen

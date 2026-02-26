@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "遠端工作模式對於雇主有哪些好處？"
 date: 2022-06-22 11:50:00 +0800
 author: HoMuChen
@@ -9,7 +8,7 @@ image:
   path: https://storage.googleapis.com/homuchen.com/images/remote-work-advantages-boss-0.jpg
 ---
 
-在上篇文章中: [**遠端工作有哪些好處？**](/posts/remote-working-advantages/){:target_blank}
+在上篇文章中: [**遠端工作有哪些好處？**](/posts/remote-working-advantages/)
 以員工、接案者或自由工作者分享了遠距工作模式有哪些好處？今天換個角度！
 來看看身為老闆的話，這樣的工作模式會帶來哪些好處。
 

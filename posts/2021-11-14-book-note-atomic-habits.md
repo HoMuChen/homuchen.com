@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則"
 date: 2021-11-14 21:36:00 +0800
 author: HoMuChen

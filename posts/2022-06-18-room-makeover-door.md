@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "房間DIY改造: 大門篇，如何用剩的乳膠漆來改造大門"
 date: 2022-06-18 22:04:00 +0800
 author: HoMuChen

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "RESTful API Design — A practical guide"
 date:   2021-04-13 20:00:00 +0800
 author: HoMuChen

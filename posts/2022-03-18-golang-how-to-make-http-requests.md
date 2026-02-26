@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Golang] 4種發起HTTP請求的方式"
 date: 2022-03-18 11:00:00 +0800
 author: HoMuChen

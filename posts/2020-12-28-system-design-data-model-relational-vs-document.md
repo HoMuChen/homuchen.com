@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[System Design] Data model: Relational V.S. Document"
 date:   2020-12-28 20:00:00 +0800
 author: HoMuChen

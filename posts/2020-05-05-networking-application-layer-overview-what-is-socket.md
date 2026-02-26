@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "[Networking]Application Layer Overview，什麼是Socket?"
 date:   2020-05-05 20:00:00 +0800
 author: HoMuChen

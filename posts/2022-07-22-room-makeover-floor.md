@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "房間DIY改造: 地板篇"
 date: 2022-07-22 16:00:00 +0800
 author: HoMuChen
@@ -15,7 +14,7 @@ description: |
 房間最大部分的面積不是牆壁就是地板了！今天要分享我在改造房間的過程中，
 針對地板這一部分怎麼做，首先就來看看成果吧！
 
-![地板改造Before and After]({{site.cdn_url}}/room-makeover-floor-0.jpg){:loading="lazy"}
+![地板改造Before and After]({{site.cdn_url}}/room-makeover-floor-0.jpg)
 
 # 地板種類
 這邊只討論便於DIY，也相對比較便宜的產品: **免膠地板**及**卡扣地板**，價格都大約落在2800～3600/坪。
@@ -49,17 +48,17 @@ description: |
 
 ## 拼法
 拼法有許多種，基本我是採用亂紋拼法，裁下來剩多長就直接再下一行使用，節省材料。
-![地板拼法]({{site.cdn_url}}/room-makeover-floor-3.jpg){:loading="lazy"}
+![地板拼法]({{site.cdn_url}}/room-makeover-floor-3.jpg)
 
 像下圖就是簡單擺一下，全部對齊的拼法，可以看到交接處就會有一條明顯的痕跡。
-![一字拼法]({{site.cdn_url}}/room-makeover-floor-2.jpg){:loading="lazy"}
+![一字拼法]({{site.cdn_url}}/room-makeover-floor-2.jpg)
 
 # 總結
 成果還算滿意～ 完工時間2022-07-21，如果未來有什麼災情，再上來更新紀錄跟大家分享。
 
 房間地板面積約**5坪**，總共**花費15000元及3個多小時的時間**！
 
-![房間改造一隅]({{site.cdn_url}}/room-makeover-floor-1.jpg){:loading="lazy"}
+![房間改造一隅]({{site.cdn_url}}/room-makeover-floor-1.jpg)
 
 之前有針對老舊櫃體、大門及牆壁的部分做過改造，有興趣的朋友可以看我之前寫過的文章～
 

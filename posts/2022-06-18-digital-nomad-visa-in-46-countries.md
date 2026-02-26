@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "你可以在這46個國家拿到數位遊牧簽證!"
 date: 2022-06-18 00:12:00 +0800
 author: HoMuChen

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "如何在Mac OS中使用command line來將文字複製到剪貼簿"
 date: 2022-03-28 20:40:00 +0800
 author: HoMuChen

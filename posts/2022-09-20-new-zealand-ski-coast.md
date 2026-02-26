@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "在紐西蘭皇后鎮周圍滑雪要花多少錢?"
 date: 2022-09-20 12:18:00 +0800
 author: HoMuChen

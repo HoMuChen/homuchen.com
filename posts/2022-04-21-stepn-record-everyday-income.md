@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "STEPN: 從2022-04-10進場至今的收益紀錄"
 date: 2022-04-21 13:25:00 +0800
 author: HoMuChen

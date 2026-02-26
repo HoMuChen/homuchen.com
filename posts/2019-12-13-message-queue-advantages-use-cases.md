@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "什麼是message queue? 優點及使用場景"
 date:   2019-12-13 20:00:00 +0800
 last_modified_at: 2021-10-16 23:00:00 +0800

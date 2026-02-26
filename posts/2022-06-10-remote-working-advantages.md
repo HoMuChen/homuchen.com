@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "遠端工作有哪些好處？"
 date: 2022-06-10 00:00:00 +0800
 author: HoMuChen

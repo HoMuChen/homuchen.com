@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "一天要擁有多少的空閒時間才會快樂?"
 date: 2024-07-04 12:00:00 +0800
 author: HoMuChen
