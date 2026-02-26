@@ -11,6 +11,7 @@ docs/                # 部署與設定文件
   ghost-deployment.md  # Ghost 部署指南
   routes.yaml          # Ghost URL 路由設定
   redirects.yaml       # Ghost 301 redirect 設定
+  plans/               # 系列文章設計文件
 ```
 
 ## Ghost 部署
@@ -52,11 +53,19 @@ description: "選填。文章摘要描述，用於 SEO meta description。"
 
 ## 寫文章的工作流程
 
-### 1. 使用 homuchen-writing-style skill
+### 1. 關鍵字研究（必要步驟）
+
+**撰寫任何文章或規劃內容之前，必須先使用 `keyword-research` skill 做關鍵字研究。** 這個 skill 定義了完整的研究流程：市場觀察 → 競品分析 → SERP 分析 → 關鍵字映射 → 優先級排序。
+
+- 單篇文章：研究該文章的主要/次要/長尾關鍵字、搜尋意圖、競爭程度
+- 系列文章：為每篇文章建立關鍵字表，並做整體優先級排序
+- 研究結果存放位置：系列 → `docs/plans/`，單篇 → 草稿規劃筆記
+
+### 2. 使用 homuchen-writing-style skill
 
 **所有文章撰寫必須使用 `homuchen-writing-style` skill。** 這個 skill 定義了 HoMuChen 的寫作風格、語調、文章結構、格式規範與禁止事項。
 
-### 2. 寫作前研究
+### 3. 寫作前研究
 
 撰寫任何文章前，必須先做研究：
 - 使用 WebSearch 搜尋主題相關資料、最新趨勢、數據
@@ -64,29 +73,46 @@ description: "選填。文章摘要描述，用於 SEO meta description。"
 - 查看 `posts/` 資料夾中是否有相關文章可以交叉引用
 - 技術文章需確認資訊的正確性與時效性
 
-### 3. SEO 最佳化
+### 4. SEO 最佳化
 
-撰寫文章時應考慮 SEO，可使用以下 skills：
+撰寫文章時應考慮 SEO，根據步驟 1 的關鍵字研究結果來最佳化文章。可使用以下 skills：
 - `marketing-skills:seo-audit` — 審核文章的 SEO 品質
 - `marketing-skills:ai-seo` — 針對 AI 搜尋引擎（GEO/AEO/LLMO）最佳化
 - `marketing-skills:schema-markup` — 結構化資料標記
 - `marketing-skills:content-strategy` — 內容策略規劃
 
 SEO 注意事項：
-- `title` 包含主要關鍵字
-- `description` 撰寫吸引人的摘要（150-160 字元）
-- 文章內自然使用關鍵字，不要堆疊
+- `title` 包含主要關鍵字（來自關鍵字研究）
+- `description` 撰寫吸引人的摘要（150-160 字元），包含主要關鍵字
+- 文章內自然使用主要/次要/長尾關鍵字，不要堆疊
 - H1/H2 標題包含相關關鍵字
 - 內部連結：串聯相關的舊文章（HoMuChen 的招牌習慣）
 - 外部連結：引用權威來源
 
-### 4. 文章規劃（系列文章 / 內容日曆）
+### 5. 文章規劃（系列文章 / 內容日曆）
 
 可以進行整體內容規劃，將規劃好的文章放在 `drafts/` 資料夾下：
+- **規劃前先使用 `keyword-research` skill 做關鍵字研究**
 - 使用 `marketing-skills:content-strategy` skill 規劃內容策略
 - 使用 `marketing-skills:marketing-ideas` skill 發想主題
 - 草稿檔案同樣遵循 `{YYYY-MM-DD}-{slug}.md` 命名格式
 - 草稿的 frontmatter 中 date 可先填預計發布日期
+
+### 6. 系列文章設計文件（`docs/plans/`）
+
+系列文章的規劃存放在 `docs/plans/` 下，命名格式：`YYYY-MM-DD-<topic>-design.md`。
+
+**設計文件包含：**
+- 系列概要（名稱、篇數、結構、目標讀者、核心主張）
+- **發布狀態表**（每篇的狀態和檔案路徑）
+- 各篇文章規劃（類型、核心內容、交叉引用、需要的個人經驗）
+- 交叉引用地圖
+- 關鍵字研究（市場觀察、競品分析、各篇關鍵字策略、SEO 優先級）
+
+**狀態更新規則（每次都要做）：**
+- 撰寫完一篇文章 → 更新該篇狀態為「已撰寫」，填入檔案路徑
+- 發布一篇文章 → 更新該篇狀態為「已發布」
+- 開始新 session 處理系列文章時，先讀設計文件了解進度
 
 ## 既有文章主題分類
 
