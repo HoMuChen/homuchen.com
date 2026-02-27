@@ -9,7 +9,7 @@ image:
   path: https://storage.googleapis.com/homuchen.com/images/pagination-1.jpg
 ---
 
-# 為何要Pagination
+## 為何要Pagination
 一個response如果資料太多，回應太慢，一定會造成使用者的體驗不佳，進而流失用戶，
 而pagination就是使reponse回應速度的加快的做法之一。
 
@@ -19,7 +19,7 @@ image:
 
 以下來看看兩種Pagination的做法，`offset`及`keyset`:
 
-# Offset Pagination
+## Offset Pagination
 最基本的做法就是使用`offset`及`limit`，一樣的概念在`SQL`語法中也可以看到:
 
 ```sql
@@ -36,7 +36,7 @@ curl http://api.exmaple.com/items?offset=0&limit=10
 
 ![offset pagination](https://storage.googleapis.com/homuchen.com/images/pagination-1.jpg)
 
-## offset pagination可能的問題
+### offset pagination可能的問題
 * 當offset很大時，比如說offset=1000000，API server必須scan一百萬的資料，效能不彰。
 
 * 再來就是當你的資料持續再增加時，可能會造成一些混亂，以下面的例子為例:
@@ -45,7 +45,7 @@ curl http://api.exmaple.com/items?offset=0&limit=10
   2. 增加了5筆資料
   3. 再一次`GET /items?offset=0&limit=10`，結果其中5筆是第一次query裡已經有出現的了
 
-# Keyset Pagination
+## Keyset Pagination
 不是使用offset，而是使用某個key作為指定的起始點，比如說`created_at`，HTTP request看起來可能像是這樣
 
 ```sh

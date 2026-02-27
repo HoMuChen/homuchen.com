@@ -16,12 +16,12 @@ description: |
 
 ![地板改造Before and After](https://storage.googleapis.com/homuchen.com/images/room-makeover-floor-0.jpg)
 
-# 地板種類
+## 地板種類
 這邊只討論便於DIY，也相對比較便宜的產品: **免膠地板**及**卡扣地板**，價格都大約落在2800～3600/坪。
 
 ![免膠卡扣地板比較](https://storage.googleapis.com/homuchen.com/images/room-makeover-floor-4.jpg)
 
-## 免膠地板
+### 免膠地板
 防水防潮且不太熱脹冷縮，施工超級簡單，鋪上去就好了，適合在租屋處使用，要離開時還可以拔起來帶走。
 
 **缺點:** 家具太重，質地沒那麼硬的地板還是**會有壓痕**，另外並**沒有像廣告說的那麼防滑**，安裝的時候還是要鋪好鋪滿，
@@ -33,7 +33,7 @@ description: |
 * [90s免膠科技地板](https://www.90shomestyle.com/pages/90s-technology-floor)
 * [特力+: 免膠地板](https://www.trplus.com.tw/TR_Tools_Building/c/EC_10344012)
 
-## 卡扣地板
+### 卡扣地板
 基本上一樣是塑膠製品，優點都是可以防水防潮且不會熱脹冷縮，SPC的材質有參入石粉，所以質地較硬，
 也比較冰涼。
 
@@ -43,17 +43,17 @@ description: |
 * [90s卡扣地板](https://www.90shomestyle.com/pages/90s-%E9%A0%82%E7%B4%9Aspc%E5%8D%A1%E6%89%A3%E5%9C%B0%E6%9D%BF)
 * [特力+: 卡扣地板](https://www.trplus.com.tw/TR_Floor_Building/c/EC_10000989)
 
-# 施工過程
+## 施工過程
 這次選用的免膠地板，為什麼？因為我懶！就選最方便的😂，還有老房子地板不是那麼平整，減少些施工的難度。
 
-## 拼法
+### 拼法
 拼法有許多種，基本我是採用亂紋拼法，裁下來剩多長就直接再下一行使用，節省材料。
 ![地板拼法](https://storage.googleapis.com/homuchen.com/images/room-makeover-floor-3.jpg)
 
 像下圖就是簡單擺一下，全部對齊的拼法，可以看到交接處就會有一條明顯的痕跡。
 ![一字拼法](https://storage.googleapis.com/homuchen.com/images/room-makeover-floor-2.jpg)
 
-# 總結
+## 總結
 成果還算滿意～ 完工時間2022-07-21，如果未來有什麼災情，再上來更新紀錄跟大家分享。
 
 房間地板面積約**5坪**，總共**花費15000元及3個多小時的時間**！

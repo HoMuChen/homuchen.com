@@ -12,7 +12,7 @@ image:
 linux command line tool就有許多好用的工具，
 今天以104人力網站的為例，示範如何只使用shell script，就可以開始抓取資料!
 
-# 前言
+## 前言
 這邊假設大家已經有網路爬蟲的基本概念了，一般大家寫爬蟲最多人用的就是python，
 流程就是到目標網站上操作，並且一邊觀察chrome dev tool，將http requests用python的requests套件重現，
 之後將response回來的資料做parse，最後存起來，可能是存到檔案或是資料庫裡。
@@ -27,7 +27,7 @@ linux command line tool就有許多好用的工具，
 * Parse JSON response data: **jq**
 * Save data: **redirect >>**
 
-# curl
+## curl
 curl是個HTTP client，相當於python的requests套件，想要在104上搜尋**軟體工程師****第1頁**的結果，
 可以使用下列的指令，有兩個querystring的參數: keyword及page。
 
@@ -41,7 +41,7 @@ curl -H 'Referer: https://www.104.com.tw/jobs/search' https://www.104.com.tw/job
 * [**HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl/)
 * [**A Linux HTTP client tool — curl的介紹及用法**](/posts/linux-http-client-tool-curl-usage/)
 
-# jq [**[1]**](#1)
+## jq [**[1]**](#1)
 成功取得回應後，可以看到terminal上噴出一堆密密麻麻的資訊，難以去閱讀，今天為例的104 API，
 回傳的是application/json的資料格式，可以將這坨資料pipe到jq[**[1]**](#1)指令上，他可以幫我們parse JSON格式的資料，
 也可以做其他的動作，包括選擇我們要的欄位、map、filter、transform等等，詳細的使用方法可以到官網看他們的文件。
@@ -49,11 +49,11 @@ curl -H 'Referer: https://www.104.com.tw/jobs/search' https://www.104.com.tw/job
 104的api回傳JSON格式的資料很方便，但很多網站沒有或是找不到這種API可以使用，就必須處理html的解析，
 我有找到一個工具**pup**[**[2]**](#2)，看起來也蠻好用的，如果你知道其他更好用的方法，也歡迎留言跟大家分享唷～
 
-# redirect
+## redirect
 處理好回應後，最後將資料導到file裡存起來就好囉~ 如果寫到同一份檔案當中，記得使用**>>**，
 才不會把先前的資料給蓋掉唷。
 
-# 完整程式碼
+## 完整程式碼
 ```sh
 #!/bin/sh
 
@@ -94,7 +94,7 @@ sh ./104.sh 軟體工程師 1 | jq .data.list
 得到的結果如下:
 ![data](https://storage.googleapis.com/homuchen.com/images/104-3.jpg)
 
-# 結語
+## 結語
 有時只想要簡易的爬蟲，不想要大張旗鼓地寫個python時，就可以寫個shell script，加上crontab就能去抓取資料。
 
 比如我只是想記錄某個keyword資料量的每天趨勢變化，就可以
@@ -105,6 +105,6 @@ sh ./104.sh 軟體工程師 1 | jq .data.totalCount >> data.csv
 
 感謝你閱讀到這邊～希望以上的內容對你有一丁點的幫助，掰掰～ 👋
 
-# 附錄
+## 附錄
 1. jq - [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 2. pup - [https://github.com/ericchiang/pup](https://github.com/ericchiang/pup)

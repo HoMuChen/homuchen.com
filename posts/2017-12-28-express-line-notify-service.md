@@ -14,7 +14,7 @@ image:
 
 ---------------------------------
 
-# 登入流程
+## 登入流程
 
 Line notify的流程大致來說是這樣的:
 
@@ -28,7 +28,7 @@ Line notify的流程大致來說是這樣的:
 3. POST https://notify-bot.line.me/api/notify
 * 帶著上面步驟所取得的token及訊息，post上面的url，使用者就可以收到消息拉～
 
-# 套件使用
+## 套件使用
 
 接下來要實作以上流程覺得好麻煩喔～小的已將上述前兩個步驟寫成一個express的middleware供大家使用，說明如下：
 1. npm install express-line-notify

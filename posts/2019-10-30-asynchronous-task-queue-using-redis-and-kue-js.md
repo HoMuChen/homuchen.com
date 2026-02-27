@@ -11,11 +11,11 @@ image:
 
 這是篇教你如何在node.js環境下，快速擁有一個Task queue的tutorial，如果想了解什麼是message queue，以及為什麼跟什麼時候要使用它，可以參考我的另外一篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)!
 
-# Outline
+## Outline
 1. 部署Redis，使用Docker，在本地起一台Redis
 2. 介紹Kue.js
 
-# 部署Redis
+## 部署Redis
 
 先準備一個shell script run_redis.sh ，記錄下docker指令，以便之後繼續使用，內容指令如下：
 
@@ -40,13 +40,13 @@ docker run                        \
 
 ![docker ps](https://storage.googleapis.com/homuchen.com/images/kue-1.jpg)
 
-# 介紹Kue.js
+## 介紹Kue.js
 
-## 安裝
+### 安裝
 
 ```$ npm install kue```
 
-## Connection
+### Connection
 
 ```javascript
 var kue = require('kue')
@@ -69,7 +69,7 @@ var queue = kue.createQueue({
 });
 ```
 
-## Produce message
+### Produce message
 
 連接到message broker後，就可以開始送message過去拉～
 
@@ -85,7 +85,7 @@ queue.create('email', {
 
 這裡我們發送了一個message到名為email的queue裡，內容就是個JSON object.
 
-## Consume message
+### Consume message
 
 接著我們就可以在別的地方，接收發出去的訊息及處理拉
 
@@ -100,7 +100,7 @@ queue.process('email', function(job, done){
 queue.process接收兩個參數，第一個是queue的名字，這裡是以’email’為例，第二個參數是一個callback function，他有兩個參數，分別是job跟done，job.data就是我們剛剛發送出去的message，而done是一個function，當你確定這個message已經處理完的時候可以執行done()
 
 
-## Concurrency controll
+### Concurrency controll
 
 上面例子中，一次只會接收一個message直到你ack這個message，如果你的工作是IO密集的話，你可能會想一次同時處理多個message，此時可以在process function中，加入第二參數:
 
@@ -120,7 +120,7 @@ queue.process('email', 10, function(job, done){
 
 [Automattic/kue](https://github.com/Automattic/kue)
 
-# 延伸閱讀
+## 延伸閱讀
 * [**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)
 
 * [**RabbitMQ和Kafka有何不同？何時該選用哪種產品？**](/posts/difference-bwtween-rabbitmq-and-kafka/)

@@ -11,12 +11,12 @@ image:
 因為開啟了全遠端工作模式的關係，不是在環遊世界工作，就是在家工作。退掉了台北租屋處回到老家之後，
 有了改造房間的念頭，這篇文章要簡單分享改造房間最後的成果，以及總共花費了多少錢～(文末有購物清單)
 
-# 成果
+## 成果
 首先就來看看改造前後的房間模樣吧!
 
 ![DIY改造房間](https://storage.googleapis.com/homuchen.com/images/room-makeover-overview-0.jpg)
 
-# 總共花費
+## 總共花費
 以下是這次改造中，所有購買的東西。
 
 購買物品 | 價格
@@ -35,7 +35,7 @@ image:
 [IKEA組合書桌: LAGKAPTEN/ADILS](https://www.ikea.com.tw/zh/products/home-workspace/home-desks/lagkapten-adils-spr-59417209) | 1399
 **total** | **25836**
 
-# 總結
+## 總結
 
 對詳細每個部分的改造過程有興趣的朋友們，可以看之前分別寫的文章:
 * [**房間DIY改造: 地板篇**](/posts/room-makeover-floor/)

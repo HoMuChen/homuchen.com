@@ -18,7 +18,7 @@ description: |
 今天要介紹一些前人所觀察歸納出的一些法則及心理現象，
 將其應用在生活中，幫助我們簡單生活卻不簡單。
 
-# 帕雷托法則(Pareto principle、80/20法則)
+## 帕雷托法則(Pareto principle、80/20法則)
 > 80% of consequences come from 20% of the causes.
 
 80%成果來自20%的原因，在許多地方都能用上這個法則，比如全世界的財富分配，大部分的財富集中在少數有錢人手中;
@@ -31,7 +31,7 @@ description: |
 不管是工作項目、客戶、人際關係、擁有的物質、從事的興趣、接收的資訊等等，
 **你可以做任何事情，但不能全部的事情都做**。
 
-# 帕金森定理(Parkinson’s Law)
+## 帕金森定理(Parkinson’s Law)
 > Work will expand to fill the time allotted for its completion.
 
 我們有多少的時間完成一項任務，我們就會花多少的時間完成，這就是帕金森定律。
@@ -42,7 +42,7 @@ description: |
 就像我之前在[**掌握這3個原則，打造出最適合自己的代辦清單系統**](/posts/book-note-todo-list-formula/)
 這篇文章中提到的，待辦清單中的事項必須要有截止日期，否則你就是拖拖拖，拖到最後一刻可以完成的他的時候才去完成。
 
-# Carlson’s Law
+## Carlson’s Law
 > Interrupted work will be less effective and will take more time than if completed in a continuous manner.
 
 如果一件任務被中斷多次，它所花的時間講比起一次做完更多。
@@ -55,7 +55,7 @@ description: |
 最近我在家或到處遊牧工作的時候，除了咖啡廳，也會選擇去圖書館工作，把自己沈浸到一個無法分心的環境，
 順便重溫以前當學生的感覺，也能看看學生妹子😎
 
-# Illich’s Law(Law of diminishing returns、邊際效用遞減)
+## Illich’s Law(Law of diminishing returns、邊際效用遞減)
 > Productivity decreases after a certain period of continuous work.
 
 ![Law of diminishing returns]({{ site.cdn_url }}/five-time-management-laws-1.jpg)
@@ -68,7 +68,7 @@ description: |
 延伸閱讀:
 * [**[讀書筆記] 用對能量，你就不會累**](/posts/book-note-the-power-of-full-engagement/)
 
-# Laborit’s Law(The Law of the Least Effort、最小努力原則)
+## Laborit’s Law(The Law of the Least Effort、最小努力原則)
 
 人會採取可能耗費最少勞動的行為，來完成特定任務：即，將必要之努力最小化。
 
@@ -82,7 +82,7 @@ description: |
 延伸閱讀:
 * [[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則](/posts/book-note-atomic-habits/)
 
-# 結論
+## 結論
 前兩個法則都跟**不要太多**有關，做的少但卻不一定成就的少，
 **知道自己的目標，找出最重要的事先做，專注並適當休息，養成習慣**，
 如此一來不只能更高效也能減輕壓力。

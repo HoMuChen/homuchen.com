@@ -16,7 +16,7 @@ image:
 
 ![cryptography in node.js cryto module]({{ site.cdn_url }}/nodejs-crytpo-1.jpg)
 
-# Hash
+## Hash
 可以使用指令`openssl list -digest-algorithms`來查詢可用的algorithms，以下使用`sha256`為例，
 並輸出`base64`的字串。
 
@@ -28,7 +28,7 @@ function hash(input) {
 }
 ```
 
-# Salt
+## Salt
 randomBytes可以幫我們隨機產生你所想要長度的隨機亂數，用來作為salt，
 它的回傳值是一個Buffer。
 
@@ -41,7 +41,7 @@ function salt(len) {
 
 ```
 
-# Password hashing
+## Password hashing
 利用`scrypt`及`scryptSync`這個KDF(一個為非同步，一個為同步的API)，
 function的前三個參數分別為:
 1. 欲hash的明文資料，此處為密碼
@@ -60,7 +60,7 @@ function passwordHash(password) {
 ```
 以上例子使用`randomBytes`來產生salt，接著將密碼與salt一起hash成32 bytes的hash value，最後跟salt一起回傳。
 
-# MAC
+## MAC
 跟hash一樣可以使用指令`openssl list -digest-algorithms`來查詢可用的演算法。
 ```javascript
 const { createHmac } = require('crypto');
@@ -71,7 +71,7 @@ const message = 'foo bar👻';
 const hmac = createHmac('sha256', key).update(message).digest('hex');
 ```
 
-# Symmetric Encryption
+## Symmetric Encryption
 支援的對稱式加密的演算法一樣可以透過這個指令來取得`openssl list -cipher-algorithms`，此處使用`aes256`。
 ```javascript
 const { randomBytes, createCipheriv, createDecipheriv } = require('crypto');
@@ -89,7 +89,7 @@ const decipher = createDecipheriv('aes256', key, iv);
 const decryptedMessage = decipher.update(encryptedMessage, 'hex', 'utf-8') + decipher.final('utf8');
 ```
 
-# Asymmetric Encryption
+## Asymmetric Encryption
 首先使用`generateKeyPair`或`generateKeyPairSync`來產生公鑰及私鑰。
 
 ```javascript
@@ -123,7 +123,7 @@ const encryptedData = publicEncrypt(publicKey, Buffer.from(message));
 const decryptedData = privateDecrypt(privateKey, encryptedData);
 ```
 
-# Digital Signature
+## Digital Signature
 數位簽章牽扯到hash及非對稱加密，使用crypto module中的`createSign`及`createVerify`，
 回傳的`Sign`及`Verify` Object都幫我們做好好囉～
 
@@ -148,9 +148,9 @@ verifier.update(message);
 const isVerified = verifier.verify(publicKey, signature, 'hex');
 ```
 
-# Summay
+## Summay
 其實就是從官方document裡，把比較常用的整理到這裡，這篇就只有紀錄在Nodejs裡如何實作，
 並沒有討論為何需要上述的每一個東西，以及有何用途，有機會再陸續補上～ 掰掰👋
 
-# 參考資料
+## 參考資料
 * [**Crypto \| Node.js Documentation**](https://nodejs.org/api/crypto.html)

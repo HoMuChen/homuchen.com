@@ -14,14 +14,14 @@ image:
 
 ![STEPN shoes price](https://storage.googleapis.com/homuchen.com/images/stepn-income-01.jpg)
 
-# 實測數據
+## 實測數據
 以下是我11天的十跑紀錄，每次皆為花費2能量，以5分速(12km/hr)跑10分鐘的GST的紀錄，
 橫軸為鞋子的效率值，縱軸為GST產出。
 
-## 散佈圖
+### 散佈圖
 ![STEPN: efficiency vs. gst outcome scatter chart](https://storage.googleapis.com/homuchen.com/images/stepn-eff-01.jpg)
 
-## 原始數據
+### 原始數據
 
 效率    |產出(GST)
 --------|-------
@@ -40,7 +40,7 @@ image:
 39.7    |12.87
 39.7    |12.26
 
-# 資產累積的速度
+## 資產累積的速度
 讓我們從另一個角度來看是否要升級鞋子增加效率，也就是GST的累積數，分別為三種情況:
 
 1. 完全不升級鞋子 (假設每天產出5.5GST)
@@ -54,7 +54,7 @@ image:
 
 如果持續投入到效率值35，15天就可以超過效率值25的鞋，並且之後每天約多產出2GST。
 
-# 結論
+## 結論
 如果你認為這個項目會持續一兩個月以上都還不會死掉的話，
 那將鞋子升級到9等會是比較好的做法(如果你有要跑步賺錢的話)，
 在高上去的等級我就沒有測試了。

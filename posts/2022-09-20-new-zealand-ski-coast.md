@@ -15,7 +15,7 @@ image:
 
 其他還有像是機票、飲食、住宿就不討論囉～
 
-# 雪場纜車票
+## 雪場纜車票
 結論先行: 一天的纜車票平均為**85~150紐幣**。
 
 價差主要來自於一次購買多少天。一次買三四天以上的話，每天的價格大約就是100紐幣。
@@ -32,13 +32,13 @@ Treble Cone    |105   |100    |85     |85
 
 所有的雪票都可以上網先購買，到雪場的第一天在出示QR code給櫃檯工作人員，拿到一張卡就可以開始滑囉～
 
-## 購票網站連結
+### 購票網站連結
 * [**The Remarkables**](https://shop.theremarkables.co.nz/lift-pass)
 * [**Coronet Peak**](https://shop.coronetpeak.co.nz/lift-pass)
 * [**Cardrona**](https://new.cardrona.com/lift-pass-packages#Lift-Passes)
 * [**Treble Cone**](https://new.treblecone.com/lift-pass-packages)
 
-# 裝備租借
+## 裝備租借
 結論先行: 一天的裝備租借(雪板、靴子)平均為**28~60紐幣**。
 
 爲什麼差距這麼大呢？主要就是看你是在鎮上租，還是在雪場上租。
@@ -50,25 +50,25 @@ Treble Cone    |105   |100    |85     |85
 但最便宜的還是自己在鎮上租好然後扛上去雪場吧～
 滑雪前一天的下午或晚上去店裡租就好了。
 
-## 鎮上雪具店
+### 鎮上雪具店
 * [**Green Toad Snowboard & Ski Shop**](https://goo.gl/maps/dK1UoCbXaCR6Y43G9)
 * [**Torpedo7 Queenstown**](https://g.page/t7-queenstown?share)
 
-# 雪場交通
-## 自行開車
+## 雪場交通
+### 自行開車
 自行開車的話，費用就是你們租車的錢跟油錢。
 
 天氣不好下雪時，會要求上雪鍊。如果害怕開山路或不想裝雪鏈，可以選擇搭接駁車，
 Cardrona的話，開車到山腳下搭免費接駁車，但只有Cardrona山腳下的接駁車是免費的～
 
-## 接駁車
+### 接駁車
 從皇后鎮鎮搭接駁車前往雪場，離鎮上較近的The Remarlables、Coronet Peak雪場要**20紐幣**，較遠的Cardrona要**35紐幣**。
 
-## 接駁車連結
+### 接駁車連結
 * [**The Remarkables、Coronet Peak**](https://shop.theremarkables.co.nz/express-ski-bus)
 * [**Cardrona**](https://www.cardrona.com/winter/plan/getting-here-transport-parking#queenstown)
 
-# 總結
+## 總結
 
 項目     |價格(紐幣)
 ---------|----------

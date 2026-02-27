@@ -46,6 +46,6 @@ image:
 
 大功告成～～🎉🎉🎉
 
-# Referece
+## Referece
 
 * [**[Google Sheet]Sparkline，在儲存格裡插入迷你圖表**](/posts/google-sheet-sparkline/)

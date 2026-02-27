@@ -9,7 +9,7 @@ tags: [remote work, digital nomad]
 如果你是個企業家、接案工作者、或像我一樣是個可以遠端工作的打工仔，
 那麼你可能對數位遊牧(digital nomad)這樣的生活型態有興趣～
 
-# 數位遊牧
+## 數位遊牧
 什麼是數位遊牧呢？就是只要有電腦跟網路，你就可以在任何你想要的地方工作！
 
 你有實現環遊世界、體驗各地的文化跟認識世界各地的人的夢想嗎？
@@ -21,7 +21,7 @@ tags: [remote work, digital nomad]
 * [**遠端工作有哪些好處？**](/posts/remote-working-advantages/)
 * [**如何不用做額外的工作，就使你的收入倍增**](/posts/double-your-money-without-any-extra-work/)
 
-# 數位遊牧簽證
+## 數位遊牧簽證
 但如果你只是持旅遊簽證，你在一個國家待的時間就會有限，有了數位簽證，
 將可以**在當地待一個月到四年不等的時間**。
 
@@ -78,6 +78,6 @@ tags: [remote work, digital nomad]
 
 如果對以上國家有興趣的，可以google 國家名 + digital nomand visa來看看申請辦法唷～
 
-# 參考資料
+## 參考資料
 * [You Can Get a ‘Digital Nomad’ Visa in These 46 Countries](https://lifehacker.com/you-can-get-a-digital-nomad-visa-in-these-46-countrie-1849058910)
 * [How “Digital Nomad” Visas Can Boost Local Economies](https://hbr.org/2022/05/how-digital-nomad-visas-can-boost-local-economies?ab=hero-subleft-2)

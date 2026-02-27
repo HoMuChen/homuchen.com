@@ -16,7 +16,7 @@ fmt.Printf("My name is %s. I am %d years old", "HoMuChen", 30)
 第一個參數將會是最後輸出的字串，不過中間我們可以看到`%s`、`%d`的東西，稱之為**verb**，
 verb會被後面的參數取代掉，並且是依照你指定的格式，這篇文章將會分享一寫常用的verb。
 
-# Overview
+## Overview
 以下為一個常用的verbs表格，依照要format的值的型態做分類，後面再詳細說明:
 
 category | syntax  | description
@@ -43,7 +43,7 @@ floating precision | %8f     | width 8 floating number
                    | %8.2f   | width 8 with 2 digit presicion floating number
                    | %.2f    | 2 digit presicion floating number
 
-# General
+## General
 
 * `%v`: 根據不同的值的型態，預設的格式
 
@@ -69,20 +69,20 @@ floating precision | %8f     | width 8 floating number
   //100 %
   ```
 
-# Boolean
+## Boolean
 * `%t`:
   ```go
   fmt.Printf("This is %t", true)
   ```
 
-# Integer
+## Integer
 * `%b` `%d` `%x`: base 2, 10, 16
   ```go
   fmt.Printf("base 2: %b, base 10: %d, base 16: %x", 255, 255, 255)
   //base 2: 11111111, base 10: 255, base 16: ff
   ``` 
 
-# Floating point number
+## Floating point number
 * `%e`: 科學記號表示
 
 * `%f`: 十進位表示，預設顯示到小數點後六位。
@@ -97,7 +97,7 @@ floating precision | %8f     | width 8 floating number
   //123.123456789
   ``` 
 
-# String
+## String
 * `%s`: 就是字串～
 
 * `%q`: 以雙引號括起來的字串，就不需要再額外寫類似`\"`escape掉。
@@ -106,7 +106,7 @@ floating precision | %8f     | width 8 floating number
   //"I am a string"
   ``` 
 
-# Padding
+## Padding
 有時我們想要輸出的字串是一樣長度的，可以在前面加上一個數字，代表你想要長度，以下例子:
 
 * `%10s`: 寬度為10的字串
@@ -151,7 +151,7 @@ floating precision | %8f     | width 8 floating number
   content length: 12345   bytes
   ```
 
-# Floating point number precision
+## Floating point number precision
 也可以指定浮點數的總長度及小數點後要到第幾位。
 
 * `%10f`: 總長度為10的浮點數，小數點後預設為6位，如果需要超過長度10才能表示，還是會超過。
@@ -182,5 +182,5 @@ floating precision | %8f     | width 8 floating number
   response time:    2125.11 ms
   ```
 
-# Summary
+## Summary
 在這篇文章記錄了常用的verbs，除了自己忘記可以回來看，也希望能幫助到有需要的人，掰掰～👋

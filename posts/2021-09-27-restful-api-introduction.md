@@ -15,7 +15,7 @@ image:
 
 [**RESTful API Design — A practical guide**](/posts/http-restful-api-design-practical-guide/)
 
-# Introduction
+## Introduction
 首先，什麼是RESTful，可以說它是一種慣例，一個關於HTTP API如何設計的style，
 慣例就是並沒有任何的強制性，但當大家都遵守的慣例時，特立獨行的邊緣人可能就會被排擠，
 至少是難以融入大家的，有了慣例，可以不需要在每次要做事前都要溝通，
@@ -27,7 +27,7 @@ image:
 
 所以接下來看看RESTful API到底是長怎樣吧!
 
-# Resource based
+## Resource based
 首先他是**resource based**的，也就是每個URL對應到的是一個或多個resource、entity，是**名詞**，
 而不會是動詞，比如說下列這樣就是RESTful:
 ```text
@@ -40,7 +40,7 @@ image:
 /getPosts               -> 代表全部的posts
 /getpostComments/1      -> 代表某一篇post的所以留言
 ```
-# Actions
+## Actions
 有了名詞，那**動詞**呢？如果想要對資源做一些操作怎麼辦呢？比如說新增、修改、刪除。
 此時就是使用HTTP的method，**GET**、**POST**、**PUT**、**DELETE**，分別對應到**讀取**、**新增**、**修改**、**刪除**。
 
@@ -52,7 +52,7 @@ PUT     /posts/2        -> 修改某一篇文章
 DELETE  /posts/2        -> 刪除某一篇文章
 ```
 
-# 為什麼RESTful是長這樣呢？
+## 為什麼RESTful是長這樣呢？
 基本上RESTful就是verbs x nouns、操作對上資源，因為HTTP有URL代表資源，還有methods，
 這也是為何基於HTTP的RESTful API自然而然就會長成這樣的原因。
 
@@ -65,6 +65,6 @@ DELETE  /posts/2        -> 刪除某一篇文章
 
 若對於HTTP協議還不熟悉的，可以看這系列文章中，前面關於HTTP的部分。
 
-# Summary
+## Summary
 大概知道了RESTful API應該是什麼樣子，還有許多細節的部分，會在後面的文章中慢慢討論，
 比如說URL的設計、如何model resource、documentation、versioning等等...

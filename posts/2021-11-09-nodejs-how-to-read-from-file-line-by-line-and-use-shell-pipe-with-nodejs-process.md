@@ -14,7 +14,7 @@ tags: [node.js, linux]
 cat words.txt | node wc.js
 ```
 
-# readline
+## readline
 * **createInterface:**  
   首先使用`readline.createInterface()`，需要一個input參數，他需要是一個`stream.Readable`，
   這裡我們使用`fs.createReadStream()`打開我們的檔案，並作為input，傳給createInterface。
@@ -39,7 +39,7 @@ cat words.txt | node wc.js
   rl.on('close', doSomething);
   ```
 
-## 完整程式碼
+### 完整程式碼
 最後我們就利用上面的資訊，寫一隻`wc.js`，來計算檔案中每個字出現的次數，將結果以JSON的格式輸出至stdout上。
 
 ```javascript
@@ -57,7 +57,7 @@ rl.on('line', row => {
 rl.on('close', () => console.log(JSON.stringify(count)))
 ```
 
-# unix pipe
+## unix pipe
 這邊示範如何從stdin中讀取資料流，就可以使用shell pipe ( | )，讀取來自前一個程式的output了。
 
 只需將**`readline.createInterface`**的input參數，從**`fs.createReadStream('./words.txt')`**改成
@@ -78,7 +78,7 @@ rl.on('line', row => {
 rl.on('close', () => console.log(JSON.stringify(count)))
 ```
 
-# summary
+## summary
 感謝你的閱讀～ 這篇文章示範了如何使用`readline`模組來逐行讀取檔案，
 並且看到了兩個`stream.Readable`的實例，體會到了stream的好用之處。
 

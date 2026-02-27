@@ -17,12 +17,12 @@ tags: [golang, http]
 
 [**HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl)
 
-# http.Get
+## http.Get
 `func Get(url string) (resp *Response, err error)`
 
 參數為一個url，沒有headers，也沒有body，就是這麼簡單，如果想要客制化自己的header，就必須使用後面的`http.NewRequest`。
 
-# http.Post
+## http.Post
 `func Post(url, contentType string, body io.Reader) (resp *Response, err error)`
 
 參數為url, contentType及body，headers的部分，除了Content-Type之外的，也無法自己自訂，而body是一個io.Reader，
@@ -45,7 +45,7 @@ Accept-Encoding: gzip
 {"email": "test@gmail.com"}
 ```
 
-# http.PostForm
+## http.PostForm
 `func PostForm(url string, data url.Values) (resp *Response, err error)`
 
 Header `Content-Type`會被自動設為`application/x-www-form-urlencoded`，body是使用`url.Values`來傳遞，
@@ -79,7 +79,7 @@ Accept-Encoding: gzip
 email=test%40homuchen.com&name=homuchen
 ```
 
-# http.NewRequest
+## http.NewRequest
 `func NewRequest(method, url string, body io.Reader) (*Request, error)`
 
 如果想要客制自己的headers就必須使用`NewRequest`拉，方法如下:
@@ -103,7 +103,7 @@ res, err := http.DefaultClient.Do(req)
 
 如此一來就會發送出一個跟前面例子一樣的HTTP Request
 
-# Summary
+## Summary
 今天介紹了四種發起HTTP Request的方法，前面三種的彈性比較低但比較方便，有固定的method及content-type，無法隨意更改及加減。
 
 而其實`http.Get`就是`http.Client`的`Get`method，`http.Post`為`http.Client`的`Post`method，

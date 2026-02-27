@@ -12,15 +12,15 @@ image:
 
 ![google sheet: stock income statement](https://storage.googleapis.com/homuchen.com/images/income-statement-1.jpg)
 
-# 主要功能
+## 主要功能
 
 * **自動更新股價**
 * **根據最新股價，計算損益，並以顏色區分損或益**
 * **近一年的股價折線圖**
 
-# Step by Step
+## Step by Step
 
-## 製作表格
+### 製作表格
 
 首先填入表頭欄位，在這裡我們會有:
 
@@ -36,7 +36,7 @@ image:
 * **持有張數**: 就是你的持有張數...
 * **持有成本**: 每次買股票時，就將成本加上去吧
 
-## 取得最新股價資訊(現價、成交量)，計算市值
+### 取得最新股價資訊(現價、成交量)，計算市值
 
 * **現價**:
 
@@ -53,7 +53,7 @@ image:
 
   將**持有張數**及**現價**相乘即可～ **=D2*G2**
 
-## 計算當日漲跌損益
+### 計算當日漲跌損益
 
 * **漲跌**:
 
@@ -71,7 +71,7 @@ image:
   **IF**及**ISBLANK**的用途爲如果你尚未實有該檔股票，持有成本爲0或空白，卻又寫列入表中觀察，
   則**損益百分比**顯示為0，否則將出現錯誤．
 
-## 股價折線圖
+### 股價折線圖
 
 公式為: **=sparkline(GOOGLEFINANCE(A2, "price",today()-365,today(),1))**
 ![google sheet: GOOGLEFINANCE sparkline](https://storage.googleapis.com/homuchen.com/images/income-statement-6.jpg)
@@ -82,7 +82,7 @@ image:
 * sparkline:
   可以再一個儲存格裡畫圖的函式，詳細的用法可以看我先前寫的文章:[[Google Sheet]Sparkline，在儲存格裡插入迷你圖表](/posts/google-sheet-sparkline/)
 
-## 替漲跌及損益百分比上色
+### 替漲跌及損益百分比上色
 
 最後！股市就是要紅紅綠綠才比較好看，將賺錢的部分標上紅色，虧錢的弄上綠色吧！
 

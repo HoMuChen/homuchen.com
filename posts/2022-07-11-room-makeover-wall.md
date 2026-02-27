@@ -17,7 +17,7 @@ description: |
 
 ![牆壁改造Before and After](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-2.jpg)
 
-# 要改善的點
+## 要改善的點
 從Before的照片中可以看到，牆壁的顏色不均、二十幾年的海報(我妹貼的)、
 醜醜的變電箱及管線、黃黃的開關面板及月曆貼起來的窗戶😂，
 所以這次牆壁改造的點，除了窗簾直接請人家做之後，其他的有:
@@ -26,8 +26,8 @@ description: |
 * 開關面板安裝
 * 變電箱及線路裝飾
 
-# 油漆粉刷
-## 廠牌及顏色
+## 油漆粉刷
+### 廠牌及顏色
 我使用的是得利乳膠漆1501白，以及00NN 62/000的電腦調色。
 
 ![油漆: 1501白、00NN 62/000](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-3.jpg)
@@ -48,7 +48,7 @@ description: |
 想更多了解得利油漆色號的意義的，
 推薦看看這部影片[**油漆小妹線上聊色卡，顏色該怎麼挑選?**](https://www.youtube.com/watch?v=zsmQunVavLE)。
 
-# 開關面板安裝
+## 開關面板安裝
 開關面板老舊發黃，按鍵也不好按，就可以考慮換掉～如果害怕自己接線的話，可以請水電工來做，
 工錢也是一個幾十塊而已。
 
@@ -60,11 +60,11 @@ description: |
 
 詳細的施工過程可以參考網路上，有需多的資料可以去學習，記得施工的時候把總開關關掉比較安全！
 
-# 變電箱及線路遮醜
+## 變電箱及線路遮醜
 選擇使用掛畫來遮擋，上蝦皮就有許多的選擇，背面我是用藍丁膠把畫黏在牆壁上，
 照片上這四幅畫含運費總共花了我1186元。
 
-# 總結
+## 總結
 成果還算滿意～ 
 
 ![房間DIY改造](https://storage.googleapis.com/homuchen.com/images/room-makeover-wall-5.jpg)

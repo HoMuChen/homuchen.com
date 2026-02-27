@@ -9,7 +9,7 @@ tags: [command line]
 在Mac OS裡，該如何使用command line的指令來將你想要的資料複製到剪貼簿呢？
 那就是可以透過**pbcopy**及**pbpaste**指令，也下為一些例子。
 
-# 複製
+## 複製
 * 複製`123`
   ```sh
   echo 123 | pbcopy
@@ -26,7 +26,7 @@ tags: [command line]
   pbcopy < words.txt
   ```
 
-# 貼上
+## 貼上
 * 輸出至stdout
 ```sh
 pbpaste

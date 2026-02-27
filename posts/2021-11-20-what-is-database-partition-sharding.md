@@ -12,7 +12,7 @@ image:
 這些跟NoSQL有關嗎? 在傳統的RDBMS，像是MySQL或PostgreSQL中，這些概念也有用嗎?
 這篇文章將討論上述的問題，看看partition在RDBMS及NoSQL中的實踐應用，以及各種優缺點。
 
-# 什麼是Partition
+## 什麼是Partition
 Partition原意就是**分拆**的意思，在資料的世界裡，就是把一份資料，分成許多小份，
 比如說log file的rotation也是，把今年的日記寫在同一本，去年的日記是另一本也是partition。
 
@@ -26,19 +26,19 @@ vertical partition就是根據欄來做分拆，而horizontal partition是對列
 
 ![vertical partition and horizontal partition](https://storage.googleapis.com/homuchen.com/images/partition-0.jpg)
 
-## Vertical Partition
+### Vertical Partition
 如下圖，vertical partition是根據欄位來進行拆分，會拆分出schema不同的表格，
 主要是為了效能優化，易於管理等目的，再後面的章節中，再來討論應用場景及優缺點。
 
 ![vertical partition](https://storage.googleapis.com/homuchen.com/images/partition-1.jpg)
 
-## Horizontal Partition
+### Horizontal Partition
 horizontal partition，是根據列來進行拆分，
 每個拆分出來的資料集都跟原本的資料集長一樣，只不過是一個子集合。
 
 ![horizontal partition](https://storage.googleapis.com/homuchen.com/images/partition-2.jpg)
 
-# 該如何做Horizontal Partition
+## 該如何做Horizontal Partition
 要根據列來進行拆分的話，就必須有個方法，來決定每一列是屬於哪一份partition，
 作法就是選擇一個資料欄位，用這個欄位經過一些運算或判斷來決定這筆資料屬於哪一個partition，
 而這個欄位就稱為**partitioning key**。
@@ -49,7 +49,7 @@ horizontal partition，是根據列來進行拆分，
 除了上述使用ID奇偶數的方法外，哪些欄位可以適合作為partition key呢? 又有哪些方法來利用每筆資料的partition key，
 使其分配到特定的partition?
 
-## Range based
+### Range based
 就是指shard key依照某個range來指派partition。舉個例子，假設我們選用birthday做為我們的shard key，
 然後指派出生年在1960年前的為partition 1，1960-1990的為partition 2，1990之後的為partition 3。
 
@@ -60,11 +60,11 @@ horizontal partition，是根據列來進行拆分，
 而優點是做range query時，可以就近就拿到幾乎所有的資料，比如說我想要查詢所有1995-1996出生的人，
 此時只要去到partition 3，就可以拿到所有的資料了。
 
-## Hash based
+### Hash based
 另一個作法，就是先將partition key的值先hash過，如此一來就可以避免使用range partition的缺點，也就是造成hot load，
 但是如此一來，將會損失某些資料既有的連續性及相關性。
 
-# Centralized or Distributed?
+## Centralized or Distributed?
 看完了partition的相關概念之後，接著就來看看是要將partition放在同一台機器裡(**Centralized**)，
 或是要分散到多台機器中(**Distributed**)，來討論有何作法及應用場景，
 相對應的好壞處、以及相關市面上已經有哪些solution。
@@ -73,7 +73,7 @@ horizontal partition，是根據列來進行拆分，
 
 按照上圖的編號的順序一個一個來討論～
 
-## Multiple tables [1]
+### Multiple tables [1]
 * **應用場景1**: 將不常用的欄位拆分出來，比如說你有多頁面都會下這樣的查詢:
   ```sql
   SELECT name FROM users WHERE id = '123';
@@ -91,7 +91,7 @@ horizontal partition，是根據列來進行拆分，
   現在多會搭配一些適合OLAP的dataware house一起使用，對此不太了解但有興趣的朋友，
   可以用關鍵字**OLAP**、**data warehouse**、**columnar database**、**column oriented database**去搜尋。
 
-## Table partition [2]
+### Table partition [2]
 * **應用場景**: 最常見的就是選擇**時間**相關的欄位來作為partition key，以下以postgresql為例，
   使用`measurement` table中的`logdate`作為partition key:
   ```sql
@@ -119,7 +119,7 @@ horizontal partition，是根據列來進行拆分，
   所以超過一個月的partition就直接DROP掉就好了！
 * **缺點**: 跟以下的[3]一起說明～
 
-## Multiple RDBMS servers [3]
+### Multiple RDBMS servers [3]
 終於要進到分散式系統的領域了～ 把一份大的檔案分拆成許多小份，當然也有許多益處，
 讀取效能的優化、更易於管理等等，但隨著資料的長大，資料增加的速度越來越快，
 總有一天一台機器還是會遇到瓶頸，此時就有了將資料放在多台機器的想法。
@@ -157,7 +157,7 @@ horizontal partition，是根據列來進行拆分，
   
   其實這裡的解決方法就是選用user_id作為shard key就好了，但不可能所有的資料集都有辦法使用同樣意義的欄位來做partition。
 
-## Sharding in NoSQL [4]
+### Sharding in NoSQL [4]
 在大數據時代，為了處理大量資料而冒出的許多NoSQL都有的內建功能，
 就跟上面講的原理一樣，只不過這次資料庫本身就幫我們把sharding這件事都處理好拉～
 不需要我們寫任何一行的code，只需要在configuration file或UI上設置一下就好。
@@ -171,7 +171,7 @@ horizontal partition，是根據列來進行拆分，
 比如說MongoDB可以自己選擇shard key，也可以選擇shard strategy，
 大家可以根據自己的use case來調整，詳見[MongoDB sharding](https://docs.mongodb.com/manual/sharding/)
 
-## Multiple services? [5]
+### Multiple services? [5]
 其實好像沒看到DB做vertical partition，然後把不同的partition分散到不同的機器上的，就算是column oriented的DB，
 應該也是用horizontal partition的方式來分散它的資料(不太確定)，如果有人想要補充，歡迎留言～開開孤陋寡聞的我的見識。
 
@@ -179,7 +179,7 @@ horizontal partition，是根據列來進行拆分，
 雖然DB也可以存，不過也可以將它拆出來，使用其他的服務像是AWS S3、或是GCP的GCS，好拉，
 其實加這個就只是要讓我的表格不會空一格😂
 
-# 總結
+## 總結
 今天知道了什麼是partition，有分為vertical及horizontal的，以及該如何做horizontal partition，選定shard key，
 以及決定你的shard strategy，不管你是自己做，還是資料庫幫你做好好的，根本的核心概念及會面臨的問題都是一樣的，
 有了這些概念，對於不管是自己家系統的架構，或是別的資料庫產品，都有更好地了解，
@@ -187,7 +187,7 @@ horizontal partition，是根據列來進行拆分，
 
 感謝你的閱讀，有很多地方我可能還是不懂或搞錯的，或是有任何想法，更棒的idea想討論的，都歡迎可以留言唷～ 掰掰👋
 
-# 參考資料
+## 參考資料
 * [PostgreSQL: Documentation](https://www.postgresql.org/docs/10/ddl-partitioning.html)
 * [Understanding Database Sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
 * [MongoDB sharding](https://docs.mongodb.com/manual/sharding/)

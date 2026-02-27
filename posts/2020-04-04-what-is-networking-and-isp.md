@@ -10,7 +10,7 @@ image:
 
 網路，可能是人類最大的工程成就之一，如今有數十億的人透過網路連接，在幾秒鐘之內就能夠互相通訊、完成某種任務，各種裝置互相連結，包括伺服器，個人桌上型電腦、平板、手機、未來還會有更多樣的things加入，例如車子、家電、各種感測器 ，等等．如此巨大的工程，大規模的全世界的共同合作，到底是如何做到的？工程架構的決定、協議的制定都值得去借鏡學習．
 
-# 網路的組成
+## 網路的組成
 
 網路連接了世界上數十億的裝置，這些連上網路的裝置就稱為hosts, end-systems，而網路本身由communocation links及packets switches組成，links就是指電話線呀、同軸電纜、光纖、電磁波頻譜這些實際傳送資料的媒介，而資料從一個host到另一個host是被拆分成許多一個一個的packet，藉由link傳送，到達packets switches，每個switch則負責把packet從進來的link選擇一個link傳出去，最後到達目的地．
 
@@ -19,7 +19,7 @@ image:
 那到底是誰提供這些links及switches給我們的裝置去連接上呢？就是網際網路服務供應商，Internet Service Provider，ISP．
 
 
-# Internet Service Provider(ISP)
+## Internet Service Provider(ISP)
 
 在台灣，當我們想要使用網路時，就要去找中華電信、遠傳、台灣大哥大等等的電信商，他們就是ISP，負責建設基礎設施，設定連結，我們透過行動網路、光纖、DSL連上，網路供應商的設備就會負責傳遞資料來往於我們與目的地之間．
 

@@ -17,13 +17,13 @@ image:
 在這一篇[**[Google sheet]我如何製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/)裡，
 我們已經建立了持有股票清單，我就想說如果同時可以同時看到每一間公司的相關新聞應該不錯，所以才會有了這篇．
 
-# 公式
+## 公式
 
 **=IMPORTFEED(CONCATENATE("https://news.google.com/atom/search?q=", A1, "&hl=zh-TW&gl=TW&ceid=TW:zh-Hant&sort=rated"), "items", false, 150)**
 
 以上公式會使用**A1**儲存格的字去google news查詢，列出150項結果，以下將分別說明各個函式的用法.
 
-# IMPORTFEED
+## IMPORTFEED
 
 IMPORTFEED爲要匯入新聞RSS Feed的函式，有四個參數，用法為: **IMPORTFEED(網址, [查詢], [標題], [項數])**
 
@@ -59,7 +59,7 @@ IMPORTFEED爲要匯入新聞RSS Feed的函式，有四個參數，用法為: **I
 
   舉例: IMPORTFEED(A1, "items", TRUE, 200)
 
-# CONCATENATE
+## CONCATENATE
 
 就是把所有的參數串起來，例如=CONCATENATE("123", "456")，就會相當於"123456"．
 
@@ -71,6 +71,6 @@ IMPORTFEED爲要匯入新聞RSS Feed的函式，有四個參數，用法為: **I
 
 就會相當於"https://news.google.com/atom/search?q=台積電&hl=zh-TW&gl=TW&ceid=TW:zh-Hant&sort=rated"
 
-# Summary
+## Summary
 
 利用以上兩個公式，可能成功在試算表上看新聞囉～ 🎉，掰掰～👋

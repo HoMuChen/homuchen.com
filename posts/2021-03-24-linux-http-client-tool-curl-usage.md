@@ -10,7 +10,7 @@ image:
 
 做為一個HTTP client，想要對server發出請求，有許多做法，可能是寫一個python script 或使用其他任何語言，也可以是使用[postman](https://www.postman.com/)這樣的工具，或者是直接在command line上或shell script中使用curl指令．當你想要快速地測試一下某個API，或是explore別人的HTTP service時，直接使用curl是還蠻方便的！甚至直接用shell script來寫爬蟲了！
 
-# Outline
+## Outline
 
 * HTTP Request message
 * Curl 的許多參數及用法
@@ -19,17 +19,17 @@ image:
 
 ![curl](https://storage.googleapis.com/homuchen.com/images/curl-1.jpg)
 
-# HTTP Request message
+## HTTP Request message
 
 作為一個HTTP client，要送出一個request，我們先必須知道送出去的message到底會有哪些東西組成．
 
-## Request line
+### Request line
 HTTP message的第一行，由method、URL、version所組成，例如：
 ```
 GET /index.html HTTP/1.1
 ```
 
-## Header lines
+### Header lines
 第二行開始，每一行是為一個header，field及value由冒號隔開，例如
 ```
 Host: www.google.com
@@ -37,7 +37,7 @@ Connection: Close
 Accept-Language: en
 ```
 
-## body
+### body
 Header結束空一行之後是為body，method是GET的就沒有body，例如你的表單POST的一些資料就會放在body，可能長這樣：
 ```
 name=HoMu&phone=0912345678&email=homu@email.com
@@ -47,22 +47,22 @@ name=HoMu&phone=0912345678&email=homu@email.com
 
 [**[Networking] HTTP 簡介，以及使用telnet、nc、curl等指令來探索**](/posts/http-introduction-telnet-nc-curl/)
 
-# Curl
+## Curl
 所以我們要如何使用curl指令來產生HTTP message呢？！
 
-## 基本
+### 基本
 URL是必須的，什麼參數都沒有，就產生一個GET message
 ```
 curl www.google.com
 ```
 
-## -X
+### -X
 設定你想要的method，例如你想要POST，如：
 ```
 curl -X POST api.host.com/v1/users
 ```
 
-## -H
+### -H
 加上headers，用冒號隔開field及value，如果想要多個header就多打幾次-H，如：
 
 ```
@@ -72,7 +72,7 @@ curl -X POST \
      api.host.com/v1/users
 ```
 
-## -d
+### -d
 加上body，比如你想POST JSON string的data給你的API：
 ```
 curl -X POST -H 'Content-Type: application/json' localhost:3000/api -d '{"name": "HoMu", "age": 30}'
@@ -83,39 +83,39 @@ curl -X POST -H 'Content-Type: application/json' localhost:3000/api -d '{"name":
 curl -X POST -H 'Content-Type: application/json' localhost:3000/api -d @FILEPATH
 ```
 
-## -i
+### -i
 按下Enter後，你得到會是server傳回來的body，如果你想要看response的header的話，要加上-i
 
-## -F
+### -F
 上傳檔案
 
-# 利用nc指令看看自己到了傳了什麼
+## 利用nc指令看看自己到了傳了什麼
 你可能寫了curl指令，不太確定用法，想知道到底curl形成出來的message是不是自己想要的格式，這時可以使用nc指令，在本機端起一個tcp server，在curl這個server，就可以看到HTTP的message囉．
 
-## nc監聽在port 3000
+### nc監聽在port 3000
 ```
 nc -l 3000
 ```
 
-## curl port 3000
+### curl port 3000
 ```
 curl localhost:3000
 ```
 
-# 其他常見使用情況
-## redirect
+## 其他常見使用情況
+### redirect
 當curl回來的資料是html時，直接在terminal上噴出一堆字也是很難看，這時長搭配redirect io，把回傳回來的html string寫到檔案裡，就可以用瀏覽器打開來了．
 ```
 curl www.google.com > gg.html
 ```
 
-## jq
+### jq
 如果content-type是json的話，可以使用jq command幫你parse，不然一堆json string噴在螢幕上，也是眼花．
 ```
 curl api.host.com/users | jq
 ```
 
-# Summary
+## Summary
 今天簡單看了一下HTTP message的格式，以及如何用curl來做出自己想要的HTTP Request，並且知道自己到底有沒有寫對．
 
 這是RESTful API一系列文章中的一篇，想了解更多關於RESTful API及HTTP的，可以看這篇目錄:
