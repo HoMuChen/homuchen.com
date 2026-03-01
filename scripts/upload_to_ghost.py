@@ -68,7 +68,7 @@ def parse_post(filepath: str):
     # Parse date (fallback to filename date if frontmatter date is missing)
     date_val = fm.get("date", "")
     if hasattr(date_val, "isoformat"):
-        date_str = date_val.isoformat()
+        date_str = date_val.isoformat() + "T00:00:00.000Z" if len(date_val.isoformat()) == 10 else date_val.isoformat()
     else:
         date_str = str(date_val).strip()
         date_match = re.match(r"(\d{4}-\d{2}-\d{2})", date_str)

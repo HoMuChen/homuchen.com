@@ -1,6 +1,6 @@
 ---
 title: "AI Agent 到底是什麼？跟 ChatBot 差在哪？"
-date: 2026-02-26
+date: 2026-03-01
 author: HoMuChen
 category: AI
 tags: [AI, AI agent, ChatBot, Agentic AI, Claude]
