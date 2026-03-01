@@ -39,7 +39,7 @@ docs/                # 部署與設定文件
 title: "文章標題（繁體中文）"
 date: YYYY-MM-DD
 author: HoMuChen
-category: 生活 / 讀書筆記 / Web Development
+category: 生活 / 讀書筆記 / Web Development / AI
 tags: [tag1, tag2]
 image: image-name.jpg
 description: "選填。文章摘要描述，用於 SEO meta description。"
@@ -47,7 +47,7 @@ description: "選填。文章摘要描述，用於 SEO meta description。"
 ```
 
 - `author` 固定為 `HoMuChen`
-- `category` 常見值：`生活`、`讀書筆記`、`Web Development`
+- `category` 常見值：`生活`、`讀書筆記`、`Web Development`、`AI`
 - `image` 和 `description` 為選填，但建議填寫以利 SEO
 - 使用通用 Markdown 格式，不使用 Jekyll 特有語法（如 `{:target="_blank"}`、`{{site.cdn_url}}`、`layout` 等）
 - 內部連結格式：`/posts/{slug}/`，**不含日期**。slug 對應檔名去掉日期前綴的部分，例如檔案 `2026-02-25-claude-cowork-ai-from-chat-to-work.md` 的連結是 `/posts/claude-cowork-ai-from-chat-to-work/`
@@ -115,18 +115,37 @@ SEO 注意事項：
 - 發布一篇文章 → 更新該篇狀態為「已發布」
 - 開始新 session 處理系列文章時，先讀設計文件了解進度
 
-## 既有文章主題分類
+## 文章分類（Ghost Primary Tags）
 
-以下是目前部落格涵蓋的主題系列，撰寫新文章時應考慮與這些系列的關聯：
+Ghost 沒有 category，以 **primary tag**（第一個 tag）作為分類。所有文章歸屬於以下 4 大分類，撰寫新文章時必須從中選擇一個作為 primary tag：
 
-- **RESTful API / HTTP 系列**：從 HTTP 基礎到 API 設計（10+ 篇）
-- **遠端工作系列**：優點、缺點、老闆角度、如何談、住宿、簽證、職缺趨勢
-- **讀書筆記系列**：原子習慣、為什麼要睡覺、金錢心理學、一週工作四小時等
-- **房間改造系列**：地板、牆壁、門、家具、工作區、總覽
-- **密碼學系列**：為什麼需要密碼學、Hash Function、Node.js 實作
-- **Google Sheet 工具系列**：記帳、股票、RSS、Sparkline、下拉選單
-- **網路概論系列**：ISP、分層架構、應用層
-- **生活/心理學**：時間管理法則、峰終定律、柴嘉尼效應、動機
+| 分類 | 文章數 | 說明 |
+|------|--------|------|
+| **Web Development** | 42 | 技術文章：RESTful API、HTTP、Node.js、密碼學、網路概論、系統設計等 |
+| **生活** | 35 | 生活分享：遠端工作、房間改造、Google Sheet 工具、心理學、時間管理等 |
+| **讀書筆記** | 15 | 讀書心得：原子習慣、為什麼要睡覺、金錢心理學、一週工作四小時等 |
+| **AI** | 7 | AI 相關：Vibe Coding、AI Agent、Claude Cowork、Agentic AI 等 |
+
+### 各分類下的主題系列
+
+**Web Development（42 篇）**
+- RESTful API / HTTP 系列：從 HTTP 基礎到 API 設計（10+ 篇）
+- 密碼學系列：為什麼需要密碼學、Hash Function、Node.js 實作
+- 網路概論系列：ISP、分層架構、應用層
+- Ghost / 部落格架設系列
+
+**生活（35 篇）**
+- 遠端工作系列：優點、缺點、老闆角度、如何談、住宿、簽證、職缺趨勢
+- 房間改造系列：地板、牆壁、門、家具、工作區、總覽
+- Google Sheet 工具系列：記帳、股票、RSS、Sparkline、下拉選單
+- 心理學 / 生活：時間管理法則、峰終定律、柴嘉尼效應、動機
+
+**讀書筆記（15 篇）**
+- 原子習慣、為什麼要睡覺、金錢心理學、一週工作四小時等
+
+**AI（7 篇）**
+- Claude Cowork 打造 AI Agent 系列
+- Vibe Coding 系列：基礎教學、擺脫 AI 味
 
 ## 寫作風格重點提醒
 
