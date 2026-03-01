@@ -3,8 +3,8 @@
 ## 平台資訊
 
 - Ghost 自架於 GCP
-- 網址：https://hammerhub.co
-- Ghost Admin：https://hammerhub.co/ghost/
+- 網址：https://homuchen.com
+- Ghost Admin：https://homuchen.com/ghost/
 
 ## URL 結構
 
@@ -48,7 +48,7 @@ collections:
 
 routes.yaml 和 redirects.yaml 透過 Ghost Admin UI 上傳：
 
-1. 前往 https://hammerhub.co/ghost/#/settings
+1. 前往 https://homuchen.com/ghost/#/settings
 2. 找到 **Labs**
 3. Upload routes YAML
 4. Upload redirects YAML
@@ -93,3 +93,68 @@ routes.yaml 和 redirects.yaml 透過 Ghost Admin UI 上傳：
 - `{:target="_blank"}` 及所有變體（`{:target="..." name="..."}`、`{:loading="lazy"}`）
 - `layout: post` frontmatter
 - `{{site.cdn_url}}` → 已替換為 `https://storage.googleapis.com/homuchen.com/images`
+
+### 已完成的 Heading 層級修正
+
+所有 84 篇文章的 heading 層級已修正，確保：
+- 文章標題（frontmatter `title`）為 H1（Ghost 自動處理）
+- 內文標題從 H2 開始（原本的 `#` → `##`，`##` → `###`，`###` → `####`）
+
+## 批次上傳腳本
+
+### `scripts/upload_to_ghost.py`
+
+Python 腳本，用於批次將 `posts/` 目錄下的 Markdown 文章上傳到 Ghost 作為草稿。
+
+### 依賴
+
+```bash
+pip install markdown pyyaml
+```
+
+### 環境變數
+
+腳本從系統環境變數讀取 Ghost 憑證（定義在 `.env` 中）：
+
+```bash
+export $(grep -v '^#' .env | xargs)
+```
+
+### 使用方式
+
+```bash
+# 上傳指定年份的文章
+python3 scripts/upload_to_ghost.py posts/2022-*.md
+
+# 上傳特定文章
+python3 scripts/upload_to_ghost.py posts/2020-12-28-system-design-data-model-relational-vs-document.md
+
+# 不帶參數：上傳所有 posts/*.md
+python3 scripts/upload_to_ghost.py
+```
+
+### 功能
+
+- 解析 YAML frontmatter（title, date, tags, category, image, description）
+- 從檔名衍生 slug（去掉日期前綴，例如 `2024-07-04-my-post.md` → `my-post`）
+- 日期 fallback：frontmatter `date` → 檔名日期
+- Tags：合併 `category` + `tags` 欄位
+- Feature image：支援 `image.path`（dict）和 `image`（string）兩種格式
+- Markdown → HTML → Lexical JSON 完整轉換流程
+- 上傳為**草稿**（`status: draft`）
+
+### 上傳後的操作
+
+上傳為草稿後，通常需要透過 Ghost Admin API 進行：
+
+1. **發布**：PUT 更新 `status` 為 `"published"`（不要送 newsletter 參數即不寄信）
+2. **設定 Template**：PUT 更新 `custom_template` 為 `"custom-no-feature-image"`
+3. 上述兩個操作可以在同一個 PUT request 中完成
+
+### 已上傳年度
+
+| 年度 | 篇數 | 狀態 |
+|------|------|------|
+| 2017–2020 | 12 | 已發布 |
+| 2021 | 38 | 已發布 |
+| 2022 | 34 | 已發布 |
