@@ -14,7 +14,7 @@
 | 篇數 | 狀態 | 檔案 |
 |------|------|------|
 | #1 | 已發布 | `posts/2026-02-25-claude-cowork-ai-from-chat-to-work.md` |
-| #2 | 已撰寫 | `posts/2026-02-26-what-is-ai-agent-vs-chatbot.md` |
+| #2 | 已發布 | `posts/2026-03-01-what-is-ai-agent-vs-chatbot.md` |
 | #3 | 未撰寫 | — |
 | #4 | 未撰寫 | — |
 | #5 | 未撰寫 | — |
