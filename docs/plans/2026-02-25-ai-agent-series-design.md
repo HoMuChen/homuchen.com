@@ -15,7 +15,7 @@
 |------|------|------|
 | #1 | 已發布 | `posts/2026-02-25-claude-cowork-ai-from-chat-to-work.md` |
 | #2 | 已發布 | `posts/2026-03-01-what-is-ai-agent-vs-chatbot.md` |
-| #3 | 未撰寫 | — |
+| #3 | 已發布 | `posts/2026-03-03-ai-agent-how-it-thinks.md` |
 | #4 | 未撰寫 | — |
 | #5 | 未撰寫 | — |
 | #6 | 未撰寫 | — |
