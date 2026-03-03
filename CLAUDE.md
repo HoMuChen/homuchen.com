@@ -41,14 +41,15 @@ date: YYYY-MM-DD
 author: HoMuChen
 category: 生活 / 讀書筆記 / Web Development / AI
 tags: [tag1, tag2]
-image: image-name.jpg
+image: https://storage.googleapis.com/homuchen.com/images/{slug}-0.jpg
 description: "選填。文章摘要描述，用於 SEO meta description。"
 ---
 ```
 
 - `author` 固定為 `HoMuChen`
 - `category` 常見值：`生活`、`讀書筆記`、`Web Development`、`AI`
-- `image` 和 `description` 為選填，但建議填寫以利 SEO
+- `image` 固定格式為 `https://storage.googleapis.com/homuchen.com/images/{slug}-0.jpg`，其中 `{slug}` 替換為文章的 slug（檔名去掉日期前綴）
+- `description` 為選填，但建議填寫以利 SEO
 - 使用通用 Markdown 格式，不使用 Jekyll 特有語法（如 `{:target="_blank"}`、`{{site.cdn_url}}`、`layout` 等）
 - 內部連結格式：`/posts/{slug}/`，**不含日期**。slug 對應檔名去掉日期前綴的部分，例如檔案 `2026-02-25-claude-cowork-ai-from-chat-to-work.md` 的連結是 `/posts/claude-cowork-ai-from-chat-to-work/`
 
