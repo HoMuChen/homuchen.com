@@ -74,13 +74,21 @@ Authorization: Ghost ${TOKEN}
 | List posts | Content | GET | `/ghost/api/content/posts/` |
 | Read post by slug | Content | GET | `/ghost/api/content/posts/slug/{slug}/` |
 | List tags | Content | GET | `/ghost/api/content/tags/` |
+| List pages | Content | GET | `/ghost/api/content/pages/` |
 | List all posts (incl. drafts) | Admin | GET | `/ghost/api/admin/posts/` |
 | Create post | Admin | POST | `/ghost/api/admin/posts/` |
 | Update post | Admin | PUT | `/ghost/api/admin/posts/{id}/` |
 | Delete post | Admin | DELETE | `/ghost/api/admin/posts/{id}/` |
+| List all pages (incl. drafts) | Admin | GET | `/ghost/api/admin/pages/` |
+| Create page | Admin | POST | `/ghost/api/admin/pages/` |
+| Update page | Admin | PUT | `/ghost/api/admin/pages/{id}/` |
+| Delete page | Admin | DELETE | `/ghost/api/admin/pages/{id}/` |
 | Upload image | Admin | POST | `/ghost/api/admin/images/upload/` |
 | List tags (admin) | Admin | GET | `/ghost/api/admin/tags/` |
 | Create tag | Admin | POST | `/ghost/api/admin/tags/` |
+| List members | Admin | GET | `/ghost/api/admin/members/` |
+| Create member | Admin | POST | `/ghost/api/admin/members/` |
+| Update member | Admin | PUT | `/ghost/api/admin/members/{id}/` |
 
 ## Reading Posts
 
@@ -122,6 +130,71 @@ curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit
 # Tags with post count
 curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit=all&include=count.posts" | jq .
 ```
+
+## Creating / Publishing Pages
+
+Pages are static content (services, courses, about, contact) — NOT blog posts. The API is identical to Posts but uses `/ghost/api/admin/pages/` endpoint.
+
+### Page-specific fields
+
+| Field | Type | Notes |
+|-------|------|-------|
+| `custom_template` | string | Template filename without `.hbs` (e.g. `custom-service`, `custom-course`) |
+| All post fields | — | Pages support the same fields as posts (title, lexical, tags, slug, etc.) |
+
+### Internal tags for page categorization
+
+Use `#` prefix for internal tags (hidden from public, used for template queries):
+
+- `#service` — pages listed on `/services/` via `{{#get "pages" filter="tag:hash-service"}}`
+- `#course` — pages listed on `/courses/` via `{{#get "pages" filter="tag:hash-course"}}`
+
+### Creating a page (Python — recommended)
+
+Use `scripts/upload_to_ghost.py`'s Lexical converter for proper block-level content:
+
+```python
+import sys, os
+# Load .env first
+with open('.env') as f:
+    for line in f:
+        if '=' in line and not line.startswith('#'):
+            k, v = line.strip().split('=', 1)
+            os.environ[k] = v
+
+import pathlib
+skill_dir = pathlib.Path(__file__).parent  # or: '.claude/skills/ghost-api'
+sys.path.insert(0, str(skill_dir))
+from upload_to_ghost import generate_ghost_token, md_to_html, html_to_lexical
+
+html = md_to_html(markdown_content)
+lexical = html_to_lexical(html)
+
+page_data = {
+    "pages": [{
+        "title": "Page Title",
+        "slug": "page-slug",
+        "lexical": lexical,
+        "custom_excerpt": "Short description for cards",
+        "custom_template": "custom-service",  # or "custom-course"
+        "tags": [{"name": "#service"}],        # internal tag
+        "status": "draft",
+    }]
+}
+```
+
+**CRITICAL**: Do NOT use the `html` field — Ghost v6 silently creates empty pages. Always use `lexical` with the `html_to_lexical()` converter from `scripts/upload_to_ghost.py`.
+
+### Page vs Post: when to use which
+
+| Use Page for | Use Post for |
+|-------------|-------------|
+| Service descriptions | Blog articles |
+| Course sales pages | Tutorial content |
+| About, Contact | Course lesson content (paid posts) |
+| Any static content | Time-based, chronological content |
+
+---
 
 ## Creating / Publishing Posts
 
@@ -369,15 +442,51 @@ def preprocess_markdown(md):
     return '\n'.join(result)
 ```
 
+## Workflow: Creating Ghost Pages (Services, Courses, etc.)
+
+Use the same Markdown → HTML → Lexical pipeline from `scripts/upload_to_ghost.py`:
+
+```bash
+python3 scripts/create_course_page.py
+```
+
+Or adapt inline:
+
+```python
+# 1. Load env
+with open('.env') as f:
+    for line in f:
+        if '=' in line and not line.startswith('#'):
+            k, v = line.strip().split('=', 1)
+            os.environ[k] = v
+
+# 2. Import converters
+import pathlib
+skill_dir = pathlib.Path(__file__).parent  # or: '.claude/skills/ghost-api'
+sys.path.insert(0, str(skill_dir))
+from upload_to_ghost import generate_ghost_token, md_to_html, html_to_lexical
+
+# 3. Convert content
+html = md_to_html(markdown_string)
+lexical = html_to_lexical(html)  # Returns proper block-level Lexical JSON
+
+# 4. POST to /ghost/api/admin/pages/
+page_data = {"pages": [{"title": "...", "slug": "...", "lexical": lexical, ...}]}
+```
+
+**Key point**: MUST load `.env` BEFORE importing `upload_to_ghost` because it reads `GHOST_ADMIN_API_KEY` at import time.
+
 ## Common Mistakes
 
-- **`source: "html"` broken in Ghost v6.0** — creates empty posts. Must use `lexical` field with Lexical JSON
+- **`html` field creates empty content in Ghost v6.0** — the `html` field is silently ignored for both Posts and Pages. Must use `lexical` field with Lexical JSON converted via `html_to_lexical()` from `scripts/upload_to_ghost.py`
+- **Single HTML card = one uneditable block** — wrapping all HTML in one Lexical `{"type": "html"}` node makes the entire content a single block in the editor. Use `html_to_lexical()` to split into proper paragraph/heading/list nodes
 - **Empty list items** — whitespace between `</li>` and `<li>` in HTML becomes phantom text nodes; filter non-listitem children when building list nodes
 - **List merged into paragraph** — markdown needs blank line before `* ` items; preprocess markdown before conversion
-- **Post created as draft instead of published** — must explicitly set `"status": "published"`
+- **Post/Page created as draft instead of published** — must explicitly set `"status": "published"`
 - **JWT expired** — tokens are valid for 5 minutes only; regenerate before each request
 - **Tags replaced on edit** — when updating, pass the FULL list of tags, not just new ones
 - **Missing `updated_at` on edit** — causes 409 conflict; always fetch current version first
 - **Wrong audience in JWT** — must be `"/admin/"`, not `"/v2/admin/"` or other paths
 - **Content-Type missing** — POST/PUT requests need `Content-Type: application/json; charset=utf-8`
 - **`source .env` fails silently** — in Claude Code's bash, `source .env` doesn't persist variables; use `export $(grep -v '^#' .env | xargs)` instead
+- **Pages endpoint vs Posts endpoint** — Pages use `/ghost/api/admin/pages/`, not `/ghost/api/admin/posts/`. Same payload format, different URL
