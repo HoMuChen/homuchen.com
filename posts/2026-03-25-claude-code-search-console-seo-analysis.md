@@ -178,6 +178,40 @@ Claude 會回傳總點擊數、總曝光數、平均 CTR 和平均排名。這�
 
 這些分析如果自己手動做，可能要花一兩個小時。用 Claude Code？**一句話，30 秒。**
 
+## 實戰：用 Claude Code 直接改標題和描述
+
+光是看數據還不夠，重點是**採取行動**。
+
+我看到 hash 那篇文章有 4,594 次曝光但只有 3 次點擊，馬上請 Claude Code 幫我查這篇文章被哪些關鍵字搜到：
+
+> 「查 what-is-hash-function 這個頁面被哪些關鍵字搜到」
+
+結果發現，最多人搜的是「hash」和「hash functions」，但我的舊標題是「什麼是Hash Function? 有什麼特性及用途?」— 太學術了，搜「hash」的人看到這個標題不會想點。
+
+所以我直接跟 Claude Code 說：
+
+> 「幫我把這篇文章的標題改成『Hash 是什麼？一次搞懂 Hash Function 的原理、特性與應用』，description 改成 ...，然後更新到 Ghost」
+
+Claude Code 就透過 Ghost Admin API，一次幫我更新了標題、meta title、meta description、custom excerpt。**整個過程不到 30 秒，不需要登入 Ghost 後台。**
+
+我用同樣的方式一口氣改了三篇：
+
+| 文章 | 舊標題 | 新標題 |
+|------|--------|--------|
+| Hash | 什麼是Hash Function? 有什麼特性及用途? | **Hash 是什麼？一次搞懂 Hash Function 的原理、特性與應用** |
+| ISP | [Networking]什麼是網路？...ISP | **ISP 是什麼？網路服務供應商如何讓你連上網路** |
+| Pagination | REST API Design: Pagination | **Pagination 是什麼？API 分頁設計完整指南** |
+
+改標題的邏輯很簡單：
+
+1. **把最多人搜的關鍵字放到標題最前面**（hash、ISP、Pagination）
+2. **加上「是什麼？」的問句**，對應搜尋者的意圖
+3. **用中文描述內容**，讓繁中搜尋者更想點進來
+
+**改標題是 SEO 裡投資報酬率最高的動作** — 花 10 分鐘改三篇標題，就可能每月多出 100-200 次點擊。而用 Claude Code，連 10 分鐘都不用。
+
+![用 Claude Code 更新 Ghost 文章標題](https://storage.googleapis.com/homuchen.com/images/claude-code-search-console-seo-analysis-1.jpg)
+
 ## 進階玩法：搭配內容策略
 
 光是查數據只是第一步。真正厲害的是把 Search Console 數據結合你的寫作流程。

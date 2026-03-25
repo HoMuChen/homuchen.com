@@ -1,8 +1,8 @@
 ---
-title:  "REST API Design: Pagination"
+title:  "Pagination 是什麼？API 分頁設計完整指南"
 date:   2022-04-14 22:35:00 +0800
 author: HoMuChen
-description: 什麼是Pagination？為何要使用，以及在HTTP API設計中該如何實作呢？
+description: "Pagination（分頁）是什麼？為什麼 API 需要分頁？完整介紹 Offset、Cursor 兩種分頁做法的差異與實作方式，讓你的 REST API 回應更快、體驗更好。"
 category: Web Development
 tags: [api, http, restful api]
 image:

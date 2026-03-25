@@ -1,11 +1,12 @@
 ---
-title:  "[Networking]什麼是網路？網路的組成及網路服務供應商 ISP"
+title:  "ISP 是什麼？網路服務供應商如何讓你連上網路"
 date:   2020-04-04 20:00:00 +0800
 author: HoMuChen
 category: Networking
-tags: [ISP]
+tags: [ISP, networking]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/isp-2.jpg
+description: "ISP（Internet Service Provider）是什麼？網路服務供應商在網路架構中扮演什麼角色？從網路的組成到 ISP 的分層架構，用簡單的方式搞懂你的網路是怎麼連上全世界的。"
 ---
 
 網路，可能是人類最大的工程成就之一，如今有數十億的人透過網路連接，在幾秒鐘之內就能夠互相通訊、完成某種任務，各種裝置互相連結，包括伺服器，個人桌上型電腦、平板、手機、未來還會有更多樣的things加入，例如車子、家電、各種感測器 ，等等．如此巨大的工程，大規模的全世界的共同合作，到底是如何做到的？工程架構的決定、協議的制定都值得去借鏡學習．

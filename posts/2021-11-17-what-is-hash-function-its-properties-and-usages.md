@@ -1,13 +1,12 @@
 ---
-title:  "什麼是Hash Function? 有什麼特性及用途?"
+title:  "Hash 是什麼？一次搞懂 Hash Function 的原理、特性與應用"
 date: 2021-11-17 17:52:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [crypto]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/hash-function-0.jpg
-description: |
-  除了了解hash function是什麼及其特性之外，用更生活化的方式來展現這些特性，以及以有趣的應用來更加地熟悉hash function。
+description: "Hash 是什麼？Hash Function 有哪些特性？用生活化的比喻解釋 Hash 的不可逆性、碰撞抵抗等核心概念，並介紹密碼儲存、資料驗證等實際應用。"
 ---
 
 在之前一篇文章: [**密碼學是什麼? 有何用途以及要解決什麼樣的問題?**](/posts/what-problems-cryptography-to-solve)
