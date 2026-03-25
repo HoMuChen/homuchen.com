@@ -1,7 +1,13 @@
 routes:
+  /:
+    template: home
+  /services/:
+    template: services
+  /courses/:
+    template: courses
 
 collections:
-  /:
+  /blog/:
     permalink: /posts/{slug}/
     template: index
 

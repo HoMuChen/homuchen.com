@@ -1,4 +1,5 @@
 301:
+  ^/rss/$: /blog/rss/
   ^/claude-cowork-ai-from-chat-to-work/$: /posts/claude-cowork-ai-from-chat-to-work/
   ^/vibe-coding-tutorial-how-web-works/$: /posts/vibe-coding-tutorial-how-web-works/
   ^/vibe-coding-avoid-ai-style-how-to-make-high-quality-website/$: /posts/vibe-coding-avoid-ai-style-how-to-make-high-quality-website/
