@@ -103,6 +103,8 @@ sh ./104.sh 軟體工程師 1 | jq .data.totalCount >> data.csv
 ```
 一天跑個一次，一份csv檔案，就可以達到我們想要目的。
 
+到了 AI Agent 時代，其實連 shell script 都可以不用自己寫了——你只要把需求講清楚，讓 AI 幫你規劃 curl 指令、處理回傳資料、還能根據中間結果調整策略。我在 [**Claude Code + Shopify Admin API：讓 AI 當你的電商營運小幫手**](/posts/claude-code-shopify-admin-api-ecommerce-assistant/) 這篇有完整的實戰案例，是這種 shell script 爬蟲思維的進化版。
+
 感謝你閱讀到這邊～希望以上的內容對你有一丁點的幫助，掰掰～ 👋
 
 ## 附錄

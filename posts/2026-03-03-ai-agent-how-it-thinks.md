@@ -178,6 +178,6 @@ AI Agent 的運作方式，就是這樣。
 
 理解這個循環，可以幫助你更好地跟 AI Agent 協作——知道它在做什麼，也知道哪裡可以介入指引它。
 
-這是 **Claude Cowork 打造 AI Agent 系列**的第三篇。下一篇我們要聊的是：**Skill 是什麼？讓 AI Agent 從通才變專家** — 也就是說，怎麼給你的 Agent 準備一份 SOP，讓它每次都能按照你想要的方式做事。
+這是 **Claude Cowork 打造 AI Agent 系列**的第三篇。下一篇我們要聊的是：[**Skill 是什麼？讓 AI Agent 從通才變專家**](/posts/what-is-ai-agent-skill/) — 也就是說，怎麼給你的 Agent 準備一份 SOP，讓它每次都能按照你想要的方式做事。
 
 希望以上的內容對大家有一丁點兒的幫助，掰掰～👋

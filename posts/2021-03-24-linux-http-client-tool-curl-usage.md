@@ -291,6 +291,7 @@ curl 是每個開發者都該熟悉的工具，不管是測試 API、debug HTTP 
 延伸閱讀：
 * [**HTTP 簡介，以及使用 telnet、nc、curl 等指令來探索**](/posts/http-introduction-telnet-nc-curl/)
 * [**HTTP Headers 完整介紹**](/posts/http-headers/)
+* [**Claude Code + Shopify Admin API：讓 AI 當你的電商營運小幫手**](/posts/claude-code-shopify-admin-api-ecommerce-assistant/) — 實戰案例：用 curl 打 API 批次上架 50 筆商品
 
 感謝您的閱讀～希望對大家有一丁點兒的幫助，掰掰～👋
 
