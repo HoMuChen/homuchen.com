@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #0a0a0b;
+        font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+        color: #f4f4f2;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ---------- shared scene scaffolding ---------- */
+      .scene {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #0a0a0b;
+      }
+      #scene1 { z-index: 1; }
+      #scene2, #scene3, #scene4, #scene5, #scene6, #scene7 { opacity: 0; }
+      #scene2 { z-index: 2; }
+      #scene3 { z-index: 3; }
+      #scene4 { z-index: 4; }
+      #scene5 { z-index: 5; }
+      #scene6 { z-index: 6; }
+      #scene7 { z-index: 7; }
+
+      .scene-inner { position: relative; width: 100%; height: 100%; }
+
+      /* background grid */
+      .grid-bg {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(to right, rgba(244,244,242,0.025) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(244,244,242,0.025) 1px, transparent 1px);
+        background-size: 160px 160px;
+        pointer-events: none;
+      }
+      .hairline-h {
+        position: absolute;
+        left: 160px;
+        right: 160px;
+        height: 1px;
+        background: #1b1b1d;
+      }
+
+      .eyebrow {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: #8a8a88;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 32px;
+        height: 1px;
+        background: currentColor;
+      }
+      .eyebrow.blue { color: #5a8cff; }
+      .eyebrow.amber { color: #f6a93b; }
+
+      /* ============================================================
+         SCENE 1 — HOOK
+         ============================================================ */
+      #scene1 .eyebrow {
+        position: absolute;
+        top: 130px;
+        left: 160px;
+      }
+      #scene1 .hookline-rule {
+        position: absolute;
+        top: 270px;
+        left: 160px;
+        width: 140px;
+        height: 4px;
+        background: #2f6bff;
+        transform-origin: left center;
+      }
+      #scene1 .hook-stack {
+        position: absolute;
+        top: 320px;
+        left: 160px;
+      }
+      #scene1 .hook-line {
+        font-size: 200px;
+        font-weight: 900;
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+        color: #f4f4f2;
+      }
+      #scene1 .hook-q {
+        color: #f6a93b;
+        display: inline-block;
+      }
+      #scene1 .year {
+        position: absolute;
+        bottom: 140px;
+        right: 160px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 0.22em;
+        color: #8a8a88;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      #scene1 .year::before {
+        content: "";
+        width: 64px;
+        height: 1px;
+        background: #8a8a88;
+      }
+      #scene1 .ghost-ai {
+        position: absolute;
+        bottom: -200px;
+        right: 720px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 640px;
+        letter-spacing: -0.06em;
+        color: #60606a;
+        line-height: 0.8;
+        pointer-events: none;
+      }
+
+      /* ============================================================
+         SCENE 2 — 25% SINGLE HERO STAT
+         ============================================================ */
+      #scene2 .eyebrow {
+        position: absolute;
+        top: 130px;
+        left: 160px;
+      }
+      #scene2 .hairline-top { top: 230px; }
+      #scene2 .hairline-bottom { bottom: 210px; }
+      #scene2 .big-number {
+        position: absolute;
+        top: 260px;
+        left: 140px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 600px;
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+        color: #5a8cff;
+        font-variant-numeric: tabular-nums;
+      }
+      #scene2 .big-number .pct {
+        font-size: 320px;
+      }
+      #scene2 .arrow-down {
+        position: absolute;
+        top: 440px;
+        left: 900px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 180px;
+        font-weight: 700;
+        color: #5a8cff;
+        line-height: 1;
+      }
+      #scene2 .data-caption {
+        position: absolute;
+        top: 520px;
+        left: 1100px;
+        width: 680px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      #scene2 .data-caption .meta {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.22em;
+        color: #f6a93b;
+        text-transform: uppercase;
+      }
+      #scene2 .data-caption .headline {
+        font-size: 54px;
+        font-weight: 800;
+        line-height: 1.22;
+        color: #f4f4f2;
+        letter-spacing: -0.005em;
+      }
+      #scene2 .source {
+        position: absolute;
+        bottom: 140px;
+        left: 160px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #a3a3a0;
+      }
+
+      /* ============================================================
+         SCENE 3 — SPLIT DATA
+         ============================================================ */
+      #scene3 .eyebrow {
+        position: absolute;
+        top: 130px;
+        left: 160px;
+      }
+      #scene3 .split {
+        position: absolute;
+        top: 280px;
+        left: 160px;
+        right: 160px;
+        bottom: 260px;
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+        gap: 64px;
+      }
+      #scene3 .stat-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 0;
+      }
+      #scene3 .stat-meta {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 22px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #f6a93b;
+      }
+      #scene3 .stat-value {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 380px;
+        letter-spacing: -0.05em;
+        line-height: 0.9;
+        color: #5a8cff;
+        font-variant-numeric: tabular-nums;
+      }
+      #scene3 .stat-value .sml { font-size: 180px; }
+      #scene3 .stat-label {
+        font-size: 40px;
+        font-weight: 800;
+        color: #f4f4f2;
+        line-height: 1.3;
+        margin-top: 30px;
+        letter-spacing: -0.005em;
+      }
+      #scene3 .divider {
+        background: #1b1b1d;
+        width: 1px;
+        transform-origin: top center;
+      }
+      #scene3 .footer {
+        position: absolute;
+        bottom: 130px;
+        left: 160px;
+        right: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #scene3 .footer .src-tag {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #a3a3a0;
+      }
+      #scene3 .footer .caption {
+        color: #f4f4f2;
+        font-family: "Noto Sans TC", "PingFang TC", sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+        letter-spacing: -0.005em;
+      }
+
+      /* ============================================================
+         SCENE 4 — TURNING POINT (kanji swap)
+         ============================================================ */
+      #scene4 .eyebrow {
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #scene4 .pivot-wrap {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+      }
+      #scene4 .kanji-row {
+        position: relative;
+        width: 800px;
+        height: 440px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #scene4 .kanji-slot {
+        position: absolute;
+        top: 0;
+        width: 400px;
+        height: 440px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #scene4 .kanji-slot.left  { left: 0; }
+      #scene4 .kanji-slot.right { right: 0; }
+      #scene4 .kanji-char {
+        position: absolute;
+        font-weight: 900;
+        font-size: 420px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+      #scene4 .kanji-char.wei   { color: #e5484d; }
+      #scene4 .kanji-char.ji-1  { color: #f4f4f2; }
+      #scene4 .kanji-char.zhuan { color: #f6a93b; opacity: 0; }
+      #scene4 .kanji-char.ji-2  { color: #f6a93b; opacity: 0; }
+      #scene4 .pivot-sub {
+        font-size: 54px;
+        font-weight: 800;
+        color: #f4f4f2;
+        letter-spacing: -0.01em;
+      }
+      #scene4 .pivot-sub .hi { color: #f6a93b; }
+      #scene4 .pivot-meta {
+        position: absolute;
+        bottom: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 22px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #a3a3a0;
+      }
+
+      /* ============================================================
+         SCENE 5 — 10x RESULT
+         ============================================================ */
+      #scene5 .eyebrow {
+        position: absolute;
+        top: 130px;
+        left: 160px;
+      }
+      #scene5 .compare {
+        position: absolute;
+        top: 300px;
+        left: 160px;
+        right: 160px;
+        display: grid;
+        grid-template-columns: 1fr 180px 1fr;
+        align-items: center;
+      }
+      #scene5 .side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      #scene5 .side.right {
+        align-items: flex-end;
+        text-align: right;
+      }
+      #scene5 .side .tag {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 24px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+      #scene5 .side.left .tag { color: #a3a3a0; }
+      #scene5 .side.right .tag { color: #f6a93b; }
+      #scene5 .side .days {
+        position: relative;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 340px;
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+        font-variant-numeric: tabular-nums;
+        display: inline-block;
+      }
+      #scene5 .side.left  .days { color: #6b6b70; }
+      #scene5 .side.right .days { color: #f6a93b; }
+      #scene5 .side.left .strike {
+        position: absolute;
+        left: -14px;
+        right: -14px;
+        top: 52%;
+        height: 12px;
+        background: #e5484d;
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+      #scene5 .side .unit {
+        font-family: "Noto Sans TC", "PingFang TC", sans-serif;
+        font-weight: 800;
+        font-size: 52px;
+        letter-spacing: -0.01em;
+      }
+      #scene5 .side.left .unit  { color: #7a7a7c; }
+      #scene5 .side.right .unit { color: #f4f4f2; }
+      #scene5 .arrow {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 500;
+        font-size: 120px;
+        color: #5a8cff;
+        text-align: center;
+      }
+      #scene5 .footer {
+        position: absolute;
+        bottom: 140px;
+        left: 160px;
+        right: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #scene5 .footer .caption {
+        font-size: 30px;
+        font-weight: 800;
+        color: #f4f4f2;
+        letter-spacing: -0.005em;
+      }
+      #scene5 .footer .multiplier {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 56px;
+        color: #f6a93b;
+        letter-spacing: -0.02em;
+      }
+
+      /* ============================================================
+         SCENE 6 — PRINCIPLES
+         ============================================================ */
+      #scene6 .eyebrow {
+        position: absolute;
+        top: 130px;
+        left: 160px;
+      }
+      #scene6 .title {
+        position: absolute;
+        top: 210px;
+        left: 160px;
+        font-size: 76px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        color: #f4f4f2;
+      }
+      #scene6 .title .hi { color: #f6a93b; }
+      #scene6 .list {
+        position: absolute;
+        top: 400px;
+        left: 160px;
+        right: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+      }
+      #scene6 .item {
+        display: grid;
+        grid-template-columns: 180px 1fr 1fr;
+        align-items: baseline;
+        gap: 50px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #1b1b1d;
+      }
+      #scene6 .item .num {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 84px;
+        color: #5a8cff;
+        letter-spacing: -0.04em;
+        font-variant-numeric: tabular-nums;
+      }
+      #scene6 .item .headline {
+        font-size: 50px;
+        font-weight: 800;
+        color: #f4f4f2;
+        letter-spacing: -0.01em;
+        line-height: 1.15;
+      }
+      #scene6 .item .sub {
+        font-size: 24px;
+        font-weight: 400;
+        color: #a3a3a0;
+        line-height: 1.5;
+      }
+
+      /* ============================================================
+         SCENE 7 — CLOSING
+         ============================================================ */
+      #scene7 .closing-wrap {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 160px;
+        gap: 30px;
+      }
+      #scene7 .closing-eyebrow {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.34em;
+        text-transform: uppercase;
+        color: #a3a3a0;
+      }
+      #scene7 .closing-line {
+        font-size: 170px;
+        font-weight: 900;
+        line-height: 1.02;
+        letter-spacing: -0.03em;
+        color: #f4f4f2;
+      }
+      #scene7 .closing-line .hi { color: #f6a93b; }
+      #scene7 .cursor {
+        display: inline-block;
+        width: 10px;
+        height: 140px;
+        background: #f6a93b;
+        margin-left: 22px;
+        transform: translateY(14px);
+      }
+      #scene7 .signature {
+        margin-top: 60px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 26px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: #f4f4f2;
+      }
+      #scene7 .signature .dim { color: #a3a3a0; }
+      #scene7 .outline {
+        position: absolute;
+        top: 110px;
+        left: 160px;
+        right: 160px;
+        bottom: 110px;
+        border: 1px solid #1b1b1d;
+        transform-origin: top left;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="55"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- =================== SCENE 1 — HOOK =================== -->
+      <div id="scene1" class="scene">
+        <div class="scene-inner">
+          <div class="grid-bg"></div>
+          <div class="ghost-ai">AI</div>
+          <div class="eyebrow blue"><span>AI × 軟體工程師 · 2026</span></div>
+          <div class="hookline-rule"></div>
+          <div class="hook-stack">
+            <div class="hook-line" id="s1-line1">AI 會取代</div>
+            <div class="hook-line" id="s1-line2">軟體工程師<span class="hook-q" id="s1-q">嗎？</span></div>
+          </div>
+          <div class="year"><span>一個工程師的真實觀察</span></div>
+        </div>
+      </div>
+
+      <!-- =================== SCENE 2 — 25% =================== -->
+      <div id="scene2" class="scene">
+        <div class="scene-inner">
+          <div class="grid-bg"></div>
+          <div class="hairline-h hairline-top"></div>
+          <div class="hairline-h hairline-bottom"></div>
+          <div class="eyebrow blue"><span>CRISIS · DATA 01</span></div>
+          <div class="big-number"><span id="s2-num">0</span><span class="pct">%</span></div>
+          <div class="arrow-down" id="s2-arrow">↓</div>
+          <div class="data-caption">
+            <div class="meta" id="s2-meta">2023 → 2024 · 下降</div>
+            <div class="headline" id="s2-head">全球前 15 大科技公司<br/>初階工程師招聘</div>
+          </div>
+          <div class="source" id="s2-src">Source · SignalFire 2025</div>
+        </div>
+      </div>
+
+      <!-- =================== SCENE 3 — SPLIT DATA =================== -->
+      <div id="scene3" class="scene">
+        <div class="scene-inner">
+          <div class="grid-bg"></div>
+          <div class="eyebrow blue"><span>CRISIS · DATA 02 — 擴大中</span></div>
+          <div class="split">
+            <div class="stat-block" id="s3-left">
+              <div class="stat-meta">U.S. · 2023 → 2025</div>
+              <div>
+                <div class="stat-value"><span id="s3-val1">0</span><span class="sml">%</span></div>
+                <div class="stat-label">程式設計師<br/>就業率暴跌</div>
+              </div>
+            </div>
+            <div class="divider" id="s3-divider"></div>
+            <div class="stat-block" id="s3-right">
+              <div class="stat-meta">22–25 歲 · 自 CHATGPT 上線</div>
+              <div>
+                <div class="stat-value"><span id="s3-val2">0</span><span class="sml">%</span></div>
+                <div class="stat-label">年輕工程師<br/>就業率下降</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <span class="src-tag" id="s3-foot-l">BLS · REVELIO LABS</span>
+            <span class="caption" id="s3-foot-r">自動化的浪潮已經開始</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================== SCENE 4 — TURNING POINT =================== -->
+      <div id="scene4" class="scene">
+        <div class="scene-inner">
+          <div class="grid-bg"></div>
+          <div class="eyebrow amber"><span>THE PIVOT · 分水嶺</span></div>
+          <div class="pivot-wrap">
+            <div class="kanji-row">
+              <div class="kanji-slot left">
+                <span class="kanji-char wei" id="s4-wei">危</span>
+                <span class="kanji-char zhuan" id="s4-zhuan">轉</span>
+              </div>
+              <div class="kanji-slot right">
+                <span class="kanji-char ji-1" id="s4-ji-1">機</span>
+                <span class="kanji-char ji-2" id="s4-ji-2">機</span>
+              </div>
+            </div>
+            <div class="pivot-sub" id="s4-sub">差別在於 <span class="hi">你怎麼用它</span></div>
+          </div>
+          <div class="pivot-meta" id="s4-meta">· 這既是危機，也是轉機 ·</div>
+        </div>
+      </div>
+
+      <!-- =================== SCENE 5 — 10x RESULT =================== -->
+      <div id="scene5" class="scene">
+        <div class="scene-inner">
+          <div class="grid-bg"></div>
+          <div class="eyebrow amber"><span>MY RESULT · 親身體驗</span></div>
+          <div class="compare">
+            <div class="side left" id="s5-left">
+              <div class="tag">BEFORE · 過去</div>
+              <div class="days" id="s5-before-wrap"><span id="s5-before">50</span><div class="strike" id="s5-strike"></div></div>
+              <div class="unit">天 · 開發交付</div>
+            </div>
+            <div class="arrow" id="s5-arrow">→</div>
+            <div class="side right" id="s5-right">
+              <div class="tag">NOW · AI 協作</div>
+              <div class="days" id="s5-after-wrap"><span id="s5-after">10</span></div>
+              <div class="unit">天 · 開發交付</div>
+            </div>
+          </div>
+          <div class="footer">
+            <span class="caption" id="s5-cap">大型電商專案 · 交付時間</span>
+            <span class="multiplier" id="s5-mult">× 5 faster</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================== SCENE 6 — PRINCIPLES =================== -->
+      <div id="scene6" class="scene">
+        <div class="scene-inner">
+          <div class="grid-bg"></div>
+          <div class="eyebrow amber"><span>WHAT TO DO · 三個關鍵動作</span></div>
+          <div class="title" id="s6-title">不是對抗，而是<span class="hi">升級維度</span></div>
+          <div class="list">
+            <div class="item" id="s6-i1">
+              <div class="num">01</div>
+              <div class="headline">擁抱 AI，不對抗</div>
+              <div class="sub">把 AI 融入工作流程<br/>越早適應，越早受益</div>
+            </div>
+            <div class="item" id="s6-i2">
+              <div class="num">02</div>
+              <div class="headline">往上走，不往深鑽</div>
+              <div class="sub">系統設計、架構判斷、問題拆解<br/>AI 短期內取代不了</div>
+            </div>
+            <div class="item" id="s6-i3">
+              <div class="num">03</div>
+              <div class="headline">學商業、學產品</div>
+              <div class="sub">解決問題的人 &gt; 寫程式的人<br/>這才是最硬的硬實力</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================== SCENE 7 — CLOSING =================== -->
+      <div id="scene7" class="scene">
+        <div class="scene-inner">
+          <div class="grid-bg"></div>
+          <div class="outline" id="s7-outline"></div>
+          <div class="closing-wrap">
+            <div class="closing-eyebrow" id="s7-eye">— ONE CLOSING THOUGHT —</div>
+            <div class="closing-line" id="s7-line1">最好的時機</div>
+            <div class="closing-line" id="s7-line2">
+              就是<span class="hi">現在</span><span class="cursor" id="s7-cursor"></span>
+            </div>
+            <div class="signature" id="s7-sig">
+              HOMUCHEN · <span class="dim">AI 時代，一起飛起來</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // counter helper: animates numeric textContent from `from` to `to`
+      function counter(selector, from, to, duration, start, decimals) {
+        const obj = { v: from };
+        tl.to(
+          obj,
+          {
+            v: to,
+            duration: duration,
+            ease: "power4.out",
+            onUpdate: () => {
+              const el = document.querySelector(selector);
+              if (!el) return;
+              el.textContent = decimals ? obj.v.toFixed(decimals) : Math.round(obj.v);
+            },
+          },
+          start
+        );
+      }
+
+      /* =====================================================
+         SCENE 1 — HOOK (0–5.8s)
+         ===================================================== */
+      tl.from("#scene1 .ghost-ai", { opacity: 0, duration: 1.2, ease: "sine.out" }, 0.25);
+      tl.from("#scene1 .eyebrow", { x: -40, opacity: 0, duration: 0.5, ease: "power3.out" }, 0.3);
+      tl.from("#scene1 .hookline-rule", { scaleX: 0, duration: 0.55, ease: "expo.out" }, 0.5);
+      tl.from("#s1-line1", { y: 80, opacity: 0, duration: 0.65, ease: "expo.out" }, 0.65);
+      tl.from("#s1-line2", { y: 80, opacity: 0, duration: 0.7, ease: "expo.out" }, 0.9);
+      tl.from("#s1-q", { scale: 0.55, opacity: 0, duration: 0.55, ease: "back.out(1.8)" }, 1.35);
+      tl.from("#scene1 .year", { x: 40, opacity: 0, duration: 0.55, ease: "power3.out" }, 1.45);
+      // ambient drift
+      tl.to("#scene1 .ghost-ai", { x: -60, duration: 4.2, ease: "sine.inOut" }, 1.6);
+
+      /* =====================================================
+         SCENE 1 → 2 transition: push slide @ 5.6s (0.55s)
+         ===================================================== */
+      tl.to("#scene1", { x: -1920, duration: 0.55, ease: "power3.inOut" }, 5.6);
+      tl.fromTo("#scene2", { x: 1920, opacity: 1 }, { x: 0, duration: 0.55, ease: "power3.inOut" }, 5.6);
+
+      /* =====================================================
+         SCENE 2 — 25% (6.2–13.6s)
+         ===================================================== */
+      tl.from("#scene2 .hairline-top",    { scaleX: 0, transformOrigin: "left center",  duration: 0.6, ease: "power3.out" }, 6.3);
+      tl.from("#scene2 .hairline-bottom", { scaleX: 0, transformOrigin: "right center", duration: 0.6, ease: "power3.out" }, 6.35);
+      tl.from("#scene2 .eyebrow",  { x: -30, opacity: 0, duration: 0.5, ease: "power3.out" }, 6.4);
+      tl.from("#scene2 .big-number", { y: 40, opacity: 0, duration: 0.6, ease: "expo.out" }, 6.55);
+      counter("#s2-num", 0, 25, 1.3, 6.65);
+      tl.from("#s2-arrow", { scale: 0.2, opacity: 0, duration: 0.5, ease: "back.out(2)" }, 7.35);
+      tl.to("#s2-arrow", { y: 22, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 2 }, 7.9);
+      tl.from("#s2-meta", { x: 40, opacity: 0, duration: 0.5, ease: "power3.out" }, 7.1);
+      tl.from("#s2-head", { y: 30, opacity: 0, duration: 0.6, ease: "power3.out" }, 7.25);
+      tl.from("#s2-src", { opacity: 0, duration: 0.5, ease: "sine.out" }, 7.55);
+
+      /* =====================================================
+         SCENE 2 → 3 transition: push slide @ 13.5s
+         ===================================================== */
+      tl.to("#scene2", { x: -1920, duration: 0.55, ease: "power3.inOut" }, 13.5);
+      tl.fromTo("#scene3", { x: 1920, opacity: 1 }, { x: 0, duration: 0.55, ease: "power3.inOut" }, 13.5);
+
+      /* =====================================================
+         SCENE 3 — split data (14.2–21.3s)
+         ===================================================== */
+      tl.from("#scene3 .eyebrow", { x: -30, opacity: 0, duration: 0.5, ease: "power3.out" }, 14.2);
+      tl.from("#s3-divider", { scaleY: 0, duration: 0.7, ease: "power3.inOut" }, 14.3);
+      tl.from("#s3-left .stat-meta",  { y: -20, opacity: 0, duration: 0.45, ease: "power3.out" }, 14.4);
+      tl.from("#s3-right .stat-meta", { y: -20, opacity: 0, duration: 0.45, ease: "power3.out" }, 14.55);
+      tl.from("#s3-left .stat-value",  { y: 40, opacity: 0, duration: 0.55, ease: "expo.out" }, 14.6);
+      counter("#s3-val1", 0, 27.5, 1.4, 14.75, 1);
+      tl.from("#s3-right .stat-value", { y: 40, opacity: 0, duration: 0.55, ease: "expo.out" }, 15.25);
+      counter("#s3-val2", 0, 20, 1.2, 15.4);
+      tl.from("#s3-left .stat-label",  { y: 20, opacity: 0, duration: 0.5, ease: "power3.out" }, 15.85);
+      tl.from("#s3-right .stat-label", { y: 20, opacity: 0, duration: 0.5, ease: "power3.out" }, 16.0);
+      tl.from("#s3-foot-l", { opacity: 0, duration: 0.5, ease: "sine.out" }, 16.5);
+      tl.from("#s3-foot-r", { x: 30, opacity: 0, duration: 0.55, ease: "power3.out" }, 16.7);
+
+      /* =====================================================
+         SCENE 3 → 4 transition: blur crossfade (signals pivot) @ 21.3s
+         ===================================================== */
+      tl.to("#scene3", { filter: "blur(12px)", scale: 1.03, opacity: 0, duration: 0.6, ease: "power2.inOut" }, 21.3);
+      tl.fromTo(
+        "#scene4",
+        { filter: "blur(12px)", scale: 0.97, opacity: 0 },
+        { filter: "blur(0px)", scale: 1, opacity: 1, duration: 0.6, ease: "power2.inOut" },
+        21.4
+      );
+
+      /* =====================================================
+         SCENE 4 — turning point (22–28.6s)
+         ===================================================== */
+      tl.from("#scene4 .eyebrow", { y: -20, opacity: 0, duration: 0.55, ease: "power3.out" }, 22.1);
+      tl.from("#s4-wei",  { y: 70, opacity: 0, duration: 0.6, ease: "expo.out" }, 22.25);
+      tl.from("#s4-ji-1", { y: 70, opacity: 0, duration: 0.6, ease: "expo.out" }, 22.45);
+      tl.from("#s4-sub",  { y: 24, opacity: 0, duration: 0.55, ease: "power3.out" }, 22.9);
+      tl.from("#s4-meta", { opacity: 0, duration: 0.55, ease: "sine.out" }, 23.2);
+
+      // kanji pivot: 危機 → 轉機  at 25.0s
+      // replace wei with zhuan (same left slot) and swap ji color to amber via ji-2 reveal
+      tl.to("#s4-wei",    { y: -50, opacity: 0, duration: 0.5, ease: "power3.in" }, 25.0);
+      tl.fromTo("#s4-zhuan",
+        { y: 55, opacity: 0, scale: 1.08 },
+        { y: 0, opacity: 1, scale: 1, duration: 0.6, ease: "expo.out" },
+        25.15
+      );
+      tl.to("#s4-ji-1", { opacity: 0, duration: 0.4, ease: "power2.in" }, 25.15);
+      tl.fromTo("#s4-ji-2",
+        { opacity: 0, scale: 1.05 },
+        { opacity: 1, scale: 1, duration: 0.55, ease: "expo.out" },
+        25.2
+      );
+
+      /* =====================================================
+         SCENE 4 → 5 transition: push slide @ 28.5s
+         ===================================================== */
+      tl.to("#scene4", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 28.5);
+      tl.fromTo("#scene5", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 28.5);
+
+      /* =====================================================
+         SCENE 5 — 10x RESULT (29.1–37.3s)
+         ===================================================== */
+      tl.from("#scene5 .eyebrow", { x: -30, opacity: 0, duration: 0.5, ease: "power3.out" }, 29.1);
+      // BEFORE
+      tl.from("#s5-left .tag",  { y: -20, opacity: 0, duration: 0.45, ease: "power3.out" }, 29.3);
+      tl.from("#s5-left .days", { y: 40, opacity: 0, duration: 0.5, ease: "expo.out" }, 29.45);
+      counter("#s5-before", 0, 50, 0.9, 29.55);
+      tl.from("#s5-left .unit", { opacity: 0, duration: 0.4, ease: "power2.out" }, 29.9);
+
+      // strike-through: static DOM bar animated via scaleX
+      tl.to("#s5-strike", { scaleX: 1, duration: 0.45, ease: "power3.out" }, 30.2);
+
+      // Arrow
+      tl.from("#s5-arrow", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(1.8)" }, 30.6);
+
+      // AFTER
+      tl.from("#s5-right .tag",  { y: -20, opacity: 0, duration: 0.45, ease: "power3.out" }, 30.85);
+      tl.from("#s5-right .days", { scale: 0.7, opacity: 0, duration: 0.65, ease: "back.out(1.5)" }, 31.0);
+      counter("#s5-after", 0, 10, 0.7, 31.15);
+      tl.from("#s5-right .unit", { opacity: 0, duration: 0.4, ease: "power2.out" }, 31.5);
+
+      // footer
+      tl.from("#s5-cap",  { x: -30, opacity: 0, duration: 0.55, ease: "power3.out" }, 32.0);
+      tl.from("#s5-mult", { x: 30, opacity: 0, duration: 0.55, ease: "expo.out" }, 32.15);
+      // subtle breathing on after number
+      tl.to("#s5-right .days", { scale: 1.03, duration: 1.8, ease: "sine.inOut", yoyo: true, repeat: 1 }, 32.8);
+
+      /* =====================================================
+         SCENE 5 → 6 transition: push slide @ 37.4s
+         ===================================================== */
+      tl.to("#scene5", { x: -1920, duration: 0.55, ease: "power3.inOut" }, 37.4);
+      tl.fromTo("#scene6", { x: 1920, opacity: 1 }, { x: 0, duration: 0.55, ease: "power3.inOut" }, 37.4);
+
+      /* =====================================================
+         SCENE 6 — principles (38–47s)
+         ===================================================== */
+      tl.from("#scene6 .eyebrow", { x: -30, opacity: 0, duration: 0.5, ease: "power3.out" }, 38.05);
+      tl.from("#s6-title", { y: 30, opacity: 0, duration: 0.6, ease: "expo.out" }, 38.2);
+      const items = ["#s6-i1", "#s6-i2", "#s6-i3"];
+      items.forEach((sel, i) => {
+        const t0 = 38.9 + i * 0.6;
+        tl.from(sel + " .num",      { scale: 0.5, opacity: 0, duration: 0.5, ease: "back.out(1.8)" }, t0);
+        tl.from(sel + " .headline", { x: -30, opacity: 0, duration: 0.5, ease: "power3.out" },        t0 + 0.12);
+        tl.from(sel + " .sub",      { x: 30, opacity: 0, duration: 0.5, ease: "power3.out" },         t0 + 0.22);
+      });
+
+      /* =====================================================
+         SCENE 6 → 7 transition: color dip @ 47.3s
+         ===================================================== */
+      tl.to("#scene6", { opacity: 0, duration: 0.35, ease: "power2.in", overwrite: "auto" }, 47.3);
+      tl.set("#scene6", { visibility: "hidden" }, 47.95);
+      tl.fromTo("#scene7", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 47.55);
+
+      /* =====================================================
+         SCENE 7 — closing (48–55s)
+         ===================================================== */
+      tl.from("#s7-outline", { scale: 0.96, opacity: 0, duration: 0.9, ease: "power3.out" }, 47.85);
+      tl.from("#s7-eye",     { y: -10, opacity: 0, duration: 0.6, ease: "power3.out" }, 48.15);
+      tl.from("#s7-line1",   { y: 50, opacity: 0, duration: 0.7, ease: "expo.out" }, 48.4);
+      tl.from("#s7-line2",   { y: 50, opacity: 0, duration: 0.7, ease: "expo.out" }, 48.8);
+      tl.from("#s7-sig",     { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" }, 49.5);
+      // cursor blink — 8 finite repeats
+      tl.fromTo(
+        "#s7-cursor",
+        { opacity: 1 },
+        { opacity: 0.05, duration: 0.38, ease: "steps(1)", repeat: 8, yoyo: true },
+        49.7
+      );
+      // gentle resolve
+      tl.to("#scene7 .closing-wrap", { opacity: 0.4, duration: 1.2, ease: "sine.inOut" }, 53.4);
+      tl.to("#s7-outline", { opacity: 0, duration: 1.0, ease: "sine.in" }, 53.6);
+      // Final visibility kill for scrubbing safety (video ends here anyway).
+      tl.set("#scene7", { visibility: "hidden" }, 55);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
