@@ -223,6 +223,15 @@ tags: [課程, ...]
 - `seo-eeat-authority` — 50+ E-E-A-T markers 檢核、Brand SEO 7 步驟、Entity SEO、Semantic SEO、Share of Search 公式、品牌提及 audit
 - `seo-ai-overviews-advanced` — Query fan-out、AI visibility audit、Brand gap analysis、10 招 LLMO、各平台（AI Overviews/ChatGPT/Perplexity/Gemini）差異化最佳化、AI 流量追蹤
 
+#### 發布前必做的 SEO review（兩個 skill 都要跑）
+
+文章寫完、上 Ghost 之前，**必須**用下面兩個 skill 對全文做一次 review：
+
+1. **`seo-eeat-authority`** — 用 50+ E-E-A-T markers 盤點作者定位、Trust 訊號、原創框架、具體數據、Experience/Expertise/Authority/Trust 四象限缺口。
+2. **`seo-ai-overviews-advanced`** — 檢查文章結構是否利於 AI 引用：BLUF 答案前置、chunk 友善的段落、entity proximity、fan-out query 覆蓋、per-platform 優化。
+
+每個 review 找出缺口後要決定是否補強，可以選擇不改，但要是有意識地選擇而不是漏看。盤點結果寫入 commit message 或文章內部規劃筆記。
+
 SEO 注意事項：
 - `title` 包含主要關鍵字（來自關鍵字研究）
 - `description` 撰寫吸引人的摘要（150-160 字元），包含主要關鍵字
