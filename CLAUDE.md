@@ -211,10 +211,17 @@ tags: [課程, ...]
 ### 4. SEO 最佳化（部落格文章）
 
 根據步驟 1 的關鍵字研究結果最佳化文章。可使用以下 skills：
-- `seo-audit` — 審核文章的 SEO 品質
-- `ai-seo` — 針對 AI 搜尋引擎（GEO/AEO/LLMO）最佳化
+
+**基礎（通用）：**
+- `seo-audit` — 審核文章的 SEO 品質（技術 SEO、on-page）
+- `ai-seo` — AI 搜尋引擎（GEO/AEO/LLMO）基礎最佳化
 - `schema-markup` — 結構化資料標記
 - `content-strategy` — 內容策略規劃
+
+**進階（Ahrefs 方法論，專案內建）：**
+- `seo-content-lifecycle` — 內容衰退偵測、refresh/prune 決策、topical map 建構、search intent shift、Deep Content for AI era、單篇文章的 focus/secondary/topical 三角色關鍵字架構
+- `seo-eeat-authority` — 50+ E-E-A-T markers 檢核、Brand SEO 7 步驟、Entity SEO、Semantic SEO、Share of Search 公式、品牌提及 audit
+- `seo-ai-overviews-advanced` — Query fan-out、AI visibility audit、Brand gap analysis、10 招 LLMO、各平台（AI Overviews/ChatGPT/Perplexity/Gemini）差異化最佳化、AI 流量追蹤
 
 SEO 注意事項：
 - `title` 包含主要關鍵字（來自關鍵字研究）
