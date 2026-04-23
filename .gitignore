@@ -1,2 +1,13 @@
 .env
 __pycache__/
+
+# External skill dependencies (managed by skills-lock.json)
+.agents/
+.claude/skills/gsap
+.claude/skills/hyperframes
+.claude/skills/hyperframes-cli
+.claude/skills/hyperframes-registry
+.claude/skills/website-to-hyperframes
+
+# HyperFrames render outputs (regenerable)
+**/renders/
