@@ -78,10 +78,10 @@ description: "選填。文章摘要描述，用於 SEO meta description。"
 ### 4. SEO 最佳化
 
 撰寫文章時應考慮 SEO，根據步驟 1 的關鍵字研究結果來最佳化文章。可使用以下 skills：
-- `marketing-skills:seo-audit` — 審核文章的 SEO 品質
-- `marketing-skills:ai-seo` — 針對 AI 搜尋引擎（GEO/AEO/LLMO）最佳化
-- `marketing-skills:schema-markup` — 結構化資料標記
-- `marketing-skills:content-strategy` — 內容策略規劃
+- `seo-audit` — 審核文章的 SEO 品質
+- `ai-seo` — 針對 AI 搜尋引擎（GEO/AEO/LLMO）最佳化
+- `schema-markup` — 結構化資料標記
+- `content-strategy` — 內容策略規劃
 
 SEO 注意事項：
 - `title` 包含主要關鍵字（來自關鍵字研究）
@@ -95,8 +95,8 @@ SEO 注意事項：
 
 可以進行整體內容規劃，將規劃好的文章放在 `drafts/` 資料夾下：
 - **規劃前先使用 `keyword-research` skill 做關鍵字研究**
-- 使用 `marketing-skills:content-strategy` skill 規劃內容策略
-- 使用 `marketing-skills:marketing-ideas` skill 發想主題
+- 使用 `content-strategy` skill 規劃內容策略
+- 使用 `marketing-ideas` skill 發想主題
 - 草稿檔案同樣遵循 `{YYYY-MM-DD}-{slug}.md` 命名格式
 - 草稿的 frontmatter 中 date 可先填預計發布日期
 
