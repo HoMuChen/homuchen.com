@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>Claude Cowork 發票處理 — Slides v2 (design-guide.md)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Primary */
+    --bg: #FAF9F5;
+    --dark: #141413;
+    --light: #E8E6DC;
+    --mid: #B0AEA5;
+    /* Accents */
+    --coral: #D97757;
+    --blue: #6A9BCC;
+    --green: #788C5D;
+    /* Extended */
+    --peach: #F2DDD0;
+    /* Dark mode */
+    --dark-card: #1E1E1D;
+    --dark-divider: #2A2A28;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+    background: var(--bg);
+    overflow: hidden;
+    color: var(--dark);
+    transition: background-color 200ms ease;
+  }
+  body.dark-active { background: var(--dark); }
+
+  .deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1920px;
+    height: 1080px;
+    transform: translate(-50%, -50%) scale(var(--scale, 1));
+    transform-origin: center center;
+    background: var(--bg);
+    display: none;
+    overflow: hidden;
+  }
+
+  .slide.active { display: block; }
+
+  /* 96px = 8px * 12, generous for video */
+  .slide-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 96px;
+  }
+
+  /* Typography utilities — 8px scale */
+  .title-h1 {
+    font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.2;
+    color: var(--dark);
+    letter-spacing: -0.5px;
+  }
+  .title-h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.3;
+    color: var(--dark);
+  }
+  .body-text {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--mid);
+    font-weight: 400;
+  }
+  .caption {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--mid);
+    letter-spacing: 0.04em;
+  }
+  .num-callout {
+    font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+    font-size: 144px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--coral);
+    letter-spacing: -2px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Common: page number bottom-left, brand bottom-right */
+  .page-num {
+    position: absolute;
+    bottom: 56px;
+    left: 96px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--mid);
+    letter-spacing: 0.2em;
+  }
+  .brand-mark {
+    position: absolute;
+    bottom: 56px;
+    right: 96px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--mid);
+    letter-spacing: 0.15em;
+  }
+  .slide.dark .page-num,
+  .slide.dark .brand-mark {
+    color: var(--mid);
+  }
+
+  /* Decoration: 3 dots bottom-right (Template A) */
+  .dots-deco {
+    position: absolute;
+    bottom: 120px;
+    right: 96px;
+    display: flex;
+    gap: 16px;
+  }
+  .dots-deco span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--coral);
+  }
+  .dots-deco span:nth-child(2) { background: var(--peach); }
+  .dots-deco span:nth-child(3) { background: var(--light); }
+
+  /* Icon circle (48px line icon in 96px circle, light bg) */
+  .icon-circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--coral);
+    flex-shrink: 0;
+  }
+  .icon-circle.peach { background: var(--peach); }
+  .icon-circle.dark-card { background: var(--dark-card); }
+  .icon-circle svg {
+    width: 44px;
+    height: 44px;
+    stroke-width: 2;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Card (radius 16px, no shadow, 1px divider) */
+  .card {
+    background: var(--bg);
+    border: 1px solid var(--light);
+    border-radius: 16px;
+    padding: 40px;
+  }
+  .card.subtle { background: var(--light); border-color: transparent; }
+
+  /* ============ SLIDE 1: Title (Template A) ============ */
+  .s1 .title-block {
+    position: absolute;
+    top: 320px;
+    left: 96px;
+    right: 96px;
+  }
+  .s1 .eyebrow {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--coral);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .s1 .title-h1 { font-size: 96px; }
+  .s1 .subtitle {
+    margin-top: 32px;
+    font-size: 36px;
+    color: var(--dark);
+    font-weight: 500;
+  }
+  .s1 .desc {
+    margin-top: 48px;
+    font-size: 22px;
+    color: var(--mid);
+    max-width: 720px;
+    line-height: 1.6;
+  }
+
+  /* ============ SLIDE 2: Three columns (Template D) ============ */
+  .s2 .header {
+    position: absolute;
+    top: 96px;
+    left: 96px;
+    right: 96px;
+  }
+  .s2 .desc {
+    margin-top: 24px;
+    max-width: 1100px;
+  }
+  .s2 .columns {
+    position: absolute;
+    top: 360px;
+    left: 96px;
+    right: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .s2 .col {
+    background: var(--bg);
+    border: 1px solid var(--light);
+    border-radius: 16px;
+    padding: 56px 48px;
+  }
+  .s2 .col h3 {
+    margin-top: 32px;
+    font-size: 32px;
+    color: var(--dark);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  .s2 .col p {
+    margin-top: 16px;
+    font-size: 20px;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+
+  /* ============ SLIDE 3: Comparison (two-col) ============ */
+  .s3 .header {
+    position: absolute;
+    top: 96px;
+    left: 96px;
+    right: 96px;
+  }
+  .s3 .compare {
+    position: absolute;
+    top: 320px;
+    left: 96px;
+    right: 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .s3 .pane {
+    border-radius: 16px;
+    padding: 56px 48px;
+    border: 1px solid var(--light);
+  }
+  .s3 .pane.left {
+    background: var(--bg);
+  }
+  .s3 .pane.right {
+    background: var(--bg);
+    border-color: var(--coral);
+    border-width: 2px;
+  }
+  .s3 .pane-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 8px;
+  }
+  .s3 .pane.right .pane-label { color: var(--coral); }
+  .s3 .pane h3 {
+    font-size: 36px;
+    color: var(--dark);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+  }
+  .s3 .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 0;
+    border-top: 1px solid var(--light);
+    font-size: 22px;
+    color: var(--dark);
+  }
+  .s3 .item:first-of-type { border-top: none; }
+  .s3 .item .ic {
+    width: 28px;
+    height: 28px;
+    color: var(--mid);
+    flex-shrink: 0;
+  }
+  .s3 .pane.right .item .ic { color: var(--coral); }
+  .s3 .item .ic svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .s3 .takeaway {
+    position: absolute;
+    bottom: 120px;
+    left: 96px;
+    right: 96px;
+    text-align: left;
+    font-size: 28px;
+    color: var(--dark);
+    font-weight: 500;
+    padding-left: 24px;
+    border-left: 4px solid var(--coral);
+  }
+
+  /* ============ SLIDE 4: Stats (Dark mode) ============ */
+  .slide.s4 { background: var(--dark); color: var(--bg); }
+  .slide.s4 .title-h1 { color: var(--bg); }
+  .slide.s4 .body-text { color: var(--mid); }
+  .slide.s4 .caption { color: var(--mid); }
+  .slide.s4 .icon-circle { background: var(--dark-card); color: var(--coral); }
+  .slide.s4 .num-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--dark-card);
+    color: var(--coral);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .s4 .header {
+    position: absolute;
+    top: 96px;
+    left: 96px;
+    right: 96px;
+  }
+  .s4 .header .desc {
+    margin-top: 24px;
+    color: var(--mid);
+    font-size: 22px;
+  }
+  .s4 .layout {
+    position: absolute;
+    top: 320px;
+    left: 96px;
+    right: 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 96px;
+  }
+  .s4 .tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .s4 .task {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: var(--bg);
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .s4 .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    border-left: 1px solid var(--dark-divider);
+    padding-left: 96px;
+  }
+  .s4 .stat .num-callout { color: var(--coral); }
+  .s4 .stat .stat-label {
+    margin-top: 12px;
+    font-size: 20px;
+    color: var(--mid);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Dark mode dots deco */
+  .slide.s4 .dots-deco span { background: var(--coral); }
+  .slide.s4 .dots-deco span:nth-child(2) { background: var(--dark-card); }
+  .slide.s4 .dots-deco span:nth-child(3) { background: var(--dark-divider); }
+
+  /* ============ SLIDE 5: Use cases (Template D, 2x3 grid) ============ */
+  .s5 .header {
+    position: absolute;
+    top: 96px;
+    left: 96px;
+    right: 96px;
+  }
+  .s5 .desc { margin-top: 24px; }
+  .s5 .grid {
+    position: absolute;
+    top: 360px;
+    left: 96px;
+    right: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .s5 .grid-card {
+    background: var(--bg);
+    border: 1px solid var(--light);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .s5 .grid-card .icon-circle {
+    width: 72px;
+    height: 72px;
+  }
+  .s5 .grid-card .icon-circle svg { width: 32px; height: 32px; }
+  .s5 .grid-card .text h4 {
+    font-size: 24px;
+    color: var(--dark);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+  }
+  .s5 .grid-card .text p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: var(--mid);
+    line-height: 1.4;
+  }
+  .s5 .grid-card.tagline {
+    background: var(--peach);
+    border: none;
+    justify-content: center;
+    text-align: center;
+  }
+  .s5 .grid-card.tagline .text {
+    text-align: center;
+  }
+  .s5 .grid-card.tagline h4 { color: var(--coral); }
+
+  /* ============ GENERIC DARK MODE (all slides) ============ */
+  .slide.dark { background: var(--dark); color: var(--bg); }
+
+  .slide.dark .title-h1,
+  .slide.dark h1, .slide.dark h2, .slide.dark h3, .slide.dark h4,
+  .slide.dark .item,
+  .slide.dark .takeaway,
+  .slide.dark .brand-statement,
+  .slide.dark .s1 .subtitle { color: var(--bg); }
+
+  .slide.dark .body-text,
+  .slide.dark .desc,
+  .slide.dark .role-where,
+  .slide.dark .footnote,
+  .slide.dark .stat-label,
+  .slide.dark .col p,
+  .slide.dark .grid-card .text p,
+  .slide.dark .cta p,
+  .slide.dark .s1 .desc { color: var(--mid); }
+
+  .slide.dark .col,
+  .slide.dark .pane,
+  .slide.dark .grid-card,
+  .slide.dark .cta,
+  .slide.dark .brand-block,
+  .slide.dark .card {
+    background: var(--dark-card);
+    border-color: var(--dark-divider);
+  }
+  .slide.dark .pane.right { border-color: var(--coral); }
+  .slide.dark .item { border-top-color: var(--dark-divider); }
+  .slide.dark .pane.left .item .ic { color: var(--mid); }
+  .slide.dark .pane.right .item .ic { color: var(--coral); }
+
+  .slide.dark .icon-circle { background: var(--dark-card); color: var(--coral); }
+  .slide.dark .icon-circle.peach { background: var(--dark-divider); }
+
+  .slide.dark .grid-card.tagline {
+    background: var(--dark-card);
+    border: 1px solid var(--coral);
+  }
+  .slide.dark .grid-card.tagline h4 { color: var(--coral); }
+
+  .slide.dark .pane-label,
+  .slide.dark .col-num,
+  .slide.dark .brand-name,
+  .slide.dark .eyebrow { color: var(--coral); }
+
+  .slide.dark .tag { background: var(--dark-divider); color: var(--bg); }
+  .slide.dark .footnote { border-left-color: var(--dark-divider); }
+
+  .slide.dark .page-num,
+  .slide.dark .brand-mark { color: var(--mid); }
+
+  .slide.dark .dots-deco span:nth-child(1) { background: var(--coral); }
+  .slide.dark .dots-deco span:nth-child(2) { background: var(--dark-card); }
+  .slide.dark .dots-deco span:nth-child(3) { background: var(--dark-divider); }
+
+  .slide.dark .num-callout { color: var(--coral); }
+
+  /* Specificity overrides — beat per-slide light-mode rules.
+     Note: .s2/.s3/.s5 are on the same element as .slide.dark (no descendant space). */
+  .slide.dark.s2 .col h3,
+  .slide.dark.s3 .pane h3,
+  .slide.dark.s5 .grid-card .text h4 { color: var(--bg); }
+  .slide.dark.s5 .grid-card.tagline .text h4 { color: var(--coral); }
+
+  /* Print */
+  @media print {
+    body { background: white; }
+    .slide { display: block !important; page-break-after: always; position: relative; top: 0; left: 0; transform: none; }
+    .deck { width: auto; height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- ============ SLIDE 1: Title (Template A) ============ -->
+  <section class="slide active s1 dark" data-slide="1">
+    <div class="slide-inner">
+      <div class="title-block">
+        <div class="eyebrow">Claude Cowork · 實測</div>
+        <h1 class="title-h1">發票丟給 AI<br>它幫我整理成 Excel</h1>
+        <div class="subtitle">30 張發票，3 分鐘，0 行程式碼</div>
+        <div class="desc">把一件每月都要做、又無聊又花時間的雜事，丟給 agent 跑。今天直接給你看完整流程。</div>
+      </div>
+
+      <div class="dots-deco">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="page-num">01 / 05</div>
+      <div class="brand-mark">HOMUCHEN</div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 2: 什麼是 Cowork (Template D) ============ -->
+  <section class="slide s2 dark" data-slide="2">
+    <div class="slide-inner">
+      <div class="header">
+        <h2 class="title-h1" style="font-size:64px;">什麼是 Claude Cowork</h2>
+        <p class="body-text desc">Claude Code 的一般人版本——把工程師的工具，做成一般人能用的樣子。</p>
+      </div>
+
+      <div class="columns">
+        <div class="col">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          </div>
+          <h3>不用 terminal</h3>
+          <p>不用打開那個黑色視窗。一般人不需要學 CLI。</p>
+        </div>
+
+        <div class="col">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>不用打指令</h3>
+          <p>不需要記任何 command。直接用中文跟它說就好。</p>
+        </div>
+
+        <div class="col">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>自然語言溝通</h3>
+          <p>像跟朋友交代事情，它就會去做。</p>
+        </div>
+      </div>
+
+      <div class="page-num">02 / 05</div>
+      <div class="brand-mark">HOMUCHEN</div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 3: Comparison (two-col) ============ -->
+  <section class="slide s3 dark" data-slide="3">
+    <div class="slide-inner">
+      <div class="header">
+        <h2 class="title-h1" style="font-size:64px;">關鍵差別在哪</h2>
+        <p class="body-text desc" style="margin-top:16px;">ChatGPT / Gemini 跟 Claude Cowork，本質上做的事不一樣。</p>
+      </div>
+
+      <div class="compare">
+        <div class="pane left">
+          <div class="pane-label">CHATGPT / GEMINI</div>
+          <h3>隔著螢幕回答</h3>
+
+          <div class="item">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
+            一個一個上傳檔案
+          </div>
+          <div class="item">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            結果在聊天視窗
+          </div>
+          <div class="item">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.78 7 7 0 1 0-13.6 2.78A4.5 4.5 0 0 0 6.5 19h11z"/></svg></span>
+            動不到你的硬碟
+          </div>
+        </div>
+
+        <div class="pane right">
+          <div class="pane-label">CLAUDE COWORK</div>
+          <h3>在你電腦裡做事</h3>
+
+          <div class="item">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></span>
+            直接讀整個資料夾
+          </div>
+          <div class="item">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg></span>
+            寫檔案到你硬碟
+          </div>
+          <div class="item">
+            <span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+            坐在你電腦旁工作
+          </div>
+        </div>
+      </div>
+
+      <div class="takeaway">
+        Cowork 可以直接 access 本地檔案——這是它跟其他 AI 工具最根本的差別。
+      </div>
+
+      <div class="page-num">03 / 05</div>
+      <div class="brand-mark">HOMUCHEN</div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 4: Today's Task — Dark mode (Template B) ============ -->
+  <section class="slide s4 dark" data-slide="4">
+    <div class="slide-inner">
+      <div class="header">
+        <h2 class="title-h1" style="font-size:64px;">今天的任務</h2>
+        <p class="desc">一個 prompt 給它，它自己做完四件事。</p>
+      </div>
+
+      <div class="layout">
+        <div class="tasks">
+          <div class="task">
+            <span class="num-circle">1</span>
+            讀取發票照片
+          </div>
+          <div class="task">
+            <span class="num-circle">2</span>
+            辨識文字資訊
+          </div>
+          <div class="task">
+            <span class="num-circle">3</span>
+            寫入 Excel
+          </div>
+          <div class="task">
+            <span class="num-circle">4</span>
+            搬移已處理檔案
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="num-callout">3 分鐘</div>
+            <div class="stat-label">PROCESSING TIME</div>
+          </div>
+          <div class="stat">
+            <div class="num-callout">0 行</div>
+            <div class="stat-label">CODE WRITTEN</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dots-deco">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="page-num">04 / 05</div>
+      <div class="brand-mark">HOMUCHEN</div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 5: Use cases (Template D, 2x3 grid) ============ -->
+  <section class="slide s5 dark" data-slide="5">
+    <div class="slide-inner">
+      <div class="header">
+        <h2 class="title-h1" style="font-size:64px;">你還可以叫它做什麼</h2>
+        <p class="body-text desc">類似的工作流——「電腦裡有一堆檔案、你懶得手動處理」——都可以套用。</p>
+      </div>
+
+      <div class="grid">
+        <div class="grid-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="text">
+            <h4>整理 PDF 合約</h4>
+            <p>抓出條款、金額、生效日</p>
+          </div>
+        </div>
+
+        <div class="grid-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </div>
+          <div class="text">
+            <h4>處理會議逐字稿</h4>
+            <p>濃縮重點、列出 action</p>
+          </div>
+        </div>
+
+        <div class="grid-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+          <div class="text">
+            <h4>整理名片照片</h4>
+            <p>一張張轉成通訊錄</p>
+          </div>
+        </div>
+
+        <div class="grid-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="text">
+            <h4>分類產品回饋</h4>
+            <p>分群、抓 sentiment</p>
+          </div>
+        </div>
+
+        <div class="grid-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+          </div>
+          <div class="text">
+            <h4>清洗 CSV 資料</h4>
+            <p>去重、補欄、normalize</p>
+          </div>
+        </div>
+
+        <div class="grid-card tagline">
+          <div class="text">
+            <h4>只要你會講中文</h4>
+            <p>剩下的它都能做</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-num">05 / 05</div>
+      <div class="brand-mark">HOMUCHEN</div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+  let idx = 0;
+
+  function fitScale() {
+    const sx = window.innerWidth / 1920;
+    const sy = window.innerHeight / 1080;
+    const scale = Math.min(sx, sy);
+    document.documentElement.style.setProperty('--scale', scale);
+  }
+
+  function show(i) {
+    idx = (i + total) % total;
+    slides.forEach((s, n) => s.classList.toggle('active', n === idx));
+    const isDark = slides[idx].classList.contains('dark');
+    document.body.classList.toggle('dark-active', isDark);
+  }
+  show(0);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight' || e.key === ' ') show(idx + 1);
+  });
+
+  window.addEventListener('resize', fitScale);
+  fitScale();
+</script>
+
+</body>
+</html>
