@@ -93,3 +93,18 @@ image:
 ![google sheet: format](https://storage.googleapis.com/homuchen.com/images/income-statement-8.jpg)
 
 如此一來就大功告成囉🎉
+
+## 後記：GOOGLEFINANCE 對台股不太穩怎麼辦？
+
+這篇寫了之後，最常被讀者問到的就是「為什麼我的台股價格常常跑出 `#N/A`、或是更新延遲？」確實，`GOOGLEFINANCE` 對台股的支援一直比美股差很多——資料來源不穩、上櫃股或小型股常抓不到。
+
+如果你受夠了 `GOOGLEFINANCE` 的不穩定，現在有一個更好的選擇：用 **FinMind 的免費台股 API** 自己抓資料、存本機。而且不需要會寫 Python——讓 Claude Code 幫你串接 API、建增量更新機制、甚至用對話的方式記錄持倉。
+
+詳細做法寫在這篇：[**用 Claude Code 建台股追蹤系統 — AI 幫你接 API、管持倉**](/posts/claude-code-finmind-stock-tracking/)。
+
+延伸閱讀：
+
+* [**[Google Sheet] Sparkline，在儲存格裡插入迷你圖表**](/posts/google-sheet-sparkline/)
+* [**用 Claude Code 建台股追蹤系統**](/posts/claude-code-finmind-stock-tracking/) — `GOOGLEFINANCE` 的進階替代方案
+
+希望以上的內容對你有一丁點兒的幫助，掰掰～👋
