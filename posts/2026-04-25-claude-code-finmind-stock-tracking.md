@@ -25,6 +25,8 @@ description: "不用寫程式，用 Claude Code 接 FinMind API 自動抓台股�
 * 每天收盤後一行指令自動更新
 * 最好玩的部分：用對話的方式追蹤持倉
 
+> **關於作者**：我是工程師阿穆，寫程式十多年，這幾年在做電商系統跟 AI Agent 開發。自己用 Google Sheet 追蹤台股多年，這篇是我從 GOOGLEFINANCE 換到 FinMind 後的第一手實作紀錄。
+
 ---
 
 ## 為什麼 GOOGLEFINANCE 抓不到台股？
@@ -198,7 +200,7 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 
 ---
 
-## 結語
+## 該不該從 GOOGLEFINANCE 換到 FinMind？
 
 這整件事給我最大的感觸是：**Claude Code 的價值不在於它幫你寫程式碼，而在於它幫你把一個「想法」變成一個「真的可以跑的系統」**。
 
