@@ -129,6 +129,8 @@ python3 stock_cache.py today
 
 這種感覺很不一樣。不是在操作軟體，是在跟一個助理聊天。
 
+> 🔗 同樣的「對話式紀錄 + local file」模式我也用在記帳上，整套工作流寫在這篇：[**不用 Google Sheet 也不用 App — 我的 Claude Code 對話式記帳工作流**](/posts/claude-code-remote-control-conversational-bookkeeping/)。如果你覺得追蹤持倉有用，記帳那篇值得一起看。
+
 ## 怎麼自己建一套台股追蹤系統？4 步驟
 
 如果你想建一個類似的系統，大致步驟是：
@@ -213,6 +215,7 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 如果你也有在追蹤台股，這套流程真的值得試試看。設定好之後，每天花不到一分鐘，資料就自動準備好了。
 
 延伸閱讀：
+* [**不用 Google Sheet 也不用 App — 我的 Claude Code 對話式記帳工作流**](/posts/claude-code-remote-control-conversational-bookkeeping/)
 * [**Google Sheet 股票損益計算：自動更新最新股價，算出投資損益**](/posts/google-sheet-stock-income-statement/)
 * [**Claude Code 接 Google Search Console — 用 AI 幫你做 SEO 分析**](/posts/claude-code-search-console-seo-analysis/)
 * [**Claude Cowork — 當 AI 從「陪你聊天」變成「幫你做事」**](/posts/claude-cowork-ai-from-chat-to-work/)
