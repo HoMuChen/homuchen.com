@@ -95,14 +95,12 @@ image:
 **喜歡這篇文章嗎？**
 
 📧 [訂閱 Newsletter](https://homuchen.com/#/portal/signup) — 新文章直接寄到你信箱
-🎬 [追蹤我的 YouTube](https://www.youtube.com/@homuchen) — 看 AI / 工具實作影片
-💬 [加我的 LINE](https://line.me/R/ti/p/@homuchen) — 有問題隨時問我
+🎬 [追蹤我的 YouTube](https://www.youtube.com/@homuchen-build-ai) — 看 AI / 工具實作影片
+💬 [加我的 LINE](https://line.me/R/ti/p/@673duklg?oat_content=url&ts=04121539) — 有問題隨時問我
 🧵 [追蹤 Threads](https://www.threads.net/@homuchen.build.ai) — 平常的工程隨筆
 
 掰掰～👋
 ```
-
-> ⚠️ URL 是 placeholder，每次寫文章時請確認最新的連結（特別是 LINE / YouTube channel handle 可能變動）。
 
 #### CTA 設計原則
 
