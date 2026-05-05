@@ -28,6 +28,8 @@ Anthropic 在 2026 年初，在 Claude Desktop 上推出了 **Cowork** 這個功
 
 用過 Claude Code 的工程師應該會很熟悉這種感覺 — 交代一件事，Claude 自己去讀程式碼、寫檔案、跑測試。Cowork 本質上就是把同樣的能力，包在一般人友善的介面裡。你不需要會寫程式，不需要打指令，只要用白話文描述你想要的結果就好。
 
+這個「從聊天變成做事」的轉變，對工程師職涯的影響其實很大——我整理在 [**AI 時代，軟體工程師怎麼辦？**](/posts/software-engineer-in-ai-era/) 這篇。
+
 Anthropic 自己的說法是：
 
 > Cowork lets you complete non-technical tasks much like how developers use Claude Code.
