@@ -41,7 +41,7 @@ image:
 
 換句話説，資料要寫入，就是寫到master，然後會在複製一份到slave。
 
-![master slave repilcation]({{ site.cdn_url }}/database-replication-1.jpg)
+![master slave repilcation](https://storage.googleapis.com/homuchen.com/images/database-replication-1.jpg)
 
 ### Synchronous or Asynchronous replication
 從master複製到slave間的過程，會有一個時間差，
@@ -50,7 +50,7 @@ image:
 * synchronous: 當資料寫入到master時，唯有等到他確定被複製到了slave，才會ack成功。
 * asynchronous: 資料一寫入到master，不等它被複製到了slave，就ack成功。
 
-![Synchronous or Asynchronous replication]({{ site.cdn_url }}/database-cache-1.jpg)
+![Synchronous or Asynchronous replication](https://storage.googleapis.com/homuchen.com/images/database-cache-1.jpg)
 
 ## 各種cache策略
 知道了Replication之後，要怎麼將這些觀念應用在cache上呢？就是將以下兩種情況排列組合！就會得到四種快取策略拉～
@@ -58,7 +58,7 @@ image:
 1. 資料庫作為master vs. 快取作為master
 2. asynchronous vs. asynchronous replication
 
-![Cache strategies]({{ site.cdn_url }}/database-cache-0.jpg)
+![Cache strategies](https://storage.googleapis.com/homuchen.com/images/database-cache-0.jpg)
 
 基本上，使用資料庫作為master，可以**保證資料不會丟失**；
 若使用快取作為master，則是**適合write heavy並且可以容許資料丟失**的應用。

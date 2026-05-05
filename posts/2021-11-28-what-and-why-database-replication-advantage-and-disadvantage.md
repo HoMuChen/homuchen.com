@@ -58,7 +58,7 @@ description: |
 首先，我們先定義幾個名詞，master為可以接受資料寫入修改的節點，
 而slave就是存放複製的檔案的地方，只負責被讀取，並不會從slave中寫入資料。
 
-![master slave repilcation]({{ site.cdn_url }}/database-replication-1.jpg)
+![master slave repilcation](https://storage.googleapis.com/homuchen.com/images/database-replication-1.jpg)
 
 資料要從master被複製到slave，最簡單的可能就像是直接`cp`，`scp`，
 或是你寫備份script，每天固定時間將DB裡的資料寫到另一台DB。
@@ -83,11 +83,11 @@ description: |
 就是會無法達成**read your write consistency**及**monotonic read consistency**，
 
 * **read your write**: 寫入一筆資料後在讀取，卻讀不到你剛剛些入的資料，而是取得舊的資料。
-  ![not read your write consistency]({{ site.cdn_url }}/database-replication-2.jpg)
+  ![not read your write consistency](https://storage.googleapis.com/homuchen.com/images/database-replication-2.jpg)
   如上圖，當你寫入一筆c=3的資料後，資料尚未從master複製到slave，但你馬上從slave讀取，就讀取不到。
 
 * **monotonic read**: 連續的讀取，讀到最新的資料後，接著又讀到舊的資料，經歷了時間上的倒退。
-  ![not monotinic read consistency]({{ site.cdn_url }}/database-replication-3.jpg)
+  ![not monotinic read consistency](https://storage.googleapis.com/homuchen.com/images/database-replication-3.jpg)
   如上圖，當你讀取c的值時，首先讀到3的值，接著再讀一次反而不見了。
 
 因為你不知道你是從master還是slave中讀取資料，如果master剛剛接受的新的更新寫入還沒複製到slave，

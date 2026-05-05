@@ -60,7 +60,7 @@ image:
 立刻地，我們得到了影劇的刺激，以及充滿糖分、脂肪、鹽分的食物的滿足，大腦覺得開心，
 便增強了我們未來繼續如此作為的可能。
 
-![習慣四階段: 提示、渴望、回應、獎賞]({{ site.cdn_url }}/book-note-atomic-hanit-0.jpg)
+![習慣四階段: 提示、渴望、回應、獎賞](https://storage.googleapis.com/homuchen.com/images/book-note-atomic-hanit-0.jpg)
 
 所以該怎麼培養好習慣，剷除壞習慣呢～作者分別對這個階段提出可行動的方案及建議，
 幫助你過關斬將，往好的方向前進～
@@ -97,7 +97,7 @@ image:
 你也可以規定自己當做完需要做的習慣時，才能去做想要的事，把渴望跟需要做的事捆綁在一起，
 也可以跟上述的習慣堆疊合在一起應用，在做完**既有**的習慣後，去做**需要**的習慣，然後才能做**想要**的習慣。
 
-![習慣堆疊 + 渴望綑綁]({{ site.cdn_url }}/book-note-atomic-hanit-1.jpg)
+![習慣堆疊 + 渴望綑綁](https://storage.googleapis.com/homuchen.com/images/book-note-atomic-hanit-1.jpg)
 
 ## 回應
 回應指的就是你真正去做的那件事的行為，該如何設計你的回應好讓我們養成新的習慣呢!

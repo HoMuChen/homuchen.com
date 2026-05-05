@@ -58,7 +58,7 @@ description: |
 ## Illich’s Law(Law of diminishing returns、邊際效用遞減)
 > Productivity decreases after a certain period of continuous work.
 
-![Law of diminishing returns]({{ site.cdn_url }}/five-time-management-laws-1.jpg)
+![Law of diminishing returns](https://storage.googleapis.com/homuchen.com/images/five-time-management-laws-1.jpg)
 
 生產力是會隨著工作的時間跟著下降的。
 

@@ -14,7 +14,7 @@ image:
 **Symmetric Encryption**及**Asymmetric Encryption**
 及**Digital Signature**。
 
-![cryptography in node.js cryto module]({{ site.cdn_url }}/nodejs-crytpo-1.jpg)
+![cryptography in node.js cryto module](https://storage.googleapis.com/homuchen.com/images/nodejs-crytpo-1.jpg)
 
 ## Hash
 可以使用指令`openssl list -digest-algorithms`來查詢可用的algorithms，以下使用`sha256`為例，

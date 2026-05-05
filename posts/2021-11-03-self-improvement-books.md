@@ -103,7 +103,7 @@ description: |
 ## [**《一週工作四小時》**](https://www.books.com.tw/products/0010621037)
 誰說一週要工作四十小時，朝九晚五地待在辦公室，打破社會框架，有錢有閒地實現自己的夢想
 
-![書: 一週工作四小時]({{ site.cdn_url }}/four-hour-work-week-0.jpg)
+![書: 一週工作四小時](https://storage.googleapis.com/homuchen.com/images/four-hour-work-week-0.jpg)
 
 人們總說等我賺夠了錢我就要怎樣怎樣，等我退休了我就要去做什麼，那何不現在就開始呢？！
 

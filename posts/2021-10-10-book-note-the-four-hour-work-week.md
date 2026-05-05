@@ -19,7 +19,7 @@ last_modified_at: 2021-10-31 21:11:00 +0800
 
 > 每當發現自己屬於多數陣營時，就是你停下來三思的時候 - 馬克.吐溫
 
-![Book: Four Hour Work Week]({{ site.cdn_url }}/four-hour-work-week-0.jpg)
+![Book: Four Hour Work Week](https://storage.googleapis.com/homuchen.com/images/four-hour-work-week-0.jpg)
 
 ## 過去的想法
 
@@ -56,7 +56,7 @@ last_modified_at: 2021-10-31 21:11:00 +0800
 ### D - 定義人生
 什麼是新富族(New Rich)，首先先來看看新富族跟延後人生族(工作 -> 儲蓄 -> 退休)的差別在哪吧!
 
-![comparasion between New Rich and Delay]({{ site.cdn_url }}/four-hour-work-week-1.jpg)
+![comparasion between New Rich and Delay](https://storage.googleapis.com/homuchen.com/images/four-hour-work-week-1.jpg)
 
 所以，誰是新富族？
 * 重新安排個人行事曆的員工，他談出一份遠距的工作契約，用十分之一的時間達成百分之九十的產出，
@@ -85,7 +85,7 @@ last_modified_at: 2021-10-31 21:11:00 +0800
 
 ### E - 排除旁騖
 
-![80/20 Priciple and Parkinson's Law]({{ site.cdn_url }}/four-hour-work-week-2.jpg)
+![80/20 Priciple and Parkinson's Law](https://storage.googleapis.com/homuchen.com/images/four-hour-work-week-2.jpg)
 
 #### 八十/二十法則
 **八十/二十法則**，80%果來自20%的因，在許多地方都能用上這個法則，比如說全世界的資產分配、
@@ -144,9 +144,9 @@ last_modified_at: 2021-10-31 21:11:00 +0800
 看完之後，非常興奮！立馬先查了一下東南亞各地的生活成本，結果發現去峇里島住一個月，大部分根本比住在台北便宜，
 在曼谷住上五星級的飯店，擁有頂樓無邊際泳池及健身房，跟在台北租個鳥籠的價格也相去不遠，那我幹嘛要住在台北呢XD
 
-![Living in Bali]({{ site.cdn_url }}/four-hour-work-week-4.jpg)
+![Living in Bali](https://storage.googleapis.com/homuchen.com/images/four-hour-work-week-4.jpg)
 
-![Living in Taipei]({{ site.cdn_url }}/four-hour-work-week-5.jpg)
+![Living in Taipei](https://storage.googleapis.com/homuchen.com/images/four-hour-work-week-5.jpg)
 
 以上只是利用機動性達成最簡單的地理套利，想要體驗奢華的生活，沒有一定要成為億萬富翁，
 賺錢不是目的，過上你想要過的生活才是。
