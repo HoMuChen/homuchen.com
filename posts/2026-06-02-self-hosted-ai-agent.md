@@ -164,7 +164,7 @@ agent 不該只活在終端機裡，不然你得一直盯著螢幕。它要能�
 8. OpenClaw：always-on、會 heartbeat、住在通訊軟體裡的 agent
 9. Hermes：會自我改進的 agent——記憶與自動長技能的設計理念
 
-**案例篇**：把上面的觀念落到真實專案（記帳、盯盤、SEO 分析、電商、個人 wiki）。
+**案例篇**：把上面的觀念落到真實專案（記帳、[**盯盤**](/posts/claude-code-stock-agent-monitor-alert/)、SEO 分析、電商、個人 wiki）。
 
 ## 結語
 
