@@ -76,7 +76,7 @@ description: "我電腦上固定跑著五隻 AI agent：幫我記帳、盯盤、
 在開始拆解之前，先讓你知道我不是在講空話。我電腦上現在固定在跑五隻 agent：
 
 1. **記帳 agent**——手機傳一句「中午便當 120」，它自動分類寫進檔案，想看圖隨時生。分類正確率約 9 成，分錯下次糾正就學會。（[**對話式記帳工作流**](/posts/claude-code-remote-control-conversational-bookkeeping/)）
-2. **股市策略研究 agent**——也就是這篇的主角，盤中盯盤、收盤補資料、偵測訊號通知我。（[**FinMind 股票追蹤**](/posts/claude-code-finmind-stock-tracking/)）
+2. **股市策略研究 agent**——也就是這篇的主角：盤前自動選股、盤中每 10 分鐘盯盤、偵測訊號就發 Telegram 通知我。（完整做法：[**用 Claude Code 打造台股 AI Agent**](/posts/claude-code-stock-agent-monitor-alert/)；資料層的前身：[**FinMind 股票追蹤**](/posts/claude-code-finmind-stock-tracking/)）
 3. **SEO 分析 agent**——接 Search Console，定期分析我哪些文章在掉、該更新哪篇。（[**Search Console SEO 分析**](/posts/claude-code-search-console-seo-analysis/)）
 4. **電商助理 agent**——接 Shopify Admin API，幫我查訂單、整理商品資料。（[**Shopify 電商助理**](/posts/claude-code-shopify-admin-api-ecommerce-assistant/)）
 5. **個人 wiki agent**——幫我維護一個自己長大的知識庫，讀過的東西它幫我記、幫我連。（[**LLM 維護的個人 wiki**](/posts/llm-maintained-personal-wiki/)）
