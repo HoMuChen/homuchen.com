@@ -378,7 +378,7 @@
 | claude code 投資 自動化 | 5.3 | 自動化意圖 |
 | claude 股票 skill / skills | 8–9 | skill 角度需求 → 印證 #4 |
 | claude code 炒股 | 14.8 | 訊號/選股意圖，排名還弱 |
-| 什麼是 finmind | 10.4（0 clicks）| 機會字，可在 finmind 文補定義吃下 |
+| 什麼是 finmind | 10.4（0 clicks）| 文章已有「FinMind 是什麼？」段落；0 clicks 是因為本頁意圖是「追蹤股票」非定義頁，不值得追 |
 
 - **未被滿足的意圖**：搜尋者要的是「用 AI 做台股**分析／選股／投資／自動化／訊號**」，但現有 finmind 文只講「追蹤」。升級版 bot（盤中盯盤＋訊號偵測通知＋crontab）正是這個答案，尚未寫成文章。
 - **雜訊（不要追）**：`claude 公司 股票`、`claude 股價` 是有人誤找「Anthropic 股價」，非本系列意圖。
@@ -392,7 +392,7 @@
    - #4 MCP/Tools/Skills → 用「股票分析 skill」當例子 → 吃 `claude 股票 skill / skills`
    - #5 channels（盤中訊號傳手機）、#6 crontab（盤中盯盤）→ 維持用股票
 4. **反向內鏈（Ahrefs 招式）**：在 finmind 這個 top 1 頁面加連結指向 pillar + 升級版 bot 案例文 + #6 / #7，把權重灌進新系列（pillar 已單向連 finmind，做成雙向）。
-5. **finmind 文 refresh**：補一段「後來加 crontab 盤中盯盤、訊號通知 → 完整做法看系列」，並補「什麼是 FinMind」定義吃機會字。
+5. **finmind 文 refresh**：補一段「後來加 crontab 盤中盯盤、訊號通知 → 完整做法看系列」並前向連結到系列。（註：該文已有「FinMind 是什麼？」段落，不需補定義；`什麼是 finmind` 字意圖不符、不追。）
 
 ---
 
