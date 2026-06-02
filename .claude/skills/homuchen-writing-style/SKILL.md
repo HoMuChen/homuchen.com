@@ -33,20 +33,23 @@ description: |
 
 ## 文章結構
 
-### 1. Frontmatter（Jekyll 格式）
+### 1. Frontmatter（Ghost 格式）
 
 ```yaml
 ---
-layout: post
-title:  "文章標題"
-date: YYYY-MM-DD HH:MM:SS +0800
+title: "文章標題"
+date: YYYY-MM-DD
 author: HoMuChen
-category: 生活 / 讀書筆記 / Web Development
-tags: [相關標籤]
-image:
-  path: 圖片URL
+category: 生活 / 讀書筆記 / Web Development / AI
+tags: [tag1, tag2]
+image: https://storage.googleapis.com/homuchen.com/images/{slug}-0.jpg
+description: "選填。文章摘要，用於 SEO meta description。"
 ---
 ```
+
+- 使用通用 Markdown，不使用 Jekyll 語法（`layout`、`{:target="_blank"}`、`{{site.cdn_url}}` 等都不要用）
+- `image` 為完整 URL，`{slug}` 替換成檔名去掉日期前綴的部分
+- 內部連結格式：`/posts/{slug}/`（不含日期）
 
 ### 2. 開頭：用故事或提問勾住讀者
 
@@ -169,7 +172,7 @@ image:
 ### 引用書籍與研究
 
 - 頻繁引用讀過的書，用粗體加連結的格式：
-  `[**《原子習慣》**](https://www.books.com.tw/products/0010822522){:target="_blank"}`
+  `[**《原子習慣》**](https://www.books.com.tw/products/0010822522)`
 - 引用科學實驗來支撐觀點，用簡單的語言描述實驗過程和結果
 - 用「## 實驗」作為小標題來介紹研究
 
@@ -179,12 +182,12 @@ image:
 
 ```markdown
 延伸閱讀:
-* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/){:target="_blank"}
+* [**[讀書筆記] 原子習慣: 細微改變帶來巨大成就的實證法則**](/posts/book-note-atomic-habits/)
 ```
 
 或在文中自然提及：
 ```
-就像我之前寫過的文章: [**掌握這3個原則...**](/posts/xxx/){:target="_blank"}裡有提到的...
+就像我之前寫過的文章: [**掌握這3個原則...**](/posts/xxx/)裡有提到的...
 ```
 
 ### 個人經驗穿插
@@ -222,16 +225,19 @@ image:
 概念性的圖片用來視覺化重要觀點：
 
 ```markdown
-![描述]({{site.cdn_url}}/image-name.jpg)
+![描述](https://storage.googleapis.com/homuchen.com/images/image-name.jpg)
 ```
 
 ### 連結
 
-外部連結加上 `{:target="_blank"}`，內部連結也常加：
+用通用 Markdown 連結即可，不要加 Jekyll 的 `{:target="_blank"}`：
 
 ```markdown
-[**連結文字**](URL){:target="_blank"}
+[**連結文字**](URL)
 ```
+
+- 外部連結：引用權威來源
+- 內部連結：串聯相關舊文章，格式 `/posts/{slug}/`（不含日期）
 
 ### 程式碼（技術文章）
 
@@ -297,7 +303,7 @@ HoMuChen 喜歡將相關主題組成系列，並在每篇文章末尾放上系�
 系列文章的結尾固定格式：
 ```markdown
 這是 XXX 一系列文章中的一篇，想了解更多關於 XXX 的，可以看這篇目錄:
-[**系列目錄標題**](/posts/xxx/){:target="_blank"}
+[**系列目錄標題**](/posts/xxx/)
 ```
 
 ---
