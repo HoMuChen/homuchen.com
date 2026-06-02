@@ -66,6 +66,7 @@ description: "選填。文章摘要描述，用於 SEO meta description。"
 
 - `author` 固定為 `HoMuChen`
 - `category` 常見值：`生活`、`讀書筆記`、`Web Development`、`AI`
+- **`category` 與 `tags` 的關係**：發布腳本（`scripts/upload_to_ghost.py`）會把 `category` 自動排成第一個 tag，也就是 Ghost 的 **primary tag（分類）**。所以 `category` 必須從 4 大分類擇一；`tags` 只列**額外**的標籤，**不需要也不應重複 `category`**（重複會被 Ghost 去重，但沒必要）。
 - `image` 固定格式為 `https://storage.googleapis.com/homuchen.com/images/{slug}-0.jpg`，其中 `{slug}` 替換為文章的 slug（檔名去掉日期前綴）
 - `description` 為選填，但建議填寫以利 SEO
 - 使用通用 Markdown 格式，不使用 Jekyll 特有語法（如 `{:target="_blank"}`、`{{site.cdn_url}}`、`layout` 等）
@@ -284,7 +285,7 @@ SEO 注意事項：
 
 ## 文章分類（Ghost Primary Tags）
 
-Ghost 沒有 category，以 **primary tag**（第一個 tag）作為分類。所有文章歸屬於以下 4 大分類，撰寫新文章時必須從中選擇一個作為 primary tag：
+Ghost 沒有 category 欄位，以 **primary tag**（第一個 tag）作為分類。本專案在 frontmatter 用 `category` 欄位表達分類，發布時由 `scripts/upload_to_ghost.py` 自動排成第一個 tag（即 primary tag）——詳見前述 frontmatter 說明。所有文章歸屬於以下 4 大分類，`category` 必須從中擇一：
 
 | 分類 | 文章數 | 說明 |
 |------|--------|------|

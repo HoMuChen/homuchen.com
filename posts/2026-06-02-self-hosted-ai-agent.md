@@ -3,7 +3,7 @@ title: "自架 AI Agent 實戰（一）：在自己電腦養一隻會自己開�
 date: 2026-06-02
 author: HoMuChen
 category: AI
-tags: [AI, AI Agent, Claude Code, 自動化, Agentic AI]
+tags: [AI Agent, Claude Code, 自動化, Agentic AI]
 image: https://storage.googleapis.com/homuchen.com/images/self-hosted-ai-agent-0.jpg
 description: "我電腦上固定跑著五隻 AI agent：幫我記帳、盯盤、分析 SEO、顧電商訂單、維護個人 wiki。這篇是「自架 AI Agent 實戰」系列總論，用一隻會自己盯盤的 agent 拆解自主 agent 的四層結構，以及為什麼 2026 你該自己養一隻。"
 ---
