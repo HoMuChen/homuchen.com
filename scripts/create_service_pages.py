@@ -28,9 +28,9 @@ PAGES = [
     {
         "title": "AI 自動化工作流",
         "slug": "ai-automation-workflow",
-        "custom_excerpt": "不是裝個 ChatGPT 就叫自動化。我幫你設計真正跑在生產環境的 AI Agent 工作流，從內容行銷、電商營運到資訊收集，把每天重複做的事交給 AI。",
+        "custom_excerpt": "不是裝個 ChatGPT 就叫自動化。我幫你看你的需求適合怎麼設計 AI Agent，也能直接幫你做出來——從內容行銷、電商營運到資訊收集，把每天重複做的事交給 AI。個人接案到中小企業都聊。",
         "meta_title": "AI 自動化工作流設計｜讓 AI Agent 幫你處理重複性工作",
-        "meta_description": "不是裝個 ChatGPT 就叫自動化。我幫你設計真正跑在生產環境的 AI Agent 工作流，從內容行銷、電商營運到資訊收集，把每天重複做的事交給 AI。",
+        "meta_description": "不是裝個 ChatGPT 就叫自動化。我幫你看你的需求適合怎麼設計 AI Agent，也能直接幫你做出來——從內容行銷、電商營運到資訊收集，把每天重複做的事交給 AI。個人接案到中小企業都聊。",
         "markdown": """
 你有沒有算過，每天花多少時間在「其實不需要你親自做」的事情上？
 
