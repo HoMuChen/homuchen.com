@@ -33,7 +33,7 @@
 
 | # | 類型 | 暫定標題 | 狀態 | 檔案 / 連結 |
 |---|------|---------|------|------------|
-| 1 | 部落格(pillar) | 自架 AI Agent 實戰：在自己電腦養一隻能自主幹活的 AI Agent | 未撰寫 | — |
+| 1 | 部落格(pillar) | 自架 AI Agent 實戰（一）：在自己電腦養一隻會自己開工的 AI 員工 | 已撰寫 | `posts/2026-06-02-self-hosted-ai-agent.md` |
 | 2 | 部落格 | Agent Instruction：怎麼寫 AI Agent 的「憲法」 | 未撰寫 | — |
 | 3 | 部落格 | AI Agent 的記憶與檔案系統：memory、檔案記錄、漸進式揭露 | 未撰寫 | — |
 | 4 | 部落格 | MCP / Tools / Skills：AI Agent 的三種能力擴充 | 未撰寫 | — |
