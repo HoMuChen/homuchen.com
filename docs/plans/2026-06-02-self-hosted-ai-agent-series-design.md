@@ -174,7 +174,16 @@
 - Shopify 電商助理（`claude-code-shopify-admin-api-ecommerce-assistant`）→ 對應 tools
 - LLM 維護個人 wiki（`llm-maintained-personal-wiki`）→ 對應 #3 memory
 
-> 案例篇細節待 HoMuChen 補充實際做過的專案。
+#### ★ 優先案例文（GSC 數據驅動，單篇 ROI 最高）
+
+**「升級版股票 bot」案例文 — 用 AI Agent 自動盯盤、偵測訊號、傳手機通知**
+
+- **為什麼優先**：見下方「GSC 實測洞察」。finmind 文是全站 top 1 頁面，但只講「追蹤」；GSC 顯示大量未被滿足的「選股／投資自動化／訊號」意圖。這篇直接騎既有 topical authority 切進隔壁未開發需求。
+- **內容**：盤中每幾分鐘醒來看行情 → 偵測訊號 → crontab 排程 → 傳手機通知（天然示範 #5 channels + #6 crontab）
+- **目標關鍵字**：`claude code 投資 自動化`、`claude 選股`、`claude 股市分析`、`claude code 炒股`、`claude 股票 自動`
+- **內鏈**：finmind 文反向連到本篇；本篇連回 pillar、#5、#6
+
+> 其餘案例篇細節待 HoMuChen 補充實際做過的專案。
 
 ---
 
@@ -347,6 +356,43 @@
 | 中 | #3 | memory 實作角度（避理論紅海） |
 | 中 | #8 | OpenClaw 設計解讀 |
 | 一般 | #4 | MCP/skills 已有競品，靠交叉引用與取捨加值 |
+
+---
+
+## GSC 實測洞察與股票招牌案例策略
+
+### 數據日期：2026-06-02（近 3 個月，sc-domain:homuchen.com）
+
+**核心發現：股票 + AI 是全站最強、最有商業價值的 cluster。**
+
+- `claude-code-finmind-stock-tracking` 是**全站 top 1 頁面**：1160 clicks、11386 曝光、CTR 10.19%、位置 5.5（第二名也是股票：`google-sheet-stock-income-statement`）。
+- 帶進流量的查詢幾乎完美對應本系列：
+
+| 查詢 | 位置 | 備註 |
+|------|------|------|
+| claude 台股 | 1.7（CTR 42%）| 已霸榜 |
+| claude 股市 | 2.9 | 已霸榜 |
+| claude code 股票 | 4.0 | 強 |
+| **codex 股票分析** | 4.4（CTR 34.6%）| 連 Codex 都在排 → 印證 #7 |
+| claude 選股 | 4.6 | 未被現有文章完整服務 |
+| claude code 投資 自動化 | 5.3 | 自動化意圖 |
+| claude 股票 skill / skills | 8–9 | skill 角度需求 → 印證 #4 |
+| claude code 炒股 | 14.8 | 訊號/選股意圖，排名還弱 |
+| 什麼是 finmind | 10.4（0 clicks）| 機會字，可在 finmind 文補定義吃下 |
+
+- **未被滿足的意圖**：搜尋者要的是「用 AI 做台股**分析／選股／投資／自動化／訊號**」，但現有 finmind 文只講「追蹤」。升級版 bot（盤中盯盤＋訊號偵測通知＋crontab）正是這個答案，尚未寫成文章。
+- **雜訊（不要追）**：`claude 公司 股票`、`claude 股價` 是有人誤找「Anthropic 股價」，非本系列意圖。
+
+### 對本系列的應用（已併入上方各篇規劃）
+
+1. **股票 bot = 系列招牌案例**，pillar 已用它當主線，繼續加碼。
+2. **優先寫「升級版 bot」案例文**（見案例篇 ★）— 單篇 ROI 最高。
+3. **觀念/工具篇都用「股票」當 worked example** 以繼承 cluster 權重：
+   - #7 Claude Code vs Codex → 用「股票分析」對打 → 吃 `codex 股票分析`(pos 4.4)、`claude code 股票`
+   - #4 MCP/Tools/Skills → 用「股票分析 skill」當例子 → 吃 `claude 股票 skill / skills`
+   - #5 channels（盤中訊號傳手機）、#6 crontab（盤中盯盤）→ 維持用股票
+4. **反向內鏈（Ahrefs 招式）**：在 finmind 這個 top 1 頁面加連結指向 pillar + 升級版 bot 案例文 + #6 / #7，把權重灌進新系列（pillar 已單向連 finmind，做成雙向）。
+5. **finmind 文 refresh**：補一段「後來加 crontab 盤中盯盤、訊號通知 → 完整做法看系列」，並補「什麼是 FinMind」定義吃機會字。
 
 ---
 
