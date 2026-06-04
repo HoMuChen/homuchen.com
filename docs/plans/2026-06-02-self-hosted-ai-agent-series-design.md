@@ -178,7 +178,7 @@
 
 **「升級版股票 bot」案例文 — 用 AI Agent 自動盯盤、偵測訊號、傳手機通知**
 
-- **狀態**：已撰寫 → `posts/2026-06-04-claude-code-stock-agent-monitor-alert.md`（標題：用 Claude Code 打造台股 AI Agent：盤前自動選股、盤中盯盤、訊號到就發 Telegram）。實作來源：`fire-auto` 專案（scan/monitor/notify/stock_cache/broker_cache + crontab）。通知用 **Telegram**（notify.py）。
+- **狀態**：已發布 → [/posts/claude-code-stock-agent-monitor-alert/](https://homuchen.com/posts/claude-code-stock-agent-monitor-alert/)（檔案 `posts/2026-06-04-claude-code-stock-agent-monitor-alert.md`；標題：用 Claude Code 打造台股 AI Agent：盤前自動選股、盤中盯盤、訊號到就發 Telegram）。pillar 與 finmind 已反向內鏈到本篇。實作來源：`fire-auto` 專案（scan/monitor/notify/stock_cache/broker_cache + crontab）。通知用 **Telegram**（notify.py）。
 - **為什麼優先**：見下方「GSC 實測洞察」。finmind 文是全站 top 1 頁面，但只講「追蹤」；GSC 顯示大量未被滿足的「選股／投資自動化／訊號」意圖。這篇直接騎既有 topical authority 切進隔壁未開發需求。
 - **內容**：盤中每幾分鐘醒來看行情 → 偵測訊號 → crontab 排程 → 傳手機通知（天然示範 #5 channels + #6 crontab）
 - **目標關鍵字**：`claude code 投資 自動化`、`claude 選股`、`claude 股市分析`、`claude code 炒股`、`claude 股票 自動`
