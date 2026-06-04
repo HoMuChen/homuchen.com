@@ -1,11 +1,12 @@
 ---
-title:  "[Google sheet]如何建立下拉選單，以及從既有資料中自動建立選項"
+title:  "Google Sheet 下拉式選單教學：自動帶入既有資料、選項變動免重設"
 date:   2021-06-26 20:00:00 +0800
 author: HoMuChen
-category: Google Sheet
-tags: [google sheet]
+category: 生活
+tags: [Google Sheet]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/drop-down-1.jpg
+description: "Google Sheet 下拉式選單（下拉選單）怎麼建立？本教學示範兩種做法：自行輸入選項，以及從既有資料範圍自動帶入選項——當來源資料變動時，下拉選單會自動更新，不用每次手動重設。"
 ---
 
 ## 為什麼要用下拉式選單
@@ -46,3 +47,7 @@ image:
 ## Summary
 
 建立一個下拉選單，選項可以自行輸入，也可以從既有資料的範圍中建立，如此一來當資料有變動時，下拉選單的選項就可以自動更新，而不需要自己再重新輸入新的選項!
+
+如果你也常用 Google Sheet 整理資料，可以再看看我其他的 Google Sheet 教學，像是
+[**如何製作進度表**](/posts/google-sheet-track-progress/) 跟
+[**用 Google Sheet 記帳**](/posts/google-sheet-how-to-do-bookkeeping/)。掰掰～👋

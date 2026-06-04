@@ -1,11 +1,12 @@
 ---
-title:  "[Google Sheet]我如何製作進度表"
+title:  "Google Sheet 進度表怎麼做？用 SPARKLINE 函式做出進度條"
 date:   2019-08-14 20:00:00 +0800
 author: HoMuChen
-tags: [google sheet, sparkline]
-category: Google Sheet
+tags: [Google Sheet, sparkline]
+category: 生活
 image:
   path: https://storage.googleapis.com/homuchen.com/images/track-progress-1.jpg
+description: "想在 Google Sheet 追蹤每項任務的完成進度？這篇教你用 SPARKLINE 函式做出橫條進度條，自動計算各任務的進度百分比，把每段時間的努力情況視覺化成一張進度表。"
 ---
 
 追蹤每項任務到目前為止的進度，或每段時間(每天、每個禮拜、或每個月)的努力情況
@@ -46,6 +47,10 @@ image:
 
 大功告成～～🎉🎉🎉
 
-## Referece
+用 Google Sheet 還能做很多事，像是
+[**建立下拉式選單**](/posts/google-sheet-create-a-drop-down-list-from-existed-data/) 或
+[**記帳管理財務**](/posts/google-sheet-how-to-do-bookkeeping/)，有興趣可以接著看。掰掰～👋
+
+## Reference
 
 * [**[Google Sheet]Sparkline，在儲存格裡插入迷你圖表**](/posts/google-sheet-sparkline/)

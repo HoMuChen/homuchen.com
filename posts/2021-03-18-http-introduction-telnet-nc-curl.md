@@ -2,8 +2,8 @@
 title:  "HTTP 簡介，以及使用telnet、nc、curl等指令來探索"
 date:   2021-03-24 20:00:00 +0800
 author: HoMuChen
-tags: [http, linux, curl]
-category: Networking
+tags: [http, linux, curl, Networking]
+category: Web Development
 last_modified_at: 2021-11-01 18:00:00 +0800
 image:
   path: https://storage.googleapis.com/homuchen.com/images/http-intro-1.jpg

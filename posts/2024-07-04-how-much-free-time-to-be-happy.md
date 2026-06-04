@@ -1,17 +1,20 @@
 ---
-title:  "一天要擁有多少的空閒時間才會快樂?"
+title:  "空閒時間越多越快樂？研究：太多反而讓幸福感下降"
 date: 2024-07-04 12:00:00 +0800
 author: HoMuChen
 category: 生活
 tags: [life style]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/how-much-free-time-0.jpg
+description: "你以為空閒時間越多越快樂？一篇分析兩萬多人的研究發現：每天自由時間少於 2 小時或超過 5 小時，主觀幸福感都會下降。真正的關鍵不是時間多寡，而是你把空閒（休閒）時間花在哪裡。"
 ---
 
 總是覺得好多事情想做，卻沒有足夠的時間，如果退休不工作了，每天就能有大把的時間去做想做的事，
 這可能是許多人的夢想及努力的目標，當然我也不例外．
 
 但! 擁有更多的空閒時間，真的就會更快樂嗎？
+
+**答案可能跟你想的不一樣：空閒時間並不是越多越好。** 研究發現，每天的自由時間落在 **2 到 5 小時之間**幸福感最高，太少會因為壓力與忙碌而不快樂，太多則會因為失去目的感而幸福感下降。
 
 ## 有更多的時間就會快樂嗎？
 根據這篇論文[Having Too Little or Too Much Time Is Linked to Lower Subjective Well-being](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf)的研究，**擁有太少或太多的自由時間，都會導致主觀幸福感的下降**！(這篇論文分析了2012-2013年，21736位美國人的資料)
@@ -40,3 +43,8 @@ image:
 ![更快樂的1小時: UCLA爆紅的時間幸福學, 教你聚焦於最重要的事](https://storage.googleapis.com/homuchen.com/images/book-note-happier-hour-1.jpg)
 
 作者闡述擁有多少時間不是重點，而是你如何使用支出他們，這本書確實是一本投資指南，只不過不是投資金錢，而是你最寶貴的資源──時間。
+
+如果你也在思考怎麼把時間、把每一段空閒（休閒）時光花得更有價值，可以接著看我寫過的
+[**五個簡化生活、時間管理的法則**](/posts/five-time-management-laws/)，以及
+[**柴嘉尼效應：為什麼沒做完的事讓你放不下**](/posts/productivity-zeigarnik-effect/)——
+學會把懸在心上的事先放下，你的空閒時間才會真的是「空閒」。祝大家都能擁有剛剛好的空閒時光😌，掰掰～👋

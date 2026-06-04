@@ -2,8 +2,8 @@
 title:  "[Networking] 網路的架構，Layered Architecture"
 date:   2020-04-04 20:00:00 +0800
 author: HoMuChen
-category: Networking
-tags: [layered architecture]
+category: Web Development
+tags: [layered architecture, Networking]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/layered-arc-1.jpg
 ---

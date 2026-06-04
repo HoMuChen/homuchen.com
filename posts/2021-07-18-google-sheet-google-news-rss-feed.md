@@ -2,8 +2,8 @@
 title:  "[Google sheet]如何在試算表裡匯入新聞、rss feed"
 date:   2021-07-18 12:00:00 +0800
 author: HoMuChen
-category: Google Sheet
-tags: [google sheet, finance]
+category: 生活
+tags: [Google Sheet, finance]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/google-sheet-news-1.jpg
 ---

@@ -2,8 +2,8 @@
 title:  "[Google Sheet]我如何利用Google表單來記帳"
 date: 2021-07-31 22:30:00 +0800
 author: HoMuChen
-category: Google Sheet
-tags: [finance, google sheet, google form]
+category: 生活
+tags: [Google Sheet, finance, google form, 記帳]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/google-sheet-bookkeeping-1.jpg
 ---

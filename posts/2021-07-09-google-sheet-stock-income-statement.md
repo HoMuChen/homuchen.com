@@ -2,8 +2,8 @@
 title:  "[Google sheet]我如何製作股票損益表，自動抓取最新股價"
 date:   2021-07-09 16:30:00 +0800
 author: HoMuChen
-category: Google Sheet
-tags: [google sheet, finance]
+category: 生活
+tags: [Google Sheet, finance, 股票]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/income-statement-1.jpg
 ---

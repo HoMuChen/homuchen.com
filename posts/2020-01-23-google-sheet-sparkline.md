@@ -2,8 +2,8 @@
 title:  "[Google Sheet]Sparkline，在儲存格裡插入迷你圖表"
 date:   2020-01-23 20:00:00 +0800
 author: HoMuChen
-category: Google Sheet
-tags: [google sheet, sparkline]
+category: 生活
+tags: [Google Sheet, sparkline]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/spark-line-1.jpg
 ---

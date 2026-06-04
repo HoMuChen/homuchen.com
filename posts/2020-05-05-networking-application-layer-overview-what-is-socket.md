@@ -2,8 +2,8 @@
 title:  "[Networking]Application Layer Overview，什麼是Socket?"
 date:   2020-05-05 20:00:00 +0800
 author: HoMuChen
-tags: [linux, socket, tcp, udp]
-category: Networking
+tags: [linux, socket, tcp, Networking]
+category: Web Development
 image:
   path: https://storage.googleapis.com/homuchen.com/images/app-layer-1.jpg
 ---

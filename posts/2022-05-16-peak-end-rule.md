@@ -61,6 +61,9 @@ IKEA在逛街購物的尾端，擺上令人心滿意足的小吃及霜淇淋，�
 記得每次結束一整天約會後，
 要給你的情人來一個大大的擁抱或是kiss goodbye，做為這次約會的美好結尾唷～❤️
 
+像峰終定律這種悄悄影響我們記憶與感受的心理學效應其實還有不少，如果你也好奇「為什麼沒做完的事總是讓你放不下」，
+可以接著看[**柴嘉尼效應：為什麼沒做完的事讓你焦慮、睡不著**](/posts/productivity-zeigarnik-effect/)這篇。
+
 ## 參考資料
 1. [Redelmeier D. A., Kahneman D. (1996). Patients’ memories of painful medical treatments: real-time and retrospective evaluations of two minimally invasive procedures.](https://pubmed.ncbi.nlm.nih.gov/8857625/)
 2. [行為經濟學](https://zh.m.wikipedia.org/zh-tw/%E8%A1%8C%E7%82%BA%E7%B6%93%E6%BF%9F%E5%AD%B8)

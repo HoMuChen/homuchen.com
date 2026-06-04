@@ -2,8 +2,8 @@
 title:  "ISP 是什麼？網路服務供應商如何讓你連上網路"
 date:   2020-04-04 20:00:00 +0800
 author: HoMuChen
-category: Networking
-tags: [ISP, networking]
+category: Web Development
+tags: [ISP, Networking]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/isp-2.jpg
 description: "ISP（Internet Service Provider）是什麼？網路服務供應商在網路架構中扮演什麼角色？從網路的組成到 ISP 的分層架構，用簡單的方式搞懂你的網路是怎麼連上全世界的。"
