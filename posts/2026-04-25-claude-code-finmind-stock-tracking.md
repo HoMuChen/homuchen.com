@@ -202,6 +202,8 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 
 可以，再叫 Claude Code 加一個 webhook 腳本就好。例如「股價跌破成本 10% 通知我」「持倉有變動寄 email」這類條件式通知，都是再開一個對話補一支腳本的事，不需要再付 SaaS 訂閱費。
 
+我後來真的把它做出來了——盤前自動選股、盤中每 10 分鐘盯盤、訊號條件到齊就發 Telegram 通知我。完整做法寫在這篇：[**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、訊號發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)。
+
 ---
 
 ## 該不該從 GOOGLEFINANCE 換到 FinMind？
@@ -215,6 +217,8 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 如果你也有在追蹤台股，這套流程真的值得試試看。設定好之後，每天花不到一分鐘，資料就自動準備好了。
 
 延伸閱讀：
+* [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、訊號發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)（這篇的升級版）
+* [**自架 AI Agent 實戰：在自己電腦養一隻會自己開工的 AI 員工**](/posts/self-hosted-ai-agent/)
 * [**不用 Google Sheet 也不用 App — 我的 Claude Code 對話式記帳工作流**](/posts/claude-code-remote-control-conversational-bookkeeping/)
 * [**Google Sheet 股票損益計算：自動更新最新股價，算出投資損益**](/posts/google-sheet-stock-income-statement/)
 * [**Claude Code 接 Google Search Console — 用 AI 幫你做 SEO 分析**](/posts/claude-code-search-console-seo-analysis/)

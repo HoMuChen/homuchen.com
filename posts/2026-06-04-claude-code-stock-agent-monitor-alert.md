@@ -1,6 +1,6 @@
 ---
 title: "用 Claude Code 打造台股 AI Agent：盤前自動選股、盤中盯盤、訊號到就發 Telegram"
-date: 2026-06-02
+date: 2026-06-04
 author: HoMuChen
 category: AI
 tags: [Claude Code, 台股, FinMind, 量化交易, 自動化]
