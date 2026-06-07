@@ -349,13 +349,11 @@ class LexicalConverter(HTMLParser):
                 elif c[0] == "strong" or c[0] == "b":
                     inner = c[1] if len(c) > 1 else []
                     for n in self._inline_nodes(inner):
-                        n["format"] = n.get("format", 0) | 1
-                        nodes.append(n)
+                        nodes.append(self._apply_format_bit(n, 1))
                 elif c[0] == "em" or c[0] == "i":
                     inner = c[1] if len(c) > 1 else []
                     for n in self._inline_nodes(inner):
-                        n["format"] = n.get("format", 0) | 2
-                        nodes.append(n)
+                        nodes.append(self._apply_format_bit(n, 2))
                 elif c[0] == "code":
                     inner = c[1] if len(c) > 1 else []
                     text = self._extract_text(inner)
@@ -386,8 +384,7 @@ class LexicalConverter(HTMLParser):
                 elif c[0] == "del" or c[0] == "s":
                     inner = c[1] if len(c) > 1 else []
                     for n in self._inline_nodes(inner):
-                        n["format"] = n.get("format", 0) | 4
-                        nodes.append(n)
+                        nodes.append(self._apply_format_bit(n, 4))
                 else:
                     # Unknown inline tag, extract text
                     inner = c[1] if len(c) > 1 else []
@@ -407,6 +404,23 @@ class LexicalConverter(HTMLParser):
             "type": "extended-text",
             "version": 1,
         }
+
+    def _apply_format_bit(self, node, bit):
+        """Apply a text format bit (bold/italic/strike) to a node.
+
+        Text nodes carry an integer `format` bitmask, so we OR the bit in.
+        Container nodes (e.g. links) carry a string `format`; for those we
+        recurse into their children instead, so e.g. **[text](url)**
+        (a link wrapped in bold) bolds the link's inner text rather than
+        crashing on `"" | 1`.
+        """
+        fmt = node.get("format", 0)
+        if isinstance(fmt, int):
+            node["format"] = fmt | bit
+        elif "children" in node:
+            for child in node["children"]:
+                self._apply_format_bit(child, bit)
+        return node
 
     def _extract_text(self, children):
         """Recursively extract plain text from children."""

@@ -115,7 +115,7 @@ agent 不該只活在終端機裡，不然你得一直盯著螢幕。它要能�
 
 我的股票 bot 偵測到訊號，就直接傳訊息到我手機。台灣最順手的是 LINE，國際上很多人用 Telegram，Claude Code 本身也有遠端遙控功能，可以用手機app指揮電腦上的 agent。我那套 [**手機對話式記帳工作流**](/posts/claude-code-remote-control-conversational-bookkeeping/) 就是這層的代表作——一句「中午便當 120」，agent 自動分類寫檔。
 
-溝通有兩個方向：**你下指令遙控它**，以及**它主動回報通知你**。兩個方向都接上，這隻 agent 才算真的住進你的生活。
+溝通有兩個方向：**你下指令遙控它**，以及**它主動回報通知你**。兩個方向都接上，這隻 agent 才算真的住進你的生活。完整做法（Remote Control 遙控、自己接 Telegram bot 收通知、LINE 與官方 Channel 的取捨）我整理在 [**系列第五篇：用 Telegram / LINE 遙控你的 AI Agent**](/posts/ai-agent-channels-telegram-line/)。
 
 ### 第四層：自動化 — 它什麼時候自己動
 
@@ -155,7 +155,7 @@ agent 不該只活在終端機裡，不然你得一直盯著螢幕。它要能�
 2. Agent Instruction：怎麼寫 agent 的「憲法」
 3. Memory 與檔案系統：記憶、檔案記錄、漸進式揭露
 4. MCP / Tools / Skills：agent 的三種能力擴充
-5. 用 LINE / Telegram 遙控你的 agent、收任務通知
+5. [**用 Telegram / LINE 遙控你的 agent、收任務通知**](/posts/ai-agent-channels-telegram-line/)
 6. 用 Crontab 讓 agent 自己定時開工
 
 **工具篇**（同樣的觀念，在不同工具上怎麼實現）
