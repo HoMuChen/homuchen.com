@@ -154,9 +154,9 @@ if __name__ == "__main__":
 
 前面講的是「在現有工具上接 channel」。但有一類開源 agent，是**從骨子裡就把 channel 當核心**設計的，值得認識（這兩隻系列之後會各寫一篇深入，這裡先讓你有概念）。
 
-**[OpenClaw](https://github.com/openclaw/openclaw)** 是一隻 local-first、always-on 的個人助理 agent。它最招牌的就是那層 **Gateway**——一隻 agent 可以同時住在 **20 多個通訊軟體裡**（Telegram、WhatsApp、Slack、Discord、Signal、iMessage，**連 LINE、WeChat 都有**），而且[跨 channel 共用同一套記憶](https://docs.openclaw.ai/channels)。你在 Telegram 跟它講的事，換到 WhatsApp 它也記得。如果你是 LINE 重度使用者，這是少數原生支援 LINE 的選擇。
+[**OpenClaw**](https://github.com/openclaw/openclaw) 是一隻 local-first、always-on 的個人助理 agent。它最招牌的就是那層 **Gateway**——一隻 agent 可以同時住在 **20 多個通訊軟體裡**（Telegram、WhatsApp、Slack、Discord、Signal、iMessage，**連 LINE、WeChat 都有**），而且[跨 channel 共用同一套記憶](https://docs.openclaw.ai/channels)。你在 Telegram 跟它講的事，換到 WhatsApp 它也記得。如果你是 LINE 重度使用者，這是少數原生支援 LINE 的選擇。
 
-**[Hermes](https://github.com/NousResearch/hermes-agent)**（Nous Research 開源）則有兩個入口：一個是終端機 UI（`hermes`），另一個是 gateway——同樣能接 [Telegram](https://hermes-agent.nousresearch.com/docs/user-guide/messaging/telegram)、Discord、Slack、WhatsApp、Signal、Email。它的重點不在 channel 多，而在「越用越懂你」（這留到 Hermes 那篇講）。
+[**Hermes**](https://github.com/NousResearch/hermes-agent)（Nous Research 開源）則有兩個入口：一個是終端機 UI（`hermes`），另一個是 gateway——同樣能接 [Telegram](https://hermes-agent.nousresearch.com/docs/user-guide/messaging/telegram)、Discord、Slack、WhatsApp、Signal、Email。它的重點不在 channel 多，而在「越用越懂你」（這留到 Hermes 那篇講）。
 
 這兩隻告訴我們一件事：**channel 不是 agent 的附加功能，而是它跟世界的介面。** 當你開始認真養 agent，「它住在哪些地方」會變成一個重要的設計決定。
 
