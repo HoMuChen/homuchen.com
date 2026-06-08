@@ -39,7 +39,7 @@
 | 3 | 部落格 | AI Agent 的記憶與檔案系統：memory、檔案記錄、漸進式揭露 | 未撰寫 | — |
 | 4 | 部落格 | MCP / Tools / Skills：AI Agent 的三種能力擴充 | 未撰寫 | — |
 | 5 | 部落格 | 用 Telegram / LINE 遙控你的 AI Agent、收任務通知 | 已發布 | [/posts/ai-agent-channels-telegram-line/](https://homuchen.com/posts/ai-agent-channels-telegram-line/)（檔案 `posts/2026-06-05-ai-agent-channels-telegram-line.md`） |
-| 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 已撰寫 | `posts/2026-06-08-crontab-ai-agent-schedule.md` |
+| 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 已發布 | [/posts/crontab-ai-agent-schedule/](https://homuchen.com/posts/crontab-ai-agent-schedule/)（檔案 `posts/2026-06-08-crontab-ai-agent-schedule.md`） |
 | 7 | 部落格 | Claude Code vs Codex：監督式 vs 全自動的 CLI 泛用 Agent | 未撰寫 | — |
 | 8 | 部落格 | OpenClaw：always-on、會 heartbeat、住在通訊軟體裡的 Agent | 未撰寫 | — |
 | 9 | 部落格 | Hermes：會自我改進的 Agent — 記憶與自動長技能的設計理念 | 未撰寫 | — |

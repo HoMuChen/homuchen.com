@@ -170,7 +170,7 @@ if __name__ == "__main__":
 
 我的股票 bot 就是這個組合——crontab 排盤中每 10 分鐘叫醒它，它跑完掃描、有訊號就用 Telegram 敲我。**channel 是嘴巴，crontab 是生理時鐘，兩個加起來才是一隻會自己上工、又會回報的員工。**
 
-crontab 這層怎麼設計，是這個系列接下來會專門寫的一篇。你也可以先回 [**系列總論**](/posts/self-hosted-ai-agent/) 看四層怎麼串。
+crontab 這層怎麼設計，就在系列的下一篇 [**用 Crontab 讓 AI Agent 自己定時開工**](/posts/crontab-ai-agent-schedule/)（含 crontab vs 雲端 Routines 的取捨）。你也可以先回 [**系列總論**](/posts/self-hosted-ai-agent/) 看四層怎麼串。
 
 ## 你可以怎麼開始
 

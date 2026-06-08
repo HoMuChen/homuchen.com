@@ -136,7 +136,7 @@ description: "我用 Claude Code 把抓股價的腳本，升級成一隻會自�
 - **Context**：我寫給它的策略規則與選股邏輯（instruction）＋ 本地那幾 GB 的股價、籌碼 CSV（記憶）
 - **能力**：FinMind API（拿資料）＋ 自己寫的回測、掃描腳本（工具）
 - **溝通**：偵測到訊號發 **Telegram**（這層的完整做法見系列專篇 [**用 Telegram / LINE 遙控你的 AI Agent、收任務通知**](/posts/ai-agent-channels-telegram-line/)）
-- **自動化**：**crontab** 那張作息表（這層也會有專篇講）
+- **自動化**：**crontab** 那張作息表（完整做法見系列專篇 [**用 Crontab 讓 AI Agent 自己定時開工**](/posts/crontab-ai-agent-schedule/)）
 
 ## 老實話：它不會幫你下單，也不保證賺錢
 
