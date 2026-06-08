@@ -39,7 +39,7 @@
 | 3 | 部落格 | AI Agent 的記憶與檔案系統：memory、檔案記錄、漸進式揭露 | 未撰寫 | — |
 | 4 | 部落格 | MCP / Tools / Skills：AI Agent 的三種能力擴充 | 未撰寫 | — |
 | 5 | 部落格 | 用 Telegram / LINE 遙控你的 AI Agent、收任務通知 | 已發布 | [/posts/ai-agent-channels-telegram-line/](https://homuchen.com/posts/ai-agent-channels-telegram-line/)（檔案 `posts/2026-06-05-ai-agent-channels-telegram-line.md`） |
-| 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 未撰寫 | — |
+| 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 已撰寫 | `posts/2026-06-08-crontab-ai-agent-schedule.md` |
 | 7 | 部落格 | Claude Code vs Codex：監督式 vs 全自動的 CLI 泛用 Agent | 未撰寫 | — |
 | 8 | 部落格 | OpenClaw：always-on、會 heartbeat、住在通訊軟體裡的 Agent | 未撰寫 | — |
 | 9 | 部落格 | Hermes：會自我改進的 Agent — 記憶與自動長技能的設計理念 | 未撰寫 | — |
@@ -308,8 +308,8 @@
 | Topical | crontab 觸發 agent, 排程跑 AI 任務, 每天自動跑 AI |
 | 搜尋意圖 | Informational + Transactional |
 | 買家階段 | Implementation |
-| 競爭程度 | 極低（繁中 crontab 全是傳統排程） |
-| SEO 筆記 | 🟢 缺口；切入點是「從定時跑指令 → 定時觸發 agent」 |
+| 競爭程度 | 中（2026-06 更新：Claude Code 推出 Cloud Routines 後，繁中冒出多篇排程競品——動區/鏈新聞/TechNews/klab/moksaweb/mindroad，競爭從「極低」升到「中」） |
+| SEO 筆記 | 切入點「從定時跑指令 → 定時觸發 agent」仍成立。**重定位**：競品多談雲端 Routines（managed），本系列主打 self-hosted crontab。殺手差異化＝Cloud Routines 最小間隔 1 小時、3 天過期，而股票盤中需每 10 分鐘長跑 → 非自己的 crontab 不可。誠實對照雲端何時用 |
 
 #### #7 Claude Code vs Codex
 | 類型 | 關鍵字 |
