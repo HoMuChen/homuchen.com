@@ -41,9 +41,9 @@
 
 | 順位 | 支柱 | 取材文章 | 鉤子（首句草稿） | 格式 | 來源 | 狀態 | 檔案 / URL |
 |------|------|---------|-----------------|------|------|------|-----------|
-| 1 | ① | `claude-code-stock-agent-monitor-alert` | 我寫了一隻 AI 幫我盯台股，盤中偵測到訊號就自動發 Telegram 叫我 | thread | repurposed | 規劃中 | — |
-| 2 | ① | `ai-labor-not-tool-500-commits` | 五月才過七天，我的 commit 數快 500。不是我變快，是 AI 在替我幹活 | single | repurposed | 規劃中 | — |
-| 3 | ② | `llm-maintained-personal-wiki` | 你的 Notion 第幾次爛掉了？我這次用 LLM 當管理員，終於活下來 | single | repurposed | 規劃中 | — |
+| 1 | ① | `claude-code-stock-agent-monitor-alert` | 我寫了一隻 AI 幫我盯台股，盤中偵測到訊號就自動發 Telegram 叫我 | thread | repurposed | 已撰寫 | `threads/2026-06-15-claude-code-stock-agent-monitor-alert.md` |
+| 2 | ① | `ai-labor-not-tool-500-commits` | 五月才過七天，我的 commit 數快 500。不是我變快，是 AI 在替我幹活 | single | repurposed | 已撰寫 | `threads/2026-06-17-ai-labor-not-tool-500-commits.md` |
+| 3 | ② | `llm-maintained-personal-wiki` | 你的 Notion 第幾次爛掉了？我這次用 LLM 當管理員，終於活下來 | single | repurposed | 已撰寫 | `threads/2026-06-19-llm-maintained-personal-wiki.md` |
 | 4 | ③ | `claude-code-remote-control-conversational-bookkeeping` | 我把用了 5 年的 Google Sheet 記帳收掉了，也沒換 App | thread | repurposed | 規劃中 | — |
 | 5 | ② | `software-engineer-in-ai-era` | AI 會不會取代工程師？身為每天用 AI 寫 code 的人，講點實話 | single | standalone | 規劃中 | — |
 | 6 | ① | `self-hosted-ai-agent` | 我電腦上固定跑著 5 隻 AI agent：記帳、盯盤、SEO、電商、wiki | thread | repurposed | 規劃中 | — |
@@ -77,21 +77,23 @@
 ### 通則
 - **首句定生死**：用 hook 公式 —— 數字（500 commits）、反直覺（不是我變快是 AI 幹活）、痛點（Notion 又爛了）、hot take（AI 取代工程師？）。
 - **寫作風格**：用 `homuchen-writing-style` skill —— 口語、`～`、適量 emoji、像朋友聊天。
+- **結尾不放「掰掰～👋」**：那是部落格文章的招牌結尾，Threads 不用（語氣保留，但不放這個簽名收尾）。
 - **發布工具**：用 `post-to-threads` skill。
 - **frontmatter** 照 CLAUDE.md `threads/` 規範：`date`、`type`（single / thread）、`source`（standalone / repurposed）、`source_post`、`tags`、`status: draft`，發布後補 `threads_url`。
 
 ### single（單則）
 - 用在「成果文 / hot take」。一則打到底（500 字內）。
-- **部落格連結放結尾，或第一則回覆**，保護觸及。
+- **主貼文不放連結**。結尾改提示「連結放 bio～」，引導去 bio 看部落格。
 
 ### thread（串文）
 - 用在「步驟 / 清單 / 觀念拆解」。3–6 則，每則一個重點，用 `---` 分隔。
 - 第 1 則只放鉤子 + 預告（不放連結）。
-- 最後一則放「完整做法 → 部落格連結」+ 軟 CTA。
+- **連結獨立成最後一則「回覆」**（`---` 分隔的最後一段，發布時 index 0 是主貼文、其餘自動串為回覆）。倒數第二則用「連結放在留言 👇」帶過。
 
-### 導流與 CTA
-- 慣例導流句：「完整做法寫在部落格（連結）」「想看我怎麼做的，文章連結放留言」。
-- 連結放結尾或留言，避免首則就外連影響觸及。
+### 導流與 CTA（重要：連結不放主貼文）
+- **連結一律放回覆，不放進主貼文**——避免主貼文外連影響觸及。串文＝最後一則當 reply 放連結；單則＝不放連結、改說「連結放 bio～」。
+- 慣例導流句：「完整做法都整理成文章了，連結放留言 👇」「連結放 bio～」。
+- **數字照實**：成果文的真實數字（commit 數、回測年化/Sharpe、wiki 頁數等）照實寫，不淡化（原文都有完整免責，沿用即可）。
 - 自架 agent 系列的成果文可帶軟導流到顧問服務頁 `/ai-automation-workflow/`（不硬推，建立信任優先，沿用系列慣例）。
 
 ---
