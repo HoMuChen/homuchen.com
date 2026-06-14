@@ -97,7 +97,7 @@ Context 是一隻 agent 的根基，它又分成兩塊。
 
 **一是 Instruction，agent 的「憲法」。** 我寫了一份指令給股票 bot：它該關心哪些訊號、風險邊界在哪、算出來要用什麼格式回報我、什麼情況該主動敲我、什麼情況閉嘴就好。指令寫得好不好，幾乎決定了這隻 agent 靠不靠譜。完整做法（好 vs 壞 instruction、該寫哪五塊、`CLAUDE.md` / `AGENTS.md` 怎麼擺）我整理在 [**系列第二篇：怎麼寫 AI Agent 的「憲法」**](/posts/agent-instruction-claude-md/)。
 
-**二是 Memory 與檔案，agent 的「記憶」。** 模型本身是會「失憶」的——每次對話結束，它就忘了。所以我讓 bot 把每天的行情、算好的指標、判斷的理由，**通通寫進檔案**。久了這些檔案就變成它的資料庫。而且我用「索引檔連到細節檔」的方式組織，讓它每次只讀需要的那部分，不用一次把所有東西塞進腦袋——這招叫**漸進式揭露（progressive disclosure）**。我那篇 [**讓 LLM 自己維護的個人 wiki**](/posts/llm-maintained-personal-wiki/) 就是同一套思路的應用。
+**二是 Memory 與檔案，agent 的「記憶」。** 模型本身是會「失憶」的——每次對話結束，它就忘了。所以我讓 bot 把每天的行情、算好的指標、判斷的理由，**通通寫進檔案**。久了這些檔案就變成它的資料庫。而且我用「索引檔連到細節檔」的方式組織，讓它每次只讀需要的那部分，不用一次把所有東西塞進腦袋——這招叫**漸進式揭露（progressive disclosure）**。我那篇 [**讓 LLM 自己維護的個人 wiki**](/posts/llm-maintained-personal-wiki/) 就是同一套思路的應用。完整做法（context window 為什麼不是記憶、用檔案當記憶、漸進式揭露怎麼做）我整理在 [**系列第三篇：AI Agent 的記憶與檔案系統**](/posts/ai-agent-memory-file-system/)。
 
 ### 第二層：能力 — 它能做什麼
 
@@ -153,7 +153,7 @@ agent 不該只活在終端機裡，不然你得一直盯著螢幕。它要能�
 
 1. 系列總論：在自己電腦養一隻會自己開工的 AI 員工（就是這篇）
 2. [**Agent Instruction：怎麼寫 agent 的「憲法」**](/posts/agent-instruction-claude-md/)
-3. Memory 與檔案系統：記憶、檔案記錄、漸進式揭露
+3. [**Memory 與檔案系統：記憶、檔案記錄、漸進式揭露**](/posts/ai-agent-memory-file-system/)
 4. MCP / Tools / Skills：agent 的三種能力擴充
 5. [**用 Telegram / LINE 遙控你的 agent、收任務通知**](/posts/ai-agent-channels-telegram-line/)
 6. [**用 Crontab 讓 agent 自己定時開工**](/posts/crontab-ai-agent-schedule/)
