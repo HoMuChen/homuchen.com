@@ -36,7 +36,7 @@
 |---|------|---------|------|------------|
 | 1 | 部落格(pillar) | 自架 AI Agent 實戰（一）：在自己電腦養一隻會自己開工的 AI 員工 | 已發布 | [/posts/self-hosted-ai-agent/](https://homuchen.com/posts/self-hosted-ai-agent/) |
 | 2 | 部落格 | Agent Instruction：怎麼寫 AI Agent 的「憲法」 | 已發布 | [/posts/agent-instruction-claude-md/](https://homuchen.com/posts/agent-instruction-claude-md/)（檔案 `posts/2026-06-10-agent-instruction-claude-md.md`） |
-| 3 | 部落格 | AI Agent 的記憶與檔案系統：memory、檔案記錄、漸進式揭露 | 已撰寫 | `posts/2026-06-10-ai-agent-memory-file-system.md` |
+| 3 | 部落格 | AI Agent 的記憶與檔案系統：memory、檔案記錄、漸進式揭露 | 已撰寫 | `posts/2026-06-14-ai-agent-memory-file-system.md` |
 | 4 | 部落格 | MCP / Tools / Skills：AI Agent 的三種能力擴充 | 未撰寫 | — |
 | 5 | 部落格 | 用 Telegram / LINE 遙控你的 AI Agent、收任務通知 | 已發布 | [/posts/ai-agent-channels-telegram-line/](https://homuchen.com/posts/ai-agent-channels-telegram-line/)（檔案 `posts/2026-06-05-ai-agent-channels-telegram-line.md`） |
 | 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 已發布 | [/posts/crontab-ai-agent-schedule/](https://homuchen.com/posts/crontab-ai-agent-schedule/)（檔案 `posts/2026-06-08-crontab-ai-agent-schedule.md`） |

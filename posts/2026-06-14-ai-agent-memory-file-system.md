@@ -1,6 +1,6 @@
 ---
 title: "AI Agent 的記憶與檔案系統：memory、檔案記錄、漸進式揭露 — 自架 AI Agent 實戰（三）"
-date: 2026-06-10
+date: 2026-06-14
 author: HoMuChen
 category: AI
 tags: [AI Agent, AI Agent 記憶, memory, 漸進式揭露, Claude Code]
