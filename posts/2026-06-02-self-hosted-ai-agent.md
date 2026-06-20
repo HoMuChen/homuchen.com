@@ -107,7 +107,7 @@ Context 是一隻 agent 的根基，它又分成兩塊。
 - 要把一個 tool 交到 agent 手上，有兩條路：接 **MCP**（一套標準插座協定，讓外部服務即插即用），或**自己寫 script**（DIY 直接打 API）。我的股票 bot 走的是後者——我叫 Claude Code 讀 FinMind 文件、寫支 script 直接抓資料，其實沒用到 MCP。
 - **Skill** 是教它「怎麼做」的工作流文件：先抓哪些資料、怎麼算、什麼門檻算訊號，還能把那支 script 包進去復用。
 
-用個比喻：tool 是切菜開火的動作、MCP 是標準規格的食材宅配、自己寫 script 是親自上市場採買、Skill 則是食譜與手藝。**接得到食材（tool）只是第一步，知道怎麼煮（skill）才是關鍵。** 完整的取捨（何時用 MCP、何時寫 script、怎麼拆成 skill）系列第四篇會專門講。
+用個比喻：tool 是切菜開火的動作、MCP 是標準規格的食材宅配、自己寫 script 是親自上市場採買、Skill 則是食譜與手藝。**接得到食材（tool）只是第一步，知道怎麼煮（skill）才是關鍵。** 完整的取捨（何時用 MCP、何時寫 script、怎麼拆成 skill）我整理在 [**系列第四篇：MCP / Tools / Skills**](/posts/mcp-tools-skills/)。
 
 ### 第三層：溝通 — 它怎麼跟你來往
 
@@ -154,7 +154,7 @@ agent 不該只活在終端機裡，不然你得一直盯著螢幕。它要能�
 1. 系列總論：在自己電腦養一隻會自己開工的 AI 員工（就是這篇）
 2. [**Agent Instruction：怎麼寫 agent 的「憲法」**](/posts/agent-instruction-claude-md/)
 3. [**Memory 與檔案系統：記憶、檔案記錄、漸進式揭露**](/posts/ai-agent-memory-file-system/)
-4. MCP / Tools / Skills：agent 的三種能力擴充
+4. [**MCP / Tools / Skills：agent 的三種能力擴充**](/posts/mcp-tools-skills/)
 5. [**用 Telegram / LINE 遙控你的 agent、收任務通知**](/posts/ai-agent-channels-telegram-line/)
 6. [**用 Crontab 讓 agent 自己定時開工**](/posts/crontab-ai-agent-schedule/)
 
