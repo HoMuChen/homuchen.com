@@ -40,7 +40,7 @@
 | 4 | 部落格 | MCP / Tools / Skills：AI Agent 的三種能力擴充 | 已發布 | [/posts/mcp-tools-skills/](https://homuchen.com/posts/mcp-tools-skills/)（檔案 `posts/2026-06-20-mcp-tools-skills.md`） |
 | 5 | 部落格 | 用 Telegram / LINE 遙控你的 AI Agent、收任務通知 | 已發布 | [/posts/ai-agent-channels-telegram-line/](https://homuchen.com/posts/ai-agent-channels-telegram-line/)（檔案 `posts/2026-06-05-ai-agent-channels-telegram-line.md`） |
 | 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 已發布 | [/posts/crontab-ai-agent-schedule/](https://homuchen.com/posts/crontab-ai-agent-schedule/)（檔案 `posts/2026-06-08-crontab-ai-agent-schedule.md`） |
-| 7 | 部落格 | Claude Code vs Codex：兩隻終端機 AI Agent，其實比你想的像（誠實版：放棄「監督 vs 全自動」對立） | 已撰寫 | `posts/2026-06-24-claude-code-vs-codex.md` |
+| 7 | 部落格 | Claude Code vs Codex：兩隻終端機 AI Agent，其實比你想的像（誠實版：放棄「監督 vs 全自動」對立） | 已發布 | [/posts/claude-code-vs-codex/](https://homuchen.com/posts/claude-code-vs-codex/)（檔案 `posts/2026-06-24-claude-code-vs-codex.md`） |
 | 8 | 部落格 | OpenClaw：always-on、會 heartbeat、住在通訊軟體裡的 Agent | 未撰寫 | — |
 | 9 | 部落格 | Hermes：會自我改進的 Agent — 記憶與自動長技能的設計理念 | 未撰寫 | — |
 | 10+ | 部落格 | 案例篇（遠端記帳 / 股票追蹤 / SEO / 電商 / 個人 wiki） | 規劃中 | 引用既有文章 |
