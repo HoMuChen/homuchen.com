@@ -40,7 +40,7 @@
 | 4 | 部落格 | MCP / Tools / Skills：AI Agent 的三種能力擴充 | 已發布 | [/posts/mcp-tools-skills/](https://homuchen.com/posts/mcp-tools-skills/)（檔案 `posts/2026-06-20-mcp-tools-skills.md`） |
 | 5 | 部落格 | 用 Telegram / LINE 遙控你的 AI Agent、收任務通知 | 已發布 | [/posts/ai-agent-channels-telegram-line/](https://homuchen.com/posts/ai-agent-channels-telegram-line/)（檔案 `posts/2026-06-05-ai-agent-channels-telegram-line.md`） |
 | 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 已發布 | [/posts/crontab-ai-agent-schedule/](https://homuchen.com/posts/crontab-ai-agent-schedule/)（檔案 `posts/2026-06-08-crontab-ai-agent-schedule.md`） |
-| 7 | 部落格 | Claude Code vs Codex：監督式 vs 全自動的 CLI 泛用 Agent | 未撰寫 | — |
+| 7 | 部落格 | Claude Code vs Codex：兩隻終端機 AI Agent，其實比你想的像（誠實版：放棄「監督 vs 全自動」對立） | 已撰寫 | `posts/2026-06-24-claude-code-vs-codex.md` |
 | 8 | 部落格 | OpenClaw：always-on、會 heartbeat、住在通訊軟體裡的 Agent | 未撰寫 | — |
 | 9 | 部落格 | Hermes：會自我改進的 Agent — 記憶與自動長技能的設計理念 | 未撰寫 | — |
 | 10+ | 部落格 | 案例篇（遠端記帳 / 股票追蹤 / SEO / 電商 / 個人 wiki） | 規劃中 | 引用既有文章 |
@@ -126,17 +126,19 @@
 
 ### 工具篇（依設計理念拆，每個工具把某個觀念推到極致）
 
-#### #7 Claude Code vs Codex — 監督式 vs 全自動的 CLI 泛用 Agent
+#### #7 Claude Code vs Codex — 兩隻終端機 AI Agent，其實比你想的像
 
-- **為什麼合講**：兩者都是 terminal-native 的泛用 coding/任務 agent，設計哲學成對比。
-- **核心內容**：
-  - Claude Code：**監督式自主**（plan mode 先審再做、hooks 生命週期攔截）、程式品質強
-  - Codex：**非監督式自主**（full-auto 無審核、硬體級 sandbox、雲端執行、token 省）
-  - 兩者怎麼實現 #2~#4 的觀念（instruction 檔、MCP、skills/sub-agent）
-  - 選型建議：架構/前端/複雜任務用 Claude Code；自動化/DevOps/成本敏感用 Codex；很多人兩個都用
-  - GUI 對照：Claude Cowork Desktop（鏈到既有 Cowork 系列，給不想碰 CLI 的人）
-- **交叉引用**：→ #8、#9；← #2、#4；← Cowork 系列
-- **差異化**：🟢 繁中幾乎無此比較（現有多為日文），先行者優勢
+> **重要：原本規劃的「監督式 vs 非監督式自主」對立框架已放棄（2026-06-24 修正）。** 查證後兩隻都有 plan mode、都有 full-auto/逐步審核全光譜、都有 sandbox——「監督 vs 全自動」只是可調設定，不是天性。把它寫成設計哲學對立是把行銷印象當本質，不誠實。改走「它們其實很像、真正差別在別處」的誠實角度（這反而更少見、E-E-A-T 更強）。
+
+- **為什麼合講**：兩者都是 terminal-native 的泛用 agent，功能高度重疊，正好破除「哲學對立」迷思。
+- **核心內容（誠實版）**：
+  - 反直覺結論：兩隻很像——plan、full-auto、sandbox、指令檔、MCP/skill 全都有（對照表佐證，附官方 permission/approval modes 文件連結）
+  - 為什麼大家以為它們不同：停留在兩年前印象（早期 Codex 主打雲端 full-auto、Claude Code 主打 plan），這一兩年已互相補齊、收斂
+  - 真正的差別：① 模型家族（Claude vs GPT，最大體感）② emphasis/深度（Claude Code 的 hooks 治理 vs Codex 的 kernel sandbox，是強調不是有無）③ 生態系與訂閱 ④ benchmark（SWE-bench 打平、Terminal-Bench Codex 略強，看方向）
+  - 選型：最實際是「你已付費用哪家模型」；其次任務偏好。它們夠像，先動手比研究比較文有用
+  - GUI 對照：Claude Cowork（鏈 Cowork 系列，給不想碰 CLI 的人）
+- **交叉引用**：→ #8、#9（那兩隻才是真的設計理念差很多）；← #2、#4；← Cowork 系列
+- **差異化**：🟢 繁中幾乎無此比較（現有多為日文）；且「誠實說它們很像」比主流「製造對立」更可信、更少見
 
 #### #8 OpenClaw — always-on、會 heartbeat、住在通訊軟體裡的 Agent
 
