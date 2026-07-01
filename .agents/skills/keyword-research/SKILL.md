@@ -104,7 +104,7 @@ digraph keyword_research {
 **搜尋意圖分類：**
 - **Informational** — 想了解某個概念（「AI Agent 是什麼」）
 - **Commercial** — 在評估比較（「AI 寫作工具推薦」）
-- **Transactional** — 想馬上行動（「Claude Skill 教學」）
+- **Transactional** — 想馬上行動（「AI Skill 教學」）
 
 **買家階段分類：**
 - **Awareness** — 剛認識這個主題

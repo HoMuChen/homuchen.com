@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "html-visualization",
+  "owner": "sevos",
+  "repo": "claude-code-marketplace",
+  "path": "plugins/pm-assistant/skills/html-visualization",
+  "branch": "master",
+  "sha": "1ade0a131ce8160ab41828e41e7b1cf4d655e63b",
+  "source": "manual"
+}

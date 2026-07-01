@@ -2,12 +2,11 @@
 __pycache__/
 
 # External skill dependencies (managed by skills-lock.json)
-.agents/
-.claude/skills/gsap
-.claude/skills/hyperframes
-.claude/skills/hyperframes-cli
-.claude/skills/hyperframes-registry
-.claude/skills/website-to-hyperframes
+.agents/*
+!.agents/skills/
+!.agents/skills/**
+.agents/skills/**/__pycache__/
+.agents/skills/**/*.pyc
 
 # HyperFrames render outputs (regenerable)
 **/renders/

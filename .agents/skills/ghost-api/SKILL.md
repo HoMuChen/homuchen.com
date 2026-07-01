@@ -24,7 +24,7 @@ Load them into shell variables with:
 export $(grep -v '^#' .env | xargs)
 ```
 
-**Note:** `source .env` does NOT work reliably in Claude Code's bash environment. Always use the `export ... xargs` pattern above, or inline the values directly with `export GHOST_URL="..."` etc.
+**Note:** `source .env` does NOT work reliably in Codex's bash environment. Always use the `export ... xargs` pattern above, or inline the values directly with `export GHOST_URL="..."` etc.
 
 ## Authentication
 
@@ -163,7 +163,7 @@ with open('.env') as f:
             os.environ[k] = v
 
 import pathlib
-skill_dir = pathlib.Path(__file__).parent  # or: '.claude/skills/ghost-api'
+skill_dir = pathlib.Path(__file__).parent  # or: '.agents/skills/ghost-api'
 sys.path.insert(0, str(skill_dir))
 from upload_to_ghost import generate_ghost_token, md_to_html, html_to_lexical
 
@@ -462,7 +462,7 @@ with open('.env') as f:
 
 # 2. Import converters
 import pathlib
-skill_dir = pathlib.Path(__file__).parent  # or: '.claude/skills/ghost-api'
+skill_dir = pathlib.Path(__file__).parent  # or: '.agents/skills/ghost-api'
 sys.path.insert(0, str(skill_dir))
 from upload_to_ghost import generate_ghost_token, md_to_html, html_to_lexical
 
@@ -488,5 +488,5 @@ page_data = {"pages": [{"title": "...", "slug": "...", "lexical": lexical, ...}]
 - **Missing `updated_at` on edit** — causes 409 conflict; always fetch current version first
 - **Wrong audience in JWT** — must be `"/admin/"`, not `"/v2/admin/"` or other paths
 - **Content-Type missing** — POST/PUT requests need `Content-Type: application/json; charset=utf-8`
-- **`source .env` fails silently** — in Claude Code's bash, `source .env` doesn't persist variables; use `export $(grep -v '^#' .env | xargs)` instead
+- **`source .env` fails silently** — in Codex's bash, `source .env` doesn't persist variables; use `export $(grep -v '^#' .env | xargs)` instead
 - **Pages endpoint vs Posts endpoint** — Pages use `/ghost/api/admin/pages/`, not `/ghost/api/admin/posts/`. Same payload format, different URL

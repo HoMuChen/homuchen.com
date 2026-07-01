@@ -46,7 +46,7 @@ Typical triggers:
 4. **Run the script:**
 
    ```bash
-   python3 .claude/skills/post-to-threads/scripts/post_threads.py /tmp/threads_posts_<timestamp>.json
+   python3 .agents/skills/post-to-threads/scripts/post_threads.py /tmp/threads_posts_<timestamp>.json
    ```
 
    The script prints the account, then a line per post with the returned Thread ID.
