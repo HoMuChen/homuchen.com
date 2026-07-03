@@ -158,7 +158,7 @@ OpenClaw 會爆紅不是沒道理——它把「在自己電腦養一隻會自�
 
 > **你已經有能力「讀懂」它了。** channel、heartbeat、檔案記憶、skill，這些它的招牌設計，全都是 [**自架 AI Agent 實戰系列**](/posts/self-hosted-ai-agent/) 一路講過的四層觀念。看懂框架，你看任何一隻 agent 都會變透明。
 
-下一篇要講的 [**Hermes**](/posts/self-hosted-ai-agent/)，跟 OpenClaw 是很有意思的對照：OpenClaw 把「溝通＋自動化」推到極致，做成一隻 always-on 的貼身助理；而 Hermes 走的是另一條路——把「**記憶＋自我改進**」推到極致，做成一隻**越用越強、會自己長出新技能**的 agent。兩隻的設計哲學，剛好補上光譜的兩端。
+下一篇要講的 [**Hermes**](/posts/hermes-ai-agent/)，跟 OpenClaw 是很有意思的對照：OpenClaw 把「溝通＋自動化」推到極致，做成一隻 always-on 的貼身助理；而 Hermes 走的是另一條路——把「**記憶＋自我改進**」推到極致，做成一隻**越用越強、會自己長出新技能**的 agent。兩隻的設計哲學，剛好補上光譜的兩端。
 
 如果你看完想養一隻像 OpenClaw 這樣的 agent，但卡在「設定兜不起來」或「想客製成我自己的工作流」——這正是我在做的事。我有提供 [**AI Agent 的諮詢顧問與代建服務**](/ai-automation-workflow/)，幫你看怎麼設計、或直接幫你做出來。
 
