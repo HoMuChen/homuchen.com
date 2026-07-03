@@ -42,7 +42,7 @@
 | 6 | 部落格 | 用 Crontab 讓 AI Agent 自己定時開工 | 已發布 | [/posts/crontab-ai-agent-schedule/](https://homuchen.com/posts/crontab-ai-agent-schedule/)（檔案 `posts/2026-06-08-crontab-ai-agent-schedule.md`） |
 | 7 | 部落格 | Claude Code vs Codex：兩隻終端機 AI Agent，其實比你想的像（誠實版：放棄「監督 vs 全自動」對立） | 已發布 | [/posts/claude-code-vs-codex/](https://homuchen.com/posts/claude-code-vs-codex/)（檔案 `posts/2026-06-24-claude-code-vs-codex.md`） |
 | 8 | 部落格 | OpenClaw 是什麼：用四層觀念看懂這隻爆紅 AI Agent 的設計 | 已發布 | [/posts/openclaw-ai-agent/](https://homuchen.com/posts/openclaw-ai-agent/)（檔案 `posts/2026-06-24-openclaw-ai-agent.md`） |
-| 9 | 部落格 | Hermes Agent 是什麼：會自己長記憶、長技能的 AI Agent | 草稿已上 Ghost（待人工確認發布） | [/posts/hermes-ai-agent/](https://homuchen.com/posts/hermes-ai-agent/)（檔案 `posts/2026-07-03-hermes-ai-agent.md`；Ghost draft ID `6a4734a74c64625e66ffa3d9`）。#8 結語連結已改指向本篇並同步回 Ghost。 |
+| 9 | 部落格 | Hermes Agent 是什麼：會自己長記憶、長技能的 AI Agent | 已發布 | [/posts/hermes-ai-agent/](https://homuchen.com/posts/hermes-ai-agent/)（檔案 `posts/2026-07-03-hermes-ai-agent.md`）。#8 結語連結已改指向本篇並同步回 Ghost。 |
 | 10+ | 部落格 | 案例篇（遠端記帳 / 股票追蹤 / SEO / 電商 / 個人 wiki） | 規劃中 | 引用既有文章 |
 
 > 狀態更新規則：撰寫完 → 改「已撰寫」填路徑；發布 → 改「已發布」填 Ghost URL。新 session 先讀本表了解進度。
