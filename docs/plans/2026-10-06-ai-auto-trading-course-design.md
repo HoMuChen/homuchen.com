@@ -50,7 +50,7 @@
 
 | 產出 | 類型 | 狀態 | 檔案路徑 | 發布連結 |
 |------|------|------|---------|---------|
-| #1 Shioaji 下單機器人 | 部落格 | Ghost 草稿（id 6ac4ad884c64625e66ffa461），待後台發布 | `posts/2026-10-06-claude-code-shioaji-auto-trading-bot.md` | /posts/claude-code-shioaji-auto-trading-bot/ |
+| #1 Shioaji 下單機器人 | 部落格 | 已發布（2026-10-06） | `posts/2026-10-06-claude-code-shioaji-auto-trading-bot.md` | https://homuchen.com/posts/claude-code-shioaji-auto-trading-bot/ |
 | #2 網格交易回測 | 部落格 | 規劃中 | — | — |
 | #3 個股期貨入門 | 部落格 | 規劃中 | — | — |
 | #4 槓桿實驗 | 部落格 | 規劃中 | — | — |
