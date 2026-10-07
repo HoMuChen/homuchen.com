@@ -51,7 +51,7 @@
 | 產出 | 類型 | 狀態 | 檔案路徑 | 發布連結 |
 |------|------|------|---------|---------|
 | #1 Shioaji 下單機器人 | 部落格 | 已發布（2026-10-06） | `posts/2026-10-06-claude-code-shioaji-auto-trading-bot.md` | https://homuchen.com/posts/claude-code-shioaji-auto-trading-bot/ |
-| #2 網格交易回測 | 部落格 | 規劃中 | — | — |
+| #2 網格交易回測 | 部落格 | 已發布（2026-10-07） | `posts/2026-10-07-grid-trading-backtest-tsmc.md` | https://homuchen.com/posts/grid-trading-backtest-tsmc/ |
 | #3 個股期貨入門 | 部落格 | 規劃中 | — | — |
 | #4 槓桿實驗 | 部落格 | 規劃中 | — | — |
 | #5 網格進階手法 | 部落格 | 規劃中 | — | — |
@@ -120,3 +120,20 @@ agent 文   ──> #1、#2、課程 waitlist
 **seo-ai-overviews-advanced**
 - 已補：Shioaji 定義段與開通段改 BLUF 開頭；開通段 heading 改問句；9 道安全機制總表（易 chunk 擷取）；FAQ 5 題覆蓋 fan-out（Mac 可用、模擬環境、不會寫程式、常見事故、AI 能否穩賺）。
 - 有意識不做：llms.txt（skill 建議暫不做）；FAQPage schema 依 Ghost 主題現況，暫不另加。
+
+### #2 網格交易回測（2026-10-07）
+
+關鍵字：主要 網格交易（800, KD 1）；次要 回測、台積電 網格、網格交易 策略；長尾 網格交易 缺點、網格會虧錢嗎、網格利潤抓多少、股票網格交易。意圖 Informational → Consideration。
+
+SERP 觀察（Ahrefs TW）：前 10 幾乎全是幣圈（Chainee、ATFX、OKX/BitoPro/MAX/Binance 網格機器人）與泛論文（鉅亨「網格交易的 13 個坑」DR75）。沒有人用台股真實多年資料回測 → 差異化角度。PAA：網格會虧錢嗎？網格交易是什麼意思？網格利潤抓多少？什麼是股市網格交易？→ 全部寫進 FAQ / 定義段。
+
+**seo-eeat-authority**
+- 已有：原創回測數據（78 月、逐年現金流、交易次數）、踩雷過程（第一版 22 個月乾旱 → 馬丁/子彈/槓桿嘗試 → 再掛單解法）、作者身分、免責、誠實揭露代價（輸 B&H、−27% 回撤、前提風險）、讀書筆記串聯（金錢心理學）。
+- 已補：FinMind 外部連結；回測方法段落 BLUF。
+- 有意識不補：實盤數字（公開邊界）；期貨細節留給 #3/#4。
+- 缺口：沒有圖表（本機無 2330 價格 CSV，研究腳本跑不起來）。之後補資料可加「網格 vs 買進持有」淨值曲線圖。
+
+**seo-ai-overviews-advanced**
+- 已有：開頭 BLUF 結論引言、「網格交易是什麼？」定義句、指標表 + 逐年表（易擷取）、FAQ 5 題對應 PAA。
+- 已補：回測方法 heading 改問句 + 一句話摘要。
+- 有意識不做：llms.txt、FAQPage schema（同 #1）。
