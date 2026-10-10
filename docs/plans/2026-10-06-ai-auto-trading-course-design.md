@@ -53,7 +53,7 @@
 | #1 Shioaji 下單機器人 | 部落格 | 已發布（2026-10-06） | `posts/2026-10-06-claude-code-shioaji-auto-trading-bot.md` | https://homuchen.com/posts/claude-code-shioaji-auto-trading-bot/ |
 | #2 網格交易回測 | 部落格 | 已發布（2026-10-07） | `posts/2026-10-07-grid-trading-backtest-tsmc.md` | https://homuchen.com/posts/grid-trading-backtest-tsmc/ |
 | #3 個股期貨入門 | 部落格 | 已發布（2026-10-08） | `posts/2026-10-08-stock-futures-tsmc-mini-futures-guide.md` | https://homuchen.com/posts/stock-futures-tsmc-mini-futures-guide/ |
-| #4 槓桿實驗 | 部落格 | 規劃中 | — | — |
+| #4 槓桿實驗 | 部落格 | 已發布（2026-10-10） | `posts/2026-10-10-futures-leverage-backtest.md` | https://homuchen.com/posts/futures-leverage-backtest/ |
 | #5 網格進階手法 | 部落格 | 規劃中 | — | — |
 | #6 9 道安全機制 | 部落格 | 規劃中 | — | — |
 | 課程 waitlist CTA（finmind 文、agent 文） | 部落格更新 | 規劃中 | `posts/2026-04-25-…`、`posts/2026-06-04-…` | — |
@@ -155,3 +155,25 @@ SERP 觀察（Ahrefs TW「個股期貨」）：前排是期貨商開戶導流頁
 **seo-ai-overviews-advanced**
 - 已有：H2 問句（個股期貨是什麼？一口多少錢？轉倉是什麼？），每段首句 BLUF 定義；規格表、保證金試算表、現股 vs 期貨表、成本對照表；FAQ 5 題對應 PAA。
 - 有意識不做：llms.txt、FAQPage schema（同前）。
+
+### #4 槓桿實驗（2026-10-10）
+
+關鍵字：主要 期貨槓桿（200+100）、槓桿（3,200, KD 3）；次要 開槓桿（900）、斷頭（1,300）、最大回撤／MDD、保證金追繳（70）、槓桿倍數（150）。意圖 Informational / Consideration。
+
+SERP 觀察（Ahrefs TW「期貨槓桿」）：期貨商教學（永豐「槓桿高達 17 倍」、統一、國票、富投）與 CMoney「其實你錯了」型文章，都在講保證金反推的槓桿上限；PAA：期貨可以開槓桿嗎？台指期幾倍槓桿？期貨槓桿功能？最大槓桿？差異化：沒人用同一策略只改槓桿做回測對照。
+
+素材：fire-auto `strategies/tsmc_grid_income.md`「補錢模型 vs 厚本金無槓桿」表（300 萬／150 萬／100 萬，峰值槓桿 0.83／2.03／3.63）、追繳門檻 1/0.1035≈9.7x、天真移植表（−40.8%／22 月；3x → −51.6%／12 月）。
+
+**seo-eeat-authority**
+- 已有：原創對照實驗、方法論細節（峰值投入資金當分母、追繳模擬、峰值槓桿時點）、反直覺發現（0 次追繳但 −62%）、回本數學表、讀書筆記串聯、免責。
+- 有意識不補：實盤槓桿設定與成績（公開邊界）。結論段只寫「研究的結論」，不宣稱作者實盤怎麼做。
+
+**seo-ai-overviews-advanced**
+- 已有：開頭結果表（BLUF）、「期貨槓桿是什麼？怎麼算」定義 + 公式、MDD 定義句、結果表、回本表、FAQ 5 題對應 PAA。
+- 有意識不做：llms.txt、FAQPage schema（同前）。
+
+### 內鏈盤點（2026-10-10，#4 發布後）
+
+- #1～#4 彼此互連完成：每篇內文都連到其他三篇；#1/#2/#3 原本的「下一篇／另外寫一篇」預告改成實際連結。
+- 舊文回連：`claude-code-stock-agent-monitor-alert`「不會幫你下單」段落加 2026-10 更新註記連 #1；`claude-code-finmind-stock-tracking` 延伸閱讀加 #1、#2。#4 延伸閱讀補 finmind 文。
+- 以 `scripts/update_ghost_post.py` 同步到 Ghost，並爬上線頁面確認所有 /posts/ 內鏈 200、無斷鏈。

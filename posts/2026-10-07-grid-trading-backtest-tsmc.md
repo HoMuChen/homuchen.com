@@ -199,7 +199,7 @@ description: "網格交易到底會不會賺？我讓 Claude 用台積電 2020�
 
 > 期貨受保證金限制。2022 熊市時套牢的部位會吃掉帳戶權益，能買的額度越來越少，網格**整整 22 個月買不下去**——熟悉的凍結又回來了。
 
-這一段牽涉到保證金、轉倉、槓桿這些期貨特有的東西，我之後會另外寫一篇。簡單講結論：**期貨網格要靠「本金夠厚」，而不是「槓桿開大」**，槓桿只會在最深的底部把虧損放大。
+這一段牽涉到保證金、轉倉、槓桿這些期貨特有的東西，我另外寫成了 [**個股期貨是什麼？小型台積電期貨的保證金、轉倉、槓桿**](/posts/stock-futures-tsmc-mini-futures-guide/)。簡單講結論：**期貨網格要靠「本金夠厚」，而不是「槓桿開大」**，槓桿只會在最深的底部把虧損放大（實驗數據在 [**期貨槓桿開幾倍才安全？同一個策略開 1、2、3 倍回測**](/posts/futures-leverage-backtest/)）。
 
 ## 我怎麼讓 Claude 幫我做回測
 
@@ -265,6 +265,8 @@ description: "網格交易到底會不會賺？我讓 Claude 用台積電 2020�
 
 * [**用 Claude Code + Shioaji 打造自動下單機器人：我的台積電期貨網格實戰**](/posts/claude-code-shioaji-auto-trading-bot/)
 * [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)
+* [**個股期貨是什麼？小型台積電期貨的保證金、轉倉、槓桿**](/posts/stock-futures-tsmc-mini-futures-guide/)
+* [**期貨槓桿開幾倍才安全？同一個策略開 1、2、3 倍回測**](/posts/futures-leverage-backtest/)
 * [**我如何用 Google Sheet 製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/)
 
 ---
