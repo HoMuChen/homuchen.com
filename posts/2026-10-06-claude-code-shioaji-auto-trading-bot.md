@@ -231,7 +231,7 @@ if broker != book:
 
 **4. 把規則寫進 `AGENTS.md` / `CLAUDE.md`。** 例如「手動帳戶跟自動帳戶的記帳要分開」、「帳本是運作狀態，不能用券商均價取代」這些規則，我都寫進專案的 instruction 檔，下次開新對話它就不會亂改。為什麼要這樣做，可以看 [**AI Agent 的 Instruction：CLAUDE.md 怎麼寫**](/posts/agent-instruction-claude-md/)。
 
-**5. 每次改動都看 diff、看 commit。** 例如「轉倉要先停利再轉」、「槓桿上限要對真實權益算」這些修正，都是我看程式邏輯時抓到、再叫它改的。AI 寫得很快，但**按下 merge 的人要負責**。
+**5. 每次改動都看 diff、看 commit。** 例如「轉倉要先停利再轉」、「槓桿上限要對真實權益算」這些修正，都是我看程式邏輯時抓到、再叫它改的。AI 寫得很快，但**按下 merge 的人要負責**。這段時間我真實修過的 bug，整理在 [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)。
 
 ## 老實話：它不保證賺錢
 
@@ -282,6 +282,7 @@ if broker != book:
 * [**網格交易回測：用台積電 6 年資料實測，99% 的月份有收入，卻輸給買進持有**](/posts/grid-trading-backtest-tsmc/)
 * [**個股期貨是什麼？小型台積電期貨的保證金、轉倉、槓桿**](/posts/stock-futures-tsmc-mini-futures-guide/)
 * [**期貨槓桿開幾倍才安全？同一個策略開 1、2、3 倍回測**](/posts/futures-leverage-backtest/)
+* [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)
 
 ---
 

@@ -206,6 +206,8 @@ description: "個股期貨是什麼？小型台積電期貨一口多少錢、保
 
 到期那個星期三是 13:30 收盤，比平常早 15 分鐘。如果你的程式排程是對齊平常的 13:45，到期日就要特別處理。我的機器人會在**到期前幾天**就先轉倉，避開最後一天。
 
+更多寫交易程式時真實修過的 bug（包括轉倉順序寫反、換月價格造成回測假獲利），整理在 [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)。
+
 ## 常見問題
 
 ### 每一檔股票都有個股期貨嗎？
@@ -241,6 +243,7 @@ description: "個股期貨是什麼？小型台積電期貨一口多少錢、保
 * [**網格交易回測：用台積電 6 年資料實測，99% 的月份有收入，卻輸給買進持有**](/posts/grid-trading-backtest-tsmc/)
 * [**用 Claude Code + Shioaji 打造自動下單機器人：我的台積電期貨網格實戰**](/posts/claude-code-shioaji-auto-trading-bot/)
 * [**期貨槓桿開幾倍才安全？同一個策略開 1、2、3 倍回測**](/posts/futures-leverage-backtest/)
+* [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)
 * [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)
 
 ---

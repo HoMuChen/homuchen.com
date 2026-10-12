@@ -207,7 +207,7 @@ description: "期貨槓桿開越大越好嗎？我讓 Claude 用小型台積電�
 
 就是這一步，讓我發現「三組都沒被追繳」這個反直覺的結果。
 
-讓 AI 跑回測很快，但**問題問錯，它會很快地給你一個錯的答案**。這也是我在[**用 Claude Code + Shioaji 打造自動下單機器人**](/posts/claude-code-shioaji-auto-trading-bot/)裡說的：程式交給 AI 寫，判斷要自己來。
+讓 AI 跑回測很快，但**問題問錯，它會很快地給你一個錯的答案**。更多「能跑但錯」的真實例子，可以看 [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)。這也是我在[**用 Claude Code + Shioaji 打造自動下單機器人**](/posts/claude-code-shioaji-auto-trading-bot/)裡說的：程式交給 AI 寫，判斷要自己來。
 
 ## 常見問題
 
@@ -245,6 +245,7 @@ description: "期貨槓桿開越大越好嗎？我讓 Claude 用小型台積電�
 * [**網格交易回測：用台積電 6 年資料實測，99% 的月份有收入，卻輸給買進持有**](/posts/grid-trading-backtest-tsmc/)
 * [**用 Claude Code + Shioaji 打造自動下單機器人：我的台積電期貨網格實戰**](/posts/claude-code-shioaji-auto-trading-bot/)
 * [**用 Claude Code + FinMind 追蹤台股**](/posts/claude-code-finmind-stock-tracking/)
+* [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)
 
 ---
 

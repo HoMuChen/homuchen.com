@@ -229,7 +229,7 @@ description: "網格交易到底會不會賺？我讓 Claude 用台積電 2020�
 
 ### 4. 檢查參數是不是「高原」
 
-我的習慣是叫它把參數上下調一點（例如格距從 1% 改成 0.9%、1.1%），看結果是不是差不多。**如果參數稍微一動結果就天差地別，那多半只是剛好擬合了歷史**，這種策略不能上線。這也是我在[**台股 AI Agent**](/posts/claude-code-stock-agent-monitor-alert/) 那篇講的回測鐵則之一。
+我的習慣是叫它把參數上下調一點（例如格距從 1% 改成 0.9%、1.1%），看結果是不是差不多。**如果參數稍微一動結果就天差地別，那多半只是剛好擬合了歷史**，這種策略不能上線。這也是我在[**台股 AI Agent**](/posts/claude-code-stock-agent-monitor-alert/) 那篇講的回測鐵則之一。回測程式本身也會有讓結果變好看的 bug，我踩過的例子在 [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)。
 
 ## 常見問題
 
@@ -267,6 +267,7 @@ description: "網格交易到底會不會賺？我讓 Claude 用台積電 2020�
 * [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)
 * [**個股期貨是什麼？小型台積電期貨的保證金、轉倉、槓桿**](/posts/stock-futures-tsmc-mini-futures-guide/)
 * [**期貨槓桿開幾倍才安全？同一個策略開 1、2、3 倍回測**](/posts/futures-leverage-backtest/)
+* [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)
 * [**我如何用 Google Sheet 製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/)
 
 ---

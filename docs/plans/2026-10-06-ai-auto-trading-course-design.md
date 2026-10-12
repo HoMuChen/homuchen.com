@@ -24,7 +24,7 @@
 | 3 | 個股期貨是什麼？小型台積電期貨的保證金、轉倉、槓桿 | 股票期貨、個股期貨、小台積、轉倉 | 期貨版研究、自動轉倉 |
 | 4 | 同一個策略開 1x/2x/3x 槓桿：回撤從 −22% 到 −62% | 期貨 槓桿、保證金 | 槓桿對照研究 |
 | 5 | 網格進階手法實測：移動停利有效、RSI 過濾是毒藥 | 移動停利、網格交易 策略 | 進階手法 + 特別變體研究 |
-| 6 | 自動交易機器人的 9 道保險 | 自動交易、交易機器人 | `futures_live.py` 檔頭安全機制 |
+| 6 | AI 寫程式的 7 個坑：自動交易程式真實修過的 bug（2026-10-11 改角度：原「9 道保險」與 #1 重複） | ai 寫程式、vibe coding 缺點、過度擬合 | fire-auto git fix commits |
 
 ### 課程
 
@@ -55,7 +55,7 @@
 | #3 個股期貨入門 | 部落格 | 已發布（2026-10-08） | `posts/2026-10-08-stock-futures-tsmc-mini-futures-guide.md` | https://homuchen.com/posts/stock-futures-tsmc-mini-futures-guide/ |
 | #4 槓桿實驗 | 部落格 | 已發布（2026-10-10） | `posts/2026-10-10-futures-leverage-backtest.md` | https://homuchen.com/posts/futures-leverage-backtest/ |
 | #5 網格進階手法 | 部落格 | 規劃中 | — | — |
-| #6 9 道安全機制 | 部落格 | 規劃中 | — | — |
+| #6 AI 寫程式的 7 個坑 | 部落格 | 已發布（2026-10-12） | `posts/2026-10-12-ai-coding-trading-bot-bugs.md` | https://homuchen.com/posts/ai-coding-trading-bot-bugs/ |
 | 課程 waitlist CTA（finmind 文、agent 文） | 部落格更新 | 規劃中 | `posts/2026-04-25-…`、`posts/2026-06-04-…` | — |
 | 課程企劃 | 課程 | 規劃中 | `courses/{date}-ai-auto-trading/` | — |
 
@@ -177,3 +177,16 @@ SERP 觀察（Ahrefs TW「期貨槓桿」）：期貨商教學（永豐「槓桿
 - #1～#4 彼此互連完成：每篇內文都連到其他三篇；#1/#2/#3 原本的「下一篇／另外寫一篇」預告改成實際連結。
 - 舊文回連：`claude-code-stock-agent-monitor-alert`「不會幫你下單」段落加 2026-10 更新註記連 #1；`claude-code-finmind-stock-tracking` 延伸閱讀加 #1、#2。#4 延伸閱讀補 finmind 文。
 - 以 `scripts/update_ghost_post.py` 同步到 Ghost，並爬上線頁面確認所有 /posts/ 內鏈 200、無斷鏈。
+
+### #6 AI 寫程式的 7 個坑（2026-10-12）
+
+改角度原因：原「9 道安全機制」在 #1 已有總表 + 逐項說明，重寫會重複。改用 fire-auto 真實 fix commits 當素材（d1e41a0 API 筆數上限、b0c067a 換月比例還原假獲利、60854ad derisk=0 被當門檻、682a52d 盤中量縮誤判、be5ee33 訂單狀態字串前綴、028a14e 槓桿上限只看保證金、832e0a9 轉倉順序；番外 1a2d9ca 顯示四捨五入）。原草稿第 3 則「報酬分母算錯」查無對應 fix commit（研究時即預先避開），已換成 60854ad，避免宣稱沒發生過的 bug。
+
+關鍵字：主要 ai 寫程式（600+600）；次要 vibe coding 缺點（150）、用ai寫程式（200）、過度擬合（150）；搭 vibe coding（5,400）主題。意圖 Informational。
+
+公開邊界：不寫 commit 內的實盤數字（槓桿倍數、格距、權益金額）與另一檔監控商品名稱。
+
+**seo-eeat-authority**：真實 git 紀錄（症狀／原因／怎麼發現／怎麼修／教訓）、兩段真實 diff、共通點表、防範清單；串聯 vibe coding、AI 時代工程師、CLAUDE.md 文章。
+**seo-ai-overviews-advanced**：開頭 BLUF 引言、「為什麼 AI 寫的交易程式特別危險？」問句 + 定義句、bug 總表、FAQ 5 題（AI 程式能直接用嗎、vibe coding 缺點、怎麼檢查、回測可信嗎、最重要一件事）。
+
+內鏈：#6 → #1～#4、finmind、agent、vibe coding、software-engineer-in-ai-era、agent-instruction；#1～#4 內文與延伸閱讀已加 → #6（已同步 Ghost，線上驗證 #1～#4、#6 互連完整、無斷鏈）。
