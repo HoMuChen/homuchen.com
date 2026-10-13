@@ -30,6 +30,7 @@
 
 - 暫名：《用 AI 打造自動化交易系統》
 - 位置：`courses/2026-10-13-ai-auto-trading/`（README / outline / plan）
+- **Waitlist 回饋 / 訪談紀錄**：`courses/2026-10-13-ai-auto-trading/plan.md` 第八節（每收到一則 LINE「交易課」回覆就加一列）。拆篇方案（研究篇 / 下單篇 / 完整版）在同檔第四節。
 - 章節（對齊 fire-auto 的真實系統）：
   1. 資料層：FinMind、30 分 K
   2. 策略研究：叫 Claude 幫你做實驗

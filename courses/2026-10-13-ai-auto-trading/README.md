@@ -13,7 +13,7 @@ tags: [課程, AI, Claude Code, 自動交易, Shioaji]
 ## 檔案說明
 
 - `outline.md` — 課程大綱（7 章 + Bonus，每章實作 demo）
-- `plan.md` — 定位、受眾、驗證計畫（waitlist）、定價、銷售頁文案、法規邊界
+- `plan.md` — 定位、受眾、驗證計畫（waitlist）、定價與拆篇方案、銷售頁文案、法規邊界、**waitlist 回饋 / 訪談紀錄（第八節）**
 
 ## 核心理念
 
