@@ -158,13 +158,15 @@ description: "我用 Claude Code 把抓股價的腳本，升級成一隻會自�
 
 要是你想做、但卡在「自己兜不起來」或「沒空慢慢試」，這正是我在做的事——我有提供 [**AI Agent 的諮詢與代建服務**](/ai-automation-workflow/)，幫你看怎麼設計、或直接幫你做出來。
 
+另外，如果你跟我一樣，從「發訊號通知我」走到想讓它「自己下單」，我正在把研究、回測、Shioaji 下單到安全機制的整套做法，整理成一門課《用 AI 打造自動化交易系統》。**想搶先知道開課消息的話，[加我的 LINE](https://line.me/R/ti/p/@673duklg?oat_content=url&ts=04121539) 跟我說一聲「交易課」就好～**
+
 ---
 
 **喜歡這篇文章嗎？**
 
 📧 [訂閱 Newsletter](https://homuchen.com/#/portal/signup) — 新文章直接寄到你信箱
 🎬 [追蹤我的 YouTube](https://www.youtube.com/@homuchen-build-ai) — 看 AI / 工具實作影片
-💬 [加我的 LINE](https://line.me/R/ti/p/@673duklg?oat_content=url&ts=04121539) — 聊聊你想做的 agent，或有問題隨時問我
+💬 [加我的 LINE](https://line.me/R/ti/p/@673duklg?oat_content=url&ts=04121539) — 聊聊你想做的 agent、想上交易課，或有問題隨時問我
 🧵 [追蹤 Threads](https://www.threads.net/@homuchen.build.ai) — 平常的工程隨筆
 
 掰掰～👋

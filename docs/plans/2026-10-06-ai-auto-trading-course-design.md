@@ -29,7 +29,7 @@
 ### 課程
 
 - 暫名：《用 AI 打造自動化交易系統》
-- 位置：`courses/{date}-ai-auto-trading/`（待建）
+- 位置：`courses/2026-10-13-ai-auto-trading/`（README / outline / plan）
 - 章節（對齊 fire-auto 的真實系統）：
   1. 資料層：FinMind、30 分 K
   2. 策略研究：叫 Claude 幫你做實驗
@@ -56,8 +56,8 @@
 | #4 槓桿實驗 | 部落格 | 已發布（2026-10-10） | `posts/2026-10-10-futures-leverage-backtest.md` | https://homuchen.com/posts/futures-leverage-backtest/ |
 | #5 網格進階手法 | 部落格 | 規劃中 | — | — |
 | #6 AI 寫程式的 7 個坑 | 部落格 | 已發布（2026-10-12） | `posts/2026-10-12-ai-coding-trading-bot-bugs.md` | https://homuchen.com/posts/ai-coding-trading-bot-bugs/ |
-| 課程 waitlist CTA（finmind 文、agent 文） | 部落格更新 | 規劃中 | `posts/2026-04-25-…`、`posts/2026-06-04-…` | — |
-| 課程企劃 | 課程 | 規劃中 | `courses/{date}-ai-auto-trading/` | — |
+| 課程 waitlist CTA（finmind 文、agent 文） | 部落格更新 | 已發布（2026-10-13，LINE 關鍵字「交易課」） | `posts/2026-04-25-claude-code-finmind-stock-tracking.md`、`posts/2026-06-04-claude-code-stock-agent-monitor-alert.md` | https://homuchen.com/posts/claude-code-finmind-stock-tracking/ 、https://homuchen.com/posts/claude-code-stock-agent-monitor-alert/ |
+| 課程企劃 | 課程 | 已撰寫（2026-10-13，planning；先跑 waitlist 驗證） | `courses/2026-10-13-ai-auto-trading/` | — |
 
 ## 4. 跨平台交叉引用地圖
 

@@ -216,6 +216,8 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 
 如果你也有在追蹤台股，這套流程真的值得試試看。設定好之後，每天花不到一分鐘，資料就自動準備好了。
 
+如果你想再往前走一步——讓 AI 幫你做策略研究、回測，一路做到會自己下單的系統——我正在把自己這整套做法整理成一門課《用 AI 打造自動化交易系統》。**想搶先知道開課消息的話，[加我的 LINE](https://line.me/R/ti/p/@673duklg?oat_content=url&ts=04121539) 跟我說一聲「交易課」就好～**（先講清楚：課程教的是怎麼把工具做出來、做得安全，不報明牌、也不保證賺錢😂）
+
 延伸閱讀：
 * [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、訊號發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)（這篇的升級版）
 * [**用 Claude Code + Shioaji 打造自動下單機器人：我的台積電期貨網格實戰**](/posts/claude-code-shioaji-auto-trading-bot/)（再升級：自動下單）
@@ -226,4 +228,15 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 * [**Claude Code 接 Google Search Console — 用 AI 幫你做 SEO 分析**](/posts/claude-code-search-console-seo-analysis/)
 * [**Claude Cowork — 當 AI 從「陪你聊天」變成「幫你做事」**](/posts/claude-cowork-ai-from-chat-to-work/)
 
-希望這篇對大家有一丁點兒的幫助～掰掰～👋
+希望這篇對大家有一丁點兒的幫助～
+
+---
+
+**喜歡這篇文章嗎？**
+
+📧 [訂閱 Newsletter](https://homuchen.com/#/portal/signup) — 新文章直接寄到你信箱
+🎬 [追蹤我的 YouTube](https://www.youtube.com/@homuchen-build-ai) — 看 AI / 工具實作影片
+💬 [加我的 LINE](https://line.me/R/ti/p/@673duklg?oat_content=url&ts=04121539) — 想上交易課、或有問題隨時問我
+🧵 [追蹤 Threads](https://www.threads.net/@homuchen.build.ai) — 平常的工程隨筆
+
+掰掰～👋
