@@ -58,6 +58,7 @@
 | #6 AI 寫程式的 7 個坑 | 部落格 | 已發布（2026-10-12） | `posts/2026-10-12-ai-coding-trading-bot-bugs.md` | https://homuchen.com/posts/ai-coding-trading-bot-bugs/ |
 | 課程 waitlist CTA（finmind 文、agent 文） | 部落格更新 | 已發布（2026-10-13，LINE 關鍵字「交易課」） | `posts/2026-04-25-claude-code-finmind-stock-tracking.md`、`posts/2026-06-04-claude-code-stock-agent-monitor-alert.md` | https://homuchen.com/posts/claude-code-finmind-stock-tracking/ 、https://homuchen.com/posts/claude-code-stock-agent-monitor-alert/ |
 | 課程企劃 | 課程 | 已撰寫（2026-10-13，planning；先跑 waitlist 驗證） | `courses/2026-10-13-ai-auto-trading/` | — |
+| 課程「即將推出」頁（/courses/ 卡片） | Ghost Page（#course） | 已發布（2026-10-13，無價格，LINE「交易課」） | `scripts/create_trading_course_waitlist_page.py` | https://homuchen.com/ai-auto-trading-course/ |
 
 ## 4. 跨平台交叉引用地圖
 

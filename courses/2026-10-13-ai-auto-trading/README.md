@@ -21,6 +21,8 @@ tags: [課程, AI, Claude Code, 自動交易, Shioaji]
 
 ## 相關企劃與文章
 
+- 「即將推出」頁：https://homuchen.com/ai-auto-trading-course/ （出現在 `/courses/` 卡片；預設 page 模板、無價格；腳本 `scripts/create_trading_course_waitlist_page.py`）。正式開賣時改套 `custom-course` 模板並換成銷售頁內容。
+
 - 跨平台企劃：`docs/plans/2026-10-06-ai-auto-trading-course-design.md`
 - 導流文章（已放 waitlist CTA：LINE 輸入「交易課」）：
   - [/posts/claude-code-finmind-stock-tracking/](https://homuchen.com/posts/claude-code-finmind-stock-tracking/)

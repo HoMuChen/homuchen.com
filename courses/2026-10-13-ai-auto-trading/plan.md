@@ -124,5 +124,6 @@ Bonus：網格進階手法實測——移動停利有效、RSI 過濾是毒藥�
 - [ ] waitlist 累積到 30 人 → 開始訪談
 - [ ] 準備教學用範例專案（從 fire-auto 抽出骨架，移除實盤設定與帳本）
 - [ ] #5 網格進階手法寫完 → 補進 Bonus 章素材
-- [ ] 建課程銷售頁（`/courses/ai-auto-trading/`，參考 Cowork 課程頁做法）
+- [x] 「即將推出」頁 + `/courses/` 卡片（2026-10-13，https://homuchen.com/ai-auto-trading-course/）
+- [ ] 預售時把「即將推出」頁改成正式銷售頁（`custom-course` 模板的價格區塊是寫死的，需先改主題）
 - [ ] YouTube《養一隻台股 AI Agent》EP4 尾端預告下單 / 課程
