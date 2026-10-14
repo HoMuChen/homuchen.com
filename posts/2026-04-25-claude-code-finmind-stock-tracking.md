@@ -64,6 +64,8 @@ description: "不用寫程式，用 Claude Code 接 FinMind API 自動抓台股�
 
 免費方案就夠個人使用了。申請帳號後拿到 API token，就可以開始抓資料。
 
+> 📌 **2026 年 10 月更正**：這篇原本寫「免費版用 `today` 一次抓全市場」是錯的——不帶股票代號一次抓全市場要 **Backer 以上的付費方案**，免費版要一檔一檔抓（下面的 `one` 指令）。我寫這篇時已經在用付費方案，沒注意到這個差別，抱歉！各方案的額度、價格跟免費版做不到的事，我整理在 [**FinMind 是什麼？台股 API 免費額度、方案價格與 Python 教學**](/posts/finmind-taiwan-stock-api-guide/)。
+
 ## Claude Code 怎麼幫我串接 FinMind API？
 
 這是整件事裡最有趣的部分。
@@ -79,7 +81,7 @@ description: "不用寫程式，用 Claude Code 接 FinMind API 自動抓台股�
 寫出來的程式是這樣用的：
 
 ```bash
-# 更新今天全市場股價（只需要 1 個 API call）
+# 更新今天全市場股價（只需要 1 個 API call，需 Backer 以上方案）
 python3 stock_cache.py today
 
 # 補抓某段日期
@@ -89,7 +91,7 @@ python3 stock_cache.py range 2026-04-01 2026-04-20
 python3 stock_cache.py one 2330
 ```
 
-一個指令，全部 2,500 多支股票的今日收盤價全部更新完畢。
+一個指令，全部 2,500 多支股票的今日收盤價全部更新完畢。（這是付費方案才有的「一次抓全市場」；免費版就用 `one` 只更新自己持有的那幾檔）
 
 如果你有用過 Python 自己爬過 API，你就知道要做到這個功能、還要處理增量更新和錯誤重試，大概要花多久。我跟 Claude Code 說我要什麼，然後喝了一杯咖啡回來，程式就寫好了。
 
@@ -137,7 +139,7 @@ python3 stock_cache.py today
 
 **Step 1：申請 FinMind 帳號**
 
-到 [FinMind 官網](https://finmindtrade.com/) 申請，拿到 API token。免費方案就夠了。
+到 [FinMind 官網](https://finmindtrade.com/) 申請，拿到 API token。只追蹤自己的持股，免費方案就夠了；想像上面 `today` 那樣一次抓全市場，要 Backer 以上的付費方案（[**方案比較看這篇**](/posts/finmind-taiwan-stock-api-guide/)）。
 
 **Step 2：告訴 Claude Code 你要什麼，讓它去讀文件**
 
@@ -171,7 +173,7 @@ Claude Code 會自己去讀文件、理解 API 結構，然後把腳本寫好。
 
 ### FinMind 免費方案能用多久？
 
-**永久免費**，每小時上限 600 次 API request。日常更新台股大概只用 1-2 次 call 就夠（用 `today` 模式一次抓全市場），所以 600 次的限額對個人使用完全綽綽有餘。
+**永久免費**，註冊後每小時上限 600 次 API request。免費版要指定股票代號一檔一檔抓，追蹤自己的十幾二十檔持股，每天也才用 20 次左右，對個人使用綽綽有餘。要一次抓全市場（`today` 模式）、還原股價、盤中即時資料，就要付費方案，詳細比較在 [**FinMind 是什麼？免費額度與方案價格**](/posts/finmind-taiwan-stock-api-guide/)。
 
 ### FinMind 的資料準確性夠嗎？跟證交所對得上嗎？
 
@@ -219,6 +221,7 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 如果你想再往前走一步——讓 AI 幫你做策略研究、回測，一路做到會自己下單的系統——我正在把自己這整套做法整理成一門課《用 AI 打造自動化交易系統》。**想搶先知道開課消息的話，[加我的 LINE](https://line.me/R/ti/p/@673duklg?oat_content=url&ts=04121539) 跟我說一聲「交易課」就好～**（先講清楚：課程教的是怎麼把工具做出來、做得安全，不報明牌、也不保證賺錢😂）
 
 延伸閱讀：
+* [**FinMind 是什麼？台股 API 免費額度、方案價格與 Python 教學**](/posts/finmind-taiwan-stock-api-guide/)
 * [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、訊號發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)（這篇的升級版）
 * [**用 Claude Code + Shioaji 打造自動下單機器人：我的台積電期貨網格實戰**](/posts/claude-code-shioaji-auto-trading-bot/)（再升級：自動下單）
 * [**網格交易回測：用台積電 6 年資料實測，99% 的月份有收入，卻輸給買進持有**](/posts/grid-trading-backtest-tsmc/)
