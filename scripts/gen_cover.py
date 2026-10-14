@@ -4,6 +4,7 @@
 產出：
   _resources/images/{slug}-0.png  原圖（1536x1024）
   _resources/images/{slug}-0.jpg  裁成 1200x630 的封面（上下各裁一點，重要內容請放中間）
+  縮圖裁切在 macOS 用 sips，其他系統用 Pillow（apt install python3-pil）
 
 用法：
   set -a && source .env && set +a
@@ -16,6 +17,7 @@ import argparse
 import base64
 import json
 import os
+import shutil
 import subprocess
 import sys
 import uuid
@@ -85,9 +87,16 @@ def main():
         f.write(generate(prompt, args.ref, args.quality))
 
     # 1536x1024 → 寬縮成 1200（1200x800）→ 置中裁成 1200x630
-    subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "85",
-                    "--resampleWidth", "1200", png, "--out", jpg], check=True, capture_output=True)
-    subprocess.run(["sips", "-c", "630", "1200", jpg], check=True, capture_output=True)
+    if shutil.which("sips"):
+        subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "85",
+                        "--resampleWidth", "1200", png, "--out", jpg], check=True, capture_output=True)
+        subprocess.run(["sips", "-c", "630", "1200", jpg], check=True, capture_output=True)
+    else:  # Linux 沒有 sips，改用 Pillow
+        from PIL import Image
+        im = Image.open(png).convert("RGB")
+        im = im.resize((1200, round(im.height * 1200 / im.width)), Image.LANCZOS)
+        top = (im.height - 630) // 2
+        im.crop((0, top, 1200, top + 630)).save(jpg, "JPEG", quality=85)
     print(png)
     print(jpg)
 

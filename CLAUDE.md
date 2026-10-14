@@ -101,6 +101,14 @@ threads_url:                    # 發布後填入
 - 單則貼文（`type: single`）：frontmatter 下直接寫貼文內容（500 字以內）
 - 串文（`type: thread`）：每則貼文以 `---` 分隔，順序即發布順序
 - 發布使用 `post-to-threads` skill
+- **不要**用「掰掰～👋」結尾——那是部落格專屬的收尾，Threads 保留口語、`～`、適量 emoji 即可
+- **連結不放主貼文**（會影響觸及）：串文把純連結獨立成最後一段（發布時會變成最後一則回覆），主貼文用「連結放留言 👇」帶過；單則貼文改寫「連結放 bio～」
+- **數字照實寫**，不淡化也不灌水（commit 數、回測數字等），沿用原文的數字與免責
+- Repurpose 時沿用原文的內容邊界：
+  - 自動交易主題只用回測數字；不提本金、實盤報酬率、實盤參數設定
+  - 台股 AI agent 接 FinMind 是 script + skill，**沒有用 MCP**
+  - 不寫原文沒有的經歷或軼事
+- 發布後把 `status` 改為 `published`、填入 `threads_url`；若有對應的 `docs/plans/` 設計文件，一併更新狀態表
 
 ### 3. YouTube 腳本（`youtube/`）
 
