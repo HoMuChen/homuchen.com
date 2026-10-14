@@ -102,9 +102,12 @@ image:
 
 詳細做法寫在這篇：[**用 Claude Code 建台股追蹤系統 — AI 幫你接 API、管持倉**](/posts/claude-code-finmind-stock-tracking/)。
 
+> 📌 2026-10 更新：後來我連這張損益表也換掉了。股票、加密貨幣、現金、房貸全部放在一起，叫 AI Agent 一個早上做出一個淨資產儀表板，每天自動記錄走勢、手機打開就看得到。完整過程（附開源程式碼）寫在 [**個人資產負債表不用再手動更新：我叫 AI Agent 一個早上做出淨資產儀表板**](/posts/claude-code-net-worth-dashboard/)。
+
 延伸閱讀：
 
 * [**[Google Sheet] Sparkline，在儲存格裡插入迷你圖表**](/posts/google-sheet-sparkline/)
 * [**用 Claude Code 建台股追蹤系統**](/posts/claude-code-finmind-stock-tracking/) — `GOOGLEFINANCE` 的進階替代方案
+* [**我叫 AI Agent 一個早上做出淨資產儀表板**](/posts/claude-code-net-worth-dashboard/) — 這張損益表的升級版：股票之外，連現金、加密貨幣、房貸一起看
 
 希望以上的內容對你有一丁點兒的幫助，掰掰～👋
