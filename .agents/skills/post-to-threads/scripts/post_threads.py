@@ -2,7 +2,7 @@
 """Post a single post or chained thread to Threads via Meta Graph API.
 
 Usage:
-    post_threads.py <posts.json>
+    post_threads.py <posts.json> [--ids-out ids.json]
     post_threads.py --refresh-only
 
     posts.json is a JSON array of strings. Each string is one post in the thread.
@@ -122,15 +122,34 @@ def post_one(
     return publish_container(user_id, token, container_id)
 
 
+def get_permalink(token: str, thread_id: str) -> str | None:
+    try:
+        r = requests.get(
+            f"https://graph.threads.net/v1.0/{thread_id}",
+            params={"fields": "permalink", "access_token": token},
+            timeout=30,
+        )
+        r.raise_for_status()
+        return r.json().get("permalink")
+    except Exception:
+        return None
+
+
 def main() -> int:
-    if len(sys.argv) != 2:
+    args = sys.argv[1:]
+    ids_out = None
+    if "--ids-out" in args:
+        i = args.index("--ids-out")
+        ids_out = Path(args[i + 1])
+        del args[i : i + 2]
+    if len(args) != 1:
         print(__doc__, file=sys.stderr)
         return 2
 
-    refresh_only = sys.argv[1] == "--refresh-only"
+    refresh_only = args[0] == "--refresh-only"
     posts: list[str] = []
     if not refresh_only:
-        posts_path = Path(sys.argv[1])
+        posts_path = Path(args[0])
         posts = json.loads(posts_path.read_text())
         if not isinstance(posts, list) or not all(isinstance(p, str) for p in posts):
             print("posts.json must be a JSON array of strings.", file=sys.stderr)
@@ -164,13 +183,20 @@ def main() -> int:
     user_id = get_user_id(token)
 
     parent_id: str | None = None
+    ids: list[str] = []
     for i, text in enumerate(posts, 1):
         print(f"Posting {i}/{len(posts)} ({len(text)} chars)...")
         thread_id = post_one(user_id, token, text, reply_to_id=parent_id)
         print(f"  -> {thread_id}")
+        ids.append(thread_id)
         parent_id = thread_id
         if i < len(posts):
             time.sleep(3)
+
+    if ids_out:
+        permalink = get_permalink(token, ids[0])
+        ids_out.write_text(json.dumps({"ids": ids, "permalink": permalink}))
+        print(f"Permalink: {permalink}")
 
     print("Done.")
     return 0

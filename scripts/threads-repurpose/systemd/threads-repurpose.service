@@ -1,0 +1,19 @@
+[Unit]
+Description=Repurpose a homuchen.com post into a Threads thread (Claude writes, script publishes)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=threads
+Group=threads
+WorkingDirectory=/home/threads/homuchen.com
+# review = 只寫草稿 commit/push，另外發布 status: approved 的；auto = 寫完直接發
+Environment=THREADS_MODE=review
+Environment=PATH=/home/threads/.local/bin:/usr/local/bin:/usr/bin:/bin
+# 選用：CLAUDE_CODE_OAUTH_TOKEN（claude setup-token 產生）等
+EnvironmentFile=-/home/threads/.config/threads-repurpose.env
+ExecStart=/home/threads/homuchen.com/scripts/threads-repurpose/run.sh
+TimeoutStartSec=45min
+NoNewPrivileges=yes
+PrivateTmp=yes

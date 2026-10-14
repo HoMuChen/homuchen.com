@@ -1,0 +1,10 @@
+[Unit]
+Description=Threads repurpose: Tue/Thu/Sat 09:00 Taipei
+
+[Timer]
+OnCalendar=Tue,Thu,Sat 09:00 Asia/Taipei
+Persistent=true
+RandomizedDelaySec=5min
+
+[Install]
+WantedBy=timers.target
