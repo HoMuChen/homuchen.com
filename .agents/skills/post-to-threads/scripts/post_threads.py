@@ -3,12 +3,17 @@
 
 Usage:
     post_threads.py <posts.json>
+    post_threads.py --refresh-only
 
     posts.json is a JSON array of strings. Each string is one post in the thread.
     A single-element array posts one standalone post. Multi-element arrays post
     a chained thread where post N+1 is a reply to post N.
 
 Requires THREADS_ACCESS_TOKEN in the project root .env file.
+
+Before posting, the long-lived token is refreshed (another 60 days) and the new
+value is written back to .env. Refresh failures (e.g. token < 24h old) are
+non-fatal: posting continues with the current token.
 """
 
 import json
@@ -35,6 +40,40 @@ def find_project_root(start: Path) -> Path:
         if (p / ".env").exists() or (p / ".git").exists():
             return p
     return start
+
+
+def refresh_token(project_root: Path, token: str) -> str:
+    """Extend the long-lived token and save it to .env; return the token to use."""
+    try:
+        r = requests.get(
+            "https://graph.threads.net/refresh_access_token",
+            params={"grant_type": "th_refresh_token", "access_token": token},
+            timeout=30,
+        )
+        r.raise_for_status()
+        data = r.json()
+        new_token = data["access_token"]
+    except Exception as e:
+        detail = getattr(getattr(e, "response", None), "text", "") or str(e)
+        print(f"Token refresh skipped: {detail[:200]}", file=sys.stderr)
+        return token
+
+    env_path = project_root / ".env"
+    lines = env_path.read_text().splitlines(keepends=True) if env_path.exists() else []
+    for i, line in enumerate(lines):
+        if line.split("=", 1)[0].strip() == "THREADS_ACCESS_TOKEN":
+            lines[i] = f"THREADS_ACCESS_TOKEN={new_token}\n"
+            break
+    else:
+        lines.append(f"THREADS_ACCESS_TOKEN={new_token}\n")
+    tmp = env_path.with_suffix(".env.tmp")
+    tmp.write_text("".join(lines))
+    os.chmod(tmp, env_path.stat().st_mode if env_path.exists() else 0o600)
+    tmp.replace(env_path)
+    os.environ["THREADS_ACCESS_TOKEN"] = new_token
+    days = int(data.get("expires_in", 0)) // 86400
+    print(f"Token refreshed (valid ~{days} days), saved to .env")
+    return new_token
 
 
 def get_user_id(token: str) -> str:
@@ -88,22 +127,25 @@ def main() -> int:
         print(__doc__, file=sys.stderr)
         return 2
 
-    posts_path = Path(sys.argv[1])
-    posts = json.loads(posts_path.read_text())
-    if not isinstance(posts, list) or not all(isinstance(p, str) for p in posts):
-        print("posts.json must be a JSON array of strings.", file=sys.stderr)
-        return 2
-    if not posts:
-        print("posts.json is empty.", file=sys.stderr)
-        return 2
+    refresh_only = sys.argv[1] == "--refresh-only"
+    posts: list[str] = []
+    if not refresh_only:
+        posts_path = Path(sys.argv[1])
+        posts = json.loads(posts_path.read_text())
+        if not isinstance(posts, list) or not all(isinstance(p, str) for p in posts):
+            print("posts.json must be a JSON array of strings.", file=sys.stderr)
+            return 2
+        if not posts:
+            print("posts.json is empty.", file=sys.stderr)
+            return 2
 
-    over = [(i + 1, len(p)) for i, p in enumerate(posts) if len(p) > 500]
-    if over:
-        print(
-            f"Posts exceed 500-char limit: {over}. Split further before posting.",
-            file=sys.stderr,
-        )
-        return 2
+        over = [(i + 1, len(p)) for i, p in enumerate(posts) if len(p) > 500]
+        if over:
+            print(
+                f"Posts exceed 500-char limit: {over}. Split further before posting.",
+                file=sys.stderr,
+            )
+            return 2
 
     project_root = find_project_root(Path.cwd())
     load_env(project_root)
@@ -114,6 +156,10 @@ def main() -> int:
             file=sys.stderr,
         )
         return 1
+
+    token = refresh_token(project_root, token)
+    if refresh_only:
+        return 0
 
     user_id = get_user_id(token)
 

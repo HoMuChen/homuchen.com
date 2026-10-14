@@ -21,6 +21,9 @@ Typical triggers:
 ## Prerequisites
 
 - `THREADS_ACCESS_TOKEN` must be present in the project root `.env`. The script auto-loads it.
+- Before posting, the script refreshes the long-lived token (`th_refresh_token`, +60 days) and
+  writes the new value back to `.env` (only that line is touched). A failed refresh is
+  non-fatal. Run `post_threads.py --refresh-only` to just extend the token without posting.
 - Each post must be ≤ 500 characters (Threads platform limit). The script rejects the job if
   any post exceeds this. If the user's draft exceeds 500 chars, split it into a chained
   thread at natural boundaries (section dividers, topic shifts) BEFORE calling the script.
@@ -62,8 +65,10 @@ and feels off-voice, flag it to the user rather than silently publishing.
 
 ## Troubleshooting
 
-- **401/OAuth error**: The access token expired or is invalid. Ask the user to refresh it
-  from Meta Developer Portal and update `.env`.
+- **401/OAuth error**: The access token expired or is invalid. An expired token can't be
+  refreshed; ask the user to generate a new one (developers.facebook.com/apps → the app →
+  Use cases → Access the Threads API → Customize → Settings → User Token Generator) and
+  update `.env`.
 - **"Posts exceed 500-char limit"**: Split the offending post(s) further.
 - **Publish fails after container creation**: The Meta API occasionally returns a container
   ID but then 500s on publish. Re-running with the same JSON re-creates fresh containers and
