@@ -1,10 +1,11 @@
 [Unit]
-Description=Threads repurpose: Tue/Thu/Sat 09:00 Taipei
+Description=Threads repurpose: daily around 18:00 Taipei (17:00-19:00)
 
 [Timer]
-OnCalendar=Tue,Thu,Sat 09:00 Asia/Taipei
+# 每天一則：17:00 起隨機延後 0-120 分鐘 → 18:00 ±60 分鐘
+OnCalendar=*-*-* 17:00 Asia/Taipei
+RandomizedDelaySec=2h
 Persistent=true
-RandomizedDelaySec=5min
 
 [Install]
 WantedBy=timers.target

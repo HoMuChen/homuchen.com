@@ -10,6 +10,7 @@
 #   THREADS_MODE=auto            新草稿驗證通過就直接標成 approved，依序自動發
 #   THREADS_SKIP_GENERATE=1      這次不產生新的
 #   THREADS_SKIP_PUBLISH=1       這次不發布
+#   THREADS_POST=<slug>          指定要拆的文章（不看佇列，一定產生一批）
 #
 # 在 hq VM 以 threads 帳號由 systemd timer 執行（見同資料夾 systemd/、README.md）。
 set -euo pipefail
@@ -127,6 +128,13 @@ queue_size() {
 generate() {
   local prompt out new files f bad=0
   prompt=$(sed "s/{TODAY}/$TODAY/g" $HERE/prompt.md)
+  if [ -n "${THREADS_POST:-}" ]; then
+    prompt="$prompt
+
+## 這次指定文章
+
+這次已經指定要拆 /posts/${THREADS_POST}/，跳過「挑文章」步驟，直接用這篇。"
+  fi
   out="$STATE/claude-$(date +%Y%m%dT%H%M%S).json"
   log "asking Claude to pick a post and split it into ideas"
   timeout 30m claude -p "$prompt" \
@@ -179,7 +187,10 @@ if [ "$(sha256sum "$0" | cut -d' ' -f1)" != "$SELF_HASH" ] && [ -z "${THREADS_RE
 fi
 [ "${THREADS_SKIP_PUBLISH:-0}" = 1 ] || publish_next
 
-if [ "${THREADS_SKIP_GENERATE:-0}" != 1 ]; then
+if [ -n "${THREADS_POST:-}" ]; then
+  log "THREADS_POST=$THREADS_POST, generating a batch for it"
+  generate || true
+elif [ "${THREADS_SKIP_GENERATE:-0}" != 1 ]; then
   q=$(queue_size)
   if [ "$q" -lt "$MIN_QUEUE" ]; then
     log "queue has $q pending posts (< $MIN_QUEUE), generating a new batch"

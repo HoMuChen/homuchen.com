@@ -3,7 +3,7 @@
 排程把已發布的部落格文章拆成多個 idea，一則一則發到 Threads。寫法依 `threads-writing` skill。跑在 hq VM 的 `threads` 帳號（見 homuchen-edge README「使用者帳號」）。
 
 ```
-systemd timer
+systemd timer（每天 17:00–19:00 台北隨機一個時間）
  └ run.sh
     1. flock；處理上次沒 commit/push 的結果；git pull --rebase 到最新 main
     2. 發布「一則」status: approved 的貼文（檔名排序最前面的）→ 回寫 status/threads_url → commit/push
@@ -30,6 +30,6 @@ systemctl enable --now threads-repurpose.timer
 systemctl list-timers threads-repurpose.timer
 ```
 
-手動跑一次：`systemctl start threads-repurpose.service`（或以 threads 帳號跑 `scripts/threads-repurpose/run.sh`；`THREADS_SKIP_GENERATE=1` 只發不寫、`THREADS_SKIP_PUBLISH=1` 只寫不發）。
+手動跑一次：`systemctl start threads-repurpose.service`（或以 threads 帳號跑 `scripts/threads-repurpose/run.sh`；`THREADS_SKIP_GENERATE=1` 只發不寫、`THREADS_SKIP_PUBLISH=1` 只寫不發；`THREADS_POST=<slug>` 指定拆某篇）。
 
 改成全自動：`systemctl edit threads-repurpose.service` 加上 `Environment=THREADS_MODE=auto`。
