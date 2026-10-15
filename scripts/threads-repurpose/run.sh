@@ -169,7 +169,14 @@ except Exception as e:
   commit "Draft Threads posts: $(basename "$(echo "$files" | head -1)" .md | sed -E 's/^[0-9-]{11}//; s/-[0-9]{2}$//')" $files
 }
 
+SELF_HASH=$(sha256sum "$0" | cut -d' ' -f1)
 sync_repo
+# pull 之後腳本本身更新了 → 用新版重跑一次（bash 已經讀進舊版）
+if [ "$(sha256sum "$0" | cut -d' ' -f1)" != "$SELF_HASH" ] && [ -z "${THREADS_REEXEC:-}" ]; then
+  log "run.sh was updated by the pull, re-executing the new version"
+  exec 9>&-
+  THREADS_REEXEC=1 exec "$0" "$@"
+fi
 [ "${THREADS_SKIP_PUBLISH:-0}" = 1 ] || publish_next
 
 if [ "${THREADS_SKIP_GENERATE:-0}" != 1 ]; then
