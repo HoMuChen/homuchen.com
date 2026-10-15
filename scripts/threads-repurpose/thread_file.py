@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Validate / read / update a threads/*.md repurposed thread file.
+"""Validate / read / update a threads/*.md repurposed post file.
 
   thread_file.py check <file>                 驗證格式與規則，有錯就印出並 exit 1
-  thread_file.py posts-json <file> <out.json> 把各則貼文寫成 post_threads.py 吃的 JSON 陣列
+  thread_file.py posts-json <file> <out.json> 寫成 post_threads.py 吃的 JSON（{"posts": [...], "topic_tag": ...}）
   thread_file.py set-status <file> <status> [url]
   thread_file.py field <file> <key>           印出 frontmatter 欄位值
+
+檔名：threads/{date}-{slug}-{nn}.md（一篇文章拆成多個 idea，同一批共用日期）
+type: single → 1 則，或 1 則＋1 則回覆（補充或放連結）
+type: thread → 3–6 則
 """
 
 import glob
@@ -15,41 +19,51 @@ import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 MAX_CHARS = 500
-MIN_POSTS, MAX_POSTS = 3, 10
 REQUIRED = ["date", "type", "source", "source_post", "tags", "status", "threads_url"]
+BATCH_NAME = re.compile(r"^(\d{4}-\d{2}-\d{2})-([a-z0-9-]+)-(\d{2})\.md$")
 
 
-def split(path: str) -> tuple[str, dict, list[str]]:
+def split(path: str) -> tuple[dict, list[str]]:
     text = open(path, encoding="utf-8").read()
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.S)
     if not m:
         raise ValueError("缺少 frontmatter")
-    fm_raw, body = m.group(1), m.group(2)
     fm = {}
-    for line in fm_raw.splitlines():
+    for line in m.group(1).splitlines():
         if ":" in line:
             k, v = line.split(":", 1)
             fm[k.strip()] = v.strip()
-    posts = [p.strip() for p in re.split(r"\n---\n", body) if p.strip()]
-    return fm_raw, fm, posts
+    posts = [p.strip() for p in re.split(r"\n---\n", m.group(2)) if p.strip()]
+    return fm, posts
+
+
+def batch_date(path: str) -> str | None:
+    m = BATCH_NAME.match(os.path.basename(path))
+    return m.group(1) if m else None
 
 
 def check(path: str) -> list[str]:
     errors = []
     try:
-        _, fm, posts = split(path)
+        fm, posts = split(path)
     except ValueError as e:
         return [str(e)]
     for k in REQUIRED:
         if k not in fm:
             errors.append(f"frontmatter 缺 {k}")
-    if fm.get("type") != "thread":
-        errors.append("type 必須是 thread")
+    kind = fm.get("type")
+    if kind not in ("single", "thread"):
+        errors.append("type 必須是 single 或 thread")
     if fm.get("source") != "repurposed":
         errors.append("source 必須是 repurposed")
     if fm.get("status") not in ("draft", "approved"):
         errors.append(f"status 必須是 draft 或 approved（現在是 {fm.get('status')}）")
+    topic = fm.get("topic", "")
+    if topic and re.search(r"[.&]", topic):
+        errors.append("topic 不能有 . 或 &")
 
+    name = os.path.basename(path)
+    m_name = BATCH_NAME.match(name)
     sp = fm.get("source_post", "")
     m = re.fullmatch(r"/posts/([a-z0-9-]+)/", sp)
     if not m:
@@ -58,30 +72,31 @@ def check(path: str) -> list[str]:
         slug = m.group(1)
         if not glob.glob(os.path.join(ROOT, "posts", f"*-{slug}.md")):
             errors.append(f"source_post 對應的文章不存在：posts/*-{slug}.md")
-        others = [
-            f for f in glob.glob(os.path.join(ROOT, "threads", "*.md"))
-            if os.path.abspath(f) != os.path.abspath(path)
-            and re.search(rf"^source_post:\s*{re.escape(sp)}\s*$", open(f, encoding="utf-8").read(), re.M)
-        ]
+        if not m_name or m_name.group(2) != slug:
+            errors.append("檔名必須是 {date}-{source_post slug}-{nn}.md")
+        # 同一篇文章只能有一批（同一個日期前綴）；別批已經改寫過就不行
+        mine = batch_date(path)
+        others = []
+        for f in glob.glob(os.path.join(ROOT, "threads", "*.md")):
+            if os.path.abspath(f) == os.path.abspath(path):
+                continue
+            if re.search(rf"^source_post:\s*{re.escape(sp)}\s*$", open(f, encoding="utf-8").read(), re.M):
+                if batch_date(f) != mine or mine is None:
+                    others.append(os.path.relpath(f, ROOT))
         if others:
-            errors.append(f"這篇已經改寫過：{[os.path.relpath(o, ROOT) for o in others]}")
-        if not os.path.basename(path).endswith(f"-{slug}.md"):
-            errors.append("檔名必須是 {date}-{source_post slug}.md")
+            errors.append(f"這篇已經改寫過：{others}")
 
-    if not MIN_POSTS <= len(posts) <= MAX_POSTS:
-        errors.append(f"串文則數 {len(posts)}，要在 {MIN_POSTS}–{MAX_POSTS} 則")
+    if kind == "single" and len(posts) not in (1, 2):
+        errors.append(f"single 要 1 則（或 1 則＋1 則回覆），現在 {len(posts)} 則")
+    if kind == "thread" and not 3 <= len(posts) <= 6:
+        errors.append(f"thread 要 3–6 則，現在 {len(posts)} 則")
     for i, p in enumerate(posts, 1):
         if len(p) > MAX_CHARS:
             errors.append(f"第 {i} 則 {len(p)} 字，超過 {MAX_CHARS}")
         if "掰掰" in p:
             errors.append(f"第 {i} 則有「掰掰」（Threads 不用）")
-        has_link = bool(re.search(r"https?://", p))
-        if i < len(posts) and has_link:
-            errors.append(f"第 {i} 則有連結（只有最後一則可以放）")
-    if posts and m:
-        url = f"https://homuchen.com/posts/{m.group(1)}/"
-        if url not in posts[-1]:
-            errors.append(f"最後一則必須放原文連結 {url}")
+        if re.search(r"https?://", p) and (i == 1 or (kind == "thread" and i < len(posts))):
+            errors.append(f"第 {i} 則有連結（主貼文不放；串文只有最後一則可以放）")
     return errors
 
 
@@ -98,19 +113,22 @@ def main() -> int:
     if cmd == "check":
         errors = check(path)
         for e in errors:
-            print(f"✗ {e}")
+            print(f"✗ {os.path.basename(path)}: {e}")
         if not errors:
-            print("✓ OK")
+            print(f"✓ {os.path.basename(path)}")
         return 1 if errors else 0
     if cmd == "posts-json":
-        _, _, posts = split(path)
-        json.dump(posts, open(sys.argv[3], "w", encoding="utf-8"), ensure_ascii=False)
+        fm, posts = split(path)
+        out = {"posts": posts}
+        if fm.get("topic"):
+            out["topic_tag"] = fm["topic"]
+        json.dump(out, open(sys.argv[3], "w", encoding="utf-8"), ensure_ascii=False)
         return 0
     if cmd == "set-status":
         set_status(path, sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else "")
         return 0
     if cmd == "field":
-        print(split(path)[1].get(sys.argv[3], ""))
+        print(split(path)[0].get(sys.argv[3], ""))
         return 0
     print(__doc__, file=sys.stderr)
     return 2

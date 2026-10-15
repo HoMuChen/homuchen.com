@@ -5,7 +5,8 @@ Usage:
     post_threads.py <posts.json> [--ids-out ids.json]
     post_threads.py --refresh-only
 
-    posts.json is a JSON array of strings. Each string is one post in the thread.
+    posts.json is a JSON array of strings (or {"posts": [...], "topic_tag": "..."}).
+    Each string is one post in the thread. topic_tag applies to the first post.
     A single-element array posts one standalone post. Multi-element arrays post
     a chained thread where post N+1 is a reply to post N.
 
@@ -89,11 +90,14 @@ def get_user_id(token: str) -> str:
 
 
 def create_text_container(
-    user_id: str, token: str, text: str, reply_to_id: str | None = None
+    user_id: str, token: str, text: str, reply_to_id: str | None = None,
+    topic_tag: str | None = None,
 ) -> str:
     params = {"media_type": "TEXT", "text": text, "access_token": token}
     if reply_to_id:
         params["reply_to_id"] = reply_to_id
+    if topic_tag:
+        params["topic_tag"] = topic_tag
     r = requests.post(
         f"https://graph.threads.net/v1.0/{user_id}/threads",
         params=params,
@@ -114,9 +118,10 @@ def publish_container(user_id: str, token: str, creation_id: str) -> str:
 
 
 def post_one(
-    user_id: str, token: str, text: str, reply_to_id: str | None = None
+    user_id: str, token: str, text: str, reply_to_id: str | None = None,
+    topic_tag: str | None = None,
 ) -> str:
-    container_id = create_text_container(user_id, token, text, reply_to_id)
+    container_id = create_text_container(user_id, token, text, reply_to_id, topic_tag)
     # Meta recommends waiting before publishing; 5s is enough for TEXT posts.
     time.sleep(5)
     return publish_container(user_id, token, container_id)
@@ -148,9 +153,13 @@ def main() -> int:
 
     refresh_only = args[0] == "--refresh-only"
     posts: list[str] = []
+    topic_tag: str | None = None
     if not refresh_only:
         posts_path = Path(args[0])
         posts = json.loads(posts_path.read_text())
+        if isinstance(posts, dict):
+            topic_tag = posts.get("topic_tag")
+            posts = posts.get("posts")
         if not isinstance(posts, list) or not all(isinstance(p, str) for p in posts):
             print("posts.json must be a JSON array of strings.", file=sys.stderr)
             return 2
@@ -186,7 +195,10 @@ def main() -> int:
     ids: list[str] = []
     for i, text in enumerate(posts, 1):
         print(f"Posting {i}/{len(posts)} ({len(text)} chars)...")
-        thread_id = post_one(user_id, token, text, reply_to_id=parent_id)
+        thread_id = post_one(
+            user_id, token, text, reply_to_id=parent_id,
+            topic_tag=topic_tag if i == 1 else None,
+        )
         print(f"  -> {thread_id}")
         ids.append(thread_id)
         parent_id = thread_id

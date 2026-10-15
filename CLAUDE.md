@@ -98,11 +98,13 @@ threads_url:                    # 發布後填入
 
 #### 內容規則
 
-- 單則貼文（`type: single`）：frontmatter 下直接寫貼文內容（500 字以內）
+- **寫之前先用 `threads-writing` skill**：Threads 的寫法、自己帳號的數據、鉤子與 topic tag。**預設寫短的單則**，串文只用在步驟或清單
+- **Repurpose 一篇文章 = 拆成 3–6 個獨立的 idea，分開發表**，不是把整篇濃縮成一串長串文。檔名 `threads/{date}-{slug}-{nn}.md`，frontmatter 多 `idea`（一句話說明）與 `topic`（一個 topic tag）
+- 單則貼文（`type: single`）：frontmatter 下直接寫貼文內容（500 字以內）；可以再加一段 `---` 當回覆（補充或放連結）
 - 串文（`type: thread`）：每則貼文以 `---` 分隔，順序即發布順序
-- 發布使用 `post-to-threads` skill
+- 發布使用 `post-to-threads` skill；排程（hq VM）見 `scripts/threads-repurpose/README.md`
 - **不要**用「掰掰～👋」結尾——那是部落格專屬的收尾，Threads 保留口語、`～`、適量 emoji 即可
-- **連結不放主貼文**（會影響觸及）：串文把純連結獨立成最後一段（發布時會變成最後一則回覆），主貼文用「連結放留言 👇」帶過；單則貼文改寫「連結放 bio～」
+- **連結不放主貼文**（會影響觸及）：放在回覆（單則的第二段、串文的最後一則），主貼文用「完整做法放留言～」帶過；不是每則都要放連結
 - **數字照實寫**，不淡化也不灌水（commit 數、回測數字等），沿用原文的數字與免責
 - Repurpose 時沿用原文的內容邊界：
   - 自動交易主題只用回測數字；不提本金、實盤報酬率、實盤參數設定
