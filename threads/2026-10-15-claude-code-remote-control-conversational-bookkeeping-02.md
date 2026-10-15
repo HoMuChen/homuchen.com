@@ -6,7 +6,7 @@ source_post: /posts/claude-code-remote-control-conversational-bookkeeping/
 idea: 記帳 App 的自動分類只是關鍵字比對，LLM 才看得懂語境；分錯一句話糾正、規則寫進 CLAUDE.md
 topic: AI觀察
 tags: [AI, 記帳, Claude Code, LLM]
-status: draft
+status: approved
 threads_url:
 ---
 

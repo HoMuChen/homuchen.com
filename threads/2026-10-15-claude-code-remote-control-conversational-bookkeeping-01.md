@@ -6,7 +6,7 @@ source_post: /posts/claude-code-remote-control-conversational-bookkeeping/
 idea: 前後對照——記帳從「開 App、選分類、填數字、按儲存」變成一句話，每天 1-2 分鐘降到 10 秒內
 topic: claude code
 tags: [Claude Code, 記帳, Remote Control]
-status: draft
+status: approved
 threads_url:
 ---
 

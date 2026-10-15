@@ -6,7 +6,7 @@ source_post: /posts/claude-code-finmind-stock-tracking/
 idea: 一個小技巧：讓 Claude Code 寫完 script、定好持倉格式後，順手寫進 CLAUDE.md，下次開新對話不用重講
 topic: claude code
 tags: [Claude Code, CLAUDE.md, 小技巧]
-status: draft
+status: approved
 threads_url:
 ---
 

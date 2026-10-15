@@ -6,7 +6,7 @@ source_post: /posts/claude-code-finmind-stock-tracking/
 idea: 踩坑更正——FinMind 免費版不能一次抓全市場，要一檔一檔抓；但追蹤自己 20 檔持股一天約 20 次，免費額度綽綽有餘
 topic: 台股
 tags: [FinMind, 台股, API, 踩坑]
-status: draft
+status: approved
 threads_url:
 ---
 

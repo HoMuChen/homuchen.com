@@ -6,7 +6,7 @@ source_post: /posts/claude-code-finmind-stock-tracking/
 idea: 串 API 不用自己讀文件：把文件連結丟給 Claude Code，它自己讀完寫出有增量更新、處理 rate limit 的 script
 topic: claude code
 tags: [Claude Code, FinMind, API, 台股]
-status: draft
+status: approved
 threads_url:
 ---
 

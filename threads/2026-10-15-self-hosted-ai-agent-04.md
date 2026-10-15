@@ -6,7 +6,7 @@ source_post: /posts/self-hosted-ai-agent/
 idea: 大家講的「AI Agent」其實是三種東西：chatbot、雲端 AI 產品、自架自主 agent，差在跑在哪、誰決定、會不會自己開工
 topic: AI觀察
 tags: [AI Agent, AI, Chatbot]
-status: draft
+status: approved
 threads_url:
 ---
 

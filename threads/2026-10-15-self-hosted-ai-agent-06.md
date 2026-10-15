@@ -6,7 +6,7 @@ source_post: /posts/self-hosted-ai-agent/
 idea: 模型會失憶，所以讓 agent 把一切寫進檔案當記憶，再用索引檔＋漸進式揭露讓它每次只讀需要的部分
 topic: AI Agent
 tags: [AI Agent, Memory, Context, 漸進式揭露]
-status: draft
+status: approved
 threads_url:
 ---
 

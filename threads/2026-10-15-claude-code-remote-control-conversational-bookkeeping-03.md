@@ -6,7 +6,7 @@ source_post: /posts/claude-code-remote-control-conversational-bookkeeping/
 idea: 觀點——On-Demand Visualization：資料在就好，圖想看才生，dashboard 退到只放每天固定要看的指標
 topic: AI觀察
 tags: [AI, Dashboard, 資料視覺化, Claude Code]
-status: draft
+status: approved
 threads_url:
 ---
 

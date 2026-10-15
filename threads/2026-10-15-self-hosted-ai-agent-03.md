@@ -6,7 +6,7 @@ source_post: /posts/self-hosted-ai-agent/
 idea: Tool / MCP / Skill 常被混為一談，其實在不同層次；用煮菜比喻講清楚，接得到食材只是第一步
 topic: AI Agent
 tags: [AI Agent, MCP, Skills, Claude Code]
-status: draft
+status: approved
 threads_url:
 ---
 

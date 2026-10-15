@@ -6,7 +6,7 @@ source_post: /posts/self-hosted-ai-agent/
 idea: 老實話——自架 agent 沒有電影那麼科幻，它最讓人滿意的是「好好把交代的事做完」，期待值要抓對
 topic: AI Agent
 tags: [AI Agent, 自動化, Agentic AI]
-status: draft
+status: approved
 threads_url:
 ---
 
