@@ -3,7 +3,8 @@
 
   thread_file.py check <file>                 驗證格式與規則，有錯就印出並 exit 1
   thread_file.py posts-json <file> <out.json> 寫成 post_threads.py 吃的 JSON（{"posts": [...], "topic_tag": ...}）
-  thread_file.py set-status <file> <status> [url]
+  thread_file.py set-status <file> <status> [url]   改成 published 時順便記 published_at
+  thread_file.py order                        approved 的檔案，依發布順序（最久沒發的文章優先）
   thread_file.py field <file> <key>           印出 frontmatter 欄位值
 
 檔名：threads/{date}-{slug}-{nn}.md（一篇文章拆成多個 idea，同一批共用日期）
@@ -16,6 +17,7 @@ import json
 import os
 import re
 import sys
+from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 MAX_CHARS = 500
@@ -105,10 +107,38 @@ def set_status(path: str, status: str, url: str = "") -> None:
     text = re.sub(r"^status:.*$", f"status: {status}", text, count=1, flags=re.M)
     if url:
         text = re.sub(r"^threads_url:.*$", f"threads_url: {url}", text, count=1, flags=re.M)
+    if status == "published":
+        now = datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds")
+        if re.search(r"^published_at:", text, re.M):
+            text = re.sub(r"^published_at:.*$", f"published_at: {now}", text, count=1, flags=re.M)
+        else:
+            text = re.sub(r"^(threads_url:.*)$", rf"\1\npublished_at: {now}", text, count=1, flags=re.M)
     open(path, "w", encoding="utf-8").write(text)
 
 
+def publish_order() -> list[str]:
+    """approved 的檔案依發布優先順序排：最久沒發過的文章優先（從沒發過的最先），同一篇照檔名。
+    這樣不同文章的 idea 會交錯發，不會同一篇連發好幾天。"""
+    last: dict[str, str] = {}  # source_post → 最後一次發布時間
+    approved = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "threads", "*.md"))):
+        try:
+            fm, _ = split(f)
+        except ValueError:
+            continue
+        sp = fm.get("source_post", "")
+        if fm.get("status") == "approved":
+            approved.append((sp, os.path.relpath(f, ROOT)))
+        elif fm.get("status") == "published" and sp:
+            when = fm.get("published_at") or fm.get("date", "")
+            last[sp] = max(last.get(sp, ""), when)
+    return [f for sp, f in sorted(approved, key=lambda x: (last.get(x[0], ""), x[1]))]
+
+
 def main() -> int:
+    if sys.argv[1:] == ["order"]:
+        print("\n".join(publish_order()))
+        return 0
     cmd, path = sys.argv[1], sys.argv[2]
     if cmd == "check":
         errors = check(path)

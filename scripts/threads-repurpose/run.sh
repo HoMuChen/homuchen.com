@@ -3,7 +3,7 @@
 #
 # 每次執行：
 #   1. 同步到最新 main（含補 commit / push 上次沒完成的結果）
-#   2. 發布「一則」status: approved 的貼文（檔名排序最前面的）
+#   2. 發布「一則」status: approved 的貼文（最久沒發過的文章優先，同一篇照檔名；不同文章交錯發）
 #   3. 待發的貼文（draft + approved）少於 THREADS_MIN_QUEUE 則，就請 Claude 挑一篇文章拆成新的一批
 #
 #   THREADS_MODE=review（預設）  新草稿是 draft，要人工改成 approved 才會發
@@ -105,8 +105,8 @@ publish() { # publish <file>
 
 publish_next() {
   local f
-  for f in threads/*.md; do
-    [ "$(field "$f" status)" = approved ] || continue
+  # 最久沒發過的文章優先，不同文章的 idea 交錯發
+  for f in $(python3 $HERE/thread_file.py order); do
     if python3 $HERE/thread_file.py check "$f"; then
       publish "$f"
       return 0

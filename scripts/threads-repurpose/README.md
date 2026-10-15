@@ -6,7 +6,7 @@
 systemd timer（每天 17:00–19:00 台北隨機一個時間）
  └ run.sh
     1. flock；處理上次沒 commit/push 的結果；git pull --rebase 到最新 main
-    2. 發布「一則」status: approved 的貼文（檔名排序最前面的）→ 回寫 status/threads_url → commit/push
+    2. 發布「一則」status: approved 的貼文（最久沒發過的文章優先，不同文章交錯發）→ 回寫 status/threads_url/published_at → commit/push
     3. 待發的（draft + approved）少於 3 則 → claude -p（prompt.md）產生新的一批：
        gsc skill 挑文章 → 讀 threads-writing 寫作指南與最近的 threads/ → 拆成 3–6 個 idea
        → threads/{date}-{slug}-01.md、-02.md…（大多是 single，最多 1 個 thread）
