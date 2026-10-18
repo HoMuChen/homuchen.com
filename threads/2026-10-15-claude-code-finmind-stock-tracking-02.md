@@ -6,8 +6,9 @@ source_post: /posts/claude-code-finmind-stock-tracking/
 idea: Google Sheet 用 GOOGLEFINANCE 抓台股常 #N/A、延遲；台股要找專門的資料源（FinMind，資料來自證交所）
 topic: Google Sheet
 tags: [Google Sheet, GOOGLEFINANCE, 台股, FinMind]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DeoUrNAk_zu
+published_at: 2026-10-18T17:07:00+08:00
 ---
 
 打開股票試算表，一排股價全是 #N/A 😱
