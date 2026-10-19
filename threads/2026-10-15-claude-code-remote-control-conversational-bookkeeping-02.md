@@ -6,8 +6,9 @@ source_post: /posts/claude-code-remote-control-conversational-bookkeeping/
 idea: 記帳 App 的自動分類只是關鍵字比對，LLM 才看得懂語境；分錯一句話糾正、規則寫進 CLAUDE.md
 topic: AI觀察
 tags: [AI, 記帳, Claude Code, LLM]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DerAJLJkw-F
+published_at: 2026-10-19T18:05:19+08:00
 ---
 
 跟客戶在全家咖啡座談了 4 小時，買了 200 元咖啡和點心。
