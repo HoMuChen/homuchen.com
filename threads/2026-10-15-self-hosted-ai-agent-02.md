@@ -6,8 +6,9 @@ source_post: /posts/self-hosted-ai-agent/
 idea: 清單——一隻自架 agent 的四層結構：Context → 能力 → 溝通 → 自動化，用股票 bot 走一遍
 topic: AI Agent
 tags: [AI Agent, Claude Code, 自動化, crontab]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DetkbM8kys-
+published_at: 2026-10-20T18:01:46+08:00
 ---
 
 一隻會自己開工的 AI agent，拆開來其實只有四層 👇
