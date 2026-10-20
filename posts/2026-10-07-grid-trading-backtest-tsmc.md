@@ -267,6 +267,7 @@ description: "網格交易到底會不會賺？我讓 Claude 用台積電 2020�
 * [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)
 * [**個股期貨是什麼？小型台積電期貨的保證金、轉倉、槓桿**](/posts/stock-futures-tsmc-mini-futures-guide/)
 * [**期貨槓桿開幾倍才安全？同一個策略開 1、2、3 倍回測**](/posts/futures-leverage-backtest/)
+* [**網格交易進階手法實測：移動停利有效、RSI 過濾是毒藥**](/posts/grid-trading-advanced-backtest/)
 * [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)
 * [**我如何用 Google Sheet 製作股票損益表，自動抓取最新股價**](/posts/google-sheet-stock-income-statement/)
 

@@ -243,6 +243,7 @@ description: "期貨槓桿開越大越好嗎？我讓 Claude 用小型台積電�
 
 * [**個股期貨是什麼？小型台積電期貨的保證金、轉倉、槓桿**](/posts/stock-futures-tsmc-mini-futures-guide/)
 * [**網格交易回測：用台積電 6 年資料實測，99% 的月份有收入，卻輸給買進持有**](/posts/grid-trading-backtest-tsmc/)
+* [**網格交易進階手法實測：移動停利有效、RSI 過濾是毒藥**](/posts/grid-trading-advanced-backtest/)
 * [**用 Claude Code + Shioaji 打造自動下單機器人：我的台積電期貨網格實戰**](/posts/claude-code-shioaji-auto-trading-bot/)
 * [**用 Claude Code + FinMind 追蹤台股**](/posts/claude-code-finmind-stock-tracking/)
 * [**AI 寫程式的 7 個坑：我用 Claude Code 寫自動交易程式，真實修過的 bug**](/posts/ai-coding-trading-bot-bugs/)

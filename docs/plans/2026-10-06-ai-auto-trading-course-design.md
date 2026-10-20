@@ -55,7 +55,7 @@
 | #2 網格交易回測 | 部落格 | 已發布（2026-10-07） | `posts/2026-10-07-grid-trading-backtest-tsmc.md` | https://homuchen.com/posts/grid-trading-backtest-tsmc/ |
 | #3 個股期貨入門 | 部落格 | 已發布（2026-10-08） | `posts/2026-10-08-stock-futures-tsmc-mini-futures-guide.md` | https://homuchen.com/posts/stock-futures-tsmc-mini-futures-guide/ |
 | #4 槓桿實驗 | 部落格 | 已發布（2026-10-10） | `posts/2026-10-10-futures-leverage-backtest.md` | https://homuchen.com/posts/futures-leverage-backtest/ |
-| #5 網格進階手法 | 部落格 | 規劃中 | — | — |
+| #5 網格進階手法 | 部落格 | 已發布（2026-10-20） | `posts/2026-10-20-grid-trading-advanced-backtest.md` | https://homuchen.com/posts/grid-trading-advanced-backtest/ |
 | #6 AI 寫程式的 7 個坑 | 部落格 | 已發布（2026-10-12） | `posts/2026-10-12-ai-coding-trading-bot-bugs.md` | https://homuchen.com/posts/ai-coding-trading-bot-bugs/ |
 | 課程 waitlist CTA（finmind 文、agent 文） | 部落格更新 | 已發布（2026-10-13，LINE 關鍵字「交易課」） | `posts/2026-04-25-claude-code-finmind-stock-tracking.md`、`posts/2026-06-04-claude-code-stock-agent-monitor-alert.md` | https://homuchen.com/posts/claude-code-finmind-stock-tracking/ 、https://homuchen.com/posts/claude-code-stock-agent-monitor-alert/ |
 | 課程企劃 | 課程 | 已撰寫（2026-10-13，planning；先跑 waitlist 驗證） | `courses/2026-10-13-ai-auto-trading/` | — |
@@ -192,3 +192,20 @@ SERP 觀察（Ahrefs TW「期貨槓桿」）：期貨商教學（永豐「槓桿
 **seo-ai-overviews-advanced**：開頭 BLUF 引言、「為什麼 AI 寫的交易程式特別危險？」問句 + 定義句、bug 總表、FAQ 5 題（AI 程式能直接用嗎、vibe coding 缺點、怎麼檢查、回測可信嗎、最重要一件事）。
 
 內鏈：#6 → #1～#4、finmind、agent、vibe coding、software-engineer-in-ai-era、agent-instruction；#1～#4 內文與延伸閱讀已加 → #6（已同步 Ghost，線上驗證 #1～#4、#6 互連完整、無斷鏈）。
+
+### #5 網格進階手法（2026-10-20）
+
+關鍵字（Ahrefs TW）：主要 移動停利（450, KD 0）；次要 網格交易 策略、rsi 指標（1,800）、移動停損（100）；長尾 網格交易 rsi、網格 加碼、移動停利 設定。意圖 Informational → Consideration。SERP：券商說明頁（群益、元富、統一 PDF）、rich01 定義文、CMoney、YouTube；**沒有人用真實資料測「網格＋移動停利」** → 差異化。
+
+資料：從 ai-dev 複製 `QFF_30min_day.csv`（2021-02 ~ 2026-10-19），用修好跨 roll 假獲利 bug 的回測（原始近月價，b0c067a）**全部重跑**，數字與 08-14 研究文件不同：基準 CAGR +6.0%/MDD −17.7%（舊 +7.0%/−22.2%）；移動停利 0.7% +6.7%、乾旱 7→6 月（舊 7→4）；RSI、ATR、MA600、深度加碼結論方向不變。文中有一節誠實揭露重跑前後差異，並說明與 #4 基準數字的出入。
+
+**seo-eeat-authority**
+- 已有：原創回測（69 月、7 種手法、逐年現金流、參數高原）、作者身分、免責、公開邊界聲明、修 bug 重跑的透明紀錄（與 #6 互相佐證）、逐筆驗證的機制解釋（RSI 擋掉 707 筆買進、中位數離高點 −2.7%；移動停利 958 次賣出中 195 次 ≥+3%）。
+- 已補：RSI 外部定義連結（維基）、FinMind 外部連結。
+- 有意識不補：實盤參數與是否實盤採用這些手法（公開邊界）；圖表（淨值曲線）留待之後。
+- 缺口：#4 的基準數字是修 bug 前版本，可考慮之後補勘誤註記。
+
+**seo-ai-overviews-advanced**
+- 已有：開頭 BLUF 結論引言；每個手法段落第一句粗體定義（移動停利、RSI、ATR、趨勢濾網）；總表 + 各段表格易擷取；FAQ 5 題覆蓋 fan-out（移動停利是什麼、網格要不要加移動停利／RSI、可不可以加碼、參數怎麼找）。
+- 有意識不做：FAQPage schema（Ghost 主題現況）、llms.txt。
+
