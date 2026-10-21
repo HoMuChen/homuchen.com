@@ -6,8 +6,9 @@ source_post: /posts/claude-code-finmind-stock-tracking/
 idea: 前後對照——以前買股要開試算表手動記、常忘記；現在跟 Claude Code 說一句就記進 positions.json，問一句就列出持倉損益
 topic: 台股
 tags: [台股, Claude Code, 持倉追蹤]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DewJBTXk7el
+published_at: 2026-10-21T17:59:23+08:00
 ---
 
 以前買完股票：
