@@ -6,8 +6,9 @@ source_post: /posts/claude-code-remote-control-conversational-bookkeeping/
 idea: 觀點——On-Demand Visualization：資料在就好，圖想看才生，dashboard 退到只放每天固定要看的指標
 topic: AI觀察
 tags: [AI, Dashboard, 資料視覺化, Claude Code]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DeyyFCOk_ZI
+published_at: 2026-10-22T18:36:35+08:00
 ---
 
 Google Sheet 最值錢的能力，其實已經被 AI 拆掉了。
