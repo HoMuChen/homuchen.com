@@ -19,7 +19,7 @@
 | # | 類型 | 標題（暫定） | 主要關鍵字 | 狀態 | 檔案 | 連結 |
 |---|---|---|---|---|---|---|
 | 1 | 部落格 | 我用 Claude Code 一天做出自己的 AI 助理：LINE、Gmail、會議錄音全收進來，自動抓出待辦和期限 | AI 助理、Claude Code | 已發布（2026-10-22） | `posts/2026-10-22-claude-code-ai-assistant-one-day.md` | https://homuchen.com/posts/claude-code-ai-assistant-one-day/ |
-| 2 | 部落格 | Whisper 中文語音轉文字：用 Cloudflare 免費額度把會議錄音轉成逐字稿 | whisper 中文、逐字稿 ai | 規劃中 | | |
+| 2 | 部落格 | Whisper 中文語音轉文字：用 Cloudflare 免費額度，每天 3.5 小時會議錄音轉逐字稿 | whisper 中文、逐字稿 ai | 已撰寫（待使用者確認） | `drafts/2026-10-23-whisper-chinese-cloudflare-transcription.md` | |
 | 3 | Threads | 由 hq 上的 threads-repurpose 排程自動拆（兩篇發布後） | | 未開始 | | |
 
 ## 各產出規劃
@@ -56,7 +56,7 @@
 - 分析：198 份文件／訊息 → 待辦 67 項、日期 171 個、金額 256 筆
 - Job：29,178 成功、1 失敗
 - AI 花費：2026-10 共 US$5.20（每月預算 US$20）；analyze $4.37、OCR $0.41、polish $0.22、triage $0.13、Whisper $0.02（牌價，實際在免費額度內）
-- 會議：40.6 分鐘 → 5 段 → Whisper 約 1.5 分鐘轉完；Whisper $0.02（牌價）＋ Claude 潤飾 $0.21 ＋ 分析 $0.06 ≈ $0.29；逐字稿 11,096 字
+- 會議：40.6 分鐘 → 5 段 → Whisper 約 2 分鐘轉完（每段 25～36 秒，依序）、潤飾 7 窗平行約 20 秒、分析約 22 秒、上傳到完成 5 分 26 秒；Whisper $0.02（牌價）＋ Claude 潤飾 $0.21 ＋ 分析 $0.06 ≈ $0.29；逐字稿 11,096 字
 - VM：Linode g6-standard-2（2 vCPU／4GB，東京），US$24／月
 - Cloudflare Workers AI（官方 pricing 頁，2026-10-22）：免費方案每天 10,000 neurons、00:00 UTC 重置、超過直接報錯；whisper-large-v3-turbo 每分鐘 46.63 neurons（$0.0005／分鐘）→ 每天約 214 分鐘免費
 - Opus vs Sonnet analyze eval（2026-10-10，30 筆）：Opus 期限待辦沒有明顯較好、摘要略好，花費 2.2 倍、每筆慢約 5 秒 → 用 Sonnet
@@ -94,7 +94,7 @@
 - Expertise ✅：「收 → 加工 → agent 讀」分工、讀取順序（摘要 → 結構化 → 全文 → 原檔）、eval 決定模型
 - Trust ✅：開頭聲明不出現客戶資料、數字只取總數；Whisper 缺點與上線後的錯誤照實寫；隱私 FAQ（R2、Claude API 不訓練、憑證加密）
 - 補強：補上 LINE Messaging API、Anthropic 商業條款、Cloudflare 模型頁三個權威連結
-- 刻意不做：**沒有介面截圖**——系統裡是客戶資料，要截圖得另建假資料環境；先不放，之後需要再用 seed 資料補
+- 截圖：使用者要求後補上 6 張（2026-10-22），全部來自本機另建的 `hq_demo` 假資料庫（虛構公司／人名／金額），文中聲明是假資料；正式機資料一張都沒截
 
 **seo-ai-overviews-advanced**
 - BLUF：「這個 AI 助理在做什麼？」第一句就是答案；「為什麼選 Cloudflare Whisper？」改成第一句先給答案（每天約 3.5 小時免費）
@@ -102,3 +102,17 @@
 - Fan-out：AI 助理怎麼做、LINE 個人帳號能不能收、要花多少錢、安全嗎、為什麼不用現成會議記錄工具——都有段落正面回答
 - 統計＋引述密度高（ChatGPT 偏好）；entity：Claude Code、Cloudflare Workers AI、Whisper、LINE Messaging API、Gmail、PostgreSQL
 - 不做：FAQPage schema（Ghost 沒有逐篇 schema 機制，維持現狀）
+
+## #2 發布前 SEO review（2026-10-22，草稿）
+
+**seo-eeat-authority**
+- Experience ✅：正式環境真實會議（40.6 分鐘、5 段、每段 25～36 秒、7 窗潤飾、總成本 $0.29）、5 個設定都對應實際踩過的坑、ffmpeg 參數與 prompt 規則取自正式程式
+- Expertise ✅：原創技巧「行號對回時間碼」＋不合法輸出退回原文
+- Trust ✅：價格表標明 2026-10 對過官方頁並附三個來源；雅婷官方 API 價格查不到 → 只寫特色不寫價格；限制段落（說話者、台語、即時）照實寫
+- 缺口：沒有使用者本人對辨識品質的主觀感受（待問）；curl 範例沒有實際跑過（正式程式是同一組參數，要跑需用使用者的 Cloudflare token，待問）
+
+**seo-ai-overviews-advanced**
+- BLUF：每個問句 H2 第一句給答案（Whisper 是什麼、多少錢、免費額度、怎麼呼叫、實測成本）
+- PAA 對應：「OpenAI Whisper 有中文版嗎」「Whisper 的費用是多少」都寫進 FAQ
+- 表格 4 個（價格比較、免費額度、實測成本），chunk 友善；entity：Whisper、OpenAI、Cloudflare Workers AI、Groq、Deepgram、OpenCC、Claude
+- 關鍵字：title 含 Whisper 中文／語音轉文字／逐字稿／會議錄音；H2 含 Whisper、語音轉文字 API

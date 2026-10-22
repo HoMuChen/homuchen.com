@@ -27,7 +27,7 @@ description: "AI 顧問的工作散在 LINE、Gmail、附件和會議裡。我�
 * 上線快三週，它幫我收了什麼、花了多少錢
 * 幾個值得偷學的設計，還有上線後才發現的問題
 
-> 📌 這個系統收的是我工作上和客戶的資料，所以文章裡不會出現任何客戶名稱或內容，數字都是只取總數的統計。
+> 📌 這個系統收的是我工作上和客戶的資料，所以文章裡不會出現任何客戶名稱或內容，數字都是只取總數的統計。**文章裡的截圖都是另外架了一套假資料拍的**，裡面的公司、人名、金額都是虛構的。
 
 ## 這個 AI 助理在做什麼？
 
@@ -41,6 +41,8 @@ description: "AI 顧問的工作散在 LINE、Gmail、附件和會議裡。我�
 | 會議錄音 | 轉成有時間碼的逐字稿，潤飾後寫摘要、抽出待辦 |
 
 另外有一個管理介面，讓我打開就知道「最近進來什麼、有什麼要注意」，也可以用手機錄完音直接上傳。
+
+![期限與待辦頁：從信件、文件、會議和 LINE 抽出來的待辦，依逾期、今天、7 天內排好，標出負責人和來源（假資料）](https://storage.googleapis.com/homuchen.com/images/claude-code-ai-assistant-one-day-tasks.jpg)
 
 不過管理介面不是重點。**真正在用這些資料的，是我的 AI Agent。** 它有資料庫的讀取權限，我問它問題，它自己去查。這個概念我在 [**AI Agent 的記憶與檔案系統**](/posts/ai-agent-memory-file-system/) 那篇有講過：agent 能做多少事，很大程度取決於它讀得到多少資料。
 
@@ -99,7 +101,11 @@ description: "AI 顧問的工作散在 LINE、Gmail、附件和會議裡。我�
 
 > 我目前會覺得畫面有點空？依照你的專業去設計。
 
-它就重新設計了一版：列表直接顯示 AI 抽出的重點，不用點進去才看得到。**你不需要會設計，但你要說得出「哪裡怪怪的」。**
+它就重新設計了一版：列表直接顯示 AI 抽出的重點，不用點進去才看得到。
+
+![總覽頁：最近收進來的信件、檔案和會議，列表直接顯示 AI 摘要、金額、期限和待辦數，右邊是近期期限（假資料）](https://storage.googleapis.com/homuchen.com/images/claude-code-ai-assistant-one-day-overview.jpg)
+
+**你不需要會設計，但你要說得出「哪裡怪怪的」。**
 
 ## 語音轉文字：為什麼選 Cloudflare Whisper？
 
@@ -114,15 +120,23 @@ description: "AI 顧問的工作散在 LINE、Gmail、附件和會議裡。我�
 
 （數字來自 [Cloudflare Workers AI 官方價格頁](https://developers.cloudflare.com/workers-ai/platform/pricing/)，額度每天台灣時間早上 8 點重置。）
 
+用起來是這樣：開完會，用手機把錄音上傳，填個會議名稱就好。
+
+![手機上傳會議錄音：選好檔案、填會議名稱和日期，上傳後自動轉錄、潤飾、整理摘要（假資料）](https://storage.googleapis.com/homuchen.com/images/claude-code-ai-assistant-one-day-mobile-upload.jpg)
+
 我目前正式跑過一場 40.6 分鐘的會議，實際的數字是這樣：
 
 | 步驟 | 做了什麼 | 花費 |
 |------|---------|------|
-| Whisper 轉錄 | 切成 5 段，大約 1.5 分鐘轉完 | 牌價 $0.02，在免費額度內實際是 $0 |
+| Whisper 轉錄 | 切成 5 段，大約 2 分鐘轉完 | 牌價 $0.02，在免費額度內實際是 $0 |
 | Claude 潤飾 | 修正錯字、斷句，保留時間碼 | $0.21 |
 | Claude 分析 | 摘要、抽出待辦和期限 | $0.06 |
 
-有趣的是，**最便宜的反而是語音轉文字，真正花錢的是後面讓 Claude 潤飾。** 一場 40 分鐘的會議，從上傳到摘要出來大約 6 分鐘，總共不到 0.3 美元。
+有趣的是，**最便宜的反而是語音轉文字，真正花錢的是後面讓 Claude 潤飾。** 一場 40 分鐘的會議，從上傳到摘要出來大約 5 分半，總共不到 0.3 美元。
+
+轉完之後，AI 摘要的每一條重點都會標時間碼，點下去就能跳到逐字稿和錄音的那一段：
+
+![會議頁：AI 摘要和結構化資料的每一條都標了時間碼，可以跳回逐字稿和錄音核對（假資料）](https://storage.googleapis.com/homuchen.com/images/claude-code-ai-assistant-one-day-meeting.jpg)
 
 Whisper 也有缺點：不會分辨是誰在講話、台語比較弱，中文還常常輸出簡體字。這些要怎麼處理、怎麼呼叫 Cloudflare 的 API、跟其他語音轉文字方案的比較，我下一篇會專門寫一篇 Whisper 中文的實作。
 
@@ -169,8 +183,12 @@ Whisper 也有缺點：不會分辨是誰在講話、台語比較弱，中文還
 **3. 每個 AI 結果都能追回原文。**
 AI 抽出來的每一個金額、期限，都標了出處：第幾頁、錄音第幾分幾秒。AI 一定會出錯，**能一鍵核對原文，才敢信它。**
 
+![報價單頁：AI 抽出的金額、日期、付款條件，每一項都標了出處在第幾頁（假資料）](https://storage.googleapis.com/homuchen.com/images/claude-code-ai-assistant-one-day-quote.jpg)
+
 **4. 每一次 AI 呼叫都記帳，還有預算上限。**
 每次呼叫 Claude 或 Whisper，都記下用了多少 token、花了多少錢。月底不會被帳單嚇到，也能算出「一場會議到底花多少」。
+
+![系統頁：本月 AI 花費和預算，以及各階段、各模型的呼叫次數、用量和費用（假資料）](https://storage.googleapis.com/homuchen.com/images/claude-code-ai-assistant-one-day-system.jpg)
 
 **5. LINE 的訊息一定要先存下來。**
 LINE 的 [Messaging API](https://developers.line.biz/en/docs/messaging-api/receiving-messages/) 只會用 webhook 把新訊息推給你，沒有「讀取歷史訊息」的功能，服務掛掉的那段時間，訊息就永遠拿不回來了。所以收到 LINE 的通知時，系統只做三件事：驗證、存進資料庫、排進工作佇列，然後馬上回應，AI 處理之後再慢慢做。
