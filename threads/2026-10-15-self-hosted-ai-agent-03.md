@@ -6,8 +6,9 @@ source_post: /posts/self-hosted-ai-agent/
 idea: Tool / MCP / Skill 常被混為一談，其實在不同層次；用煮菜比喻講清楚，接得到食材只是第一步
 topic: AI Agent
 tags: [AI Agent, MCP, Skills, Claude Code]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/De1SBfKE0an
+published_at: 2026-10-23T17:54:16+08:00
 ---
 
 Tools、MCP、Skills 常被混在一起講，
