@@ -6,8 +6,9 @@ source_post: /posts/claude-code-remote-control-conversational-bookkeeping/
 idea: 我沒換成記帳 App 的理由：資料被鎖、分類被綁、訂閱費也不便宜；Claude 訂閱一份多用途
 topic: 理財
 tags: [記帳, 記帳App, Claude Code]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/De6eNoGE41a
+published_at: 2026-10-25T18:16:39+08:00
 ---
 
 收掉 Google Sheet 之後，我也沒去用記帳 App。
