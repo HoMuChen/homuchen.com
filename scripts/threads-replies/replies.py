@@ -359,19 +359,21 @@ def finish_message(c: sqlite3.Row, mark: str) -> None:
 def handle_callback(conn, cq: dict) -> None:
     chat = str(((cq.get("message") or {}).get("chat") or {}).get("id"))
     action, _, cid = (cq.get("data") or "").partition(":")
-    answer = "已處理過了"
-    if chat == TG_CHAT:
-        c = conn.execute("SELECT * FROM comments WHERE id = ?", (cid,)).fetchone()
-        if c and action == "skip" and conn.execute(
-                "UPDATE comments SET status = 'dismissed', updated_at = datetime('now') "
-                "WHERE id = ? AND status = 'pending'", (cid,)).rowcount:
-            answer = "略過"
-            finish_message(c, "🙈 略過")
-        elif c and action == "send" and c["draft"] and claim(conn, cid, ("pending",)):
-            ok = send_threads_reply(conn, c, c["draft"], "sent")
-            answer = "已送出" if ok else "沒有送出"
-            finish_message(c, "✅ 已送出" if ok else "⚠️ 沒有送出（可能你已經在 app 回過，或發送失敗）")
-    tg("answerCallbackQuery", callback_query_id=cq["id"], text=answer)
+    # Telegram 只給幾秒回應按鈕，發 Threads 要十幾秒，所以先回應，結果另外發訊息
+    tg("answerCallbackQuery", callback_query_id=cq["id"], text="送出中…" if action == "send" else "")
+    if chat != TG_CHAT:
+        return
+    c = conn.execute("SELECT * FROM comments WHERE id = ?", (cid,)).fetchone()
+    if c and action == "skip" and conn.execute(
+            "UPDATE comments SET status = 'dismissed', updated_at = datetime('now') "
+            "WHERE id = ? AND status = 'pending'", (cid,)).rowcount:
+        finish_message(c, "🙈 略過")
+    elif c and action == "send" and c["draft"] and claim(conn, cid, ("pending",)):
+        ok = send_threads_reply(conn, c, c["draft"], "sent")
+        finish_message(c, "✅ 已送出" if ok else "⚠️ 沒有送出（可能你已經在 app 回過，或發送失敗）")
+    elif c:
+        tg("sendMessage", chat_id=TG_CHAT, text=f"這則留言已經處理過了（{c['status']}）",
+           reply_parameters={"message_id": cq["message"]["message_id"]})
 
 
 def handle_message(conn, msg: dict) -> None:
