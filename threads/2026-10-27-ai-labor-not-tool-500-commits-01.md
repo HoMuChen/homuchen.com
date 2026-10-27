@@ -6,8 +6,9 @@ source_post: /posts/ai-labor-not-tool-500-commits/
 idea: 七天快 500 個 commits：不是打字變快，是有人在替我做事
 topic: claude code
 tags: [Claude Code, 生產力, AI]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/De_jO3rEwlo
+published_at: 2026-10-27T17:37:01+08:00
 ---
 
 五月才過七天，我幾個專案合計的 commit 數快 500 了。
