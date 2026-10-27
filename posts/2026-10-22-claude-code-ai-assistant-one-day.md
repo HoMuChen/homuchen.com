@@ -138,7 +138,7 @@ description: "AI 顧問的工作散在 LINE、Gmail、附件和會議裡。我�
 
 ![會議頁：AI 摘要和結構化資料的每一條都標了時間碼，可以跳回逐字稿和錄音核對（假資料）](https://storage.googleapis.com/homuchen.com/images/claude-code-ai-assistant-one-day-meeting.jpg)
 
-Whisper 也有缺點：不會分辨是誰在講話、台語比較弱，中文還常常輸出簡體字。這些要怎麼處理、怎麼呼叫 Cloudflare 的 API、跟其他語音轉文字方案的比較，我下一篇會專門寫一篇 Whisper 中文的實作。
+Whisper 也有缺點：不會分辨是誰在講話、台語比較弱，中文還常常輸出簡體字。這些要怎麼處理、怎麼呼叫 Cloudflare 的 API、跟其他語音轉文字方案的比較，我另外寫了一篇 [**Whisper 中文語音轉文字實作**](/posts/whisper-chinese-cloudflare-transcription/)。
 
 ## 上線快三週，這個 AI 助理幫我收了什麼？
 

@@ -19,7 +19,7 @@
 | # | 類型 | 標題（暫定） | 主要關鍵字 | 狀態 | 檔案 | 連結 |
 |---|---|---|---|---|---|---|
 | 1 | 部落格 | 我用 Claude Code 一天做出自己的 AI 助理：LINE、Gmail、會議錄音全收進來，自動抓出待辦和期限 | AI 助理、Claude Code | 已發布（2026-10-22） | `posts/2026-10-22-claude-code-ai-assistant-one-day.md` | https://homuchen.com/posts/claude-code-ai-assistant-one-day/ |
-| 2 | 部落格 | Whisper 中文語音轉文字：用 Cloudflare 免費額度，每天 3.5 小時會議錄音轉逐字稿 | whisper 中文、逐字稿 ai | 已撰寫（待使用者確認） | `drafts/2026-10-23-whisper-chinese-cloudflare-transcription.md` | |
+| 2 | 部落格 | Whisper 中文語音轉文字：用 Cloudflare 免費額度，每天 3.5 小時會議錄音轉逐字稿 | whisper 中文、逐字稿 ai | 已發布（2026-10-27） | `posts/2026-10-27-whisper-chinese-cloudflare-transcription.md` | https://homuchen.com/posts/whisper-chinese-cloudflare-transcription/ |
 | 3 | Threads | 由 hq 上的 threads-repurpose 排程自動拆（兩篇發布後） | | 未開始 | | |
 
 ## 各產出規劃
@@ -43,7 +43,7 @@
 
 ## 跨平台交叉引用
 
-- #1 → #2（Whisper 一節，#2 發布後補連結）、自架 AI Agent 系列（記憶、MCP/Skills、LINE 頻道）、淨資產儀表板、Vibe Coding
+- #1 → #2（Whisper 一節，2026-10-27 已補連結）、自架 AI Agent 系列（記憶、MCP/Skills、LINE 頻道）、淨資產儀表板、Vibe Coding
 - #2 → #1（完整系統）、MCP/Skills
 - Threads → #1、#2
 
@@ -103,13 +103,13 @@
 - 統計＋引述密度高（ChatGPT 偏好）；entity：Claude Code、Cloudflare Workers AI、Whisper、LINE Messaging API、Gmail、PostgreSQL
 - 不做：FAQPage schema（Ghost 沒有逐篇 schema 機制，維持現狀）
 
-## #2 發布前 SEO review（2026-10-22，草稿）
+## #2 發布前 SEO review（2026-10-22 草稿，2026-10-27 發布）
 
 **seo-eeat-authority**
 - Experience ✅：正式環境真實會議（40.6 分鐘、5 段、每段 25～36 秒、7 窗潤飾、總成本 $0.29）、5 個設定都對應實際踩過的坑、ffmpeg 參數與 prompt 規則取自正式程式
 - Expertise ✅：原創技巧「行號對回時間碼」＋不合法輸出退回原文
 - Trust ✅：價格表標明 2026-10 對過官方頁並附三個來源；雅婷官方 API 價格查不到 → 只寫特色不寫價格；限制段落（說話者、台語、即時）照實寫
-- 缺口：沒有使用者本人對辨識品質的主觀感受（待問）；curl 範例沒有實際跑過（正式程式是同一組參數，要跑需用使用者的 Cloudflare token，待問）
+- 缺口處理（2026-10-27）：使用者的感受補進潤飾一節——「很少直接看 Whisper 原文，再過一次 LLM 後基本 OK」；curl 範例使用者決定不另外實跑（參數與正式程式一致），直接發布
 
 **seo-ai-overviews-advanced**
 - BLUF：每個問句 H2 第一句給答案（Whisper 是什麼、多少錢、免費額度、怎麼呼叫、實測成本）
