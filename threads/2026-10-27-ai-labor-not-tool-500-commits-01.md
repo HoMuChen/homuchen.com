@@ -6,7 +6,7 @@ source_post: /posts/ai-labor-not-tool-500-commits/
 idea: 七天快 500 個 commits：不是打字變快，是有人在替我做事
 topic: claude code
 tags: [Claude Code, 生產力, AI]
-status: draft
+status: approved
 threads_url:
 ---
 

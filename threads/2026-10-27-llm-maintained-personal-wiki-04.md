@@ -6,7 +6,7 @@ source_post: /posts/llm-maintained-personal-wiki/
 idea: RAG 每次查詢都從零開始；讓 LLM 當維護者，知識才會累積
 topic: AI觀察
 tags: [LLM, RAG, 知識管理]
-status: draft
+status: approved
 threads_url:
 ---
 

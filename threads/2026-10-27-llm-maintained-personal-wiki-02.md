@@ -6,7 +6,7 @@ source_post: /posts/llm-maintained-personal-wiki/
 idea: LLM 維護知識庫的三層架構 raw/ + wiki/ + CLAUDE.md，關鍵是 CLAUDE.md 的規則
 topic: claude code
 tags: [Claude Code, 知識管理, CLAUDE.md]
-status: draft
+status: approved
 threads_url:
 ---
 

@@ -6,7 +6,7 @@ source_post: /posts/claude-code-stock-agent-monitor-alert/
 idea: 盯盤 agent 刻意不下單：把注意力交出去，決定留在自己手上
 topic: 台股
 tags: [台股, AI Agent, 自動化]
-status: draft
+status: approved
 threads_url:
 ---
 

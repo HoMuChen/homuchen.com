@@ -6,7 +6,7 @@ source_post: /posts/claude-code-stock-agent-monitor-alert/
 idea: 盯盤程式幾乎不是我寫的：一段把需求講清楚的 prompt，Claude Code 就生出來
 topic: claude code
 tags: [Claude Code, 台股, AI Agent]
-status: draft
+status: approved
 threads_url:
 ---
 

@@ -6,7 +6,7 @@ source_post: /posts/claude-code-stock-agent-monitor-alert/
 idea: 盯盤 agent 最重要的設計是「什麼時候不要通知我」：條件全到齊才敲我，接近的只寫 log
 topic: 台股
 tags: [台股, AI Agent, Telegram]
-status: draft
+status: approved
 threads_url:
 ---
 

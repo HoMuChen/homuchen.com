@@ -6,7 +6,7 @@ source_post: /posts/ai-labor-not-tool-500-commits/
 idea: 用 AI 的三層：顧問、叫 AI 做事、自主員工；從第一層跨到第二層的切入點
 topic: AI觀察
 tags: [AI, 生產力, Claude Code]
-status: draft
+status: approved
 threads_url:
 ---
 

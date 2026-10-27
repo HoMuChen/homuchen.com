@@ -6,7 +6,7 @@ source_post: /posts/llm-maintained-personal-wiki/
 idea: 遠端 inbox 把「捕捉靈感」和「整理」解耦；backlog 指標就是 ls | wc -l
 topic: AI Agent
 tags: [知識管理, 自動化, LLM]
-status: draft
+status: approved
 threads_url:
 ---
 

@@ -6,7 +6,7 @@ source_post: /posts/claude-code-stock-agent-monitor-alert/
 idea: 選股策略上線前的四條回測鐵則；回測的價值是篩掉沒用的策略，不是那個年化
 topic: 台股
 tags: [台股, 回測, 量化交易]
-status: draft
+status: approved
 threads_url:
 ---
 

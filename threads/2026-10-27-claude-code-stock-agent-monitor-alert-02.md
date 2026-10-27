@@ -6,7 +6,7 @@ source_post: /posts/claude-code-stock-agent-monitor-alert/
 idea: 讓 AI 從「問它才動」變成「時間到自己上工」，差的就是一張 crontab 作息表
 topic: AI Agent
 tags: [AI Agent, 台股, crontab]
-status: draft
+status: approved
 threads_url:
 ---
 
