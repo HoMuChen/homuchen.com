@@ -1,11 +1,11 @@
 ---
-title: "自架 AI Agent 實戰（一）：在自己電腦養一隻會自己開工的 AI 員工"
+title: "自架本地 AI Agent 實戰（一）：在自己電腦養一隻會自己開工的 AI 員工"
 date: 2026-06-02
 author: HoMuChen
 category: AI
 tags: [AI Agent, Claude Code, 自動化, Agentic AI]
 image: https://storage.googleapis.com/homuchen.com/images/self-hosted-ai-agent-0.jpg
-description: "我電腦上固定跑著五隻 AI agent：幫我記帳、盯盤、分析 SEO、顧電商訂單、維護個人 wiki。這篇是「自架 AI Agent 實戰」系列總論，用一隻會自己盯盤的 agent 拆解自主 agent 的四層結構，以及為什麼 2026 你該自己養一隻。"
+description: "我電腦上固定跑著五隻本地 AI Agent：幫我記帳、盯盤、分析 SEO、顧電商訂單、維護個人 wiki。這篇是「自架 AI Agent 實戰」系列總論，拆解一隻個人 AI Agent 的四層結構（Context、能力、溝通、自動化），以及它跟 ChatGPT、雲端 AI 產品差在哪。"
 ---
 
 前幾天盤中，我手機震了一下。

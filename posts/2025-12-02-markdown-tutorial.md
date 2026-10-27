@@ -1,11 +1,11 @@
 ---
-title: "Markdown 語法完整教學：讓你的文字排版又快又美"
+title: "Markdown 語法教學：Markdown 是什麼？常用語法速查表一次看懂"
 date: 2025-12-02
 author: HoMuChen
 category: Web Development
 tags: [Web Development, Web, Markdown]
 image: "https://images.unsplash.com/photo-1583521214690-73421a1829a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGZpbGVzfGVufDB8fHx8MTc2NDYyNTc1MXww&ixlib=rb-4.1.0&q=80&w=2000"
-description: "Markdown 語法完整教學：從標題、粗體、列表、連結、圖片、引用、程式碼區塊、表格到任務清單，整理常用 Markdown 排版範例與速查表。"
+description: "Markdown 是什麼？一種用簡單符號就能排版的輕量標記語言，GitHub、Notion、Obsidian、Discord 都支援。這篇整理標題、粗體、列表、連結、圖片、表格、程式碼區塊、任務清單等常用 Markdown 語法，附範例與速查表。"
 ---
 
 如果你曾經在 GitHub 上看過漂亮的專案說明文件、在 Notion 裡快速排版筆記、或是用 Obsidian 建立個人知識庫，那你其實已經跟 Markdown 打過照面了。今天這篇文章，就是要帶你徹底搞懂這個簡單卻超強大的標記語言！

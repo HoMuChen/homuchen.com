@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""依 slug 更新既有 Ghost 文章的 HTML 內容（保留狀態、標題等其他欄位）"""
+"""依 slug 更新既有 Ghost 文章的 HTML 內容（保留狀態、標題等其他欄位）
+
+加 --meta 則只更新 title / custom_excerpt / meta_description，不動內文。
+"""
 
 import argparse
 import os
@@ -61,7 +64,7 @@ def slug_from_filename(path):
     return re.sub(r"^\d{4}-\d{2}-\d{2}-", "", name)
 
 
-def update_post(ghost_url, token, slug, html):
+def update_post(ghost_url, token, slug, fields, source_html=True):
     headers = {"Authorization": f"Ghost {token}"}
 
     # 找文章
@@ -76,10 +79,11 @@ def update_post(ghost_url, token, slug, html):
     updated_at = post["updated_at"]
 
     # PUT 更新
+    query = "?source=html" if source_html else ""
     r = requests.put(
-        f"{ghost_url}/ghost/api/admin/posts/{post_id}/?source=html",
+        f"{ghost_url}/ghost/api/admin/posts/{post_id}/{query}",
         headers={**headers, "Content-Type": "application/json"},
-        json={"posts": [{"html": html, "updated_at": updated_at}]},
+        json={"posts": [{**fields, "updated_at": updated_at}]},
         timeout=30,
     )
     if r.status_code != 200:
@@ -91,6 +95,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", required=True)
     parser.add_argument("--env", default=".env")
+    parser.add_argument("--meta", action="store_true",
+                        help="只更新 title / custom_excerpt / meta_description（依 frontmatter），不動內文")
     args = parser.parse_args()
 
     env = load_env(args.env)
@@ -98,14 +104,24 @@ def main():
     api_key = env["GHOST_ADMIN_API_KEY"]
 
     with open(args.file, encoding="utf-8") as f:
-        _, body = parse_frontmatter(f.read())
-    html = md_to_html(body)
+        fm, body = parse_frontmatter(f.read())
     slug = slug_from_filename(args.file)
 
-    print(f"🔄 更新 slug={slug}")
+    if args.meta:
+        fields = {"title": fm["title"]}
+        if fm.get("description"):
+            fields["custom_excerpt"] = fm["description"]
+            fields["meta_description"] = fm["description"]
+    else:
+        fields = {"html": md_to_html(body)}
+
+    print(f"🔄 更新 slug={slug}" + ("（meta）" if args.meta else ""))
     token = generate_jwt(api_key)
-    post = update_post(ghost_url, token, slug, html)
+    post = update_post(ghost_url, token, slug, fields, source_html=not args.meta)
     print(f"   ✅ 已更新：{post['url']} (status={post['status']})")
+    if args.meta:
+        print(f"   title: {post['title']}")
+        print(f"   meta_description: {post['meta_description']}")
 
 
 if __name__ == "__main__":
