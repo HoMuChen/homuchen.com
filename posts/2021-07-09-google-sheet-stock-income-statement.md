@@ -98,6 +98,8 @@ image:
 
 這篇寫了之後，最常被讀者問到的就是「為什麼我的台股價格常常跑出 `#N/A`、或是更新延遲？」確實，`GOOGLEFINANCE` 對台股的支援一直比美股差很多——資料來源不穩、上櫃股或小型股常抓不到。
 
+哪些台股抓得到、哪些抓不到，我 2026 年重新實測了一遍，整理在 [**GOOGLEFINANCE 台股教學：抓即時股價、ETF、歷史股價**](/posts/googlefinance-taiwan-stock/)：上市股和 ETF 都抓得到，上櫃股目前是 `#N/A`，還有代號沒加 `TPE:` 會抓到港股的坑。
+
 如果你受夠了 `GOOGLEFINANCE` 的不穩定，現在有一個更好的選擇：用 **FinMind 的免費台股 API** 自己抓資料、存本機。而且不需要會寫 Python——讓 Claude Code 幫你串接 API、建增量更新機制、甚至用對話的方式記錄持倉。
 
 詳細做法寫在這篇：[**用 Claude Code 建台股追蹤系統 — AI 幫你接 API、管持倉**](/posts/claude-code-finmind-stock-tracking/)。
@@ -106,6 +108,7 @@ image:
 
 延伸閱讀：
 
+* [**GOOGLEFINANCE 台股教學：抓即時股價、ETF、歷史股價**](/posts/googlefinance-taiwan-stock/) — 2026 年實測哪些台股抓得到、上櫃股怎麼辦
 * [**[Google Sheet] Sparkline，在儲存格裡插入迷你圖表**](/posts/google-sheet-sparkline/)
 * [**用 Claude Code 建台股追蹤系統**](/posts/claude-code-finmind-stock-tracking/) — `GOOGLEFINANCE` 的進階替代方案
 * [**我叫 AI Agent 一個早上做出淨資產儀表板**](/posts/claude-code-net-worth-dashboard/) — 這張損益表的升級版：股票之外，連現金、加密貨幣、房貸一起看
