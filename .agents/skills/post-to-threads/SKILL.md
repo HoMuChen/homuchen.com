@@ -65,6 +65,6 @@ and feels off-voice, flag it to the user rather than silently publishing.
 
 ## Legacy script
 
-`scripts/post_threads.py` (direct Graph API with the token in `.env`) is only still used by
-`scripts/threads-replies/replies.py`, until replies move to outbox too. Don't use it for
-publishing.
+`scripts/post_threads.py` (direct Graph API with the token in `.env`) is no longer used by
+anything — repurpose and replies both go through outbox. It is kept only as a fallback until
+the outbox setup has been stable for a while. Don't use it for publishing.

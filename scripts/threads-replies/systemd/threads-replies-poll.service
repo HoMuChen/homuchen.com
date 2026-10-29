@@ -1,5 +1,5 @@
 [Unit]
-Description=Threads replies: classify new comments, auto-reply simple ones, send the rest to Telegram
+Description=Threads replies: classify new comments, auto-reply simple ones, send the rest for approval (via outbox)
 After=network-online.target
 Wants=network-online.target
 
@@ -9,7 +9,7 @@ User=threads
 Group=threads
 WorkingDirectory=/home/threads/homuchen.com
 Environment=PATH=/home/threads/.local/bin:/usr/local/bin:/usr/bin:/bin
-# TELEGRAM_BOT_TOKEN、TELEGRAM_CHAT_ID；選用 THREADS_REPLIES_MODE、THREADS_REPLIES_AUTO_CAP
+# OUTBOX_API_KEY；選用 THREADS_REPLIES_MODE、THREADS_REPLIES_AUTO_CAP
 EnvironmentFile=/home/threads/.config/threads-replies.env
 ExecStart=/usr/bin/python3 /home/threads/homuchen.com/scripts/threads-replies/replies.py poll
 TimeoutStartSec=20min
