@@ -6,8 +6,9 @@ source_post: /posts/llm-maintained-personal-wiki/
 idea: 知識庫爛掉不是因為懶，是維護 cross-reference 的成本太高；這種 bookkeeping LLM 不嫌煩
 topic: Notion
 tags: [Notion, 知識管理, LLM]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfEo5stk3aH
+published_at: 2026-10-29T17:02:27+08:00
 ---
 
 我有三個爛掉的 Notion。
