@@ -85,17 +85,22 @@ sync_repo() {
 
 # ── 2. 發布一則 ─────────────────────────────────────────────
 publish() { # publish <file>
-  local f=$1 name json ids url
+  local f=$1 name json ids url rc=0
   name=$(basename "$f" .md)
   json=$(mktemp) ids=$(mktemp)
   python3 $HERE/thread_file.py posts-json "$f" "$json"
-  if python3 .agents/skills/post-to-threads/scripts/post_threads.py "$json" --ids-out "$ids"; then
+  # 透過 outbox 發（token 只在 outbox）；同一個檔案固定用同一個 idempotency key，重跑不會發兩次
+  python3 $HERE/outbox_publish.py "$json" "threads-repurpose:$name" --ids-out "$ids" || rc=$?
+  if [ "$rc" = 0 ]; then
     url=$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1])).get("permalink") or "")' "$ids")
     python3 $HERE/thread_file.py set-status "$f" published "$url"
     log "published $f → ${url:-(no permalink)}"
     commit "Publish Threads post: $name" "$f"
+  elif [ "$rc" = 3 ]; then
+    # outbox 連不上或還在重試：維持 approved，下次用同一個 key 再問
+    log "publish of $f has no result yet, will check again next run"
   else
-    # 可能已發出部分貼文：標成 failed 不再重試，留給人工處理
+    # 可能已發出部分貼文：標成 failed 不再重試，留給人工處理（outbox 的 send:get / send:resume）
     python3 $HERE/thread_file.py set-status "$f" failed
     log "publish FAILED for $f (marked failed; check Threads for partial posts)"
     commit "Threads publish failed: $name" "$f"
