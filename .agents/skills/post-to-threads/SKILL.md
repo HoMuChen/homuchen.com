@@ -1,12 +1,14 @@
 ---
 name: post-to-threads
-description: Publish a single post or chained thread to the user's Threads account via the Meta Graph API. Use when the user says "發到 Threads", "發串文", "post to Threads", "publish this to my Threads", "幫我發佈到 Threads", or otherwise asks to publish prepared content to the Threads social platform (distinct from Meta Threads messaging app, and unrelated to Twitter threads).
+description: Publish a single post or chained thread to the user's Threads account through the outbox MCP server. Use when the user says "發到 Threads", "發串文", "post to Threads", "publish this to my Threads", "幫我發佈到 Threads", or otherwise asks to publish prepared content to the Threads social platform (distinct from Meta Threads messaging app, and unrelated to Twitter threads).
 ---
 
 # Post to Threads
 
-Publishes one or more posts to the user's Threads account (@homuchen.build.ai). Multi-post
-inputs are chained as a thread — post N+1 is published as a reply to post N.
+Publishes one or more posts to the user's Threads account (@homuchen.build.ai) through
+**outbox** (https://outbox.homuchen.com), the user's own publishing gateway. Multi-post inputs
+are chained as a thread — post N+1 is published as a reply to post N. The Threads token lives
+only in outbox (which also refreshes it); this repo no longer needs it to publish.
 
 ## When to use
 
@@ -20,56 +22,49 @@ Typical triggers:
 
 ## Prerequisites
 
-- `THREADS_ACCESS_TOKEN` must be present in the project root `.env`. The script auto-loads it.
-- Before posting, the script refreshes the long-lived token (`th_refresh_token`, +60 days) and
-  writes the new value back to `.env` (only that line is touched). A failed refresh is
-  non-fatal. Run `post_threads.py --refresh-only` to just extend the token without posting.
-- Each post must be ≤ 500 characters (Threads platform limit). The script rejects the job if
-  any post exceeds this. If the user's draft exceeds 500 chars, split it into a chained
-  thread at natural boundaries (section dividers, topic shifts) BEFORE calling the script.
+- The `outbox` MCP server must be connected (tools `threads_check`, `threads_publish`,
+  `get_send`, …). It is registered in Claude Code user scope. If the tools are missing, tell
+  the user and stop — do not fall back to calling the Threads API directly.
+- Destination: `threads:homuchen.build.ai` (the org's only Threads account, so `to` can be
+  omitted).
 
 ## How to use
 
 1. **Confirm the final content with the user.** Never publish without explicit go-ahead. If
-   the content is still being edited, stop and confirm.
+   the content is still being edited, stop and confirm. Publishing is public and can't be
+   taken back.
 
-2. **Character-check every post.** If any post exceeds 500 chars, propose a split and get
-   approval before proceeding. Count including spaces, punctuation, English, numbers,
-   dividers — everything.
+2. **Check first with `threads_check`** (same arguments you will publish with: `posts`, and
+   `topic_tag` if the file has a `topic`). It reports per-post character counts (500 max),
+   links in the main post, duplicates of recent posts and quota. If a post is too long,
+   propose a split at natural boundaries and get approval before proceeding.
 
-3. **Write the posts to a temporary JSON file** as a JSON array of strings. One string per
-   post. Order matters — index 0 is the root post, the rest become chained replies in order.
+3. **Publish with `threads_publish`**:
+   - `posts`: one string per post, index 0 is the main post.
+   - `topic_tag`: from the file's `topic` frontmatter, if any.
+   - `idempotency_key`: `homuchen-threads:{file name without .md}` when publishing a file
+     from `threads/`, so a retry never posts twice.
+   - `note` is optional (shown to the approver if approval is required).
 
-   ```json
-   ["first post text", "reply 1 text", "reply 2 text"]
-   ```
+4. **Read the result.** `status: sent` comes back with each part's `id` and `permalink`.
+   - `pending_approval`: it was sent to Telegram for approval; tell the user, don't poll.
+   - `queued`: a temporary error, outbox retries by itself; check later with `get_send`.
+   - `partial` / `failed`: some or none of the posts went out. Report which parts were
+     sent; do NOT republish the whole thing. Resuming from the failed part is done on the
+     outbox side (`ops send:resume <send_id>`).
 
-   Write to a temp path like `/tmp/threads_posts_<timestamp>.json`. Do NOT commit this file.
-
-4. **Run the script:**
-
-   ```bash
-   python3 .agents/skills/post-to-threads/scripts/post_threads.py /tmp/threads_posts_<timestamp>.json
-   ```
-
-   The script prints the account, then a line per post with the returned Thread ID.
-
-5. **Report the result** to the user with the returned post IDs so they can verify on
-   threads.net. Mention the account (@homuchen.build.ai) that the content was posted to.
+5. **Record and report.** For a file in `threads/`, set `status: published` and fill
+   `threads_url` with the main post's permalink (see CLAUDE.md). Tell the user the account
+   (@homuchen.build.ai) and the permalink.
 
 ## Content guidelines
 
-Respect existing style conventions from `homuchen-writing-style` and `social-content` skills
+Respect existing style conventions from `homuchen-writing-style` and `threads-writing` skills
 when drafting — this skill does not redraft. If content was produced without those skills
 and feels off-voice, flag it to the user rather than silently publishing.
 
-## Troubleshooting
+## Legacy script
 
-- **401/OAuth error**: The access token expired or is invalid. An expired token can't be
-  refreshed; ask the user to generate a new one (developers.facebook.com/apps → the app →
-  Use cases → Access the Threads API → Customize → Settings → User Token Generator) and
-  update `.env`.
-- **"Posts exceed 500-char limit"**: Split the offending post(s) further.
-- **Publish fails after container creation**: The Meta API occasionally returns a container
-  ID but then 500s on publish. Re-running with the same JSON re-creates fresh containers and
-  usually succeeds.
+`scripts/post_threads.py` (direct Graph API with the token in `.env`) is only still used by
+`scripts/threads-replies/replies.py`, until replies move to outbox too. Don't use it for
+publishing.
