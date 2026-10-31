@@ -6,8 +6,9 @@ source_post: /posts/claude-code-remote-control-conversational-bookkeeping/
 idea: 步驟——4 步驟用 Claude Code + Remote Control 架起對話式記帳，不用會寫程式
 topic: claude code
 tags: [Claude Code, 記帳, Remote Control, CLAUDE.md]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfJ2PguE7eb
+published_at: 2026-10-31T17:35:49+08:00
 ---
 
 用 Claude Code 對話式記帳，4 步就能跑起來，不用會寫程式 👇
