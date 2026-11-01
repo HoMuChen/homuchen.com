@@ -6,8 +6,9 @@ source_post: /posts/self-hosted-ai-agent/
 idea: 想養一隻 agent 別想一次到位：先挑一件每週都要做又煩的重複工作，再一層一層往上加
 topic: AI Agent
 tags: [AI Agent, 自動化, Claude Code]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfMku1SE5TN
+published_at: 2026-11-01T19:00:00+08:00
 ---
 
 想自己養一隻 AI agent，最常見的失敗是：
