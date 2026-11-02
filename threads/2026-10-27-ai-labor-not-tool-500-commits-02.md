@@ -6,8 +6,9 @@ source_post: /posts/ai-labor-not-tool-500-commits/
 idea: SaaS 賣鋤頭，Agentic AI 賣拿鋤頭的人；問題從「好不好用」變成「信不信任」
 topic: AI觀察
 tags: [AI, Agentic AI, SaaS]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfPEIMtk2MG
+published_at: 2026-11-02T18:12:44+08:00
 ---
 
 以前買 SaaS，你買的是鋤頭。
