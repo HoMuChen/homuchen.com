@@ -214,10 +214,16 @@ class LexicalConverter(HTMLParser):
                 "version": 1,
             }
         elif tag == "blockquote":
-            # Flatten inner paragraphs
+            # Flatten inner paragraphs; a Lexical quote holds inline nodes only,
+            # so separate paragraphs with a blank line (two linebreaks) and
+            # drop the formatting whitespace between them.
             inline = []
             for c in children:
+                if isinstance(c, tuple) and c[0] == "text" and not c[1].strip():
+                    continue
                 if isinstance(c, tuple) and c[0] == "p":
+                    if inline:
+                        inline.extend([self._linebreak(), self._linebreak()])
                     inline.extend(self._inline_nodes(c[1]))
                 else:
                     inline.extend(self._inline_nodes([c]))
@@ -343,9 +349,7 @@ class LexicalConverter(HTMLParser):
         for c in children:
             if isinstance(c, tuple):
                 if c[0] == "text":
-                    text = c[1]
-                    if text.strip() or text:
-                        nodes.append(self._text_node(text, 0))
+                    nodes.extend(self._text_with_breaks(c[1]))
                 elif c[0] == "strong" or c[0] == "b":
                     inner = c[1] if len(c) > 1 else []
                     for n in self._inline_nodes(inner):
@@ -390,9 +394,36 @@ class LexicalConverter(HTMLParser):
                     inner = c[1] if len(c) > 1 else []
                     nodes.extend(self._inline_nodes(inner))
             elif isinstance(c, str):
-                if c.strip() or c:
-                    nodes.append(self._text_node(c, 0))
+                nodes.extend(self._text_with_breaks(c))
+        nodes = self._trim_breaks(nodes)
         return nodes if nodes else [self._text_node("", 0)]
+
+    def _text_with_breaks(self, text):
+        """Turn single newlines inside a paragraph into Lexical linebreaks.
+
+        Python-Markdown keeps a soft newline as a literal "\\n" in the text,
+        which the browser renders as a space; the posts rely on these as
+        line breaks (CTA box, "**1. title**" + explanation lines), the same
+        as the nl2br extension in update_ghost_post.py.
+        """
+        nodes = []
+        for i, part in enumerate(text.split("\n")):
+            if i > 0:
+                nodes.append(self._linebreak())
+            if part:
+                nodes.append(self._text_node(part, 0))
+        return nodes
+
+    def _trim_breaks(self, nodes):
+        """Drop linebreaks at the start/end (HTML whitespace around blocks)."""
+        while nodes and nodes[0].get("type") == "linebreak":
+            nodes.pop(0)
+        while nodes and nodes[-1].get("type") == "linebreak":
+            nodes.pop()
+        return nodes
+
+    def _linebreak(self):
+        return {"type": "linebreak", "version": 1}
 
     def _text_node(self, text, fmt):
         return {
@@ -414,6 +445,8 @@ class LexicalConverter(HTMLParser):
         (a link wrapped in bold) bolds the link's inner text rather than
         crashing on `"" | 1`.
         """
+        if node.get("type") == "linebreak":
+            return node
         fmt = node.get("format", 0)
         if isinstance(fmt, int):
             node["format"] = fmt | bit
