@@ -6,8 +6,9 @@ source_post: /posts/ai-stock-picking-taiwan-backtest/
 idea: 疊四層選股條件，持有一個月的勝率只從 45.1% 到 53.5%；疊條件提高的是贏的時候賺多少，不是賺的機率
 topic: 台股
 tags: [AI選股, 台股, 回測]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfRrfa3k6V9
+published_at: 2026-11-03T18:35:21+08:00
 ---
 
 疊了四層選股條件，勝率只從 45.1% 變成 53.5%。
