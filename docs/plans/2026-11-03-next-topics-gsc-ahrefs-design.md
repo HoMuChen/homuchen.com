@@ -130,6 +130,7 @@ FinLab（DR 17）排得上「量化交易」、yu-wenhao（DR 24）排得上「c
 | 產出 | 類型 | 狀態 | 檔案路徑 | 發布連結 |
 |------|------|------|---------|---------|
 | A. AI 選股實測（140 個策略） | 部落格 | 已發布（2026-11-03） | `posts/2026-11-03-ai-stock-picking-taiwan-backtest.md` | https://homuchen.com/posts/ai-stock-picking-taiwan-backtest/ |
+| A 篇 Threads ×6（拆 idea） | Threads | 已撰寫（approved，hq VM 排程每天發一則） | `threads/2026-11-03-ai-stock-picking-taiwan-backtest-01.md`～`-06.md` | — |
 | B. Claude 股票分析 Skill | 部落格 | 規劃中 | — | — |
 | C. 回測是什麼 | 部落格 | 規劃中 | — | — |
 | LINE 串接草稿 | 部落格 | 草稿待發 | `drafts/2026-07-14-ai-agent-line-bot-tutorial.md` | — |
