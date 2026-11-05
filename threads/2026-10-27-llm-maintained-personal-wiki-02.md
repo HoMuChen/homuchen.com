@@ -6,8 +6,9 @@ source_post: /posts/llm-maintained-personal-wiki/
 idea: LLM 維護知識庫的三層架構 raw/ + wiki/ + CLAUDE.md，關鍵是 CLAUDE.md 的規則
 topic: claude code
 tags: [Claude Code, 知識管理, CLAUDE.md]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfWzz-ZEwma
+published_at: 2026-11-05T18:24:16+08:00
 ---
 
 讓 LLM 幫我維護個人知識庫，整個架構只有三層：
