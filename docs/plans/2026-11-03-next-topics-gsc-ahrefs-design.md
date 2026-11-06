@@ -163,7 +163,7 @@ FinLab（DR 17）排得上「量化交易」、yu-wenhao（DR 24）排得上「c
 | A. AI 選股實測（140 個策略） | 部落格 | 已發布（2026-11-03） | `posts/2026-11-03-ai-stock-picking-taiwan-backtest.md` | https://homuchen.com/posts/ai-stock-picking-taiwan-backtest/ |
 | A 篇 Threads ×6（拆 idea） | Threads | 已撰寫（approved，hq VM 排程每天發一則） | `threads/2026-11-03-ai-stock-picking-taiwan-backtest-01.md`～`-06.md` | — |
 | B. Claude 股票分析 Skill（tradermonty 介紹 + 台股市場寬度版） | 部落格 | 已發布（2026-11-07；美股原版 50/100 Neutral〔11/5〕、台股版 19.1/100 Critical〔FinMind 上市 11/6〕） | `posts/2026-11-07-claude-stock-skill-tradermonty-taiwan.md` | https://homuchen.com/posts/claude-stock-skill-tradermonty-taiwan/ |
-| B 篇 Threads（拆 idea） | Threads | 待撰寫 | — | — |
+| B 篇 Threads（拆 idea，4 則） | Threads | 已撰寫（approved，hq VM 排程每天發一則） | `threads/2026-11-07-claude-stock-skill-tradermonty-taiwan-01..04.md` | — |
 | B 篇台股版 skill 開源 | GitHub repo | 已發布（2026-11-06，MIT，一鍵腳本端到端實測 1 分 52 秒） | `../tw-market-breadth-skill/` | https://github.com/HoMuChen/tw-market-breadth-skill |
 | C. 回測是什麼 | 部落格 | 規劃中 | — | — |
 | LINE 串接草稿 | 部落格 | 草稿待發 | `drafts/2026-07-14-ai-agent-line-bot-tutorial.md` | — |
