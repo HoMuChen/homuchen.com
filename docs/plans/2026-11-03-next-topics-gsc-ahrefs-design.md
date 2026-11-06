@@ -125,13 +125,46 @@ FinLab（DR 17）排得上「量化交易」、yu-wenhao（DR 24）排得上「c
 | 競爭 | 低～中 |
 | SEO 筆記 | BLUF 先給定義，接著講回測常見的坑（過度擬合、倖存者偏差、交易成本），再用自己的網格／槓桿回測當 worked example；導向 ai-auto-trading-course waitlist；只用回測數字 |
 
+### B 篇關鍵字研究更新（2026-11-06）：以 tradermonty/claude-trading-skills 為主角
+
+**主角 repo 事實**（GitHub API，2026-11-06）：[tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)，MIT、3,663 stars、797 forks、2025-10-19 建立、11/4 仍在更新；日本作者，80+ 個 skill + `workflows/*.yaml` 工作流程 + Hermes 版 work package。設計理念：不把買賣決策外包給 AI、不是訊號服務，而是把市場檢查、風險、交易計畫、日誌、檢討流程結構化；人做最後決策。有 No API Key 入門路徑（market-breadth-analyzer、uptrend-analyzer、position-sizer、trader-memory-core、signal-postmortem）。資料源全是美股（FMP、FINVIZ、Alpaca、作者自己的公開 CSV）。
+
+**市場觀察**：繁中**沒有**介紹 tradermonty 或「Claude 股票分析 Skill」的教學；英文有安裝指南（vibetradinglab）、日文有聚合站；中文 skill 都是 A 股／港股（nicepkg、chjm-ai、Claude Office Skills）。台股版 skill 是空白。
+
+**Ahrefs 台灣月量**（多數無 KD，量小但意圖精準）：
+
+| 群組 | 關鍵字（月量） |
+|------|---------------|
+| 股票 × skill | claude 股票 skill 50、claude 股票 分析 skill 20、claude 股票分析skills 20、股票分析skill 20、股票 skill／股票 skills／股票分析 skill 各 10、claude 投資 skill 10 |
+| 上位詞 | claude 股票 300、ai股票分析 150、ai 股票分析 90、claude code 股票 40 |
+| Skills 泛用 | claude skills github 300、claude skills 推薦 150、claude skills 範例 40、claude code skills 推薦 30 |
+| 方法論（可當內文 H2/H3） | 市場寬度 150、vcp 型態 100、canslim 70 |
+| 英文 | claude trading skills 台灣 0 |
+
+**GSC（2026-08-06～11-04，90 天）**：股票 × skill 群組約 **600+ 曝光**，比 Ahrefs 估的多。主要查詢 `claude 股票 分析 skill`（174＋40）、`claude 股票 skill`（97＋96）、`claude 股票分析skills`（68＋23），排名 6–13，**被 finmind-stock-tracking 和 stock-agent-monitor-alert 兩頁分食（cannibalization）**，兩頁都不是專門講 skill 的。→ B 篇要成為這群查詢的專屬落點，兩篇舊文反向內鏈過來。
+
+**SERP**：Ahrefs 沒有這幾個字的台灣 SERP 快照（量太小／太新）；WebSearch 觀察前排是英文聚合站、GitHub、A 股 skill 頁，沒有繁中完整教學 → 競爭**極低**。
+
+**B 篇關鍵字映射（更新版）**
+
+| 類型 | 關鍵字 |
+|------|--------|
+| 主要 | claude 股票 skill |
+| 次要 | claude 股票 分析 skill、股票分析 skill、claude skills 推薦 |
+| 長尾 | claude 股票分析skills、claude 投資 skill、台股 skill、claude skills github、市場寬度（若做台股版 market breadth） |
+| 意圖 / 階段 | Commercial（找推薦）＋ Implementation（安裝、改成台股）/ Consideration → Implementation |
+| 競爭 | 極低 |
+| SEO 筆記 | BLUF：一句話講 tradermonty 是什麼、適合誰；強調它「不給訊號、只結構化決策流程」的設計，這也是跟一般「AI 報明牌」內容的差異；外部連結 GitHub 與官方文件站；誠實寫限制（美股資料源、部分要 FMP 付費）；台股版接 FinMind（script＋skill，不是 MCP）；只用回測數字；從 finmind、stock-agent、mcp-tools-skills、what-is-ai-agent-skill、hermes-ai-agent 內鏈 |
+
 ## 六、跨平台發布狀態表
 
 | 產出 | 類型 | 狀態 | 檔案路徑 | 發布連結 |
 |------|------|------|---------|---------|
 | A. AI 選股實測（140 個策略） | 部落格 | 已發布（2026-11-03） | `posts/2026-11-03-ai-stock-picking-taiwan-backtest.md` | https://homuchen.com/posts/ai-stock-picking-taiwan-backtest/ |
 | A 篇 Threads ×6（拆 idea） | Threads | 已撰寫（approved，hq VM 排程每天發一則） | `threads/2026-11-03-ai-stock-picking-taiwan-backtest-01.md`～`-06.md` | — |
-| B. Claude 股票分析 Skill | 部落格 | 規劃中 | — | — |
+| B. Claude 股票分析 Skill（tradermonty 介紹 + 台股市場寬度版） | 部落格 | 已發布（2026-11-07；美股原版 50/100 Neutral〔11/5〕、台股版 19.1/100 Critical〔FinMind 上市 11/6〕） | `posts/2026-11-07-claude-stock-skill-tradermonty-taiwan.md` | https://homuchen.com/posts/claude-stock-skill-tradermonty-taiwan/ |
+| B 篇 Threads（拆 idea） | Threads | 待撰寫 | — | — |
+| B 篇台股版 skill 開源 | GitHub repo | 已發布（2026-11-06，MIT，一鍵腳本端到端實測 1 分 52 秒） | `../tw-market-breadth-skill/` | https://github.com/HoMuChen/tw-market-breadth-skill |
 | C. 回測是什麼 | 部落格 | 規劃中 | — | — |
 | LINE 串接草稿 | 部落格 | 草稿待發 | `drafts/2026-07-14-ai-agent-line-bot-tutorial.md` | — |
 | claude-code-vs-codex title | 部落格更新 | 待做 | `posts/2026-06-24-claude-code-vs-codex.md` | — |
