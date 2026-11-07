@@ -6,8 +6,9 @@ source_post: /posts/claude-stock-skill-tradermonty-taiwan/
 idea: 加權指數 10/6 創高 49,823 那天，上市股票只有 55.4% 站上 200 日線；寬度 7/6 就見頂（65.7%），11/6 剩 23.5%
 topic: 台股
 tags: [台股, 市場寬度, 加權指數]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Dfb8WnFE09z
+published_at: 2026-11-07T18:15:09+08:00
 ---
 
 10/6 加權指數衝到 49,823 點那天，上市股票只有 55% 站在 200 日線上。
