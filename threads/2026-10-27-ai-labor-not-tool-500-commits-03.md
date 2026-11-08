@@ -6,8 +6,9 @@ source_post: /posts/ai-labor-not-tool-500-commits/
 idea: agent loop 沒設上限，token 一直燒；max iteration + spend cap 兩個習慣
 topic: AI Agent
 tags: [AI Agent, LLM, 踩坑]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Dfeg8lxk4U4
+published_at: 2026-11-08T18:13:10+08:00
 ---
 
 AI 變成你的勞力之後，出錯的成本不一樣了。
