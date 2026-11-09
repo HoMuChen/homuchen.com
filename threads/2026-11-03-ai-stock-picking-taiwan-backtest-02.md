@@ -6,8 +6,9 @@ source_post: /posts/ai-stock-picking-taiwan-backtest/
 idea: 回測台股常見選股說法：每月挑高殖利率前 30 檔每年輸 7.4%、9 年只贏 1 年；跟著外資買、賭反彈都方向相反；但這不是存股
 topic: 台股
 tags: [AI選股, 台股, 高殖利率, 回測]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfhF4joE4ns
+published_at: 2026-11-09T18:14:35+08:00
 ---
 
 每個月挑殖利率最高的 30 檔台股，回測 9 年，只有 1 年贏大盤。
