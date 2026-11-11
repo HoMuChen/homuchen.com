@@ -156,6 +156,14 @@ FinLab（DR 17）排得上「量化交易」、yu-wenhao（DR 24）排得上「c
 | 競爭 | 極低 |
 | SEO 筆記 | BLUF：一句話講 tradermonty 是什麼、適合誰；強調它「不給訊號、只結構化決策流程」的設計，這也是跟一般「AI 報明牌」內容的差異；外部連結 GitHub 與官方文件站；誠實寫限制（美股資料源、部分要 FMP 付費）；台股版接 FinMind（script＋skill，不是 MCP）；只用回測數字；從 finmind、stock-agent、mcp-tools-skills、what-is-ai-agent-skill、hermes-ai-agent 內鏈 |
 
+### C 篇關鍵字研究更新（2026-11-11）
+
+- Ahrefs（TW）：回測 1,300（KD 0、TP 1,100）、股票回測 250、回測 意思 200（TP 1,000）、回測工具 200、tradingview 回測 200、台股回測 150、股票回測工具 150、0050回測 100（TP 3,900）、etf回測 100、股票回測意思 100、回測是什麼意思 90、台股回測工具 80。
+- SERP「回測」：rich01 市場先生（DR52、770 流量）、FinLab、巴菲特線上學院（回測陷阱）、yp-finance 工具頁；另有大量新聞用「回測季線」（價格支撐義）→ 文章開頭補一段區分兩種意思，接「回測 意思」。
+- PAA：股票回測什麼意思？回測怎麼算？0050 定期定額的回測？有哪些股票回測工具？TradingView 的回測功能？→ 全部放進 FAQ / 工具段。
+- 差異化：競品都是概念＋通則；我們有 fire-auto 的第一手踩坑紀錄（成本吃掉 84% 勝率、COT 同週 64.2% vs 下週 50.4%、減資假跳 +133%、int32 溢位、外資連賣 dev 80%→val 58%、安慰劑 19.4%、修 bug 重跑）。
+- 邊界：不引用 legacy 舊三策略／14 技術策略重驗（會連回 6/4 文）、不提哪個策略是實盤。
+
 ## 六、跨平台發布狀態表
 
 | 產出 | 類型 | 狀態 | 檔案路徑 | 發布連結 |
@@ -165,7 +173,8 @@ FinLab（DR 17）排得上「量化交易」、yu-wenhao（DR 24）排得上「c
 | B. Claude 股票分析 Skill（tradermonty 介紹 + 台股市場寬度版） | 部落格 | 已發布（2026-11-07；美股原版 50/100 Neutral〔11/5〕、台股版 19.1/100 Critical〔FinMind 上市 11/6〕） | `posts/2026-11-07-claude-stock-skill-tradermonty-taiwan.md` | https://homuchen.com/posts/claude-stock-skill-tradermonty-taiwan/ |
 | B 篇 Threads（拆 idea，4 則） | Threads | 已撰寫（approved，hq VM 排程每天發一則） | `threads/2026-11-07-claude-stock-skill-tradermonty-taiwan-01..04.md` | — |
 | B 篇台股版 skill 開源 | GitHub repo | 已發布（2026-11-06，MIT，一鍵腳本端到端實測 1 分 52 秒） | `../tw-market-breadth-skill/` | https://github.com/HoMuChen/tw-market-breadth-skill |
-| C. 回測是什麼 | 部落格 | 規劃中 | — | — |
+| C. 回測是什麼（股票回測入門與 6 個坑） | 部落格 | 已發布（2026-11-11） | `posts/2026-11-11-what-is-backtesting.md` | https://homuchen.com/posts/what-is-backtesting/ |
+| C 篇 Threads（拆 idea） | Threads | 待撰寫 | — | — |
 | LINE 串接草稿 | 部落格 | 草稿待發 | `drafts/2026-07-14-ai-agent-line-bot-tutorial.md` | — |
 | claude-code-vs-codex title | 部落格更新 | 待做 | `posts/2026-06-24-claude-code-vs-codex.md` | — |
 | hermes-ai-agent title | 部落格更新 | 待做 | `posts/2026-07-03-hermes-ai-agent.md` | — |
