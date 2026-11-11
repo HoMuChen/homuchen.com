@@ -6,8 +6,9 @@ source_post: /posts/llm-maintained-personal-wiki/
 idea: 遠端 inbox 把「捕捉靈感」和「整理」解耦；backlog 指標就是 ls | wc -l
 topic: AI Agent
 tags: [知識管理, 自動化, LLM]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfmRDLvk0KQ
+published_at: 2026-11-11T18:28:08+08:00
 ---
 
 靈感都在最不方便的時候出現：捷運上、吃飯時、洗澡時。
