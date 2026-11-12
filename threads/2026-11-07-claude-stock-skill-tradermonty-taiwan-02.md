@@ -6,8 +6,9 @@ source_post: /posts/claude-stock-skill-tradermonty-taiwan/
 idea: 國外最紅的 Claude 股票 skill（tradermonty，3,663 星、74 個 skill）刻意不報明牌，花很多力氣在下單前擋住自己、交易後檢討
 topic: claude code
 tags: [Claude Skills, Claude Code, 股票]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Dfo5Qmmk8tG
+published_at: 2026-11-12T18:58:12+08:00
 ---
 
 最近挖到國外很紅的一套 Claude 股票 skill：tradermonty/claude-trading-skills。
