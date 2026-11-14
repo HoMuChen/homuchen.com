@@ -6,8 +6,9 @@ source_post: /posts/ai-stock-picking-taiwan-backtest/
 idea: 機器學習選股的預測準確度比任何單一特徵都高，年化超額卻只有簡單規則的三分之一多一點；目標是平均排名，模型學會避開爛股而不是挑大贏家
 topic: AI觀察
 tags: [AI選股, 機器學習, 台股, 回測]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DfuBOyVGT2y
+published_at: 2026-11-14T18:43:59+08:00
 ---
 
 我用機器學習選台股，預測準確度比任何單一指標都高。
