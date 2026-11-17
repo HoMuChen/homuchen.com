@@ -6,8 +6,9 @@ source_post: /posts/claude-code-shioaji-auto-trading-bot/
 idea: 叫 Claude Code 寫會下單的程式，給它的需求幾乎沒在講策略，全部在講「出事的時候怎麼辦」
 topic: claude code
 tags: [Claude Code, Shioaji, 自動交易]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Df1tBBak1TQ
+published_at: 2026-11-17T18:21:23+08:00
 ---
 
 我那隻會自己下單的期貨機器人，寫下單版的時候，我給 Claude Code 的需求大概是這樣：
