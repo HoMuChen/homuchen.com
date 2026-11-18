@@ -6,8 +6,9 @@ source_post: /posts/claude-stock-skill-tradermonty-taiwan/
 idea: 把美股寬度 skill 改成台股版，評分程式 0 行修改：skill 把「資料從哪來」跟「怎麼判斷」拆開，換市場只要換一半
 topic: claude code
 tags: [Claude Skills, Claude Code, Skill 設計]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Df4Mk2fE5Za
+published_at: 2026-11-18T17:35:38+08:00
 ---
 
 把一個美股的 Claude skill 改成台股版，評分程式我一行都沒改。
