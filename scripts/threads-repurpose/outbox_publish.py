@@ -39,8 +39,10 @@ def call(method: str, path: str, body: dict | None = None) -> dict:
         f"{URL}{path}",
         method=method,
         data=json.dumps(body).encode() if body is not None else None,
+        # Cloudflare 會擋 Python 預設的 User-Agent（Python-urllib，error 1010），要自己帶
         headers={"Authorization": f"Bearer {os.environ['OUTBOX_API_KEY']}",
-                 "Content-Type": "application/json"},
+                 "Content-Type": "application/json",
+                 "User-Agent": "homuchen-threads-repurpose/1.0"},
     )
     try:
         with urllib.request.urlopen(req, timeout=120) as r:

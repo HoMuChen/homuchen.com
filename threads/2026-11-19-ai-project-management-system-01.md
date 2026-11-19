@@ -6,7 +6,7 @@ source_post: /posts/ai-project-management-system/
 idea: 接案 PM 最好笑的痛：有時東西早就做好了，只是我不知道
 topic: 專案管理
 tags: [專案管理, 接案]
-status: failed
+status: approved
 threads_url:
 ---
 
