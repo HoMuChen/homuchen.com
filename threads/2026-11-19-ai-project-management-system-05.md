@@ -6,7 +6,7 @@ source_post: /posts/ai-project-management-system/
 idea: PM 直接跟 AI 對話維護專案（MCP）：拆 WBS、查進度、寫週報；AI 權限跟我一樣、改了什麼都查得到
 topic: AI Agent
 tags: [AI Agent, MCP, 專案管理]
-status: draft
+status: approved
 threads_url:
 ---
 

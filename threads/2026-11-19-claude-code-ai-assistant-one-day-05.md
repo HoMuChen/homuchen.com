@@ -6,7 +6,7 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 繳費通知被分類成雜訊，因為只給 AI 看前 100 個字；AI 判斷錯常常是資料給不夠
 topic: AI Agent
 tags: [AI Agent, AI 助理]
-status: draft
+status: approved
 threads_url:
 ---
 

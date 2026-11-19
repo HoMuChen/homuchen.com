@@ -6,7 +6,7 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 1,021 封信有 92% 是促銷、通知、電子報；先分類再送 AI，錢才不會白花
 topic: AI Agent
 tags: [AI Agent, AI 助理, Gmail]
-status: draft
+status: approved
 threads_url:
 ---
 

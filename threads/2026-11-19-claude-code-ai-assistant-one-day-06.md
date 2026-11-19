@@ -6,7 +6,7 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 一天做出 AI 助理，關鍵是砍範圍：MVP 只要收得完整、agent 讀得到，分析之後再加
 topic: claude code
 tags: [Claude Code, AI 助理, AI Agent]
-status: draft
+status: approved
 threads_url:
 ---
 

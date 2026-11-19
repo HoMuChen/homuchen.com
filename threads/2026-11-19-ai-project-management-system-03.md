@@ -6,7 +6,7 @@ source_post: /posts/ai-project-management-system/
 idea: 把 4 個專案搬進自己做的系統，第一天就抓到一顆西瓜：燈號正常，系統算出 SPI 0.86、建議落後
 topic: 專案管理
 tags: [專案管理, 接案]
-status: draft
+status: approved
 threads_url:
 ---
 

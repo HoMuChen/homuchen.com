@@ -6,7 +6,7 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 40 分鐘會議轉逐字稿，最便宜的是 Whisper 語音轉文字，真正花錢的是 Claude 潤飾
 topic: AI Agent
 tags: [AI Agent, 語音轉文字, Whisper]
-status: draft
+status: approved
 threads_url:
 ---
 
