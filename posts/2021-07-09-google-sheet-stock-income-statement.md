@@ -100,7 +100,7 @@ image:
 
 哪些台股抓得到、哪些抓不到，我 2026 年重新實測了一遍，整理在 [**GOOGLEFINANCE 台股教學：抓即時股價、ETF、歷史股價**](/posts/googlefinance-taiwan-stock/)：上市股和 ETF 都抓得到，上櫃股目前是 `#N/A`，還有代號沒加 `TPE:` 會抓到港股的坑。
 
-如果你受夠了 `GOOGLEFINANCE` 的不穩定，現在有一個更好的選擇：用 **FinMind 的免費台股 API** 自己抓資料、存本機。而且不需要會寫 Python——讓 Claude Code 幫你串接 API、建增量更新機制、甚至用對話的方式記錄持倉。
+如果你受夠了 `GOOGLEFINANCE` 的不穩定，現在有一個更好的選擇：用 [**FinMind 的免費台股 API**](/posts/finmind-taiwan-stock-api-guide/) 自己抓資料、存本機。而且不需要會寫 Python——讓 Claude Code 幫你串接 API、建增量更新機制、甚至用對話的方式記錄持倉。
 
 詳細做法寫在這篇：[**用 Claude Code 建台股追蹤系統 — AI 幫你接 API、管持倉**](/posts/claude-code-finmind-stock-tracking/)。
 

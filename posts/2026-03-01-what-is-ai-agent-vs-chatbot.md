@@ -106,7 +106,7 @@ AI Agent 的「大腦」是大語言模型（LLM）。過去兩年，GPT-4、Cla
 
 你只要用白話文描述你想完成的事情就好。像是：「幫我整理這個資料夾」「幫我做一份市場研究」「幫我把這份逐字稿整理成重點」— Agent 會自己搞定剩下的事。
 
-如果你覺得這聽起來很像之前我分享過的，用 Google Sheet 搭配公式來[**自動記帳**](/posts/google-sheet-how-to-do-bookkeeping/)或[**追蹤股票**](/posts/google-sheet-track-stock/)的概念 — 沒錯，方向很像。只是 AI Agent 把這件事提升到了另一個層次：你不需要自己設計公式或流程了，直接用白話文說你要什麼結果就好。
+如果你覺得這聽起來很像之前我分享過的，用 Google Sheet 搭配公式來[**自動記帳**](/posts/google-sheet-how-to-do-bookkeeping/)或[**追蹤股票**](/posts/google-sheet-stock-income-statement/)的概念 — 沒錯，方向很像。只是 AI Agent 把這件事提升到了另一個層次：你不需要自己設計公式或流程了，直接用白話文說你要什麼結果就好。
 
 所以我們能做什麼呢？**現在就開始嘗試。**
 
