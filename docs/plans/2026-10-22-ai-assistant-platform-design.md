@@ -20,7 +20,9 @@
 |---|---|---|---|---|---|---|
 | 1 | 部落格 | 我用 Claude Code 一天做出自己的 AI 助理：LINE、Gmail、會議錄音全收進來，自動抓出待辦和期限 | AI 助理、Claude Code | 已發布（2026-10-22） | `posts/2026-10-22-claude-code-ai-assistant-one-day.md` | https://homuchen.com/posts/claude-code-ai-assistant-one-day/ |
 | 2 | 部落格 | Whisper 中文語音轉文字：用 Cloudflare 免費額度，每天 3.5 小時會議錄音轉逐字稿 | whisper 中文、逐字稿 ai | 已發布（2026-10-27） | `posts/2026-10-27-whisper-chinese-cloudflare-transcription.md` | https://homuchen.com/posts/whisper-chinese-cloudflare-transcription/ |
-| 3 | Threads | 由 hq 上的 threads-repurpose 排程自動拆（兩篇發布後） | | 未開始 | | |
+| 3 | Threads | #1 拆 6 則（92% 雜訊信、會議成本、LINE 先存、Opus vs Sonnet eval、繳費通知誤判、MVP 砍範圍） | | 已撰寫（draft，2026-11-19） | `threads/2026-11-19-claude-code-ai-assistant-one-day-01..06.md` | |
+| 4 | 部落格 | 接案 PM 最怕不知道做到哪：我做了一個用 AI 對話管理的專案管理系統（pm.homuchen.com，同骨架的延伸） | 專案管理系統、專案管理工具 | 已發布（2026-11-19） | `posts/2026-11-19-ai-project-management-system.md` | https://homuchen.com/posts/ai-project-management-system/ |
+| 5 | Threads | #4 拆 5 則 | | 已撰寫（draft，2026-11-19） | `threads/2026-11-19-ai-project-management-system-01..05.md` | |
 
 ## 各產出規劃
 
