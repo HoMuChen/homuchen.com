@@ -247,8 +247,11 @@ LINE 的 [Messaging API](https://developers.line.biz/en/docs/messaging-api/recei
 
 如果你也有那種「一直想做、但覺得要寫很多程式」的工具，也許可以挑一個下午試試看～希望這篇對你有一丁點兒的幫助！
 
+後來我也用這套系統的骨架，兩天又做了一個給接案用的專案管理系統，把 PM、客戶、執行者三方連在一起，PM 直接跟 AI 對話就能更新進度、寫週報：[**接案 PM 最怕不知道做到哪：我做了一個用 AI 對話管理的專案管理系統**](/posts/ai-project-management-system/)。
+
 延伸閱讀：
 
+* [**接案 PM 最怕不知道做到哪：我做了一個用 AI 對話管理的專案管理系統**](/posts/ai-project-management-system/)
 * [**自架 AI Agent 實戰（一）：在自己電腦養一隻會自己開工的 AI 員工**](/posts/self-hosted-ai-agent/)
 * [**AI Agent 的記憶與檔案系統：memory、檔案記錄、漸進式揭露**](/posts/ai-agent-memory-file-system/)
 * [**MCP / Tools / Skills：AI Agent 的三種能力擴充**](/posts/mcp-tools-skills/)
