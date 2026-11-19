@@ -1,0 +1,12 @@
+[Unit]
+Description=Threads repurpose: morning run 09:00-10:00 Taipei
+
+[Timer]
+# 早上一則：09:00 起隨機延後 0-60 分鐘（晚上那則見 threads-repurpose.timer）
+OnCalendar=*-*-* 09:00 Asia/Taipei
+RandomizedDelaySec=1h
+Persistent=true
+Unit=threads-repurpose.service
+
+[Install]
+WantedBy=timers.target

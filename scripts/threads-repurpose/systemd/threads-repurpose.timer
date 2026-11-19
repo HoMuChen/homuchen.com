@@ -1,8 +1,8 @@
 [Unit]
-Description=Threads repurpose: daily around 18:00 Taipei (17:00-19:00)
+Description=Threads repurpose: evening run 17:00-19:00 Taipei
 
 [Timer]
-# 每天一則：17:00 起隨機延後 0-120 分鐘 → 18:00 ±60 分鐘
+# 晚上一則：17:00 起隨機延後 0-120 分鐘（早上那則見 threads-repurpose-morning.timer）
 OnCalendar=*-*-* 17:00 Asia/Taipei
 RandomizedDelaySec=2h
 Persistent=true

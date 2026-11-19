@@ -3,7 +3,8 @@
 排程把已發布的部落格文章拆成多個 idea，一則一則發到 Threads。寫法依 `threads-writing` skill。跑在 hq VM 的 `threads` 帳號（見 homuchen-edge README「使用者帳號」）。
 
 ```
-systemd timer（每天 17:00–19:00 台北隨機一個時間）
+systemd timer（每天兩次：早上 09:00–10:00、晚上 17:00–19:00，台北時間隨機）
+  threads-repurpose-morning.timer / threads-repurpose.timer → 同一個 threads-repurpose.service
  └ run.sh
     1. flock；處理上次沒 commit/push 的結果；git pull --rebase 到最新 main
     2. 發布「一則」status: approved 的貼文（最久沒發過的文章優先，不同文章交錯發）→ 回寫 status/threads_url/published_at → commit/push
@@ -16,7 +17,7 @@ systemd timer（每天 17:00–19:00 台北隨機一個時間）
        → review 模式 commit 成 draft；auto 模式直接標 approved，之後每次排程發一則
 ```
 
-- 一篇文章拆成多則、每次排程只發一則，所以一批大約能發一週多。
+- 一篇文章拆成多則、每次排程只發一則（一天兩則），所以一批大約能發三四天。
 - Claude 產生 threads/ 以外的檔案或整批驗證失敗 → `git stash` 收起來（`git stash list` 看得到），這次不產生。
 - 發布失敗 → 標 `status: failed` 並 commit，不會自動重試（Threads 上可能有部分貼文，要人工看；outbox 那邊用 `ops send:get` 看哪幾則發出了、`ops send:resume` 從失敗那則接著發）。
 - outbox 連不上、或 outbox 還在自動重試 → 維持 `approved`，下次排程用同一個 idempotency key 再問一次，不會發兩次。
@@ -33,10 +34,10 @@ OUTBOX_API_KEY=obx_...        # outbox: ops key:create threads-repurpose --rules
 ```
 
 ```bash
-install -m 644 /home/threads/homuchen.com/scripts/threads-repurpose/systemd/threads-repurpose.{service,timer} /etc/systemd/system/
+install -m 644 /home/threads/homuchen.com/scripts/threads-repurpose/systemd/threads-repurpose{.service,.timer,-morning.timer} /etc/systemd/system/
 systemctl daemon-reload
-systemctl enable --now threads-repurpose.timer
-systemctl list-timers threads-repurpose.timer
+systemctl enable --now threads-repurpose.timer threads-repurpose-morning.timer
+systemctl list-timers 'threads-repurpose*'
 ```
 
 手動跑一次：`systemctl start threads-repurpose.service`（或以 threads 帳號跑 `scripts/threads-repurpose/run.sh`；`THREADS_SKIP_GENERATE=1` 只發不寫、`THREADS_SKIP_PUBLISH=1` 只寫不發；`THREADS_POST=<slug>` 指定拆某篇）。
