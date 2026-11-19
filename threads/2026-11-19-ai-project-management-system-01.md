@@ -6,8 +6,9 @@ source_post: /posts/ai-project-management-system/
 idea: 接案 PM 最好笑的痛：有時東西早就做好了，只是我不知道
 topic: 專案管理
 tags: [專案管理, 接案]
-status: failed
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Df7SITOE5qx
+published_at: 2026-11-19T22:21:47+08:00
 ---
 
 接案當 PM，最好笑的一種狀況是：
