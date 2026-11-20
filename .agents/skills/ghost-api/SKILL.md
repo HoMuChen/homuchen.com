@@ -99,10 +99,12 @@ curl -s "${GHOST_URL}/ghost/api/content/posts/?key=${GHOST_CONTENT_API_KEY}&limi
 # Read single post by slug
 curl -s "${GHOST_URL}/ghost/api/content/posts/slug/my-post-slug/?key=${GHOST_CONTENT_API_KEY}&include=tags" | jq .
 
-# List ALL posts including drafts (Admin API)
+# List ALL posts including drafts (Admin API) — 每頁最多 100 筆，要翻頁（見下方 limit 說明）
 TOKEN=$(generate_ghost_token)
-curl -s -H "Authorization: Ghost ${TOKEN}" \
-  "${GHOST_URL}/ghost/api/admin/posts/?limit=all&include=tags" | jq .
+for page in 1 2 3; do
+  curl -s -H "Authorization: Ghost ${TOKEN}" \
+    "${GHOST_URL}/ghost/api/admin/posts/?limit=100&page=${page}&include=tags" | jq -c '.posts[]'
+done
 
 # Filter posts by tag
 curl -s "${GHOST_URL}/ghost/api/content/posts/?key=${GHOST_CONTENT_API_KEY}&filter=tag:my-tag&include=tags" | jq .
@@ -114,7 +116,7 @@ curl -s -H "Authorization: Ghost ${TOKEN}" \
 
 ### Useful query parameters
 
-- `limit` — number of results (default: 15, use `all` for everything)
+- `limit` — number of results (default: 15). **Ghost 6.78 起最多 100**：`limit=all` 也只回 100 筆，要看 `meta.pagination.pages` 用 `page` 翻頁（站上已超過 100 篇文章、150+ 個 tag）
 - `page` — pagination page number
 - `include` — comma-separated: `tags`, `authors`
 - `fields` — comma-separated field names to return
@@ -124,11 +126,11 @@ curl -s -H "Authorization: Ghost ${TOKEN}" \
 ## Reading Tags
 
 ```bash
-# All tags (Content API)
-curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit=all" | jq .
+# All tags (Content API) — 最多 100 筆一頁，page=2 拿後面的
+curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit=100&page=1" | jq .
 
 # Tags with post count
-curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit=all&include=count.posts" | jq .
+curl -s "${GHOST_URL}/ghost/api/content/tags/?key=${GHOST_CONTENT_API_KEY}&limit=100&page=1&include=count.posts" | jq .
 ```
 
 ## Creating / Publishing Pages

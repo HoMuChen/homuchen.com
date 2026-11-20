@@ -2,7 +2,10 @@
 
 ## 平台資訊
 
-- Ghost 自架於 GCP
+- Ghost 自架於 GCP VM（ssh `menoctl`，`/var/www/ghost`，ghost-cli 實例名 `hammerhub-co`，systemd `ghost_hammerhub-co`，SQLite）
+- 版本：2026-11-20 從 6.0.10 升到 6.78.0（修 CVE-2026-26980 SQL injection）；Node 用 NodeSource apt（22.23.5），升 Ghost 前先確認 Node 版本符合
+- 升級：先備份 `content/` → `sudo npm i -g ghost-cli@latest` → `cd /var/www/ghost && ghost update`；VM 記憶體 2G、沒有 swap，升級時可暫時加 swap
+- Ghost 6.78 起 `{{#get}}` 與 API 的 limit 最多 100，不支援 `limit="all"`
 - 網址：https://homuchen.com
 - Ghost Admin：https://homuchen.com/ghost/
 
