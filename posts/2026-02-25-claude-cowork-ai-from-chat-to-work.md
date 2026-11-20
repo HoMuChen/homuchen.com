@@ -7,6 +7,8 @@ tags: [AI, AI agent, Claude, productivity, cowork]
 description: "大多數人用 AI 還停留在聊天問答，但 Claude Cowork 讓 AI 從「回答問題」變成「幫你做事」。介紹 Cowork 是什麼、能做什麼，以及 Skills 如何擴充它的能力。"
 ---
 
+> **2026/9 更新：** Anthropic 已經把 Cowork 併進 Claude 主介面，不用再切換到獨立的 Cowork 模式；文中介紹的「幫你做事」能力和 Skills 都還在，直接在 Claude 裡就能用（[官方說明](https://claude.com/resources/articles/cowork-is-now-claude)）。
+
 大多數人用 AI 的方式，大概就是打開 ChatGPT 或 Claude，問個問題，得到答案，複製貼上，結束。
 
 進階一點的，可能會請它幫忙寫信、翻譯、整理重點。但說到底，我們跟 AI 的互動模式還是：**你問，它答**。
