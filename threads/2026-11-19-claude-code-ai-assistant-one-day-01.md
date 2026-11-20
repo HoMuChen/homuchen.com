@@ -6,8 +6,9 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 1,021 封信有 92% 是促銷、通知、電子報；先分類再送 AI，錢才不會白花
 topic: AI Agent
 tags: [AI Agent, AI 助理, Gmail]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Df8dJXuEyfy
+published_at: 2026-11-20T09:17:22+08:00
 ---
 
 我把 3 個 Gmail 信箱接進自己的 AI 助理，收了 1,021 封信。
