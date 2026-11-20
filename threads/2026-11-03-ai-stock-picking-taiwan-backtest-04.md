@@ -6,8 +6,9 @@ source_post: /posts/ai-stock-picking-taiwan-backtest/
 idea: 把財經 YouTuber 的選股口訣丟給 AI 回測：「乖離太大一定會拉回」在強勢股裡相反；順勢的口訣大致有資料支持，抄底的方向都是反的
 topic: 台股
 tags: [AI選股, 台股, 技術分析, 回測]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Df9dzOck8kQ
+published_at: 2026-11-20T18:42:19+08:00
 ---
 
 財經 YouTuber 常說：「乖離太大，一定會拉回。」
