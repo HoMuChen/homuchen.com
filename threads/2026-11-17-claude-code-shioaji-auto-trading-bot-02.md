@@ -6,8 +6,9 @@ source_post: /posts/claude-code-shioaji-auto-trading-bot/
 idea: 下單機器人最重要的一道保險是每輪先跟券商對帳，對不上就停機，寧可什麼都不做
 topic: 台股
 tags: [自動交易, Shioaji, 程式交易]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/Df_Cglnk2EJ
+published_at: 2026-11-21T09:22:17+08:00
 ---
 
 會下單的程式，最可怕的不是策略賠錢，是程式出 bug。
