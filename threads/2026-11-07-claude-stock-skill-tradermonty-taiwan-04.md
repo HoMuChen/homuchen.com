@@ -6,8 +6,9 @@ source_post: /posts/claude-stock-skill-tradermonty-taiwan/
 idea: 台股市場寬度 skill 開源：問一句「台股漲勢健不健康」就跑出 0–100 分（11/6 是 19.1 分 Critical）；FinMind 免費版要改用未還原股價、全上市要跑兩個多小時
 topic: 台股
 tags: [台股, FinMind, Claude Skills, 開源]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgADVrgmfZb
+published_at: 2026-11-21T18:48:47+08:00
 ---
 
 在 Claude Code 問一句「台股漲勢健不健康？」
