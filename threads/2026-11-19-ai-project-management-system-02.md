@@ -6,8 +6,9 @@ source_post: /posts/ai-project-management-system/
 idea: 不讓執行者填百分比，做一半就拆子任務、勾掉做完的，90% 症候群就消失
 topic: 專案管理
 tags: [專案管理, 接案]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgBlGnrGdps
+published_at: 2026-11-22T09:03:05+08:00
 ---
 
 專案管理有個很有名的現象叫「90% 症候群」：
