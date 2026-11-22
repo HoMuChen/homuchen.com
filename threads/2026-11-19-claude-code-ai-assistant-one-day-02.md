@@ -6,8 +6,9 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 40 分鐘會議轉逐字稿，最便宜的是 Whisper 語音轉文字，真正花錢的是 Claude 潤飾
 topic: AI Agent
 tags: [AI Agent, 語音轉文字, Whisper]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgCkLafGbyw
+published_at: 2026-11-22T18:14:10+08:00
 ---
 
 一場 40 分鐘的會議，從錄音到摘要，我的 AI 助理總共花了不到 0.3 美元。
