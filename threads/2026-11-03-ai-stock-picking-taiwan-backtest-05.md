@@ -6,8 +6,9 @@ source_post: /posts/ai-stock-picking-taiwan-backtest/
 idea: 看到「勝率九成」的 AI 選股工具，先問 7 個問題：下市股、當時資料、隔天開盤成交、成本、事先定規則、比較基準、最大回撤
 topic: AI觀察
 tags: [AI選股, 回測, 台股]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgEJw5qGSGc
+published_at: 2026-11-23T09:01:50+08:00
 ---
 
 看到「AI 選股勝率九成」的工具，我會先問這 7 個問題：
