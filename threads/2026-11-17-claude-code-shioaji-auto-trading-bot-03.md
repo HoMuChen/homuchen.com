@@ -6,8 +6,9 @@ source_post: /posts/claude-code-shioaji-auto-trading-bot/
 idea: 下單模式跟緊急煞車都用一個檔案切換：先只講不做的提醒模式，touch 一個檔案就全停
 topic: AI Agent
 tags: [AI Agent, 自動交易, Claude Code]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgFGWiTmZoY
+published_at: 2026-11-23T17:51:16+08:00
 ---
 
 我那隻會自己下單的機器人，最重要的開關是兩個空檔案 😂
