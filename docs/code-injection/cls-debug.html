@@ -1,0 +1,18 @@
+<!-- CLS field debug (2026-11-24): GSC 桌面版 CLS 0.13，lab 重現不出來。
+     把真實使用者「造成最大位移的元素」送到 GA4 event cls_debug，找到根因、修好後可移除。
+     貼在 Ghost Admin → Settings → Code injection → Site footer。 -->
+<script type="module">
+import {onCLS} from 'https://cdn.jsdelivr.net/npm/web-vitals@6.2.3/dist/web-vitals.attribution.js';
+onCLS(function (m) {
+  if (m.value < 0.05 || typeof gtag !== 'function') return;
+  var a = m.attribution || {};
+  gtag('event', 'cls_debug', {
+    cls_value: Math.round(m.value * 1000) / 1000,
+    cls_target: String(a.largestShiftTarget || '(none)').slice(0, 100),
+    cls_shift_time: Math.round(a.largestShiftTime || 0),
+    cls_load_state: a.loadState || '',
+    cls_viewport: innerWidth + 'x' + innerHeight,
+    non_interaction: true
+  });
+});
+</script>
