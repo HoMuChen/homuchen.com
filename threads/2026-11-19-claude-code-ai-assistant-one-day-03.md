@@ -6,8 +6,9 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: LINE Messaging API 沒有讀取歷史訊息的功能，webhook 收到要先存下來，AI 處理之後再做
 topic: AI Agent
 tags: [AI Agent, LINE, LINE Bot]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgHmRixmUFF
+published_at: 2026-11-24T17:08:34+08:00
 ---
 
 用 LINE 官方帳號做 bot 的人，要知道一件事：
