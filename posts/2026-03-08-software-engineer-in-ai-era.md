@@ -4,6 +4,7 @@ date: 2026-03-08
 author: HoMuChen
 category: AI
 tags: [AI, 軟體工程師, Vibe Coding, Claude, career]
+image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fGJ1c2luZXNzfGVufDB8fHx8MTc3Mjg5NzM4MXww&ixlib=rb-4.1.0&q=80&w=2000"
 description: "軟體工程師會被 AI 取代嗎？短答：不會取代這個職業，但會大量取代只會聽令寫 code 的工程師。大型科技公司初階工程師招聘已下降 25%，懂得善用 AI 的人產能卻能拉到 10 倍。每天用 Claude Code 工作的工程師，分享危機、轉機與該怎麼做。"
 ---
 

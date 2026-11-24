@@ -4,6 +4,7 @@ date: 2026-02-25
 author: HoMuChen
 category: AI
 tags: [AI, AI agent, Claude, productivity, cowork]
+image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fHdvcmt8ZW58MHx8fHwxNzcyMDA3MzY2fDA&ixlib=rb-4.1.0&q=80&w=2000"
 description: "大多數人用 AI 還停留在聊天問答，但 Claude Cowork 讓 AI 從「回答問題」變成「幫你做事」。介紹 Cowork 是什麼、能做什麼，以及 Skills 如何擴充它的能力。"
 ---
 

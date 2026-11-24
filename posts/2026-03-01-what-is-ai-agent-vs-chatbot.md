@@ -4,6 +4,7 @@ date: 2026-03-01
 author: HoMuChen
 category: AI
 tags: [AI, AI agent, ChatBot, Agentic AI, Claude]
+image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHx3b3JrfGVufDB8fHx8MTc3MjM1NjEwMHww&ixlib=rb-4.1.0&q=80&w=2000"
 description: "AI Agent 是什麼？跟 ChatBot 聊天機器人差在哪裡？用「問路人 vs 個人助理」的比喻，解釋 AI Agent 的三大特性，以及為什麼 2025-2026 是 AI Agent 爆發的一年。"
 ---
 
