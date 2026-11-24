@@ -7,6 +7,7 @@ tags: [message queue]
 category: Web Development
 image:
   path: https://storage.googleapis.com/homuchen.com/images/mq-1.jpg
+description: "Message queue 是什麼？說明 producer、consumer 與非同步通訊，整理 fault tolerance、decoupling、scaling 三大優點、跟 RESTful API 的差別與適用場景。"
 ---
 
 在大型網頁應用程式系統中，當我們的服務越來越多，服務之間就需要溝通，透過http restful api，想必大家都一定遇過，或許或多或少也聽過使用message queue，那到底它是什麼？為什麼要用它？以及跟restful api有何不同的使用場景呢？

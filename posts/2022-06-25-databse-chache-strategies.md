@@ -6,6 +6,7 @@ category: Web Development
 tags: [system design, database]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/database-cache-0.jpg
+description: "write through 跟 write back 差在哪？從 replication 角度看誰當 master、同步或非同步，歸納 cache aside、read through 等四種快取策略的優缺點。"
 ---
 
 資料庫的快取策略那麼多種: **cache aside**、**read through**、**write through**、**write back**，
@@ -34,6 +35,7 @@ image:
 
 之前有寫過一篇關於replication的文章: 
 [**[System Design] 淺談Database Replication，有何優缺點、做法及何處可見?**](/posts/what-and-why-database-replication-advantage-and-disadvantage/)，有興趣的朋友可以再去看看～
+另外，replication 是把資料「複製」成多份，而把資料「拆開」成好幾份的則是 partition（sharding），兩者常常一起出現，可以參考 [**淺談 Database Partition：vertical、horizontal partition 與 sharding**](/posts/what-is-database-partition-sharding/)。
 
 ### Master or Slave
 首先，我們先定義幾個名詞，master就是接受資料寫入修改的最一開始的節點，

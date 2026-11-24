@@ -6,6 +6,7 @@ category: 生活
 tags: [life style, room makeover]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/room-makeover-furniture-0.jpg
+description: "舊衣櫃、系統櫃想改造又不想拆？比較貼皮與家具漆兩種做法，分享我用壁貼改造整面衣櫃的步驟（清理、換把手、貼、裁切），以及實際花了多少時間和錢。"
 ---
 
 想DIY重新裝潢佈置自己的房間，家裏有老舊家具或櫃體還是堪用的丟掉可惜，

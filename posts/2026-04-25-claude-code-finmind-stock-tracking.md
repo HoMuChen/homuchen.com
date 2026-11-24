@@ -223,6 +223,7 @@ FinMind 的台股資料源自[**台灣證券交易所**](https://www.twse.com.tw
 延伸閱讀：
 * [**FinMind 是什麼？台股 API 免費額度、方案價格與 Python 教學**](/posts/finmind-taiwan-stock-api-guide/)
 * [**用 Claude Code 打造台股 AI Agent：盤前選股、盤中盯盤、訊號發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)（這篇的升級版）
+* [**Claude 股票分析 Skill 推薦：國外最紅的 tradermonty，我把它改成台股版**](/posts/claude-stock-skill-tradermonty-taiwan/)（一樣用 FinMind 當資料源）
 * [**用 Claude Code + Shioaji 打造自動下單機器人：我的台積電期貨網格實戰**](/posts/claude-code-shioaji-auto-trading-bot/)（再升級：自動下單）
 * [**網格交易回測：用台積電 6 年資料實測，99% 的月份有收入，卻輸給買進持有**](/posts/grid-trading-backtest-tsmc/)
 * [**自架 AI Agent 實戰：在自己電腦養一隻會自己開工的 AI 員工**](/posts/self-hosted-ai-agent/)

@@ -6,6 +6,7 @@ category: 生活
 tags: [life style, remote work, digital nomad]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/remote-working-where-to-find-accommodation-0.jpg
+description: "數位遊牧住宿怎麼找？依花費由高到低整理三種方法：短期住宿、Coliving space、House sitting，分析各自優缺點，並列出 Airbnb、TrustedHousesitters 等可用平台。"
 ---
 
 作為一名數位遊牧者，找住的地方一定是我們會常常遇到的問題，

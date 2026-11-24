@@ -6,12 +6,13 @@ tags: [linux, socket, tcp, Networking]
 category: Web Development
 image:
   path: https://storage.googleapis.com/homuchen.com/images/app-layer-1.jpg
+description: "Application layer 是什麼？說明應用程式之間如何透過 socket 使用 transport layer 的服務、ip:port 怎麼定位 process，並比較 TCP 與 UDP 的差異。"
 ---
 
 ![application layer](https://storage.googleapis.com/homuchen.com/images/app-layer-1.jpg)
 
 ## Process communication
-上次講過了網路的分層架構之後，接下來要來關注application layer，這一層就是我們應用程式所在的地方，應用程式可能是網頁瀏覽器、電子信箱、Skype等等，每種不同的應用程式會有他們自己的通訊協定，規定應用程式之間該如何交換資料，以及資料的格式，常見的協定例如是HTTP、FTP、DNS等等．
+上次講過了[**網路的分層架構（Layered Architecture）**](/posts/networking-layered-architecture/)之後，接下來要來關注application layer，這一層就是我們應用程式所在的地方，應用程式可能是網頁瀏覽器、電子信箱、Skype等等，每種不同的應用程式會有他們自己的通訊協定，規定應用程式之間該如何交換資料，以及資料的格式，常見的協定例如是HTTP、FTP、DNS等等．
 
 那application layer的process們之間要怎麼互相通訊呢？就是要利用transport layer所提供的服務．
 

@@ -6,6 +6,7 @@ category: 生活
 tags: [Google Sheet, sparkline]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/spark-line-1.jpg
+description: "Google Sheet 的 SPARKLINE 函式能在儲存格裡直接畫迷你圖表。整理 line、bar、column 等圖表類型與顏色、上限值設定，附折線圖、進度條等範例。"
 ---
 
 ## Sparkline用起來長怎樣

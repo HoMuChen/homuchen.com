@@ -7,6 +7,7 @@ tags: [life style, remote work, digital nomad]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/remote-work-advantages-0.jpg
 last_modified_at: 2022-06-30 22:37:00 +0800
+description: "遠端工作有哪些好處？分享我轉向數位遊牧過程中最有感的五點：節省通勤時間、時間彈性、地點彈性、專注工作提升生產力，以及利用平日出遊與不必住市中心來省錢。"
 ---
 
 這篇文章將分享**遠端工作**有哪些好處，也就是我在慢慢轉變為**數位遊牧**生活型態的過程中，
@@ -50,6 +51,8 @@ last_modified_at: 2022-06-30 22:37:00 +0800
 
 喜歡大自然的人，可以遠離喧囂、生活成本又高的都市，
 擁抱鄉下新鮮的空氣；喜歡都市也好，一切由你自己決定！
+
+想到國外長住的話，可以先看看 [**你可以在這 46 個國家拿到數位遊牧簽證**](/posts/digital-nomad-visa-in-46-countries/)；到了當地要住哪裡，則整理在 [**三個數位遊牧可以尋找住宿的方法及各平台**](/posts/remote-working-where-to-find-accommodation/)～
 
 ## 專注工作、生產力提升
 在辦公室中，就可能隨時會被打擾，同事間有意無意的閒聊，或是有一點點小事就找你問，失去了大段可以專注的時間。

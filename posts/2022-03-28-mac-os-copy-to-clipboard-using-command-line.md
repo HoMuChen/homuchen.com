@@ -4,6 +4,7 @@ date: 2022-03-28 20:40:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [command line]
+description: "在 Mac OS 用 command line 把文字複製到剪貼簿：介紹 pbcopy 與 pbpaste 指令，附 echo、cat、檔案重導向複製與貼上到 stdout 或檔案的範例。"
 ---
 
 在Mac OS裡，該如何使用command line的指令來將你想要的資料複製到剪貼簿呢？

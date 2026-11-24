@@ -6,6 +6,7 @@ category: 生活
 tags: [life style, remote work, digital nomad]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/remote-working-disadvantages-0.jpg
+description: "遠端工作有哪些缺點？從工作與生活混在一起、缺乏社交、瑣碎回報變多三個問題切入，分享建立固定作息、去咖啡廳或 coworking space、跟老闆建立信任等克服方法。"
 ---
 
 在上一篇文章: [遠端工作有哪些好處？](/posts/remote-working-advantages/)中，

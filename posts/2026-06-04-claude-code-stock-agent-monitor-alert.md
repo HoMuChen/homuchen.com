@@ -123,6 +123,8 @@ description: "我用 Claude Code 把抓股價的腳本，升級成一隻會自�
 
 但我得很誠實地說：**這是回測數字，不是我的對帳單，更不是未來保證。** 回測最大的價值不是那個漂亮的年化，而是逼我用一套有紀律的方法去篩掉「聽起來很厲害但其實沒用」的策略。我把它當研究工具，不是印鈔機。
 
+> 📌 2026-11 更新：後來我也試了國外很紅的 Claude 股票分析 skill（tradermonty），把其中的「市場寬度」skill 改成台股版，資料一樣接 FinMind，整理在 [**Claude 股票分析 Skill 推薦：國外最紅的 tradermonty，我把它改成台股版**](/posts/claude-stock-skill-tradermonty-taiwan/)。
+
 ## 我幾乎沒自己寫 code
 
 跟前一篇一樣，這整套不是我一行一行刻出來的。我的角色比較像「出一張嘴」的產品經理，把需求講清楚，讓 Claude Code 去實作。

@@ -6,6 +6,7 @@ category: 生活
 tags: [crypto, stepn]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/stepn-income-01.jpg
+description: "STEPN 跑鞋該不該升級？實測 11 天、不同效率值下每次跑步的 GST 產出，附原始數據與散佈圖，並比較不升級與升級到效率 25、35 的累積速度。"
 ---
 
 買了跑鞋開始跑步的大家可能會有些疑問，我應該升級我的跑鞋嗎？升級了之後，

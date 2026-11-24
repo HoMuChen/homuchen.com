@@ -6,6 +6,7 @@ category: Web Development
 tags: [express, node.js, line notify, middleware]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/line-notify.jpg
+description: "用 Node.js + Express 整合 LINE Notify：說明 LINE Notify 的 OAuth2 授權流程，並介紹我寫的 express-line-notify middleware，幾行就能取得 access token 推送訊息。"
 ---
 
 快速簡單地使用一個express的middleware完成line notify的oauth2流程，取得access\_token來做後續的消息推送

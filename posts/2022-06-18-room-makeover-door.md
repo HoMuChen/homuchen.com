@@ -6,6 +6,7 @@ category: 生活
 tags: [life style, room makeover]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/room-makeover-door-0.jpg
+description: "房門想改色但不想整扇換掉？比較房門貼皮 DIY 與油漆的優缺點，分享我用立邦護壁寶當底漆、剩下的得利乳膠漆刷三層改造凹凸塑膠門的過程、換把手與購買清單。"
 ---
 
 想DIY重新裝潢佈置自己的房間，房門不想費功夫整個換掉，

@@ -6,6 +6,7 @@ category: 生活
 tags: [Google Sheet, finance]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/google-sheet-news-1.jpg
+description: "用 Google Sheets 的 IMPORTFEED 搭配 CONCATENATE 匯入 Google News RSS，輸入公司名稱就列出相關新聞，附完整公式與各參數用法說明。"
 ---
 
 此篇文章將分享我是如何在試算表裡查看新聞，看起來像是下面這樣:

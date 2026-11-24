@@ -7,6 +7,7 @@ category: Web Development
 last_modified_at: 2021-11-01 18:00:00 +0800
 image:
   path: https://storage.googleapis.com/homuchen.com/images/http-intro-1.jpg
+description: "HTTP 簡介：看懂 request、response message 與 header 格式，再用 telnet 連 Google 送出 GET、用 nc 架 server 搭配 curl 發請求，親手觀察 HTTP 傳了什麼。"
 ---
 
 在網路的世界裡，HTTP扮演著一個重要角色，當你打開Instagram看著無以計數的照片、打開Youtube看看影片、在google上搜尋著你想要知道的答案、瀏覽著別人的網站文章，這些都是HTTP負責把上述的這些照片、影片、文字、等檔案資源從別處的伺服器搬到你的裝置裡，可能是你的手機、平板或是電腦．

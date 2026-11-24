@@ -7,6 +7,7 @@ tags: [books, life style]
 last_modified_at: 2022-04-18 11:05:00 +0800
 image:
   path: https://storage.googleapis.com/homuchen.com/images/book-note-design-life-2.jpg
+description: "《做自己的生命設計師》讀書筆記：把史丹佛的設計思考用在人生上，整理重力問題、工作觀與人生觀、心智圖發想點子到打造原型的步驟，幫你面對職涯迷惘。"
 ---
 
 我的生活該要怎麼度過呢？找不到喜歡感到熱情的事怎麼辦？對未來的職涯感到迷茫，

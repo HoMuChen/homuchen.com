@@ -199,7 +199,7 @@ Claude Code 就透過 Ghost Admin API，一次幫我更新了標題、meta title
 | 文章 | 舊標題 | 新標題 |
 |------|--------|--------|
 | Hash | 什麼是Hash Function? 有什麼特性及用途? | **Hash 是什麼？一次搞懂 Hash Function 的原理、特性與應用** |
-| ISP | [Networking]什麼是網路？...ISP | **ISP 是什麼？網路服務供應商如何讓你連上網路** |
+| ISP | [Networking]什麼是網路？...ISP | [**ISP 是什麼？網路服務供應商如何讓你連上網路**](/posts/what-is-networking-and-isp/) |
 | Pagination | REST API Design: Pagination | **Pagination 是什麼？API 分頁設計完整指南** |
 
 改標題的邏輯很簡單：

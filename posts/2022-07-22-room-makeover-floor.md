@@ -65,6 +65,7 @@ description: |
 * [**房間DIY改造: 老舊家具及櫃體篇**](/posts/room-makeover-furniture/)
 * [**房間DIY改造: 大門篇，如何用剩的乳膠漆來改造大門**](/posts/room-makeover-door/)
 * [**房間DIY改造: 牆壁篇(油漆、開關面板、變電箱遮掩)**](/posts/room-makeover-wall/)
+* [**房間改造DIY總整理：成果、購物清單及總共花了多少錢**](/posts/room-makeover-overview/)
 
 之後就剩下傢俱的添購(床、工作桌椅)，
 如果想更即時的看到改造過程的，也歡迎追蹤我的Instagram: [**mumu.life.lab**](https://www.instagram.com/mumu.life.lab/)。希望以上的內容對你有幫助！掰掰～👋

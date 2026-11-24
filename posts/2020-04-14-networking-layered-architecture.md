@@ -6,9 +6,12 @@ category: Web Development
 tags: [layered architecture, Networking]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/layered-arc-1.jpg
+description: "網路為什麼要用 layered architecture？用公司寄信的比喻解釋分層的概念，再依序介紹 application、transport、network、link、physical 五層各自負責什麼。"
 ---
 
 網路是個如此巨大的工程，要如何架構，才能讓全世界的人通力合作，一起打造這豐富的世界呢？答案就是Layered Artichecture ．
+
+（如果還不清楚網路是由哪些東西組成、ISP 又扮演什麼角色，可以先看上一篇 [**ISP 是什麼？網路服務供應商如何讓你連上網路**](/posts/what-is-networking-and-isp/)）
 
 ----------
 

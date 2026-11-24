@@ -4,6 +4,7 @@ date: 2021-08-22 22:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [http, restful api, api]
+description: "HTTP response status code 怎麼用？整理 2xx、3xx、4xx、5xx 四大類的意義，說明 200、201、204、301、302、401、403、404 等常見狀態碼該在什麼情境回傳。"
 ---
 
 這篇文章會介紹在HTTP協議中，Response status code的作用，有哪些codes以及該如何去使用他們？

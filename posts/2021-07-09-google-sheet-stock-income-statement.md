@@ -6,6 +6,7 @@ category: 生活
 tags: [Google Sheet, finance, 股票]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/income-statement-1.jpg
+description: "用 Google Sheet 的 GOOGLEFINANCE 函式抓台股最新股價，做一張自動更新的股票損益表：說明現價、漲跌、損益百分比公式，加上 sparkline 一年股價走勢圖與紅綠條件格式。"
 ---
 
 此篇文章將分享我是如何製作我持有股票的未實現損益表，看起來的成果如下:
@@ -110,6 +111,7 @@ image:
 
 * [**GOOGLEFINANCE 台股教學：抓即時股價、ETF、歷史股價**](/posts/googlefinance-taiwan-stock/) — 2026 年實測哪些台股抓得到、上櫃股怎麼辦
 * [**[Google Sheet] Sparkline，在儲存格裡插入迷你圖表**](/posts/google-sheet-sparkline/)
+* [**[Google Sheet] 如何在試算表裡匯入新聞、RSS feed**](/posts/google-sheet-google-news-rss-feed/) — 在持股清單旁邊，順便看每間公司的相關新聞
 * [**用 Claude Code 建台股追蹤系統**](/posts/claude-code-finmind-stock-tracking/) — `GOOGLEFINANCE` 的進階替代方案
 * [**我叫 AI Agent 一個早上做出淨資產儀表板**](/posts/claude-code-net-worth-dashboard/) — 這張損益表的升級版：股票之外，連現金、加密貨幣、房貸一起看
 

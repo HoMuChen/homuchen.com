@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, life style, productivity]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/book-note-the-power-of-less-0.jpg
+description: "《少才是力量》讀書筆記：整理 zenhabits 作者的簡單高效 6 大原則：自我設限、抓住重點、化繁為簡、集中精神、養成習慣、小處著手，附每項可以馬上開始的做法。"
 ---
 
 在現在這個時代裡，我們被太多的資訊、選擇及任務轟炸，

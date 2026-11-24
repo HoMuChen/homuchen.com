@@ -4,6 +4,7 @@ date: 2021-10-14 13:20:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [http, restful api, api]
+description: "RESTful API 的 path 怎麼設計？URL 是資源（名詞）、HTTP method 是動作；無法用 CRUD 表達或牽涉多個資源時創造新 resource，並用多段 path 表示 sub-resource。"
 ---
 
 繼上篇文章[**RESTful API簡介: 什麼是RESTful? 以及為何需要它?**](/posts/restful-api-introduction/)後，

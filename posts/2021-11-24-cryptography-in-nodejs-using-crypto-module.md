@@ -6,6 +6,7 @@ category: Web Development
 tags: [crypto, node.js]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/nodejs-crytpo-0.jpg
+description: "用 Node.js crypto module 實作 7 個密碼學概念：hash、salt、scrypt password hashing、MAC、對稱與非對稱加密、數位簽章，每個都附可直接參考的程式碼。"
 ---
 
 這篇要介紹nodejs中的crypto module的用法，如何使用這個module來實現密碼學中常見的概念，

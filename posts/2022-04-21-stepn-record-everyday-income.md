@@ -7,6 +7,7 @@ tags: [crypto, stepn]
 last_modified_at: 2022-05-11 20:45:00 +0800
 image:
   path: https://storage.googleapis.com/homuchen.com/images/stepn-income-01.jpg
+description: "STEPN 真的能賺錢嗎？記錄 2022-04-10 用 10.1 SOL 買鞋進場後每天的 GST 收益、維修費與加點測試，並估算 LV5 runner 鞋大約 33 天回本。"
 ---
 
 真的可以賺到錢嗎？每天可以賺錢的速度有多快，幾天才可以回本呢？

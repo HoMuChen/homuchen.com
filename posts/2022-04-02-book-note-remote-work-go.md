@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, life style, remote work, digital nomad]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/book-note-remote-work-1.jpg
+description: "《遠距工作模式》讀書筆記：從雇主與員工角度整理遠距工作的好處，例如省下通勤、逃離朝九晚五、世界人才庫與成果導向，也回應管理疑慮，並分享社交與設立工作界線的作法。"
 ---
 
 為何要遠距工作？遠距工作有哪些好處？常見會遇到的問題有哪些？該如何解決，

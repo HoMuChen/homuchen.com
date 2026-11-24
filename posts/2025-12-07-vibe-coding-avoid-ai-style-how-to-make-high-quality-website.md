@@ -5,6 +5,7 @@ author: HoMuChen
 category: AI
 tags: [Vibe Coding]
 image: https://homuchen.com/content/images/2025/12/Vibe-Coding-------------------------.jpeg
+description: "Vibe Coding 做的網站總有 AI 味？分享「複製大法」：複製喜歡網站的 HTML 當 context 給 AI，四個步驟做出有質感的網站，並說明版權、改寫不照抄、混搭範例等注意事項。"
 ---
 
 你有沒有這種感覺：用 Vibe Coding 做出來的網站，看起來都長得很像？一看就知道是 AI 寫的，那種排版、那種配色、那種整體感覺，就是有一股濃濃的「AI 味」。

@@ -6,6 +6,7 @@ tags: [restful api, api, http]
 category: Web Development
 image:
   path: https://storage.googleapis.com/homuchen.com/images/header-1.jpg
+description: "HTTP method 該怎麼用？說明 Safe 與 Idempotent 的意義，介紹 GET、HEAD、OPTIONS、PUT、PATCH、POST、DELETE 的用途與 status code，附 PUT 與 PATCH 差異範例。"
 ---
 
 這篇文章主要討論幾個常見的HTTP methods，說明他們分別是否具有哪些特性(Safe、Idempotent)，以及他們應該要怎麼使用，比較會是符合大家的期待．

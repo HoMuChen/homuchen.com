@@ -261,6 +261,8 @@ curl -s api.host.com/users | jq
 curl -s api.host.com/users | jq '.[0].name'
 ```
 
+在 Mac 上還可以再接一個 `| pbcopy`，把結果直接複製到剪貼簿，用法可以看 [**如何在 Mac OS 用 command line 把文字複製到剪貼簿（pbcopy、pbpaste）**](/posts/mac-os-copy-to-clipboard-using-command-line/)。
+
 ### curl + grep：快速找資料
 
 ```bash
@@ -291,6 +293,7 @@ curl 是每個開發者都該熟悉的工具，不管是測試 API、debug HTTP 
 延伸閱讀：
 * [**HTTP 簡介，以及使用 telnet、nc、curl 等指令來探索**](/posts/http-introduction-telnet-nc-curl/)
 * [**HTTP Headers 完整介紹**](/posts/http-headers/)
+* [**[Golang] 4 種發起 HTTP 請求的方式：Go HTTP client 怎麼用**](/posts/golang-how-to-make-http-requests/) — 不用 curl，改在 Go 程式裡發 HTTP request
 * [**Claude Code + Shopify Admin API：讓 AI 當你的電商營運小幫手**](/posts/claude-code-shopify-admin-api-ecommerce-assistant/) — 實戰案例：用 curl 打 API 批次上架 50 筆商品
 
 感謝您的閱讀～希望對大家有一丁點兒的幫助，掰掰～👋

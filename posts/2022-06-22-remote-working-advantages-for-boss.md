@@ -6,6 +6,7 @@ category: 生活
 tags: [life style, remote work, digital nomad]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/remote-work-advantages-boss-0.jpg
+description: "遠端工作對雇主有什麼好處？從老闆的角度整理四點：接觸全球人才、降低人才流動、以成果導向評估績效、省下辦公室與通勤成本，幫你跟老闆談遠距時創造雙贏。"
 ---
 
 在上篇文章中: [**遠端工作有哪些好處？**](/posts/remote-working-advantages/)

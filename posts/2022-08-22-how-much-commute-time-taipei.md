@@ -6,6 +6,7 @@ category: 生活
 tags: [remote work]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/how-much-commute-time-taipei-2.jpg
+description: "台北人平均通勤時間多長、通勤費用要多少？根據台北市交通民意調查 690 位受訪者，一趟平均約 29 分鐘、42.6 元，來回每天就是 58 分鐘與 85.2 元，附時間與費用分佈。"
 ---
 
 通勤是辦公室及學校生活必須的部分，太長的通勤時間對生活滿意度真的是一大影響，
@@ -17,6 +18,8 @@ image:
 ![台北人通勤時間分佈](https://storage.googleapis.com/homuchen.com/images/how-much-commute-time-taipei-0.jpg)
 
 平均而言，一趟所需的通勤時間約為**29分鐘**。
+
+順帶一提，如果好奇台北捷運各站每個月有多少人進出，我之前也整理過 [**台北捷運在疫情期間各站的進出人數**](/posts/mrt-transportation-volume-during-pandemic/)。
 
 ## 通勤費用統計
 以下為690名受訪者通勤費用的分佈，其中一趟所需花費的通勤交通費用在**20元以下佔比最多**，為36%，其次是21-40元。

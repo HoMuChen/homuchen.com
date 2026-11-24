@@ -6,6 +6,7 @@ category: 生活
 tags: [New Zealand]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/queenstown-overview-0.jpg
+description: "想從高處欣賞紐西蘭皇后鎮的景色？依高度介紹五種方法：Skydive、The Remarkables 雪場、Skyline 纜車、飛行傘和 Queenstown Hill Track，附各自的優缺點與小提醒。"
 ---
 
 冬天從皇后鎮高處往下看，有藍天、白雪覆蓋的山頭、咖啡色及綠色植被、湖泊及城鎮，
@@ -39,6 +40,8 @@ The Remarkables雪場，坐右邊的纜車往上，
 但畢竟這裡是雪場，雖然離鎮上只有約一小時的車程，但雪季的時候，
 八點之後才出門的話，停車場可能就沒位置了。最後！坐纜車上來就要滑雪下去～
 有藍線跟黑線，新手雪板會落葉飄的話，還是可以下得去的。
+
+如果想知道在皇后鎮周圍滑雪要花多少錢（纜車票、裝備租借、交通），可以看 [**在紐西蘭皇后鎮周圍滑雪要花多少錢？**](/posts/new-zealand-ski-coast/)～
 
 ## Skyline
 搭乘纜車上山，應該是最輕鬆的方法了，上去之後有觀景台，拍出皇后鎮明信片的時間來拉～

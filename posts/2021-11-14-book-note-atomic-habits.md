@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, self improvement, habit]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/book-note-atomic-hanit-0.jpg
+description: "《原子習慣》讀書筆記與重點整理：為什麼要專注系統而非目標，以及提示、渴望、回應、獎賞四步驟，搭配環境設計、習慣堆疊、讓好習慣容易做與創造立即獎賞的實際例子。"
 ---
 
 [**《原子習慣》**](https://www.books.com.tw/products/0010822522)
@@ -127,6 +128,8 @@ image:
 試想一下所有的壞習慣，獎賞都是來得又快又即時，抽菸時尼古丁立刻進入我們身體當中，
 吃垃圾食物時馬上覺得滿足～ 看劇時立即享受到感官的刺激，而壞處卻是可能很久之後才會來，
 我們人類往往都是短視近利的，所以必須讓我們想要培養的習慣有獎賞之外，還要讓它來的即時。
+
+（獎賞跟懲罰到底怎麼驅動我們的行為、有沒有獎賞之外的動機，我另外整理在 [**動機：到底是什麼在驅動、引導我們的行為？**](/posts/motivation-what-motivates-us/)）
 
 ### 創造立即獎賞
 如果我們想要培養的習慣可能就是沒辦法帶來立即的獎賞該怎麼辦呢? 

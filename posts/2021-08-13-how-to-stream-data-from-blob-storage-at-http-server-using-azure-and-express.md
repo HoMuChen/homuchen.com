@@ -5,6 +5,7 @@ author: HoMuChen
 category: Web Development
 tags: [express, node.js, http, api]
 last_modified_at: 2021-11-09 15:03:00 +0800
+description: "用 Node.js 以 stream 方式下載 Azure Storage 上的檔案，pipe 到本地檔案或 express.js 的 HTTP response，並用 mime-types 依檔名設定 Content-Type，附範例程式碼。"
 ---
 
 這篇文章將會示範如何使用Node.js來下載Azure Blob Storage上的檔案，並且使用Stream的方式，

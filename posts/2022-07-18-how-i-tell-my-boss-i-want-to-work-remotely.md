@@ -23,6 +23,7 @@ description: |
 如果你沒那麼想遠端工作，或許可以看看我之前寫過的文章，來被我推坑吧～
 * [**遠端工作有哪些好處？**](/posts/remote-working-advantages/)
 * [**[讀書筆記] 一週工作4小時: 擺脫朝九晚五的窮忙生活，晉身「新富族」！**](/posts/book-note-the-four-hour-work-week/)
+* [**[讀書筆記] 遠距工作模式：麥肯錫、IBM、英特爾、eBay都在用的職場工作術**](/posts/book-note-remote-work-go/)
 
 ## 對老闆有哪些好處
 首先如果你是員工，以雇主的角度來看遠端工作這件事，說之以理，告訴你的老闆，如果你們合作的工作模式是遠距的話，

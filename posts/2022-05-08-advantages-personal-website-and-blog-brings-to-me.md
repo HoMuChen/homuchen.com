@@ -6,6 +6,7 @@ category: 生活
 tags: [self improvement]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/personal-blog-advantages.jpg
+description: "架設個人網站、寫個人部落格近一年，我得到的 5 個好處：逼自己積極學習、讓生活更豐富、透過輸出加深理解、累積個人品牌帶來工作機會，還順便學會 SEO 與 Markdown。"
 ---
 
 開始認真規律的寫部落格寫到現在，大概過了近一年的時間，這篇文章將分享

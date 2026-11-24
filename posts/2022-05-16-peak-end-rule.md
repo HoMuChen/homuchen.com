@@ -6,6 +6,7 @@ category: 生活
 image:
   path: https://storage.googleapis.com/homuchen.com/images/peak-end-rule-1.jpg
 tags: [psychology]
+description: "為什麼 IKEA 結帳區要賣霜淇淋？用康納曼提出的峰終定律解釋：我們對一段經驗的記憶由高峰與結尾決定，附結腸鏡與噪音兩個實驗，以及行為經濟學延伸書單。"
 ---
 
 為什麼IKEA會在最後結帳區的前後，設置餐廳區及有賣霜淇淋的小吃部呢？

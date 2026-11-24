@@ -6,6 +6,7 @@ category: Web Development
 tags: [react, create-react-app]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/cra-1.jpg
+description: "用 create-react-app 開發怎麼串接 API server？比較 package.json 的 proxy 與 setupProxy.js 搭配 http-proxy-middleware，用環境變數把不同 path 導向多個 backend。"
 ---
 
 在開發single page application時，會需要透過api來取得及操作資料，本篇文章將示範如何在使用create-react-app開發時，整合一個甚至是多個backend api server！

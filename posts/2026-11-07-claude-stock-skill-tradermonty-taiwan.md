@@ -373,6 +373,7 @@ MCP 是讓 AI 接上外部工具的「插座」，skill 是教 AI「怎麼把一
 * [**AI 選股實測：我讓 AI 回測 140 個台股策略，只有 2 種活下來**](/posts/ai-stock-picking-taiwan-backtest/)
 * [**用 Claude Code 打造台股 AI Agent：盤前自動選股、盤中盯盤、訊號到就發 Telegram**](/posts/claude-code-stock-agent-monitor-alert/)
 * [**用 Claude Code 建台股追蹤系統 — AI 幫你接 API、管持倉，你只要說你買了什麼**](/posts/claude-code-finmind-stock-tracking/)
+* [**AI 泡沫了嗎？我用三個比率追蹤 AI 資本支出（2026 Q3 財報實測）**](/posts/ai-bubble-capex-three-ratios/)
 * [**Skill 是什麼？讓 AI Agent 從通才變專家**](/posts/what-is-ai-agent-skill/)
 * [**Hermes Agent 是什麼：會自己長記憶、長技能的 AI Agent**](/posts/hermes-ai-agent/)（tradermonty 也有出 Hermes 版的工作流程包）
 

@@ -6,6 +6,7 @@ category: Web Development
 tags: [message queue, kafka]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/rabbitmq-kafka-1.jpg
+description: "RabbitMQ vs Kafka 差在哪？從 memory based 與 log based 的內部設計，比較 load balancing、fan-out、persistence 與訊息順序，再依使用情境告訴你該選哪個。"
 ---
 
 Message broker主要有分為兩類，分別是**memory based**及**log based**，

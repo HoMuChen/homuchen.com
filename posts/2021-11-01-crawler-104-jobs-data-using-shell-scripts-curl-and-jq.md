@@ -6,6 +6,7 @@ category: Web Development
 tags: [crawler, http, curl, linux]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/104-1.jpg
+description: "104 爬蟲不一定要寫 Python：只用 shell script，以 curl 呼叫 104 職缺搜尋 API、用 jq 解析 JSON、再用 >> 存檔，附完整程式碼與搭配 crontab 每天記錄職缺數的用法。"
 ---
 
 想要抓取網路上的資料，大家可能都會想到python爬蟲，但有時並不需要那麼麻煩，
@@ -101,7 +102,7 @@ sh ./104.sh 軟體工程師 1 | jq .data.list
 ```sh
 sh ./104.sh 軟體工程師 1 | jq .data.totalCount >> data.csv
 ```
-一天跑個一次，一份csv檔案，就可以達到我們想要目的。
+一天跑個一次，一份csv檔案，就可以達到我們想要目的。像我就有用爬蟲持續收集 104 上提到「遠端」的職缺數，整理成 [**遠端工作職缺數變化：104 求職網站搜尋結果統計**](/posts/remote-jobs-trend/)。
 
 到了 AI Agent 時代，其實連 shell script 都可以不用自己寫了——你只要把需求講清楚，讓 AI 幫你規劃 curl 指令、處理回傳資料、還能根據中間結果調整策略。我在 [**Claude Code + Shopify Admin API：讓 AI 當你的電商營運小幫手**](/posts/claude-code-shopify-admin-api-ecommerce-assistant/) 這篇有完整的實戰案例，是這種 shell script 爬蟲思維的進化版。
 

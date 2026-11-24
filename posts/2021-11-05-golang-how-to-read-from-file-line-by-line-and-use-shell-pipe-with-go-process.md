@@ -4,6 +4,7 @@ date: 2021-11-05 13:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [golang, linux]
+description: "Golang 如何逐行讀取檔案？用 bufio.Scanner 示範 read file line by line 做字數統計，再改用 os.Stdin 接 shell pipe，並用 io.Reader、io.Writer 分離 IO 與邏輯。"
 ---
 
 這篇將示範如何用go的bufio，開啟檔案並且一行一行地讀取資料，
@@ -140,6 +141,8 @@ By the way, `wc`這名字取的不好，因為我們實現的是`uniq -c`這個c
 感謝你的閱讀～ 今天學到了如何使用bufio.Scanner來一行一行地讀取檔案，另外也體會到了interface的強大，
 io.Reader及io.Writer是個很好的例子，並且利用`os.Stdin`就可以使用shell pipe ( | )，
 跟其他linux command一起搭配完成任務！
+
+文中用到的 `fmt.Printf` 裡 `%s`、`%d` 這些格式化 verb，我整理在 [**[Golang] Printf 格式化字串常用的 verbs**](/posts/golang-common-verbs-for-formatting-string/)，忘記的時候可以查～
 
 最後，我也有寫一篇一樣功能的Node.js版本，有興趣的可以看一看:
 

@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, finance, psychology]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/dollars-and-sense-1.jpg
+description: "《金錢心理學：打破你對金錢的迷思，學會聰明花費》讀書筆記下篇，整理定錨效應、稟賦效應、損失趨避、期望公平與太在意價格，以及我怎麼用這些現象設計自己的花費。"
 ---
 
 繼上篇[**[讀書筆記] 金錢心理學: 打破你對金錢的迷思，學會聰明花費 (上)**](/posts/book-note-money-psychology/)

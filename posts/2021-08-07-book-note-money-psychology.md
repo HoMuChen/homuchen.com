@@ -7,6 +7,7 @@ tags: [books, finance, psychology]
 last_modified_at: 2021-10-28 21:30:00 +0800
 image:
   path: https://storage.googleapis.com/homuchen.com/images/dollars-and-sense-1.jpg
+description: "《金錢心理學：打破你對金錢的迷思，學會聰明花費》讀書筆記上篇：從機會成本出發，整理相對性、誘餌、心理帳戶與避免付錢痛苦等心理現象，看懂我們為何常亂花錢。"
 ---
 
 生而為人，而不是一部機器人，我們有情緒，我們有人性而不是聖人；我們懶惰，喜歡走捷徑，有各種誤判及偏見；

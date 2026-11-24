@@ -6,6 +6,7 @@ category: Web Development
 tags: [http, restful api, api, url]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/http-url-1.jpg
+description: "URL 是什麼？用計程車報地址的比喻解釋 URL 的用途，再拆解 URL 構造：scheme、host、port、path、query 各代表什麼，附一般網址格式與欄位說明表。"
 ---
 
 這篇文章將會介紹什麼是URL，為何會需要它，以及它是由哪些部分組成的。

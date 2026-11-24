@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, finance, habit]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/rich-habit-1.jpg
+description: "《習慣致富 人生實踐版》讀書筆記：透過兩對夫婦面對財務決策的故事，整理書中 22 個致富習慣，並分享心得，推薦習慣、睡眠、運動、金錢心理學等延伸書籍。"
 ---
 
 ![book: Effort-less Wealth](https://storage.googleapis.com/homuchen.com/images/rich-habit-1.jpg)

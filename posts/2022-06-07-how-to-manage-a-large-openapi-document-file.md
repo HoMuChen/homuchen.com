@@ -4,6 +4,7 @@ date: 2022-06-07 00:07:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [http, restful api, api, openapi]
+description: "OpenAPI yaml 太大難管理？分享我改用 JSON 把 schema、response、parameter 與 paths 拆成多個檔案的做法，附 index.js 範例，YAML 則可用 swagger-cli 合併 $ref。"
 ---
 
 OpenAPI的document文件可以變得非常大一份，特別是當你有好幾百個routes的時候，

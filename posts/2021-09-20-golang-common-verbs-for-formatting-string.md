@@ -4,6 +4,7 @@ date: 2021-09-20 15:30:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [golang, formatting]
+description: "Golang 用 fmt.Printf、Sprintf 做 string format 時常用的 verbs 整理：%v、%T、%d、%s、%q、%f，以及寬度 padding 與浮點數精度，每個都附程式範例。"
 ---
 
 在fmt package裡Printf, Fprintf, Fscanf, Scanf，或像是log package裡的Printf, Fatalf，

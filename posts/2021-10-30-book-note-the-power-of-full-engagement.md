@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, life style, habit, self improvement, productivity]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/full-engagement-0.jpg
+description: "《用對能量，你就不會累》（The Power of Full Engagement）讀書筆記：用身體、情緒、心理、精神四種能量取代時間管理，整理定時休息、刻意鍛鍊與建立儀式的做法。"
 ---
 
 原文書名為[**《The Power of Full Engagement》**](https://bookzone.cwgv.com.tw/books/details/BBP291)，

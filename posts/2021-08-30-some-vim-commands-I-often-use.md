@@ -6,6 +6,7 @@ category: Web Development
 tags: [vim, linux]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/vim-5.jpg
+description: "整理我常用的 vim 指令：hjkl 上下左右、翻頁、字與括號跳躍，dd、dw、diw、di( 等 d 系列刪除，換成 c 直接進 insert mode，以及 yy、p 等複製貼上用法。"
 ---
 
 作為一個軟體工程師，我們花在文字編輯器上的時間一定佔了一定的比例，

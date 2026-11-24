@@ -6,6 +6,7 @@ category: 生活
 tags: [food, life style, habit]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/food-0.jpg
+description: "15 分鐘就能做好的懶人早餐：用冷凍毛豆、冷凍花椰菜和雞蛋，做出高纖高蛋白低碳水的毛豆炒蛋與炒花椰菜，附食材選擇理由、簡單做法和一餐約 49.5 元的花費。"
 ---
 
 想少吃些外食的精緻碳水，於是乎開始研究自己下廚，在[**《原子習慣》**](https://www.books.com.tw/products/0010822522)

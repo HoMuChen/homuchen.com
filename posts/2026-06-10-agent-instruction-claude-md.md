@@ -199,7 +199,7 @@ description: "AI Agent 靠不靠譜，九成看你給它的 instruction 寫得�
 
 ### CLAUDE.md 和 AGENTS.md 我該用哪個？
 
-看你用什麼工具。**只用 Claude Code → 寫 `CLAUDE.md` 就好;會在多個工具間切換（Claude Code、Codex、Cursor）→ 主力寫 `AGENTS.md`（跨工具通用），再讓 `CLAUDE.md` import 過去。** 兩者格式都是純 Markdown，沒有魔法，重點永遠是裡面的內容寫得夠不夠具體。
+看你用什麼工具。**只用 Claude Code → 寫 `CLAUDE.md` 就好;會在多個工具間切換（Claude Code、Codex、Cursor）→ 主力寫 `AGENTS.md`（跨工具通用），再讓 `CLAUDE.md` import 過去。** 兩者格式都是純 Markdown，沒有魔法，重點永遠是裡面的內容寫得夠不夠具體。如果還不熟 Markdown 語法，可以先看 [**Markdown 語法教學：Markdown 是什麼？常用語法速查表**](/posts/markdown-tutorial/)。
 
 ### instruction 要寫多長才夠？
 

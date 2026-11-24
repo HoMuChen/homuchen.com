@@ -7,6 +7,7 @@ category: Web Development
 last_modified_at: 2021-10-28 16:49:00 +0800
 image:
   path: https://storage.googleapis.com/homuchen.com/images/kue-1.jpg
+description: "在 Node.js 快速建立 asynchronous task queue：用 Docker 跑 Redis，再用 Kue.js produce、consume message 並用 done() 做 ack，設定 concurrency 同時處理多個工作。"
 ---
 
 這是篇教你如何在node.js環境下，快速擁有一個Task queue的tutorial，如果想了解什麼是message queue，以及為什麼跟什麼時候要使用它，可以參考我的另外一篇文章[**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)!
@@ -124,3 +125,5 @@ queue.process('email', 10, function(job, done){
 * [**什麼是message queue? 優點及使用場景**](/posts/message-queue-advantages-use-cases)
 
 * [**RabbitMQ和Kafka有何不同？何時該選用哪種產品？**](/posts/difference-bwtween-rabbitmq-and-kafka/)
+
+* [**利用Docker建立PostgreSQL開發環境**](/posts/docker-postgres-dev-environment/)

@@ -6,6 +6,7 @@ category: 生活
 tags: [life style, room makeover]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/room-makeover-overview-0.jpg
+description: "老家房間 DIY 改造的成果分享，附完整購物清單與改造費用：免膠地板、壁貼、乳膠漆、開關面板到書桌，總共花了 25,836 元，並附地板、牆壁、房門、櫃體各篇教學。"
 ---
 
 因為開啟了全遠端工作模式的關係，不是在環遊世界工作，就是在家工作。退掉了台北租屋處回到老家之後，

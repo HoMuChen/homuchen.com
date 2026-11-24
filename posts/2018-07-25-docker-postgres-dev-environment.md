@@ -4,6 +4,7 @@ date:   2018-07-25 12:19:15 +0800
 author: "HoMuChen"
 category: Web Development 
 tags: [docker, postgres]
+description: "用 Docker 建立 PostgreSQL 開發環境：把設定放進環境變數、寫成 shell script 執行 docker run，解釋 -d、-p、-e、-v 參數，再用 docker exec 進 psql 開始使用。"
 ---
 
 首先先將需要的configuration variable放到環境變數裏，在這裡就是我們的PostgreSQL database server要起在哪一個port，user，password，db等等，準備好你的 dev.env檔案如下，然後執行 . ./dev.env
@@ -22,7 +23,7 @@ docker run                                  \
   -d                                        \
   -p $PG_PORT:5432                          \
   -e POSTGRES_USER="$PG_USER"               \
-  -e POSTGRES_PASSWORD="$PG_PASSWORD"       \
+  -e POSTGRES_PASSWORD="$PG_PWD"            \
   -v "$PWD/pgdata":/var/lib/postgresql/data \
   postgres
 ```

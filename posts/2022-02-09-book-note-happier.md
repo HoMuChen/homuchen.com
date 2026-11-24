@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, life style, self improvement, psychology]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/happier-01.jpg
+description: "《更快樂：哈佛最受歡迎的一堂課》讀書筆記：用拼命三郎、享樂主義、虛無主義、快樂開朗型四種生活類型，說明快樂要有樂趣也要有意義，以及目標與享樂適應的關係。"
 ---
 
 作者於2002年在哈佛大學開始講授 **正向心理學**，這門課主要探討的問題就是: **如何幫助自己和別人活得更快樂？**

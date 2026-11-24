@@ -6,6 +6,7 @@ category: Web Development
 tags: [http, restful api, api]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/restful-api-1.jpg
+description: "什麼是 RESTful API？用簡單範例說明 resource based 的 URL 設計原則（用名詞不用動詞），以及如何用 GET、POST、PUT、DELETE 對應 CRUD，和它為何長這樣。"
 ---
 
 在web開發裡，API是幾乎無所不在，而其中最常見的應該就是基於HTTP協議的RESTful API，

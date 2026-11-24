@@ -6,6 +6,7 @@ category: Web Development
 tags: [system design, database]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/hash-function-5.jpg
+description: "Partition 是什麼？圖解 vertical 與 horizontal partition 的差別、partition key 怎麼選、range 與 hash 分法優缺點，並比較 RDBMS 與 NoSQL 的 sharding 做法。"
 ---
 
 什麼是partition，vertical跟horizontal partition有何不同? 阿sharding又是什麼?

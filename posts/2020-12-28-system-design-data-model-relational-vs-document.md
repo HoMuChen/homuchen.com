@@ -6,6 +6,7 @@ category: Web Development
 tags: [data model, system design, database]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/data-model-1.jpg
+description: "Relational data model 和 document model 該怎麼選？用 Todo list 範例比較兩者處理 one-to-many、many-to-many 關係與 join 的差異，以及 schema flexibility 的利弊。"
 ---
 
 開發應用程式時，時常使用到資料庫，儲存資料並在之後需要時將其取出，如今有許多的資料庫產品可供選擇，提供各種不同的data model及function，在各種使用情境下有不同的表現，開發者根據你的應用程式的需求、資料之間的關係、access pattern、scalability、ACID transaction、fault-tolerance、會有各種不同的適合的選擇．

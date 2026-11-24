@@ -6,6 +6,7 @@ category: 生活
 tags: [remote work]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/remote-jobs-trend.jpg
+description: "遠端工作職缺真的變多了嗎？用爬蟲持續統計 104 求職網站提到遠端的職缺數，整理 2021 年 11 月以來的趨勢圖，並開放原始資料試算表。"
 ---
 
 疫情(Covid-19)的關係，算是打開了所以工作遠端的大門，這篇文章利用了網路爬蟲程式，

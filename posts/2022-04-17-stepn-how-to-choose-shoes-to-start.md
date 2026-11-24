@@ -6,6 +6,7 @@ category: 生活
 tags: [crypto, stepn]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/stepn-income-01.jpg
+description: "STEPN 新手怎麼挑鞋？說明鞋子的四種基礎數值、升級所需 GST 與時間、鑄造次數與費用如何影響價格，並建議想快速回本該買哪種鞋（內容為 2022 年 4 月的數據）。"
 ---
 
 在考慮進場**STEPN**邊跑邊賺嗎？對於想買鞋嘗試玩玩看的玩家，

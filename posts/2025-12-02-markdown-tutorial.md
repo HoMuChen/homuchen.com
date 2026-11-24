@@ -48,7 +48,7 @@ Markdown 是一種**輕量級標記語言**，由 John Gruber 在 2004 年創造
 
 ### 3. 部落格與靜態網站
 
-Jekyll、Hugo、Hexo、Astro 這些靜態網站生成器，文章都是用 Markdown 寫的。包括你現在看到的這篇文章，也是 Markdown！
+Jekyll、Hugo、Hexo、Astro 這些靜態網站生成器，文章都是用 Markdown 寫的。包括你現在看到的這篇文章，也是 Markdown！我以前的部落格就是用 Jekyll 架的，寫部落格的心得整理在 [**架設個人網站、撰寫部落格帶給我的5個好處**](/posts/advantages-personal-website-and-blog-brings-to-me/)。
 
 ### 4. 技術文件
 
@@ -291,3 +291,4 @@ Markdown 的魅力就在於它的**簡單**和**通用性**。
 - [CommonMark 官方規範](https://commonmark.org/?ref=homuchen.com)
 - [GitHub Flavored Markdown 規範](https://github.github.com/gfm/?ref=homuchen.com)
 - [Markdown Guide](https://www.markdownguide.org/?ref=homuchen.com)
+- [Claude Code 不只 Code！Agentic AI 自動撰寫 SEO 文章完整指南](/posts/claude-code-not-just-for-coding-for-blog-writing/)

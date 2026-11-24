@@ -4,6 +4,7 @@ date: 2021-11-09 10:00:00 +0800
 author: HoMuChen
 category: Web Development
 tags: [node.js, linux]
+description: "用 Node.js readline module 逐行讀取檔案，再把 input 換成 process.stdin，就能搭配 Unix pipe 讀取其他程式的輸出，附計算字數的 wc.js 完整範例。"
 ---
 
 這篇文章將介紹如何使用Nodejs的`readline` module來一行一行地讀取檔案，

@@ -6,6 +6,7 @@ category: 讀書筆記
 tags: [books, psychology, health, sleep]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/sleep-0.jpg
+description: "《為什麼要睡覺？睡出健康與學習力、夢出創意的新科學》讀書筆記：整理生理時鐘、腺苷等睡眠機制，睡眠對記憶、情緒、免疫力的影響與實驗，以及睡得更好的方法。"
 ---
 
 如果有一個產品，只要你使用它，就可以擁有更好記憶力、學習能力、

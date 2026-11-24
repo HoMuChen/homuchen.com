@@ -16,6 +16,7 @@ description: |
 顧名思義就是將一份資料，複製成多份，並把它放到不同的機器上，
 好像也沒什麼好說的🤪，接著會看看為什麼要做複製，它會帶來什麼好處及壞處，
 再看看要如何做到replication，最後看看在RDBMS、NoSQL或是你自己的系統，是怎麼應用這些概念的。
+（常跟 replication 一起出現的，是把一份資料拆成好幾份的 partition，之前寫過一篇 [**淺談 Database Partition：vertical、horizontal partition 與 sharding**](/posts/what-is-database-partition-sharding/)，可以搭配著看～）
 
 ## 為何要replication
 ### 資料備份
@@ -103,6 +104,7 @@ description: |
 比如說MongoDB的write有各種設定[[1]](#1)，w option可以設為`0`、`1`或`majority`，
 你知道他們的區別及取捨嗎?其核心的概念就是今天所討論的replication所造成的
 consistency及durability的問題，之後有機會再單獨寫一篇講MongoDB的write concern(TODO)。
+至於 MongoDB 這類 document database 跟傳統 relational database 在 data model 上差在哪，可以看 [**[System Design] Data model: Relational V.S. Document**](/posts/system-design-data-model-relational-vs-document/)。
 
 ### 自己的系統也會有replication
 隨著系統越來越複雜，你可能也會使用到多個資料產品，比如說你有個主要的資料庫，

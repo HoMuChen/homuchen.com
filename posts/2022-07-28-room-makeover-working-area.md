@@ -6,6 +6,7 @@ category: 生活
 tags: [life style, room makeover]
 image:
   path: https://storage.googleapis.com/homuchen.com/images/room-makeover-working-area-0.jpg
+description: "全遠端工作後改造房間工作區，久坐需要站坐交替，但一定要買升降桌嗎？比較升降桌與高腳桌搭配一般桌子的優缺點，附總價 3195 元的購物清單。"
 ---
 
 因為開啟了全遠端工作模式的關係，不是在環遊世界工作，就是在家工作。退掉了台北租屋處回到老家之後，

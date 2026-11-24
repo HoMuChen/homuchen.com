@@ -4,10 +4,9 @@ date: 2021-11-11 16:04:00 +0800
 author: HoMuChen
 category: 生活
 tags: []
-descripton: |
-  台北捷運運量統計資料分享，COVID-19疫情期間各站的總進出人數
 image:
   path: https://storage.googleapis.com/homuchen.com/images/mrt-data-taipei-stattion-0.jpg
+description: "COVID-19 疫情期間台北捷運運量怎麼變化？整理 data.taipei 各站分時進出量資料，呈現 2020-01 到 2021-09 台北車站、忠孝復興、西門、板橋、士林每月進出站人數趨勢。"
 ---
 
 COVID-19爆發以來，台灣人民的生活跟世界其他國家相比，受到的影響相對較小，
