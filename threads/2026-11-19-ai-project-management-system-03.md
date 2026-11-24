@@ -6,8 +6,9 @@ source_post: /posts/ai-project-management-system/
 idea: 把 4 個專案搬進自己做的系統，第一天就抓到一顆西瓜：燈號正常，系統算出 SPI 0.86、建議落後
 topic: 專案管理
 tags: [專案管理, 接案]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgGxsoDGbGG
+published_at: 2026-11-24T09:29:15+08:00
 ---
 
 我把手上 4 個接案專案、205 個任務搬進自己做的專案管理系統，第一天就抓到一顆西瓜🍉
