@@ -161,3 +161,20 @@ python3 scripts/upload_to_ghost.py
 | 2017–2020 | 12 | 已發布 |
 | 2021 | 38 | 已發布 |
 | 2022 | 34 | 已發布 |
+
+## 修改已發布文章：`scripts/ghost_sync.py`
+
+改舊文（補 description、加內部連結、修錯字）時，先 commit，再把兩個 commit 之間的變更同步到 Ghost：
+
+```bash
+python3 scripts/ghost_sync.py <base> <head> --dry-run   # 列出每篇會做的操作、哪些無法安全 patch
+python3 scripts/ghost_sync.py <base> <head> --limit 1   # 先跑一篇，自己到線上確認
+python3 scripts/ghost_sync.py <base> <head>             # 跑剩下的，已成功的會略過
+python3 scripts/ghost_sync.py <base> <head> --rollback <slug>   # 還原某篇到更新前
+```
+
+- **不要整篇重送內文**：Ghost 上很多文章跟 repo 不一致（圖片說明、刪除線、「延伸閱讀」在 Ghost 是「段落 + 換行 + `* `」的假清單、後台改過的字），用 `update_ghost_post.py` 或重新上傳會把這些蓋掉。`ghost_sync.py` 透過 `scripts/ghost_patch.py` 在 Ghost 現有的 Lexical 上只插入新段落、清單項或句尾文字，其他內容不動。
+- 只同步 `description`（→ `meta_description`）和內文；title、image、tags 不送，要改請到後台。新文章用 `upload_to_ghost.py`。
+- 每篇更新後都會驗證（後台欄位沒被改到、新文字緊接在預期位置、圖片與原有連結都在、線上 meta description 與新連結正確），失敗就停在那一篇。
+- 找不到唯一對應位置的改動（例如改了段落中間、或錨點在 HTML 卡片裡）會被跳過，`--dry-run` 會列出原因，這些請到後台手動改。
+- 備份與紀錄在 `~/.cache/homuchen-ghost-sync/<base>..<head>/`（repo 外，備份含整篇內容）。
