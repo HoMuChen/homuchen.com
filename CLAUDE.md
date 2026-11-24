@@ -243,6 +243,13 @@ tags: [課程, ...]
 
 每個 review 找出缺口後要決定是否補強，可以選擇不改，但要是有意識地選擇而不是漏看。盤點結果寫入 commit message 或文章內部規劃筆記。
 
+#### 發布前 lint（必跑）
+
+上 Ghost 前跑 `python3 scripts/seo_lint.py <文章.md>`：有 `error`（壞掉的站內連結、缺 image/category 等）就不要發；`warn` 要處理或有意識地略過。
+- 輸出會列出「沒有文章連進來」時建議從哪幾篇補連結：發布新文時順手到那幾篇舊文加連結。
+- 全站健檢：`python3 scripts/seo_lint.py --all --live --out <報告.md>`（`--live` 會抓線上頁面核對 meta description / canonical / og:image，約 1 分鐘）。
+- 舊文（2025 年以前）不檢查「掰掰～👋」結尾與 image 路徑慣例；在 Ghost 後台新增獨立頁面時，把路徑補進腳本的 `KNOWN_PAGES`。
+
 SEO 注意事項：
 - `title` 包含主要關鍵字（來自關鍵字研究）
 - `description` 撰寫吸引人的摘要（150-160 字元），包含主要關鍵字
