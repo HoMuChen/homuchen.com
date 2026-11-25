@@ -6,8 +6,9 @@ source_post: /posts/claude-code-shioaji-auto-trading-bot/
 idea: 期貨自動轉倉要「先平再開」，順序一開始寫反了，檢查才抓到
 topic: 台股
 tags: [期貨, 自動交易, 程式交易]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgKSc8omb4H
+published_at: 2026-11-25T18:13:12+08:00
 ---
 
 期貨自動轉倉，我一開始把順序寫反了 😱
