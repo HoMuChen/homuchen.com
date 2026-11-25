@@ -6,8 +6,9 @@ source_post: /posts/ai-stock-picking-taiwan-backtest/
 idea: AI 回測出漂亮數字時，叫它自己找漏洞、用打亂股票代號的安慰劑估計假訊號比例；實測篩選標準放行了 19.4% 的假特徵
 topic: claude code
 tags: [Claude Code, 回測, AI選股]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgJXsgTGYQV
+published_at: 2026-11-25T09:39:46+08:00
 ---
 
 用 AI 回測出很漂亮的數字時，我會再丟一句話給它：
