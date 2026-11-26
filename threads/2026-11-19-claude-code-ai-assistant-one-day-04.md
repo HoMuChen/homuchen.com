@@ -6,8 +6,9 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 拿 30 筆真實資料比 Opus 和 Sonnet：Opus 沒有明顯比較好，貴 2.2 倍、每筆慢 5 秒
 topic: AI觀察
 tags: [AI觀察, Claude, eval]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgMv7jZGcmI
+published_at: 2026-11-26T17:09:09+08:00
 ---
 
 我拿 30 筆真實資料，比了 Claude Opus 跟 Sonnet，讓它們做同一件事：從信件和文件裡抽出待辦和期限。
