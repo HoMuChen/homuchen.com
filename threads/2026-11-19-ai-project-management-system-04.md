@@ -6,8 +6,9 @@ source_post: /posts/ai-project-management-system/
 idea: 客戶不會登入，所以系統讓 PM 代記客戶在 LINE 上做的決定，誰決定、誰記錄分開記
 topic: 專案管理
 tags: [專案管理, 接案]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgL5V1NmScf
+published_at: 2026-11-26T09:12:07+08:00
 ---
 
 做給客戶用的專案管理系統，我最早接受的事實是：
