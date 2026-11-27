@@ -6,8 +6,9 @@ source_post: /posts/claude-code-shioaji-auto-trading-bot/
 idea: 永豐 Shioaji 開通前要通過模擬環境測試，這一關整個交給 Claude Code 跑
 topic: claude code
 tags: [Claude Code, Shioaji, 永豐 API]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgOhyf1Ge-E
+published_at: 2026-11-27T09:44:11+08:00
 ---
 
 永豐 Shioaji API 開通前，要先在模擬環境通過登入和下單測試。
