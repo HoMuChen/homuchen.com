@@ -6,8 +6,9 @@ source_post: /posts/ai-project-management-system/
 idea: PM 直接跟 AI 對話維護專案（MCP）：拆 WBS、查進度、寫週報；AI 權限跟我一樣、改了什麼都查得到
 topic: AI Agent
 tags: [AI Agent, MCP, 專案管理]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgPfA95GboJ
+published_at: 2026-11-27T18:39:12+08:00
 ---
 
 當 PM 最花時間的不是做決定，是維護資料。
