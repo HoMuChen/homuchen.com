@@ -6,8 +6,9 @@ source_post: /posts/claude-code-ai-assistant-one-day/
 idea: 一天做出 AI 助理，關鍵是砍範圍：MVP 只要收得完整、agent 讀得到，分析之後再加
 topic: claude code
 tags: [Claude Code, AI 助理, AI Agent]
-status: approved
-threads_url:
+status: published
+threads_url: https://www.threads.com/@homuchen.build.ai/post/DgSCb6qmb6Q
+published_at: 2026-11-28T18:27:09+08:00
 ---
 
 我用 Claude Code 一天做出自己的 AI 助理：下午一點多開空 repo，晚上 11 點上線。
